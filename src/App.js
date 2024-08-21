@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import News from './pages/News';
+import OnlineCasinos from './pages/OnlineCasinos';
+import Sportwetten from './pages/Sportwetten';
+import Guides from './pages/Guides';
+import Bonusangebote from './pages/Bonusangebote';
+import Promotions from './pages/Promotions';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Wrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/online-casinos" element={<OnlineCasinos />} />
+            <Route path="/sportwetten" element={<Sportwetten />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/bonusangebote" element={<Bonusangebote />} />
+            <Route path="/promotions" element={<Promotions />} />
+          </Routes>
+        </Wrapper>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
