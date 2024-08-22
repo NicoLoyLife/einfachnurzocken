@@ -1,23 +1,21 @@
 import React from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import { spiele } from '../services/dummyData';
 
 function PopularGames() {
   return (
-    <Box m={2} p={2} border={1} borderRadius={1}>
-      <Typography variant="h4" gutterBottom>
-        Beliebte Spiele
+    <Box sx={{ mt: 8, mb: 8 }}>
+      <Typography variant='h3' component='h3' sx={{ mb: 4, textAlign: 'center' }}>
+        Beliebteste Spiele
       </Typography>
-      <List>
-        {spiele.slice(0, 3).map((game, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={game.title}
-              secondary={game.description}
-            />
-          </ListItem>
-        ))}
-      </List>
+
+      <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
+        Entdecke die Spiele, die aktuell bei unseren Nutzern am beliebtesten sind. Diese Slots und Tischspiele bieten nicht nur Unterhaltung, sondern auch großartige Gewinnchancen.
+      </Typography>
+
+      <Button variant='containded' color='primary' sx={{ display: 'block', margin: '0 auto' }}>
+        Alle Spiele ansehen
+      </Button>
     </Box>
   );
 }
