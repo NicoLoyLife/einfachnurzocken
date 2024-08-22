@@ -38,7 +38,7 @@ function LatestBonusangebote() {
         Verpasse nicht die besten Bonusangebote der Woche! Von großzügigen Willkommensboni bis hin zu spannenden Promotions - hier findest du alles, was du brauchst, um dein Spielerlebnis zu maximieren.
       </Typography>
 
-      <Grid container spacing={4} justifyContent='center'>
+      <Grid container spacing={1} justifyContent='center'>
         {enrichedOffers.map((offer, index) => (
           <Grid item key={index} xs={12} md={4}>
             <BonusOfferCard offer={offer} placement={index + 1} />
