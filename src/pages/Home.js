@@ -2,7 +2,8 @@ import React from 'react';
 import HeroBanner from '../components/HeroBanner';
 import TopCasinos from '../components/TopCasinos';
 import LatestBonusangebote from '../components/LatestBonusangebote';
-import LatestGuides from '../components/LatestGuides';
+import PopularGames from '../components/PopularGames';
+import TopSportwetten from '../components/TopSportwetten';
 
 function Home() {
   return (
@@ -10,7 +11,8 @@ function Home() {
       <HeroBanner />
       <TopCasinos />
       <LatestBonusangebote />
-      <LatestGuides />
+      <PopularGames />
+      <TopSportwetten />
     </div>
   );
 }

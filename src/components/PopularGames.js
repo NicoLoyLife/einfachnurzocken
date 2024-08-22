@@ -13,7 +13,7 @@ function PopularGames() {
         Entdecke die Spiele, die aktuell bei unseren Nutzern am beliebtesten sind. Diese Slots und Tischspiele bieten nicht nur Unterhaltung, sondern auch großartige Gewinnchancen.
       </Typography>
 
-      <Button variant='containded' color='primary' sx={{ display: 'block', margin: '0 auto' }}>
+      <Button variant='contained' color='primary' sx={{ display: 'block', margin: '0 auto' }}>
         Alle Spiele ansehen
       </Button>
     </Box>
