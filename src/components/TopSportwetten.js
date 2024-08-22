@@ -1,23 +1,21 @@
 import React from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import { sportwetten } from '../services/dummyData';
 
 function TopSportwetten() {
   return (
-    <Box m={2} p={2} border={1} borderRadius={1}>
-      <Typography variant="h4" gutterBottom>
-        Top Sportwetten Anbieter
+    <Box sx={{ mt: 8, mb: 8 }}>
+      <Typography variant='h3' component='h3' sx={{ mb: 4, textAlign: 'center' }}>
+        Unsere Empfehlungen für Sportwetten
       </Typography>
-      <List>
-        {sportwetten.slice(0, 3).map((wetten, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={wetten.name}
-              secondary={`Rating: ${wetten.rating} | Bonus: ${wetten.welcome_bonus}`}
-            />
-          </ListItem>
-        ))}
-      </List>
+
+      <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
+        Egal, ob du ein Fan von Fußball, Basketball oder Tennis bist - hier findest du die besten Sportwetten-Anbieter, die dir die besten Quoten und ein umfangreiches Wettangebot bieten.
+      </Typography>
+
+      <Button variant='contained' color='primary' sx={{ display: 'block', margin: '0 auto' }}>
+        Zu den Sportwetten-Anbietern
+      </Button>
     </Box>
   );
 }
