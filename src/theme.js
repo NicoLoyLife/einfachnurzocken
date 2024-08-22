@@ -63,7 +63,7 @@ const typography = {
   // Weitere Typografiestile wie Button, Caption, Overline, etc.
   button: {
     fontFamily: 'Poppins, Arial, sans-serif',
-    fontWeight: 600,
+    // fontWeight: 600,
     fontSize: '0.875rem',
     textTransform: 'none', // Deaktiviert automatische Großschreibung
   },
@@ -96,8 +96,8 @@ const themes = {
   elegantPurple: createTheme({
     palette: {
       mode: 'dark',
-      primary: { main: '#7c4dff' },
-      secondary: { main: '#ff4081' },
+      primary: { main: '#673ab7' },
+      secondary: { main: '#e91e63' },
       background: { default: '#020202', paper: '#1e1e1e' },
       text: { primary: '#ffffff', secondary: '#bdbdbd' },
     },

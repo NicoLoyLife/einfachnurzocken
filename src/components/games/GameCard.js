@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 function GameCard({ game }) {
   return (
-    <Card sx={{ borderRadius: '15px', overflow: 'hidden', position: 'relative' }}>
+    <Card sx={{ mb: 4, borderRadius: '15px', overflow: 'hidden', position: 'relative' }}>
       <CardMedia
         component="img"
         alt={game.name}
@@ -12,7 +12,7 @@ function GameCard({ game }) {
         sx={{ height: '200px', objectFit: 'cover' }}
       />
 
-      <CardContent sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'primary.dark', color: '#fff', padding: '10px 16px', minHeight: '60px' }}>
+      <CardContent sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'primary.main', color: '#fff', padding: '10px 16px', minHeight: '60px' }}>
         <Typography variant='body1'>
           {game.name}
         </Typography>

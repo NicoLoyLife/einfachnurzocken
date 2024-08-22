@@ -20,7 +20,7 @@ function PopularGames() {
         Entdecke die Spiele, die aktuell bei unseren Nutzern am beliebtesten sind. Diese Slots und Tischspiele bieten nicht nur Unterhaltung, sondern auch großartige Gewinnchancen.
       </Typography>
 
-      <Grid container spacing={1}>
+      <Grid container spacing={1} justifyContent='center'>
         {topGames.map((game, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <GameCard game={game} />
