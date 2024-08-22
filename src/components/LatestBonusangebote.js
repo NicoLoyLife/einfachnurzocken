@@ -9,7 +9,7 @@ function LatestBonusangebote() {
   const sortedOffers = bonusangebote.sort((a, b) => b.rating - a.rating);
 
   // Filtern der Bonusangebote mit den höchsten Ratings
-  const topOffers = sortedOffers.slice(0, 3);
+  const topOffers = sortedOffers.slice(0, 5);
 
   // Anreichern der Bonusangebote mit Casino-Informationen
   const enrichedOffers = topOffers.map(offer => {
