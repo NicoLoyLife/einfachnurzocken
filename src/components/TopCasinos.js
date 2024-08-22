@@ -1,41 +1,34 @@
 import React from 'react';
-import { Box, Typography, Card, CardContent, CardMedia, Grid } from '@mui/material';
+import { Box, Typography, Grid, Button } from '@mui/material';
+import CasinoCard from './casinos/CasinoCard';
 import { casinos } from '../services/dummyData';
 
 function TopCasinos() {
+
+  // Sortieren der Casinos nach Rating in absteigender Reihenfolge
+  const sortedCasinos = casinos.sort((a, b) => b.rating - a.rating);
+
+  // Filtern der Casinos mit den höchsten Ratings
+  const topCasinos = sortedCasinos.slice(0, 3);
+
   return (
-    <Box m={2} p={2}>
-      <Typography variant="h4" gutterBottom>
-        Top Online Casinos
+    <Box sx={{ mt: 8, mb: 8 }}>
+      <Typography variant='h3' component='h3' sx={{ mb: 4, textAlign: 'center' }}>
+        Unsere Top Casinos im Überblick
       </Typography>
-      <Grid container spacing={2}>
-        {casinos.slice(0, 3).map((casino, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{ backgroundColor: 'background.paper' }}>
-              <CardMedia
-                component="img"
-                height="140"
-                image={casino.image} // Placeholder-Bild, später ersetzen
-                alt={casino.name}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {casino.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {casino.description}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Rating: {casino.rating}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Bonus: {casino.bonus}
-                </Typography>
-              </CardContent>
-            </Card>
+      <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
+      Entdecke die besten Online Casinos, die von unseren Experten sorgfältig geprüft wurden. Diese Casinos bieten nicht nur herausragende Spiele und Boni, sondern auch einen erstklassigen Kundenservice und sichere Zahlungsmethoden.
+      </Typography>
+      <Grid container spacing={4} justifyContent='center'>
+        {topCasinos.map((casino, index) => (
+          <Grid item key={index} xs={12} md={4}>
+            <CasinoCard casino={casino} />
           </Grid>
         ))}
       </Grid>
+      <Button variant='contained' color='primary' sx={{ mt: 4, display: 'block', margin: '0 auto' }}>
+        Die besten Casinos entdecken
+      </Button>
     </Box>
   );
 }

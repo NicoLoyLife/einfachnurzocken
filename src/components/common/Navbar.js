@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, YouTube } from '@mui/icons-material'; // Verwenden Sie Twitter-Icon
-import logo from '../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);

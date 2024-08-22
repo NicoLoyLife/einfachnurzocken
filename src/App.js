@@ -7,9 +7,9 @@ import Sportwetten from './pages/Sportwetten';
 import Guides from './pages/Guides';
 import Bonusangebote from './pages/Bonusangebote';
 import Promotions from './pages/Promotions';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Wrapper from './components/Wrapper';
+import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
+import Wrapper from './components/common/Wrapper';
 
 function App() {
   return (

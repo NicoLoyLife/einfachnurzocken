@@ -50,6 +50,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "6 Stunden",
     license: "Malta Gaming Authority",
+    image: require('../assets/images/luckybet.webp'),
   },
   {
     name: "BetZone",
@@ -111,7 +112,7 @@ export const casinos = [
     link: "https://www.elitecasino.com",
     description:
       "Elite Casino bietet eine exklusive Auswahl an Spielen und eine benutzerfreundliche Plattform.",
-    rating: 4.9,
+    rating: 4.5,
     promotions: "Exklusive Bonusangebote für Mitglieder",
     welcome_bonus: "250% bis zu 400€",
     game_selection: ["Slots", "Poker", "Roulette", "Live Casino"],
@@ -175,6 +176,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Neteller", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Curacao eGaming",
+    image: require('../assets/images/vegas-paradise.webp'),
   },
   {
     name: "Luxury Casino",
@@ -245,6 +247,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Gibraltar Gambling Commission",
+    image: require('../assets/images/diamond-club-casino.webp'),
   },
   {
     name: "Sunshine Casino",
