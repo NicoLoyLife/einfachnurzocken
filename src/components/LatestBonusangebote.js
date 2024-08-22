@@ -1,23 +1,21 @@
 import React from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import { bonusangebote } from '../services/dummyData';
 
 function LatestBonusangebote() {
   return (
-    <Box m={2} p={2} border={1} borderRadius={1}>
-      <Typography variant="h4" gutterBottom>
-        Neueste Bonusangebote
+    <Box sx={{ mt: 8, mb: 8 }}>
+      <Typography variant="h3" component='h3' sx={{ mb: 4, textAlign: 'center' }}>
+        Aktuelle Bonusangebote und Promotions
       </Typography>
-      <List>
-        {bonusangebote.slice(0, 3).map((bonus, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={bonus.title}
-              secondary={bonus.details}
-            />
-          </ListItem>
-        ))}
-      </List>
+
+      <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
+        Verpasse nicht die besten Bonusangebote der Woche! Von großzügigen Willkommensboni bis hin zu spannenden Promotions - hier findest du alles, was du brauchst, um dein Spielerlebnis zu maximieren.
+      </Typography>
+
+      <Button variant='contained' color='primary' sx={{ display: 'block', margin: '0 auto' }} size='large'>
+        Zu den Bonusangeboten
+      </Button>
     </Box>
   );
 }

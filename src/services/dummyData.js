@@ -172,7 +172,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Banküberweisung", "Neteller"],
     withdrawal_time: "48 Stunden",
     license: "UK Gambling Commission",
-    image: require('../assets/images/casino-palace.webp'),
+    // image: require('../assets/images/casino-palace.webp'),
   },
   {
     name: "Vegas Paradise",

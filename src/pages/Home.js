@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroBanner from '../components/HeroBanner';
 import TopCasinos from '../components/TopCasinos';
-import LatestPromotions from '../components/LatestPromotions';
+import LatestBonusangebote from '../components/LatestBonusangebote';
 import LatestGuides from '../components/LatestGuides';
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
     <div>
       <HeroBanner />
       <TopCasinos />
-      <LatestPromotions />
+      <LatestBonusangebote />
       <LatestGuides />
     </div>
   );

@@ -29,7 +29,7 @@ function HeroBanner() {
         Finde dein perfektes Casino mit den besten Bonusangeboten und Spielen
       </Typography>
 
-      <Button variant='contained' color='primary' sx={{ mt:4 }}>
+      <Button variant='contained' color='primary' sx={{ mt:4 }} size='large'>
         Jetzt vergleichen
       </Button>
     </Box>

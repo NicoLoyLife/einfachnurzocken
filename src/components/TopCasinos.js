@@ -26,7 +26,7 @@ function TopCasinos() {
           </Grid>
         ))}
       </Grid>
-      <Button variant='contained' color='primary' sx={{ mt: 4, display: 'block', margin: '0 auto' }}>
+      <Button variant='contained' color='primary' sx={{ mt: 4, display: 'block', margin: '0 auto' }} size='large'>
         Die besten Casinos entdecken
       </Button>
     </Box>
