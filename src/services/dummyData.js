@@ -11,7 +11,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Paysafecard"],
     withdrawal_time: "24 Stunden",
     license: "Malta Gaming Authority",
-    image: require('../assets/images/easybet.webp'),
+    image: require("../assets/images/easybet.webp"),
   },
   {
     name: "TopBets",
@@ -25,7 +25,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "UK Gambling Commission",
-    image: require('../assets/images/topbets.webp'),
+    image: require("../assets/images/topbets.webp"),
   },
   {
     name: "MaxBet",
@@ -39,7 +39,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Neteller"],
     withdrawal_time: "24 Stunden",
     license: "Gibraltar Gambling Commission",
-    image: require('../assets/images/maxbet.webp'),
+    image: require("../assets/images/maxbet.webp"),
   },
   {
     name: "LuckyBet",
@@ -53,7 +53,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "6 Stunden",
     license: "Malta Gaming Authority",
-    image: require('../assets/images/luckybet.webp'),
+    image: require("../assets/images/luckybet.webp"),
   },
   {
     name: "BetZone",
@@ -67,7 +67,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Paysafecard"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
-    image: require('../assets/images/betzone.webp'),
+    image: require("../assets/images/betzone.webp"),
   },
   {
     name: "Vegas Dreams",
@@ -82,7 +82,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill"],
     withdrawal_time: "48 Stunden",
     license: "Malta Gaming Authority",
-    image: require('../assets/images/vegas-dreams.webp'),
+    image: require("../assets/images/vegas-dreams.webp"),
   },
   {
     name: "Fortune Casino",
@@ -97,7 +97,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Neteller", "Banküberweisung"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
-    image: require('../assets/images/fortune-casino.webp'),
+    image: require("../assets/images/fortune-casino.webp"),
   },
   {
     name: "BetLux",
@@ -112,7 +112,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Curacao eGaming",
-    image: require('../assets/images/betlux.webp'),
+    image: require("../assets/images/betlux.webp"),
   },
   {
     name: "Elite Casino",
@@ -127,7 +127,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Neteller"],
     withdrawal_time: "6 Stunden",
     license: "Gibraltar Gambling Commission",
-    image: require('../assets/images/elite-casino.webp'),
+    image: require("../assets/images/elite-casino.webp"),
   },
   {
     name: "Star Jackpot",
@@ -142,7 +142,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
-    image: require('../assets/images/star-jackpot.webp'),
+    image: require("../assets/images/star-jackpot.webp"),
   },
   {
     name: "Golden Crown Casino",
@@ -157,7 +157,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "Malta Gaming Authority",
-    image: require('../assets/images/golden-crown-casino.webp'),
+    image: require("../assets/images/golden-crown-casino.webp"),
   },
   {
     name: "Casino Palace",
@@ -172,7 +172,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Banküberweisung", "Neteller"],
     withdrawal_time: "48 Stunden",
     license: "UK Gambling Commission",
-    // image: require('../assets/images/casino-palace.webp'),
+    image: require("../assets/images/casino-palace.webp"),
   },
   {
     name: "Vegas Paradise",
@@ -187,7 +187,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Neteller", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Curacao eGaming",
-    image: require('../assets/images/vegas-paradise.webp'),
+    image: require("../assets/images/vegas-paradise.webp"),
   },
   {
     name: "Luxury Casino",
@@ -202,6 +202,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill"],
     withdrawal_time: "6 Stunden",
     license: "Gibraltar Gambling Commission",
+    image: require("../assets/images/luxury-casino.webp"),
   },
   {
     name: "Jackpot Mania",
@@ -216,6 +217,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Neteller", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
+    image: require("../assets/images/jackpot-mania.webp"),
   },
   {
     name: "Fortune City Casino",
@@ -230,6 +232,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Neteller"],
     withdrawal_time: "24 Stunden",
     license: "Malta Gaming Authority",
+    image: require("../assets/images/fortune-city-casino.webp"),
   },
   {
     name: "Galaxy Casino",
@@ -244,6 +247,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Banküberweisung", "Paysafecard"],
     withdrawal_time: "48 Stunden",
     license: "UK Gambling Commission",
+    image: require("../assets/images/fortune-city-casino.webp"),
   },
   {
     name: "Diamond Club Casino",
@@ -258,7 +262,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Gibraltar Gambling Commission",
-    image: require('../assets/images/diamond-club-casino.webp'),
+    image: require("../assets/images/diamond-club-casino.webp"),
   },
   {
     name: "Sunshine Casino",
@@ -273,6 +277,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Neteller"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
+    image: require("../assets/images/fortune-city-casino.webp"),
   },
   {
     name: "Epic Win Casino",
@@ -287,6 +292,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Neteller", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "Curacao eGaming",
+    image: require("../assets/images/fortune-city-casino.webp"),
   },
 ];
 
@@ -901,73 +907,92 @@ export const guides = [
 
 export const bonusangebote = [
   {
-    "name": "Willkommensbonus",
-    "description": "Erhalte 200% Bonus auf deine erste Einzahlung bis zu 200€.",
-    "terms": "Mindesteinzahlung 20€, 35x Umsatzbedingungen, gilt für Neukunden.",
-    "provider": "BetKing"
+    provider: "EasyBet",
+    bonus: "150% bis zu 100€",
+    bonusType: "Einzahlungsbonus",
+    rtp: 92,
+    rating: 4.5,
+    wageringRequirements: "30x Bonus",
   },
   {
-    "name": "Cashback-Bonus",
-    "description": "Bis zu 10% Cashback auf wöchentliche Verluste.",
-    "terms": "Maximaler Cashback-Betrag 100€, Cashback wird als Bonusguthaben ausgezahlt.",
-    "provider": "SpinMaster"
+    provider: "TopBets",
+    bonus: "200% bis zu 150€",
+    bonusType: "Willkommensbonus",
+    rtp: 94,
+    rating: 4.7,
+    wageringRequirements: "25x Bonus",
   },
   {
-    "name": "Freispiele-Bonus",
-    "description": "100 Freispiele für ausgewählte Spielautomaten bei einer Einzahlung von 50€ oder mehr.",
-    "terms": "Freispiele sind 7 Tage gültig, Gewinne unterliegen 20x Umsatzbedingungen.",
-    "provider": "LuckySpin"
+    provider: "MaxBet",
+    bonus: "100% bis zu 200€",
+    bonusType: "Einzahlungsbonus",
+    rtp: 90,
+    rating: 4.6,
+    wageringRequirements: "35x Bonus",
   },
   {
-    "name": "High Roller Bonus",
-    "description": "50% Bonus bis zu 1000€ für Einzahlungen ab 500€.",
-    "terms": "Gilt nur für erste Einzahlung, Umsatzbedingungen 40x.",
-    "provider": "RoyalWins"
+    provider: "LuckyBet",
+    bonus: "150% bis zu 100€ + 50 Freispiele",
+    bonusType: "Willkommensbonus",
+    rtp: 95,
+    rating: 4.8,
+    wageringRequirements: "20x Bonus + 40x Freispiele-Gewinne",
   },
   {
-    "name": "Reload-Bonus",
-    "description": "Erhalte 50% Bonus auf deine zweite und dritte Einzahlung bis zu 200€.",
-    "terms": "Mindesteinzahlung 25€, Umsatzbedingungen 30x.",
-    "provider": "CasinoStar"
-  }
+    provider: "BetZone",
+    bonus: "200% bis zu 150€",
+    bonusType: "Willkommensbonus",
+    rtp: 93,
+    rating: 4.7,
+    wageringRequirements: "25x Bonus",
+  },
 ];
 
 export const promotions = [
   {
-    "name": "Freundschaftswerbung",
-    "description": "Empfehle einen Freund und erhalte 50€ Bonus, wenn dieser eine Einzahlung tätigt.",
-    "duration": "Gültig bis 31.12.2024",
-    "conditions": "Der geworbene Freund muss eine Mindesteinzahlung von 50€ leisten.",
-    "provider": "BetKing"
+    name: "Freundschaftswerbung",
+    description:
+      "Empfehle einen Freund und erhalte 50€ Bonus, wenn dieser eine Einzahlung tätigt.",
+    duration: "Gültig bis 31.12.2024",
+    conditions:
+      "Der geworbene Freund muss eine Mindesteinzahlung von 50€ leisten.",
+    provider: "BetKing",
   },
   {
-    "name": "VIP-Programm",
-    "description": "Tritt unserem exklusiven VIP-Club bei und genieße spezielle Boni, Geschenke und Einladungen zu Events.",
-    "duration": "Laufend",
-    "conditions": "VIP-Status wird durch regelmäßige Spielaktivitäten und Einzahlungen erreicht.",
-    "provider": "RoyalWins"
+    name: "VIP-Programm",
+    description:
+      "Tritt unserem exklusiven VIP-Club bei und genieße spezielle Boni, Geschenke und Einladungen zu Events.",
+    duration: "Laufend",
+    conditions:
+      "VIP-Status wird durch regelmäßige Spielaktivitäten und Einzahlungen erreicht.",
+    provider: "RoyalWins",
   },
   {
-    "name": "Turniere",
-    "description": "Nimm an wöchentlichen Slot-Turnieren teil und gewinne einen Anteil am 10.000€ Preispool.",
-    "duration": "Jeden Montag bis Sonntag",
-    "conditions": "Teilnahme mit Mindesteinsatz von 10€ pro Runde.",
-    "provider": "SpinMaster"
+    name: "Turniere",
+    description:
+      "Nimm an wöchentlichen Slot-Turnieren teil und gewinne einen Anteil am 10.000€ Preispool.",
+    duration: "Jeden Montag bis Sonntag",
+    conditions: "Teilnahme mit Mindesteinsatz von 10€ pro Runde.",
+    provider: "SpinMaster",
   },
   {
-    "name": "Saisonale Angebote",
-    "description": "Erhalte spezielle Boni und Freispiele während Feiertagen und besonderen Anlässen.",
-    "duration": "Gültig während Feiertagen und saisonalen Events",
-    "conditions": "Boni variieren je nach Event, Umsatzbedingungen können abweichen.",
-    "provider": "LuckySpin"
+    name: "Saisonale Angebote",
+    description:
+      "Erhalte spezielle Boni und Freispiele während Feiertagen und besonderen Anlässen.",
+    duration: "Gültig während Feiertagen und saisonalen Events",
+    conditions:
+      "Boni variieren je nach Event, Umsatzbedingungen können abweichen.",
+    provider: "LuckySpin",
   },
   {
-    "name": "Treuepunkte",
-    "description": "Sammle Treuepunkte für jede Wette und tausche sie gegen Boni, Freispiele oder Geldprämien ein.",
-    "duration": "Laufend",
-    "conditions": "1 Punkt pro 10€ Wetteinsatz, Punkte können im Prämien-Shop eingelöst werden.",
-    "provider": "CasinoStar"
-  }
+    name: "Treuepunkte",
+    description:
+      "Sammle Treuepunkte für jede Wette und tausche sie gegen Boni, Freispiele oder Geldprämien ein.",
+    duration: "Laufend",
+    conditions:
+      "1 Punkt pro 10€ Wetteinsatz, Punkte können im Prämien-Shop eingelöst werden.",
+    provider: "CasinoStar",
+  },
 ];
 
 export const spiele = [
@@ -1549,3 +1574,8 @@ export const faqs = [
     ],
   },
 ];
+
+// Funktion, um ein Casino nach Namen zu finden
+export const findCasinoByName = (name) => {
+  return casinos.find((casino) => casino.name === name);
+};

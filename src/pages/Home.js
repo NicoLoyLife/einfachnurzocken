@@ -4,6 +4,9 @@ import TopCasinos from '../components/TopCasinos';
 import LatestBonusangebote from '../components/LatestBonusangebote';
 import PopularGames from '../components/PopularGames';
 import TopSportwetten from '../components/TopSportwetten';
+import LatestNews from '../components/LatestNews';
+import LatestGuides from '../components/LatestGuides';
+import FAQ from '../components/FAQ';
 
 function Home() {
   return (
@@ -13,6 +16,9 @@ function Home() {
       <LatestBonusangebote />
       <PopularGames />
       <TopSportwetten />
+      <LatestNews />
+      <LatestGuides />
+      <FAQ />
     </div>
   );
 }

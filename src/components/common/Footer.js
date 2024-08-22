@@ -12,8 +12,8 @@ function Footer() {
         marginTop: '20px'
       }}
     >
-      <Typography variant="body1" gutterBottom>
-        © 2024 Casino Portal. Alle Rechte vorbehalten.
+      <Typography variant="body1">
+        © 2024 EinfachNurZocken. Alle Rechte vorbehalten.
       </Typography>
     </Box>
   );
