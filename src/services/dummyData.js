@@ -11,6 +11,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Paysafecard"],
     withdrawal_time: "24 Stunden",
     license: "Malta Gaming Authority",
+    image: require('../assets/images/easybet.webp'),
   },
   {
     name: "TopBets",
@@ -24,6 +25,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "UK Gambling Commission",
+    image: require('../assets/images/topbets.webp'),
   },
   {
     name: "MaxBet",
@@ -37,6 +39,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Neteller"],
     withdrawal_time: "24 Stunden",
     license: "Gibraltar Gambling Commission",
+    image: require('../assets/images/maxbet.webp'),
   },
   {
     name: "LuckyBet",
@@ -64,6 +67,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Paysafecard"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
+    image: require('../assets/images/betzone.webp'),
   },
   {
     name: "Vegas Dreams",
@@ -78,6 +82,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill"],
     withdrawal_time: "48 Stunden",
     license: "Malta Gaming Authority",
+    image: require('../assets/images/vegas-dreams.webp'),
   },
   {
     name: "Fortune Casino",
@@ -92,6 +97,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Neteller", "Banküberweisung"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
+    image: require('../assets/images/fortune-casino.webp'),
   },
   {
     name: "BetLux",
@@ -106,6 +112,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "12 Stunden",
     license: "Curacao eGaming",
+    image: require('../assets/images/betlux.webp'),
   },
   {
     name: "Elite Casino",
@@ -120,6 +127,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Neteller"],
     withdrawal_time: "6 Stunden",
     license: "Gibraltar Gambling Commission",
+    image: require('../assets/images/elite-casino.webp'),
   },
   {
     name: "Star Jackpot",
@@ -134,6 +142,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Skrill", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "UK Gambling Commission",
+    image: require('../assets/images/star-jackpot.webp'),
   },
   {
     name: "Golden Crown Casino",
@@ -148,6 +157,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "PayPal", "Skrill", "Bitcoin"],
     withdrawal_time: "24 Stunden",
     license: "Malta Gaming Authority",
+    image: require('../assets/images/golden-crown-casino.webp'),
   },
   {
     name: "Casino Palace",
@@ -162,6 +172,7 @@ export const casinos = [
     deposit_methods: ["Kreditkarte", "Banküberweisung", "Neteller"],
     withdrawal_time: "48 Stunden",
     license: "UK Gambling Commission",
+    image: require('../assets/images/casino-palace.webp'),
   },
   {
     name: "Vegas Paradise",
