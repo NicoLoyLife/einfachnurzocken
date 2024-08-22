@@ -885,9 +885,76 @@ export const guides = [
   },
 ];
 
-export const bonusangebote = [];
+export const bonusangebote = [
+  {
+    "name": "Willkommensbonus",
+    "description": "Erhalte 200% Bonus auf deine erste Einzahlung bis zu 200€.",
+    "terms": "Mindesteinzahlung 20€, 35x Umsatzbedingungen, gilt für Neukunden.",
+    "provider": "BetKing"
+  },
+  {
+    "name": "Cashback-Bonus",
+    "description": "Bis zu 10% Cashback auf wöchentliche Verluste.",
+    "terms": "Maximaler Cashback-Betrag 100€, Cashback wird als Bonusguthaben ausgezahlt.",
+    "provider": "SpinMaster"
+  },
+  {
+    "name": "Freispiele-Bonus",
+    "description": "100 Freispiele für ausgewählte Spielautomaten bei einer Einzahlung von 50€ oder mehr.",
+    "terms": "Freispiele sind 7 Tage gültig, Gewinne unterliegen 20x Umsatzbedingungen.",
+    "provider": "LuckySpin"
+  },
+  {
+    "name": "High Roller Bonus",
+    "description": "50% Bonus bis zu 1000€ für Einzahlungen ab 500€.",
+    "terms": "Gilt nur für erste Einzahlung, Umsatzbedingungen 40x.",
+    "provider": "RoyalWins"
+  },
+  {
+    "name": "Reload-Bonus",
+    "description": "Erhalte 50% Bonus auf deine zweite und dritte Einzahlung bis zu 200€.",
+    "terms": "Mindesteinzahlung 25€, Umsatzbedingungen 30x.",
+    "provider": "CasinoStar"
+  }
+];
 
-export const promotions = [];
+export const promotions = [
+  {
+    "name": "Freundschaftswerbung",
+    "description": "Empfehle einen Freund und erhalte 50€ Bonus, wenn dieser eine Einzahlung tätigt.",
+    "duration": "Gültig bis 31.12.2024",
+    "conditions": "Der geworbene Freund muss eine Mindesteinzahlung von 50€ leisten.",
+    "provider": "BetKing"
+  },
+  {
+    "name": "VIP-Programm",
+    "description": "Tritt unserem exklusiven VIP-Club bei und genieße spezielle Boni, Geschenke und Einladungen zu Events.",
+    "duration": "Laufend",
+    "conditions": "VIP-Status wird durch regelmäßige Spielaktivitäten und Einzahlungen erreicht.",
+    "provider": "RoyalWins"
+  },
+  {
+    "name": "Turniere",
+    "description": "Nimm an wöchentlichen Slot-Turnieren teil und gewinne einen Anteil am 10.000€ Preispool.",
+    "duration": "Jeden Montag bis Sonntag",
+    "conditions": "Teilnahme mit Mindesteinsatz von 10€ pro Runde.",
+    "provider": "SpinMaster"
+  },
+  {
+    "name": "Saisonale Angebote",
+    "description": "Erhalte spezielle Boni und Freispiele während Feiertagen und besonderen Anlässen.",
+    "duration": "Gültig während Feiertagen und saisonalen Events",
+    "conditions": "Boni variieren je nach Event, Umsatzbedingungen können abweichen.",
+    "provider": "LuckySpin"
+  },
+  {
+    "name": "Treuepunkte",
+    "description": "Sammle Treuepunkte für jede Wette und tausche sie gegen Boni, Freispiele oder Geldprämien ein.",
+    "duration": "Laufend",
+    "conditions": "1 Punkt pro 10€ Wetteinsatz, Punkte können im Prämien-Shop eingelöst werden.",
+    "provider": "CasinoStar"
+  }
+];
 
 export const spiele = [
   {
