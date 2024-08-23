@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, Button, Grid } from '@mui/material';
 import { news } from '../services/dummyData';
 import NewsCard from './news/NewsCard';
-import { parseISO, format } from 'date-fns';
 
 function LatestNews() {
 
