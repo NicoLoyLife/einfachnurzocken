@@ -1,23 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Verzeichnisse, die von npm/yarn erstellt werden
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Erstellte Build-Dateien
+build/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Umgebungsdateien
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Mac-spezifische Dateien
+.DS_Store
+
+# Log-Dateien
+*.log
+
+# IDE/Editor spezifische Dateien (optional, je nach genutztem Editor/IDE)
+.vscode/
+.idea/
+
+# Windows spezifische Dateien
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Cache-Dateien
+.cache/
