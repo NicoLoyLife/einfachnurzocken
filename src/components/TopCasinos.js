@@ -16,9 +16,11 @@ function TopCasinos() {
       <Typography variant='h3' component='h3' sx={{ mb: 4, textAlign: 'center' }}>
         Unsere Top Casinos im Überblick
       </Typography>
+
       <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
       Entdecke die besten Online Casinos, die von unseren Experten sorgfältig geprüft wurden. Diese Casinos bieten nicht nur herausragende Spiele und Boni, sondern auch einen erstklassigen Kundenservice und sichere Zahlungsmethoden.
       </Typography>
+
       <Grid container spacing={1} justifyContent='center'>
         {topCasinos.map((casino, index) => (
           <Grid item key={index} xs={12} md={4}>
@@ -26,6 +28,7 @@ function TopCasinos() {
           </Grid>
         ))}
       </Grid>
+      
       <Button variant='contained' color='primary' sx={{ mt: 4, display: 'block', margin: '0 auto' }} size='large'>
         Die besten Casinos entdecken
       </Button>

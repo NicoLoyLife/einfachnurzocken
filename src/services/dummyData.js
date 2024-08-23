@@ -303,8 +303,9 @@ export const news = [
     publish_date: "2024-01-10",
     category: "Casino",
     excerpt:
-      "Entdecken Sie die besten neuen Online-Casinos, die im Jahr 2024 auf den Markt gekommen sind. Diese Casinos bieten aufregende Spiele, großartige Boni und innovative Features.",
+      "Entdecke die besten neuen Online-Casinos, die im Jahr 2024 auf den Markt gekommen sind. Diese Casinos bieten aufregende Spiele, großartige Boni und innovative Features.",
     link: "https://www.beispielcasino.com/news/die-besten-neuen-casinos-2024",
+    image: require("../assets/images/news/news1.webp"),
   },
   {
     title: "Die größten Jackpot-Gewinne im Januar 2024",
@@ -312,8 +313,9 @@ export const news = [
     publish_date: "2024-01-25",
     category: "Jackpot",
     excerpt:
-      "Lesen Sie über die größten Jackpot-Gewinne im Januar 2024 und die glücklichen Gewinner, die ihr Leben über Nacht verändert haben.",
+      "Lies über die größten Jackpot-Gewinne im Januar 2024 und die glücklichen Gewinner, die ihr Leben über Nacht verändert haben.",
     link: "https://www.beispielcasino.com/news/die-groessten-jackpot-gewinne-januar-2024",
+    image: require("../assets/images/news/news2.webp"),
   },
   {
     title: "Neue Bonusangebote bei beliebten Casinos",
@@ -321,8 +323,9 @@ export const news = [
     publish_date: "2024-02-01",
     category: "Bonus",
     excerpt:
-      "Entdecken Sie die neuesten Bonusangebote bei den beliebtesten Online-Casinos. Erfahren Sie, wie Sie das Beste aus diesen Angeboten herausholen können.",
+      "Entdecke die neuesten Bonusangebote bei den beliebtesten Online-Casinos. Erfahre, wie du das Beste aus diesen Angeboten herausholen kannst.",
     link: "https://www.beispielcasino.com/news/neue-bonusangebote-bei-beliebten-casinos",
+    image: require("../assets/images/news/news3.webp"),
   },
   {
     title: "Veränderungen in der Glücksspielgesetzgebung 2024",
@@ -518,6 +521,7 @@ export const sportwetten = [
     deposit_methods: ["PayPal", "Skrill", "Neteller", "Kreditkarte"],
     withdrawal_time: "12 Stunden",
     license: "Curacao eGaming",
+    image: require("../assets/images/sportsbooks/sportybet.webp"),
   },
   {
     name: "PlaySafe",
@@ -557,6 +561,7 @@ export const sportwetten = [
     deposit_methods: ["Kreditkarte", "PayPal", "Bitcoin"],
     withdrawal_time: "6 Stunden",
     license: "UK Gambling Commission",
+    image: require("../assets/images/sportsbooks/elitebets.webp"),
   },
   {
     name: "PrimeBet",
@@ -739,6 +744,7 @@ export const sportwetten = [
     deposit_methods: ["Kreditkarte", "PayPal", "Bitcoin"],
     withdrawal_time: "6 Stunden",
     license: "UK Gambling Commission",
+    image: require("../assets/images/sportsbooks/royalbet.webp"),
   },
 ];
 
@@ -750,6 +756,7 @@ export const guides = [
     excerpt:
       "Erfahren Sie, wie Sie Ihre Gewinnchancen bei Sportwetten erhöhen können. Unsere Experten teilen ihre besten Tipps und Strategien für erfolgreiche Wetten.",
     link: "https://www.beispielsportwetten.com/guides/tipps-und-tricks-fuer-erfolgreiches-sportwetten",
+    image: require("../assets/images/guides/guide1.webp"),
   },
   {
     title: "Ein Leitfaden für Anfänger im Online-Casino",
@@ -758,6 +765,7 @@ export const guides = [
     excerpt:
       "Ein umfassender Leitfaden für Anfänger, die in die Welt der Online-Casinos eintauchen möchten. Erfahren Sie die Grundlagen und erste Schritte.",
     link: "https://www.beispielcasino.com/guides/ein-leitfaden-fuer-anfaenger-im-online-casino",
+    image: require("../assets/images/guides/guide2.webp"),
   },
   {
     title: "Strategien für Live-Casino-Spiele",
@@ -766,6 +774,7 @@ export const guides = [
     excerpt:
       "Lernen Sie die besten Strategien für Live-Casino-Spiele kennen und maximieren Sie Ihre Gewinnchancen.",
     link: "https://www.beispielcasino.com/guides/strategien-fuer-live-casino-spiele",
+    image: require("../assets/images/guides/guide3.webp"),
   },
   {
     title: "Wie man den richtigen Sportwettenanbieter auswählt",
@@ -1007,6 +1016,7 @@ export const spiele = [
     paylines: 25,
     bonus_features: ["Free Spins", "Multipliers", "Jackpot"],
     rtp: "88.12%",
+    image: require("../assets/images/games/mega-moolah.webp"),
   },
   {
     name: "Starburst",
@@ -1031,6 +1041,7 @@ export const spiele = [
     paylines: 20,
     bonus_features: ["Free Falls", "Multipliers", "Avalanche Feature"],
     rtp: "95.97%",
+    image: require("../assets/images/games/gonzos-quest.webp"),
   },
   {
     name: "Book of Ra",
@@ -1067,6 +1078,7 @@ export const spiele = [
     paylines: 243,
     bonus_features: ["Chamber of Spins", "Wild Desire Feature"],
     rtp: "96.86%",
+    image: require("../assets/images/games/immortal-romance.webp"),
   },
   {
     name: "Dead or Alive",
@@ -1103,6 +1115,7 @@ export const spiele = [
     paylines: "117649 Megaways",
     bonus_features: ["Free Spins", "Unlimited Win Multiplier"],
     rtp: "96.00%",
+    image: require("../assets/images/games/bonanza.webp"),
   },
   {
     name: "Buffalo Blitz",
@@ -1151,6 +1164,7 @@ export const spiele = [
     paylines: 10,
     bonus_features: ["Free Spins", "Expanding Symbols"],
     rtp: "96.21%",
+    image: require("../assets/images/games/book-of-dead.webp"),
   },
   {
     name: "Legacy of Egypt",
@@ -1215,6 +1229,7 @@ export const spiele = [
       "Unlimited Win Multiplier",
     ],
     rtp: "96.58%",
+    image: require("../assets/images/games/great-rhino-megaways.webp"),
   },
   {
     name: "Vikings Go Berzerk",

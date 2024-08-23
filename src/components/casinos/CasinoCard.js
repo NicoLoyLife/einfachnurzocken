@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Rating } from '@mui/material';
-import casino_image from '../../assets/images/hero-banner.png';
 
 function CasinoCard({ casino }) {
     return (
