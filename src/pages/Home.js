@@ -10,7 +10,7 @@ import FAQ from '../components/FAQ';
 
 function Home() {
   return (
-    <div>
+    <>
       <HeroBanner />
       <TopCasinos />
       <LatestBonusangebote />
@@ -19,7 +19,7 @@ function Home() {
       <LatestNews />
       <LatestGuides />
       <FAQ />
-    </div>
+    </>
   );
 }
 

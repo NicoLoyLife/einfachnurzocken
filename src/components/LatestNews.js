@@ -21,7 +21,7 @@ function LatestNews() {
         Bleibe immer auf dem Laufenden mit den neuesten Nachrichten aus der Welt der Online Casinos und Sportwetten. Hier findest du spannende Updates zu neuen Spielen, Branchenentwicklungen und exklusiven Interviews.
       </Typography>
 
-      <Grid container spacing={1}>
+      <Grid container spacing={2}>
         {latestNews.map((news, index) => (
           <Grid item key={index} xs={12} md={4}>
             <NewsCard news={news} />
