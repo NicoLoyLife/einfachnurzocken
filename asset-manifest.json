@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/einfachnurzocken/static/css/main.6ddaa4ab.css",
-    "main.js": "/einfachnurzocken/static/js/main.a56a4ec1.js",
+    "main.js": "/einfachnurzocken/static/js/main.1ddf3346.js",
     "static/media/hero-banner.png": "/einfachnurzocken/static/media/hero-banner.d276aa02b8f91e66d6bf.png",
     "static/media/gonzos-quest.webp": "/einfachnurzocken/static/media/gonzos-quest.a8ebd505f61e9f026d54.webp",
     "static/media/bonanza.webp": "/einfachnurzocken/static/media/bonanza.ae5b9f3bb850b64e10cf.webp",
@@ -61,10 +61,10 @@
     "static/media/open-sans-greek-ext-400-normal.woff": "/einfachnurzocken/static/media/open-sans-greek-ext-400-normal.3616aaac04f18fe72867.woff",
     "index.html": "/einfachnurzocken/index.html",
     "main.6ddaa4ab.css.map": "/einfachnurzocken/static/css/main.6ddaa4ab.css.map",
-    "main.a56a4ec1.js.map": "/einfachnurzocken/static/js/main.a56a4ec1.js.map"
+    "main.1ddf3346.js.map": "/einfachnurzocken/static/js/main.1ddf3346.js.map"
   },
   "entrypoints": [
     "static/css/main.6ddaa4ab.css",
-    "static/js/main.a56a4ec1.js"
+    "static/js/main.1ddf3346.js"
   ]
 }
