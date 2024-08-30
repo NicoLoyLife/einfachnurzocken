@@ -25,12 +25,13 @@ function BonusTypesSection() {
       title: "Freispiele",
       description:
         "Spiele bestimmte Slots kostenlos und behalte deine Gewinne.",
-      icon: <FreeBreakfastOutlined sx={{ fontSize: 40, color: "primary.main" }} />,
+      icon: (
+        <FreeBreakfastOutlined sx={{ fontSize: 40, color: "primary.main" }} />
+      ),
     },
     {
       title: "Cashback",
-      description:
-        "Erhalte einen Teil deiner Verluste als Cashback zurück.",
+      description: "Erhalte einen Teil deiner Verluste als Cashback zurück.",
       icon: (
         <MoneyOffCsredOutlined sx={{ fontSize: 40, color: "primary.main" }} />
       ),
@@ -53,8 +54,8 @@ function BonusTypesSection() {
         sx={{ mb: 4, textAlign: "center" }}
       >
         Online Casinos bieten eine Vielzahl von Bonusangeboten, um dein
-        Spielerlebnis zu verbessern. Entdecke die verschiedenen Arten von
-        Boni und finde heraus, welcher am besten zu deinem Spielstil passt:
+        Spielerlebnis zu verbessern. Entdecke die verschiedenen Arten von Boni
+        und finde heraus, welcher am besten zu deinem Spielstil passt:
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
