@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
         node-version: '20'
 
@@ -29,17 +29,16 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Sync files to server
+    - name: Clean old build on server
+      run: |
+        ssh enz@h3015104.stratoserver.net 'rm -rf /home/enz/www/staging.einfachnurzocken.com/einfachnurzocken/build/*'
+
+    - name: Sync new build files to server
       run: |
         rsync -avz --delete \
         -e "ssh -o StrictHostKeyChecking=no" \
         ./build/ enz@h3015104.stratoserver.net:/home/enz/www/staging.einfachnurzocken.com/einfachnurzocken/build/
 
-    - name: Add known hosts
-      run: |
-        ssh-keyscan staging.einfachnurzocken.com >> ~/.ssh/known_hosts
-    
     - name: Restart Apache
       run: |
         ssh enz@staging.einfachnurzocken.com 'sudo systemctl restart apache2'
-      
