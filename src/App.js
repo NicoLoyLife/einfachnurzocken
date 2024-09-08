@@ -10,6 +10,7 @@ import Promotions from './pages/Promotions';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Wrapper from './components/common/Wrapper';
+import Impressum from './pages/Impressum';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/guides" element={<Guides />} />
             <Route path="/bonusangebote" element={<Bonusangebote />} />
             <Route path="/promotions" element={<Promotions />} />
+            <Route path="/impressum" element={<Impressum />} />
           </Routes>
         </Wrapper>
         <Footer />

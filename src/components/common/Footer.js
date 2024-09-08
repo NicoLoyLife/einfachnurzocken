@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link as MuiLink } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -14,6 +15,11 @@ function Footer() {
     >
       <Typography variant="body1">
         © 2024 EinfachNurZocken. Alle Rechte vorbehalten.
+      </Typography>
+      <Typography variant='body2' sx={{ marginTop: '10px' }}>
+        <MuiLink component={Link} to="/impressum" color="inherit" underline='hover'>
+          Impressum
+        </MuiLink>
       </Typography>
     </Box>
   );
