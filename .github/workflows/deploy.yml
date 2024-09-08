@@ -24,6 +24,17 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Add .htaccess file to build folder
+      run: |
+        echo "<IfModule mod_rewrite.c>
+          RewriteEngine On
+          RewriteBase /einfachnurzocken/
+          RewriteRule ^index\.html$ - [L]
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteRule . /einfachnurzocken/index.html [L]
+        </IfModule>" > ./build/.htaccess
+
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.3
       with:

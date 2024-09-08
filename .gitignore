@@ -31,6 +31,3 @@ Desktop.ini
 
 # Cache-Dateien
 .cache/
-
-# htaccess-Dateien
-*.htaccess

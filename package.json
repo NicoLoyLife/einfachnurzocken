@@ -21,14 +21,13 @@
     "styled-components": "^6.1.12",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://NicoLoyLife.github.io/einfachnurzocken",
+  "homepage": "https://staging.einfachnurzocken.com/einfachnurzocken",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/NicoLoyLife/einfachnurzocken.git"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
