@@ -35,6 +35,11 @@ jobs:
         -e "ssh -o StrictHostKeyChecking=no" \
         ./build/ enz@h3015104.stratoserver.net:/home/enz/www/staging.einfachnurzocken.com/einfachnurzocken/build/
 
+    - name: Add known hosts
+      run: |
+        ssh-keyscan staging.einfachnurzocken.com >> ~/.ssh/known_hosts
+    
     - name: Restart Apache
       run: |
         ssh enz@staging.einfachnurzocken.com 'sudo systemctl restart apache2'
+      
