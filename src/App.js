@@ -11,6 +11,7 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import Wrapper from './components/common/Wrapper';
 import Impressum from './pages/Impressum';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/bonusangebote" element={<Bonusangebote />} />
             <Route path="/promotions" element={<Promotions />} />
             <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<PrivacyPolicy />} />
           </Routes>
         </Wrapper>
         <Footer />

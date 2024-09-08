@@ -20,6 +20,10 @@ function Footer() {
         <MuiLink component={Link} to="/impressum" color="inherit" underline='hover'>
           Impressum
         </MuiLink>
+        {' | '}
+        <MuiLink component={Link} to="/datenschutz" color="inherit" underline='hover'>
+          Datenschutz
+        </MuiLink>
       </Typography>
     </Box>
   );
