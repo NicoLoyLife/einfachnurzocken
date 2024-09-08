@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Staging
 
 on:
   push:
@@ -6,30 +6,35 @@ on:
       - develop
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Build the project
-        run: npm run build
+    - name: Build project
+      run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "goetze.nico@hotmail.de"
-          git config --global user.name "Nico Goetze"
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run deploy
+    - name: Sync files to server
+      run: |
+        rsync -avz --delete \
+        -e "ssh -o StrictHostKeyChecking=no" \
+        ./build/ enz@h3015104.stratoserver.net:/home/enz/www/staging.einfachnurzocken.com/einfachnurzocken/build/
+
+    - name: Restart Apache
+      run: |
+        ssh enz@staging.einfachnurzocken.com 'sudo systemctl restart apache2'
