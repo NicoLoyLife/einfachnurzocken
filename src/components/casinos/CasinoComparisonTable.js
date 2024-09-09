@@ -43,7 +43,7 @@ function CasinoComparisonTable() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Vergleich der besten Online Casinos
+        Vergleich der besten Online Spielotheken
       </Typography>
       <TableContainer
         component={Paper}
@@ -60,7 +60,7 @@ function CasinoComparisonTable() {
                   direction={orderBy === "name" ? orderDirection : "asc"}
                   onClick={() => handleSortRequest("name")}
                 >
-                  Casino-Name
+                  Spielotheken-Name
                 </TableSortLabel>
               </TableCell>
               <TableCell

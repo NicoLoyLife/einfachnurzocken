@@ -38,7 +38,7 @@ function CasinoBonusSection() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Attraktive Bonusangebote der besten Online Casinos
+        Attraktive Bonusangebote der besten Online Spielotheken
       </Typography>
 
       <Typography
@@ -46,7 +46,7 @@ function CasinoBonusSection() {
         component="p"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Einer der größten Vorteile beim Spielen in Online Casinos sind die
+        Einer der größten Vorteile beim Spielen in Online Spielotheken sind die
         attraktiven Bonusangebote. Diese reichen von Willkommensboni über
         Freispiele bis hin zu Cashback-Angeboten. Nutze diese Angebote, um dein
         Spielerlebnis zu maximieren und deine Gewinnchancen zu erhöhen!

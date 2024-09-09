@@ -11,7 +11,7 @@ function CasinoHeader() {
           mb: 2,
         }}
       >
-        Die besten Online Casinos 2024 im Überblick
+        Die besten Online Spielotheken 2024 im Überblick
       </Typography>
       <Typography
         variant="body1"
@@ -19,9 +19,9 @@ function CasinoHeader() {
           mb: 4, maxWidth: "800px", mx: "auto"
         }}
       >
-        Entdecke die besten Online Casinos 2024! Unsere Experten haben eine
+        Entdecke die besten Online Spielotheken 2024! Unsere Experten haben eine
         Vielzahl von Anbietern sorgfältig getestet, um dir eine Liste der besten
-        und sichersten Online Casinos zu bieten. Finde das perfekte Casino mit
+        und sichersten Online Spielotheken zu bieten. Finde die perfekte Spielotheken mit
         den besten Bonusangeboten, den schnellsten Auszahlungen und der größten
         Spielauswahl.
       </Typography>

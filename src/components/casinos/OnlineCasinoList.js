@@ -22,7 +22,7 @@ function OnlineCasinoList() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Top Online Casinos im Vergleich
+        Top Online Spielotheken im Vergleich
       </Typography>
 
       <Typography
@@ -30,10 +30,10 @@ function OnlineCasinoList() {
         component="p"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Unsere Auswahl der besten Online Casinos basiert auf gründlichen Tests
+        Unsere Auswahl der besten Online Spielotheken basiert auf gründlichen Tests
         und Bewertungen durch unser Expertenteam. Diese Anbieter zeichnen sich
         durch erstklassige Bonusangebote, eine vielfältige Spielauswahl und
-        exzellenten Kundenservice aus. Finde das perfekte Casino, das deinen
+        exzellenten Kundenservice aus. Finde die perfekte Spielothek, das deinen
         Bedürfnissen entspricht, und genieße ein sicheres und unterhaltsames
         Spielerlebnis.
       </Typography>
@@ -56,7 +56,7 @@ function OnlineCasinoList() {
           size="large"
           onClick={showMoreCasinos}
         >
-          Mehr Casinos laden
+          Mehr Spielotheken laden
         </Button>
       )}
     </Box>

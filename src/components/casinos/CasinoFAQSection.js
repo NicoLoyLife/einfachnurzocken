@@ -11,14 +11,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function CasinoFAQSection() {
   const faqItems = [
     {
-      question: "Sind Online-Casinos sicher?",
+      question: "Sind Online-Spielotheken sicher?",
       answer:
-        "Ja, die von uns empfohlenen Casinos sind lizenziert und reguliert, was bedeutet, dass sie strenge Sicherheitsstandards einhalten. Wir überprüfen jedes Casino auf seine Sicherheitsprotokolle, um sicherzustellen, dass deine Daten und dein Geld geschützt sind.",
+        "Ja, die von uns empfohlenen Spielotheken sind lizenziert und reguliert, was bedeutet, dass sie strenge Sicherheitsstandards einhalten. Wir überprüfen jede Spielothek auf seine Sicherheitsprotokolle, um sicherzustellen, dass deine Daten und dein Geld geschützt sind.",
     },
     {
       question: "Wie kann ich eine Einzahlung machen?",
       answer:
-        "Die meisten Casinos bieten eine Vielzahl von Zahlungsmethoden an, darunter Kreditkarten, E-Wallets und Banküberweisungen. Du kannst die bevorzugte Methode in der Kasse des Casinos auswählen und den Anweisungen folgen.",
+        "Die meisten Spielotheken bieten eine Vielzahl von Zahlungsmethoden an, darunter Kreditkarten, E-Wallets und Banküberweisungen. Du kannst die bevorzugte Methode in der Kasse der Spielothek auswählen und den Anweisungen folgen.",
     },
     {
       question: "Welche Spiele bieten die besten Gewinnchancen?",
@@ -28,7 +28,7 @@ function CasinoFAQSection() {
     {
       question: "Wie kann ich meine Gewinne auszahlen lassen?",
       answer:
-        "Um eine Auszahlung zu machen, gehe zur Kasse des Casinos und wähle die Option zur Auszahlung. Befolge die Anweisungen, um den Betrag und die Zahlungsmethode auszuwählen. Die Auszahlungsdauer kann je nach Methode variieren.",
+        "Um eine Auszahlung zu machen, gehe zur Kasse der Spielothek und wähle die Option zur Auszahlung. Befolge die Anweisungen, um den Betrag und die Zahlungsmethode auszuwählen. Die Auszahlungsdauer kann je nach Methode variieren.",
     },
     {
       question: "Welche Boni sind am vorteilhaftesten?",
@@ -44,7 +44,7 @@ function CasinoFAQSection() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Häufig gestellte Fragen zu Online Casinos
+        Häufig gestellte Fragen zu Online Spielotheken
       </Typography>
 
       <Box>

@@ -19,7 +19,7 @@ function WhyChooseOnlineCasino() {
     {
       title: "Vielfalt an Spielen",
       description:
-        "Genieße eine riesige Auswahl an Slots, Tischspielen und Live-Casino-Optionen.",
+        "Genieße eine riesige Auswahl an Slots, Tischspielen und Live-Spielotheken-Optionen.",
       icon: <CasinoOutlined sx={{ fontSize: 40, color: "primary.main" }} />,
     },
     {
@@ -50,7 +50,7 @@ function WhyChooseOnlineCasino() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Warum ein Online Casino wählen?
+        Warum eine Online Spielothek wählen?
       </Typography>
 
       <Typography
@@ -58,11 +58,11 @@ function WhyChooseOnlineCasino() {
         component="p"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Online Casinos bieten dir eine Vielzahl von Vorteilen gegenüber
+        Online Spielotheken bieten dir eine Vielzahl von Vorteilen gegenüber
         traditionellen Casinos. Von der Bequemlichkeit des Spielens von zu Hause
         bis hin zu einer breiten Auswahl an Spielen und exklusiven
         Bonusangeboten – hier sind die wichtigsten Gründe, warum immer mehr
-        Spieler Online Casinos bevorzugen:
+        Spieler Online Spielotheken bevorzugen:
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">

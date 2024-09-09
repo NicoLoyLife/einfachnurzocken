@@ -17,7 +17,7 @@ function CasinoNewsSection() {
         component="h2"
         sx={{ mb: 4, textAlign: "center" }}
       >
-        Aktuelle News und Trends in der Online Casino Welt
+        Aktuelle News und Trends in der Online Spielotheken Welt
       </Typography>
 
       <Typography
@@ -26,8 +26,8 @@ function CasinoNewsSection() {
         sx={{ mb: 4, textAlign: "center" }}
       >
         Bleibe auf dem Laufenden über die neuesten Entwicklungen in der Online
-        Casino Branche. Hier findest du Informationen zu neuen
-        Spielveröffentlichungen, Updates von Casino-Plattformen und Änderungen
+        Spielotheken Branche. Hier findest du Informationen zu neuen
+        Spielveröffentlichungen, Updates von Spielotheken-Plattformen und Änderungen
         in der Gesetzgebung.
       </Typography>
 
