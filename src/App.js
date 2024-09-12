@@ -14,6 +14,7 @@ import Wrapper from './components/common/Wrapper';
 import Impressum from './pages/Impressum';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Spielerschutz from './pages/Spielerschutz';
+import AGB from './pages/AGB';
 import themes from './theme';
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<PrivacyPolicy />} />
           <Route path="/spielerschutz" element={<Spielerschutz />} />
+          <Route path="/agb" element={<AGB />} />
         </Routes>
       </Wrapper>
       <Footer />
