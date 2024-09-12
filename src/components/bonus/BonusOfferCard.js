@@ -103,11 +103,11 @@ function BonusOfferCard({ offer, placement }) {
             </Box>
 
             <Box sx={{ display: "flex", justifyContent: "space-around", mt: 3 }}>
-            <Button variant="outlined" color="primary">
-                Review
-            </Button>
             <Button variant="contained" color="primary">
                 Jetzt spielen
+            </Button>
+            <Button variant="outlined" color="secondary">
+                Review
             </Button>
             </Box>
         </Box>

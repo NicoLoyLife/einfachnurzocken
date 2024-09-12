@@ -21,9 +21,10 @@ function TopbarTabs() {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: "black",
+        backgroundColor: "primary.dark",
+        backgroundImage: "none",
         boxShadow: "none",
-        borderBottom: (theme) => `4px solid ${theme.palette.primary.main}`, // BorderBottom in Primärfarbe
+        borderBottom: (theme) => `4px solid ${theme.palette.secondary.main}`, // BorderBottom in Primärfarbe
       }}
     >
       <Tabs
@@ -36,9 +37,10 @@ function TopbarTabs() {
           },
           ".MuiTab-root": {
             color: "white", // Textfarbe für inaktive Tabs
+            opacity: 1, // Volle Deckkraft für inaktive Tabs
           },
           ".Mui-selected": {
-            color: "primary.main", // Textfarbe für aktive Tabs
+            color: "secondary.main", // Textfarbe für aktive Tabs
           },
         }}
         centered

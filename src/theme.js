@@ -89,7 +89,7 @@ const themes = {
       mode: "dark",
       primary: { main: "#b71c1c" }, // Dunkles Rot
       secondary: { main: "#FFD700" }, // Gold/helles Gelb
-      background: { default: "#020202", paper: "#2b2b2b" },
+      background: { default: "#212121", paper: "#2b2b2b" },
       text: { primary: "#ffffff", secondary: "#bdbdbd" },
     },
     typography,
@@ -99,8 +99,8 @@ const themes = {
     palette: {
       mode: "dark",
       primary: { main: "#28A745" }, // Dunkles Grün
-      secondary: { main: "#007BFF" }, // Helleres Grün
-      background: { default: "#020202", paper: "#2b2b2b" },
+      secondary: { main: "#FFD700" }, // Helleres Grün
+      background: { default: "#212121", paper: "#2b2b2b" },
       text: { primary: "#ffffff", secondary: "#bdbdbd" },
     },
     typography,
