@@ -1,22 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { CssBaseline } from '@mui/material';
+import { BrowserRouter as Router } from 'react-router-dom'; // Router importieren
 import App from './App';
-import themes from './theme';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* Redux Provider um die gesamte App */}
     <Provider store={store}>
-      {/* Material UI Theme Provider */}
-      <ThemeProvider theme={themes.elegantPurple}>
+      <Router>
         <CssBaseline />
         <App />
-      </ThemeProvider>
+      </Router>
     </Provider>
   </React.StrictMode>
 );
