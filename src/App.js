@@ -13,6 +13,7 @@ import Footer from './components/common/Footer';
 import Wrapper from './components/common/Wrapper';
 import Impressum from './pages/Impressum';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Spielerschutz from './pages/Spielerschutz';
 import themes from './theme';
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<PrivacyPolicy />} />
+          <Route path="/spielerschutz" element={<Spielerschutz />} />
         </Routes>
       </Wrapper>
       <Footer />
