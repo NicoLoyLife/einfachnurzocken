@@ -12,24 +12,29 @@ import {
   Box,
   Typography,
   Divider,
-  Switch,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material"; // Verwenden Sie Twitter-Icon
+import { Link, useLocation } from "react-router-dom";
+import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 import logo from "../../assets/images/logo.png";
-import { setSection } from "../../redux/sectionSlice";
+import TopbarTabs from "./Topbar";
+import { setSection } from "../../redux/sectionSlice"; // Redux action to update the section
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-  // Aktuelle URL der Seite
+  const currentSection = useSelector((state) => state.section.currentSection); // Redux state für die aktuelle Section (sportwetten oder online-spielotheken)
   const location = useLocation();
 
-  // Redux state für die aktuelle Section (sportwetten oder online-spielotheken)
-  const currentSection = useSelector((state) => state.section.currentSection);
+  useEffect(() => {
+    // Setze die Section basierend auf der aktuellen URL
+    if (location.pathname.includes("/sportwetten")) {
+      dispatch(setSection("sportwetten"));
+    } else if (location.pathname.includes("/online-spielotheken")) {
+      dispatch(setSection("online-spielotheken"));
+    }
+  }, [location.pathname, dispatch]);
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
@@ -38,21 +43,6 @@ function Navbar() {
   const handleMenuItemClick = () => {
     setDrawerOpen(false);
   };
-
-  const handleSectionToggle = (event) => {
-    const newSection = event.target.checked ? "online-spielotheken" : "sportwetten";
-    dispatch(setSection(newSection));
-    navigate(newSection === 'sportwetten' ? '/sportwetten' : '/online-spielotheken');
-  };
-
-  useEffect(() => {
-    // Setzt die aktuelle Section basierend auf der URL
-    if (location.pathname.includes("sportwetten")) {
-      dispatch(setSection("sportwetten"));
-    } else if (location.pathname.includes("online-spielotheken")) {
-      dispatch(setSection("online-spielotheken"));
-    }
-  }, [location.pathname, dispatch]);
 
   // Standard Menü für die allgemeine Startseite
   const defaultMenuItems = [
@@ -82,7 +72,7 @@ function Navbar() {
     { text: "Guides", link: "/online-spielotheken/guides" },
   ];
 
-  // Festlegen welches Menü gezeigt wird
+  // Festlegen welches Menü gezeigt wird basierend auf der aktuellen Section
   const menuItems =
     location.pathname === "/"
       ? defaultMenuItems
@@ -158,6 +148,7 @@ function Navbar() {
 
       <Divider sx={{ marginTop: "20px", marginBottom: "10px" }} />
 
+      {/* Social Media Links */}
       <Box sx={{ display: "flex", justifyContent: "flex-start", gap: "15px" }}>
         <IconButton color="inherit" href="https://facebook.com" target="_blank">
           <Facebook />
@@ -170,7 +161,7 @@ function Navbar() {
           <Instagram />
         </IconButton>
         <IconButton color="inherit" href="https://twitter.com" target="_blank">
-          <Twitter /> {/* Verwenden Sie Twitter-Icon */}
+          <Twitter />
         </IconButton>
         <IconButton color="inherit" href="https://youtube.com" target="_blank">
           <YouTube />
@@ -181,24 +172,8 @@ function Navbar() {
 
   return (
     <>
-      {/* Top Bar für die Auswahl des Bereichs */}
-      {location.pathname !== "/" && (
-        <AppBar
-          position="static"
-          sx={{ backgroundColor: "lightgray", padding: "5px 20px" }}
-        >
-          <Toolbar sx={{ justifyContent: "space-between" }}>
-            <Typography variant="body1">Sportwetten</Typography>
-            <Switch
-              checked={currentSection === "online-spielotheken"}
-              onChange={handleSectionToggle}
-              name="sectionToggle"
-              color="primary"
-            />
-            <Typography variant="body1">Online Spielotheken</Typography>
-          </Toolbar>
-        </AppBar>
-      )}
+      {/* Top Bar nur auf Unterseiten sichtbar (Mobile und Desktop) */}
+      {location.pathname !== "/" && <TopbarTabs />}
 
       {/* Haupt-Navigation */}
       <AppBar
