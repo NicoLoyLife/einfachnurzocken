@@ -33,13 +33,19 @@ function Betano() {
     <Box sx={{ padding: { xs: 2, md: 4 }, backgroundColor: 'background.default' }}>
       {/* Titel und Einleitung */}
       <Typography variant="h1" component="h1" sx={{ mb: 4, textAlign: "center" }}>
-        Betano Sportwetten – Dein ultimativer Anbieter im Test
+        Betano Sportwetten
       </Typography>
       
       <Typography variant="body1" component="p" sx={{ mb: 4, textAlign: "center" }}>
         Entdecke den ultimativen Sportwettenanbieter – 100% Einzahlungsbonus bis 80€ + 20€ Freiwette ohne Einzahlung! 
-        Bei Betano erwarten dich Top-Quoten, ein breites Wettangebot und viele spannende Features. 
-        Melde dich noch heute an und profitiere von einem unschlagbaren Bonusangebot!
+      </Typography>
+
+      <Typography variant="body1" component="p" sx={{ mb: 4, textAlign: "center" }}>
+        Du suchst nach einem attraktiven Sportwettenanbieter? Dann haben wir das perfekte Angebot für dich! Melde dich jetzt bei Betano an und profitiere von einem 100% Einzahlungsbonus bis zu 80€ - verdopple deine erste Einzahlung und starte mit einem größeren Wettguthaben durch!
+      </Typography>
+
+      <Typography variant="body1" component="p" sx={{ mb: 4, textAlign: "center" }}>
+        Und das Beste: Du erhältst zusätzlich eine 20€ Freiwette - ganz ohne Einzahlung! Einfach registrieren, Freiwette sichern und loslegen!
       </Typography>
 
       {/* Bonusübersicht */}
