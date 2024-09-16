@@ -33,7 +33,7 @@ import CasinoFAQSection from "../components/casinos/CasinoFAQSection";
 import CasinoNewsSection from "../components/casinos/CasinoNewsSection";
 import CasinoGuidesSection from "../components/casinos/CasinoGuidesSection";
 
-function OnlineCasinos() {
+function OnlineSpielotheken() {
     return (
         <Container maxWidth="lg" sx={{ padding: { xs: 2, md: 4 }, backgroundColor: 'background.default' }}>
             <CasinoHeader />
@@ -48,4 +48,4 @@ function OnlineCasinos() {
     );
 }
 
-export default OnlineCasinos;
+export default OnlineSpielotheken;

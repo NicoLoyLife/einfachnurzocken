@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { ThemeProvider, GlobalStyles } from '@mui/material';
 import Home from './pages/Home';
 import News from './pages/News';
-import OnlineCasinos from './pages/OnlineCasinos';
+import OnlineSpielotheken from './pages/OnlineSpielotheken';
 import Sportwetten from './pages/Sportwetten';
 import Guides from './pages/Guides';
 import Bonusangebote from './pages/Bonusangebote';
@@ -56,7 +56,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
-          <Route path="/online-casinos" element={<OnlineCasinos />} />
+          <Route path="/online-spielotheken" element={<OnlineSpielotheken />} />
           <Route path="/sportwetten" element={<Sportwetten />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/bonusangebote" element={<Bonusangebote />} />
