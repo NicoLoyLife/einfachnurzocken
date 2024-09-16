@@ -1,17 +1,5 @@
 import React, { useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  TableSortLabel,
-  Rating,
-  Box,
-  Typography,
-} from "@mui/material";
+import { Box, Typography, Grid, Rating, Paper } from "@mui/material";
 import { sportwetten } from "../../services/dummyData";
 
 function SportsBettingComparisonTable() {
@@ -30,7 +18,7 @@ function SportsBettingComparisonTable() {
     if (orderBy === "rating") {
       return orderDirection === "asc" ? a.rating - b.rating : b.rating - a.rating;
     }
-    return 0; // Weitere Sortieroptionen hinzufügen, falls nötig
+    return 0;
   });
 
   return (
@@ -42,60 +30,81 @@ function SportsBettingComparisonTable() {
       >
         Vergleich der besten Sportwetten-Anbieter
       </Typography>
-      <TableContainer
-        component={Paper}
-        sx={{ borderRadius: "15px", boxShadow: 3, overflowX: "auto" }}
-      >
-        <Table sx={{ minWidth: 650 }} aria-label="sports betting comparison table">
-          <TableHead>
-            <TableRow>
-              <TableCell sortDirection={orderBy === "name" ? orderDirection : false}>
-                <TableSortLabel
-                  active={orderBy === "name"}
-                  direction={orderBy === "name" ? orderDirection : "asc"}
-                  onClick={() => handleSortRequest("name")}
-                >
-                  Anbieter-Name
-                </TableSortLabel>
-              </TableCell>
-              <TableCell
-                align="center"
-                sortDirection={orderBy === "rating" ? orderDirection : false}
-              >
-                <TableSortLabel
-                  active={orderBy === "rating"}
-                  direction={orderBy === "rating" ? orderDirection : "asc"}
-                  onClick={() => handleSortRequest("rating")}
-                >
-                  Bewertung
-                </TableSortLabel>
-              </TableCell>
-              <TableCell align="center">Willkommensbonus</TableCell>
-              <TableCell align="center">Quoten</TableCell>
-              <TableCell align="center">Einzahlungsmethoden</TableCell>
-              <TableCell align="center">Auszahlungsdauer</TableCell>
-              <TableCell align="center">Lizenz</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {sortedSportsbooks.map((sportsbook, index) => (
-              <TableRow key={index}>
-                <TableCell>{sportsbook.name}</TableCell>
-                <TableCell align="center">
-                  <Rating value={sportsbook.rating} readOnly precision={0.1} />
-                </TableCell>
-                <TableCell align="center">{sportsbook.welcome_bonus}</TableCell>
-                <TableCell align="center">{sportsbook.quoten}%</TableCell>
-                <TableCell align="center">
+
+      <Box sx={{ display: { xs: "block", md: "none" }, mb: 4 }}>
+        {/* Mobile sticky header */}
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            textAlign: "center",
+            backgroundColor: "primary.main",
+            color: "white",
+            p: 2,
+            position: "sticky",
+            top: 90,
+            zIndex: 1,
+          }}
+        >
+          <Typography>Anbieter</Typography>
+          <Typography>Details</Typography>
+        </Box>
+      </Box>
+
+      {/* Desktop-Grid Darstellung */}
+      <Grid container spacing={2}>
+        {sortedSportsbooks.map((sportsbook, index) => (
+          <Grid item xs={12} md={12} key={index}>
+            <Paper
+              sx={{
+                padding: 2,
+                display: "grid",
+                gridTemplateColumns: { xs: "1fr", md: "repeat(6, 1fr)" },
+                gap: 2,
+                alignItems: "center",
+                textAlign: "center",
+                borderRadius: "8px",
+                boxShadow: 3,
+                backgroundColor: index % 2 === 0 ? "grey.100" : "white",
+              }}
+            >
+              {/* Anbieter-Name */}
+              <Box>
+                <Typography variant="body1" fontWeight="bold">
+                  {sportsbook.name}
+                </Typography>
+              </Box>
+
+              {/* Bewertung */}
+              <Box>
+                <Rating value={sportsbook.rating} readOnly precision={0.1} />
+              </Box>
+
+              {/* Willkommensbonus */}
+              <Box>
+                <Typography variant="body1">{sportsbook.welcome_bonus}</Typography>
+              </Box>
+
+              {/* Quoten */}
+              <Box>
+                <Typography variant="body1">{sportsbook.quoten}%</Typography>
+              </Box>
+
+              {/* Einzahlungsmethoden */}
+              <Box>
+                <Typography variant="body1">
                   {sportsbook.deposit_methods.join(", ")}
-                </TableCell>
-                <TableCell align="center">{sportsbook.withdrawal_time}</TableCell>
-                <TableCell align="center">{sportsbook.license}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+                </Typography>
+              </Box>
+
+              {/* Auszahlungsdauer */}
+              <Box>
+                <Typography variant="body1">{sportsbook.withdrawal_time}</Typography>
+              </Box>
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 }

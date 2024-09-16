@@ -177,8 +177,10 @@ function Navbar() {
 
       {/* Haupt-Navigation */}
       <AppBar
-        position="static"
+        position="sticky"
         sx={{
+          top: 0,
+          zIndex: 1100,
           backgroundColor: "transparent",
           backgroundImage: "none",
           boxShadow: "none",
