@@ -10,35 +10,28 @@
  */
 
 import React from "react";
+import { Container } from "@mui/material";
 import SportsBettingHeader from "../components/sportsbetting/SportsBettingHeader";
-import SeoText from "../components/sportsbetting/SeoText";
-import TopProviders from "../components/sportsbetting/TopProviders";
-import BonusOffers from "../components/sportsbetting/BonusOffers";
-import NewsAndTips from "../components/sportsbetting/NewsAndTips";
-import SportsBettingGuide from "../components/sportsbetting/SportsBettingGuide";
+import SportsBettingList from "../components/sportsbetting/SportsBettingList";
+import SportsBettingComparisonTable from "../components/sportsbetting/SportsBettingComparisonTable";
+import WhyChooseSportsBetting from "../components/sportsbetting/WhyChooseSportsBetting";
+import SportsBettingBonusSection from "../components/sportsbetting/SportsBettingBonusSection";
+import SportsBettingFAQSection from "../components/sportsbetting/SportsBettingFAQSection";
+import SportsBettingNewsSection from "../components/sportsbetting/SportsBettingNewsSection";
+import SportsBettingGuidesSection from "../components/sportsbetting/SportsBettingGuidesSection";
 
 function Sportwetten() {
   return (
-    <>
-      {/* Hero-Bereich */}
+    <Container maxWidth="lg" sx={{ padding: { xs: 2, md: 4 }, backgroundColor: 'background.default' }}>
       <SportsBettingHeader />
-
-      {/* SEO-relevanter Einleitungstext */}
-      <SeoText />
-
-      {/* Top 5 Anbieter */}
-      <TopProviders />
-
-      {/* Aktuelle Bonusangebote */}
-      <BonusOffers />
-
-      {/* News und Tipps */}
-      <NewsAndTips />
-
-      {/* Sportwetten Guide */}
-      <SportsBettingGuide />
-
-    </>
+      <SportsBettingList />
+      <SportsBettingComparisonTable />
+      <WhyChooseSportsBetting />
+      <SportsBettingBonusSection />
+      <SportsBettingFAQSection />
+      <SportsBettingNewsSection />
+      <SportsBettingGuidesSection />
+    </Container>
   );
 }
 

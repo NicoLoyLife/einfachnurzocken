@@ -957,6 +957,49 @@ export const bonusangebote = [
   },
 ];
 
+export const sportwettenBonusangebote = [
+  {
+    provider: "EasyBet",
+    bonus: "150% bis zu 100€",
+    bonusType: "Einzahlungsbonus",
+    quoten: 92,
+    rating: 4.5,
+    wageringRequirements: "30x Bonus",
+  },
+  {
+    provider: "TopBets",
+    bonus: "200% bis zu 150€",
+    bonusType: "Willkommensbonus",
+    quoten: 94,
+    rating: 4.7,
+    wageringRequirements: "25x Bonus",
+  },
+  {
+    provider: "MaxBet",
+    bonus: "100% bis zu 200€",
+    bonusType: "Einzahlungsbonus",
+    quoten: 90,
+    rating: 4.6,
+    wageringRequirements: "35x Bonus",
+  },
+  {
+    provider: "LuckyBet",
+    bonus: "150% bis zu 100€ + 50 Freispiele",
+    bonusType: "Willkommensbonus",
+    quoten: 95,
+    rating: 4.8,
+    wageringRequirements: "20x Bonus + 40x Freispiele-Gewinne",
+  },
+  {
+    provider: "BetZone",
+    bonus: "200% bis zu 150€",
+    bonusType: "Willkommensbonus",
+    quoten: 93,
+    rating: 4.7,
+    wageringRequirements: "25x Bonus",
+  },
+];
+
 export const promotions = [
   {
     name: "Freundschaftswerbung",
@@ -1593,4 +1636,9 @@ export const faqs = [
 // Funktion, um ein Casino nach Namen zu finden
 export const findCasinoByName = (name) => {
   return casinos.find((casino) => casino.name === name);
+};
+
+// Funktion, um ein Sportsbook nach Namen zu finden
+export const findSportsbookByName = (name) => {
+  return sportwetten.find((sportsbook) => sportsbook.name === name);
 };
