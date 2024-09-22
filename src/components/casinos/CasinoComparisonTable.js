@@ -7,11 +7,11 @@ function CasinoComparisonTable() {
   const [orderBy, setOrderBy] = useState("rating");
 
   // Funktion zum Sortieren der Tabelle
-  const handleSortRequest = (property) => {
-    const isAscending = orderBy === property && orderDirection === "asc";
-    setOrderDirection(isAscending ? "desc" : "asc");
-    setOrderBy(property);
-  };
+  // const handleSortRequest = (property) => {
+  //   const isAscending = orderBy === property && orderDirection === "asc";
+  //   setOrderDirection(isAscending ? "desc" : "asc");
+  //   setOrderBy(property);
+  // };
 
   // Funktion zum Sortieren der Daten
   const sortedCasinos = casinos.sort((a, b) => {

@@ -7,11 +7,11 @@ function SportsBettingComparisonTable() {
   const [orderBy, setOrderBy] = useState("rating");
 
   // Funktion zum Sortieren der Tabelle
-  const handleSortRequest = (property) => {
-    const isAscending = orderBy === property && orderDirection === "asc";
-    setOrderDirection(isAscending ? "desc" : "asc");
-    setOrderBy(property);
-  };
+  // const handleSortRequest = (property) => {
+  //   const isAscending = orderBy === property && orderDirection === "asc";
+  //   setOrderDirection(isAscending ? "desc" : "asc");
+  //   setOrderBy(property);
+  // };
 
   // Funktion zum Sortieren der Daten
   const sortedSportsbooks = sportwetten.sort((a, b) => {

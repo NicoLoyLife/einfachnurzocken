@@ -7,7 +7,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  ListItemAvatar,
   ListItemButton,
   Paper,
   useTheme,
