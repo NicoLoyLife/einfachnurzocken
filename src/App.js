@@ -17,6 +17,7 @@ import Spielerschutz from './pages/Spielerschutz';
 import AGB from './pages/AGB';
 import About from './pages/About';
 import themes from './theme';
+import SportwettenRoutes from './routes/SportwettenRoutes';
 
 function App() {
   const location = useLocation();
@@ -66,6 +67,8 @@ function App() {
           <Route path="/spielerschutz" element={<Spielerschutz />} />
           <Route path="/agb" element={<AGB />} />
           <Route path="/about" element={<About />} />
+          {/* Sportwetten-Routen einbinden */}
+          {SportwettenRoutes()}
         </Routes>
       </Wrapper>
       <Footer />

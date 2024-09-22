@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WW Diners Club</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="2.84217094e-14" y="0" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="WW-Diners-Club" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" transform="translate(159, 50)">
+                <path d="M253.72093,500 C114.549403,500.631486 0,388.591168 0,252.176878 C0,103.093089 114.549403,-0.0275668535 253.72093,0 L318.957153,0 C456.474338,-0.0275668535 581.997543,103.037945 581.997543,252.176878 C581.997543,388.522237 456.474338,500 318.957153,500 L253.72093,500 Z" id="path2446" fill="#004C97"></path>
+                <path d="M253.72093,500 C114.549403,500.631486 0,388.591168 0,252.176878 C0,103.093089 114.549403,-0.0275668535 253.72093,0 L257.374269,0 C394.877668,-0.0275668535 515.272413,103.037945 515.272413,252.176878 C515.272413,388.522237 394.877668,500 257.374269,500 L253.72093,500 Z" id="path2453" fill="#004C97"></path>
+                <path d="M254.286164,20.6860367 C127.108616,20.7273953 24.0568911,123.158742 24.0568911,249.564258 C24.0568911,375.942207 127.108616,478.359767 254.286164,478.373554 C381.477497,478.373554 484.543009,375.942207 484.584367,249.564258 C484.543009,123.144956 381.463711,20.7136091 254.286164,20.6860367" id="path2457" fill="#FEFEFE"></path>
+                <path d="M202.008954,384.88944 L202.008954,114.183937 C147.277804,135.138936 108.469696,187.774581 108.331834,249.564258 C108.469696,311.326362 147.29159,363.989585 202.008954,384.88944 M400.268066,249.564258 C400.157777,187.747009 361.294524,135.042433 306.508229,114.156364 L306.508229,384.958371 C361.294524,364.04473 400.157777,311.395293 400.25428,249.564258" id="path2459" fill="#004C97"></path>
+            </g>
+        </g>
+    </g>
+</svg>

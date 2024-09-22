@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WW Etherum</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="-2.84217094e-14" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="WW-Etherum" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" transform="translate(296, 50)" fill-rule="nonzero">
+                <polygon id="Path" fill="#343434" points="153.464949 0 150.112879 11.3934392 150.112879 342.00466 153.464949 345.350733 306.930977 254.63737"></polygon>
+                <polygon id="Path" fill="#8C8C8C" points="153.466028 0 0 254.63737 153.466028 345.351933 153.466028 184.883137"></polygon>
+                <polygon id="Path" fill="#3C3C3B" points="153.464949 374.408321 151.576036 376.710995 151.576036 494.481977 153.464949 500 307.022124 283.740531"></polygon>
+                <polygon id="Path" fill="#8C8C8C" points="153.466028 499.998321 153.466028 374.406642 0 283.738852"></polygon>
+                <polygon id="Path" fill="#141414" points="153.464949 345.350373 306.928578 254.638209 153.464949 184.883976"></polygon>
+                <polygon id="Path" fill="#393939" points="0.00107937845 254.638329 153.464709 345.350493 153.464709 184.884096"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

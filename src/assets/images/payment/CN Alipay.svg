@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CN Alipay</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="2.84217094e-14" y="0" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="CN-Alipay" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" transform="translate(202, 50)" fill-rule="nonzero">
+                <g id="g3989" transform="translate(247.8832, 250) scale(-1, 1) rotate(-180) translate(-247.8832, -250)" fill="#1677FF">
+                    <path d="M416.376307,500 L79.4181559,500 C35.5363231,500 0,464.149901 0,419.898093 L0,80.0878573 C0,35.864149 35.5363231,0 79.4181559,0 L416.376307,0 C460.248773,0 495.766363,35.864149 495.766363,80.0878573 L495.766363,419.898093 C495.766363,464.149901 460.248773,500 416.376307,500" id="path3991"></path>
+                </g>
+                <g id="g3993" transform="translate(266.2264, 242.107) scale(-1, 1) rotate(-180) translate(-266.2264, -242.107)translate(36.685, 66.2916)" fill="#FFFFFF">
+                    <path d="M97.2754388,33.4195047 C20.1473806,33.4195047 -2.65524946,94.6901577 35.4615315,128.212693 C48.1811748,139.541418 71.4240282,145.072309 83.8158457,146.313364 C129.631851,150.87951 172.043151,133.251845 222.092793,108.61339 C186.912395,62.3290622 142.103283,33.4195047 97.2754388,33.4195047 M371.497087,103.96763 C351.658939,110.669327 325.039479,120.916226 295.389972,131.73448 C313.195599,162.952868 327.418558,198.503241 336.766278,237.13986 L239.04139,237.13986 L239.04139,272.638717 L358.754027,272.638717 L358.754027,292.453449 L239.04139,292.453449 L239.04139,351.630699 L190.18597,351.630699 C181.615666,351.630699 181.615666,343.097861 181.615666,343.097861 L181.615666,292.453449 L60.5402097,292.453449 L60.5402097,272.638717 L181.615666,272.638717 L181.615666,237.13986 L81.652195,237.13986 L81.652195,217.329812 L275.528408,217.329812 C268.43332,192.677307 258.907637,169.532801 247.602328,148.505114 C184.692546,169.439137 117.563176,186.406467 75.3907211,175.962871 C48.4200194,169.261174 31.0499321,157.300214 20.8451814,144.767899 C-25.9917674,87.295343 7.6010167,2.81789562e-13 106.515445,2.81789562e-13 C164.999578,2.81789562e-13 221.338793,32.8856169 265.005198,87.0799146 C330.13483,55.5056011 459.08279,1.29257053 459.08279,1.29257053 L459.08279,78.5564422 C459.08279,78.5564422 442.888192,79.8583792 371.497087,103.96763" id="path3995"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

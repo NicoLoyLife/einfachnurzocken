@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="980" height="680" viewBox="0 0 980 680">
+  <defs>
+    <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#EDEDED"/>
+    </linearGradient>
+    <filter id="b" width="113.3%" height="120%" x="-6.7%" y="-10%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2.5" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="17.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+    </filter>
+    <rect id="a" width="900" height="600" x="0" y="0" rx="80"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(40 40)">
+    <mask id="d" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+    <use xlink:href="#a" fill="#000" filter="url(#b)"/>
+    <use xlink:href="#a" fill="url(#c)"/>
+    <g fill-rule="nonzero" mask="url(#d)">
+      <path fill="#006FCF" d="M900 600H0V0h900v300z"/>
+      <path fill="#FFF" d="M900 600H227V0h673v300z"/>
+      <path fill="#006FCF" d="M900 698V574.658h-90.883l-51.934-51.933-45.441 51.933h-311.6V327.975H296.275L419.617 48.833h116.85l45.441 97.375V42.342h149.309l25.966 71.408 25.967-71.408H900V-81H121v779h779Zm-77.9-155.8H900L796.133 431.842 900 327.975h-77.9l-64.917 71.408-64.916-71.408h-71.409l103.867 110.358L620.858 542.2h77.9l64.917-71.408L822.1 542.2Zm19.475-110.358L900 496.758V373.417l-58.425 58.425Zm-350.55 58.425v-32.459h123.342v-45.441H491.025v-38.95h123.342v-45.442H432.6v220.717h188.258v-58.425H491.025Zm350.55-194.75H900V74.8h-90.883l-51.934 136.325L711.742 74.8h-90.884v220.717h58.425v-155.8l58.425 155.8h51.934l58.425-155.8v155.8h-6.492Zm-292.125 0h64.917L523.483 74.8h-77.9l-97.375 220.717h64.917l19.475-45.442h97.375l19.475 45.442Zm-38.95-97.375h-58.425l32.458-71.409 25.967 71.409Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DE VR pay alt</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="10" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="0 0 899.998253 0 899.998253 457.675775 0 457.675775"></polygon>
+    </defs>
+    <g id="DE-VR-pay-alt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 30)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-3)">
+                <g transform="translate(0.0118, 0)" id="Group-18">
+                    <path d="M900,610.23524 L900,502.844271 L557.011876,502.844271 C547.303058,552.069681 539.533383,593.988365 536.428133,610.23524" id="Fill-2" fill="#F35C19"></path>
+                    <polyline id="Fill-4" fill="#F35C19" points="0.000436743947 502.842524 0.000436743947 610.233493 360.855756 610.233493 336.773695 502.842524"></polyline>
+                    <g id="Group-8">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-7"></g>
+                        <path d="M177.125875,249.877372 L150.711601,138.90947 L374.839861,138.90947 L447.474746,457.675775 L450.584363,457.675775 L496.416273,253.449937 C519.336596,160.681156 528.268009,138.90947 658.007166,138.90947 L751.230162,138.90947 C751.230162,138.90947 732.585563,224.371525 708.892204,317.140307 C699.956423,352.394279 621.879707,348.170965 626.15543,315.188062 C626.544132,311.777092 630.038084,286.921994 633.147701,269.212027 C637.419057,243.701813 607.510831,240.6184 602.462071,265.801056 C598.57505,283.834214 581.485259,373.353621 565.557208,457.675775 L899.998253,457.675775 L899.998253,-0.00131023184 L0,-0.00131023184 L0,457.675775 L326.671371,457.675775 L280.062056,250.038967" id="Fill-6" fill="#1B62B7" mask="url(#mask-6)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

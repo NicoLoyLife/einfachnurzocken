@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WW Bitcoin alt</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="-2.84217094e-14" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="WW-Bitcoin-alt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-3)">
+                <g transform="translate(0, -0)">
+                    <rect id="Rectangle" fill="#F7931A" fill-rule="evenodd" x="0" y="0" width="900" height="600"></rect>
+                    <path d="M637.399808,251.122448 C645.259542,198.584383 605.257568,170.341163 550.560235,151.500011 L568.303245,80.330552 L524.982168,69.5342142 L507.708028,138.828195 C496.319434,135.990301 484.622373,133.312809 472.999344,130.659995 L490.396871,60.9094825 L447.100472,50.1131446 L429.345123,121.257927 C419.918378,119.110998 410.664374,116.988746 401.68182,114.755447 L401.731175,114.53335 L341.987326,99.6158962 L330.463006,145.885916 C330.463006,145.885916 362.605247,153.252103 361.92662,153.708634 C379.472211,158.088862 382.64325,169.699552 382.112687,178.904202 L361.901942,259.981614 C363.111132,260.290081 364.678144,260.734273 366.405558,261.425239 C364.961933,261.067418 363.419599,260.67258 361.82791,260.290081 L333.49832,373.867556 C331.351391,379.197862 325.910037,387.193321 313.645397,384.158008 C314.07725,384.78728 282.157106,376.298274 282.157106,376.298274 L260.650801,425.887396 L317.026193,439.941144 C327.514064,442.569281 337.792178,445.320804 347.909889,447.911926 L329.981798,519.895737 L373.253521,530.692075 L391.008869,459.473261 C402.829317,462.681316 414.304282,465.642597 425.532473,468.431137 L407.838818,539.316807 L451.159895,550.113145 L469.087985,478.265058 C542.959613,492.244774 598.508314,486.606001 621.890097,419.792092 C640.731249,365.995483 620.952358,334.963723 582.085542,314.728301 C610.390455,308.201144 631.71168,289.582088 637.399808,251.122448 L637.399808,251.122448 Z M538.418982,389.920168 C525.031523,443.716777 434.453333,414.634528 405.087294,407.342372 L428.876253,311.976778 C458.242292,319.305949 552.411036,333.816227 538.418982,389.920168 Z M551.81878,250.345112 C539.603495,299.280284 464.21421,274.41786 439.758962,268.322557 L461.32696,181.828467 C485.782208,187.923771 564.53995,199.300026 551.81878,250.345112 L551.81878,250.345112 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

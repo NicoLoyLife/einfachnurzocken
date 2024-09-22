@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WW sumup</title>
+    <defs>
+        <rect id="path-1" x="0" y="2.84217094e-14" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="WW-sumup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-2)">
+                <g transform="translate(295.7389, 50.1244)" id="Group-2">
+                    <g transform="translate(0, 0)">
+                        <path d="M254.247569,446.637575 C185.961852,514.923292 77.2105243,517.452393 5.1311561,455.489427 L3.86660579,454.224877 C0.0729548261,450.431226 -1.19159549,442.843924 3.86660579,437.785722 L246.660267,196.256611 C251.718468,192.46296 258.04122,192.46296 263.099421,196.256611 C326.326937,269.60053 323.797837,378.351857 254.247569,446.637575 Z" id="path10273-path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M304.829582,60.9497272 L62.0359205,302.478838 C56.9777192,306.272489 50.6549676,306.272489 45.5967663,302.478838 C-17.6307496,230.39947 -15.101649,121.648143 53.1840683,53.3624253 C121.469786,-14.923292 230.221113,-17.4523926 302.300481,44.5105731 C302.300481,44.5105731 303.565032,44.5105731 303.565032,45.7751234 C309.887783,49.5687743 309.887783,57.1560763 304.829582,60.9497272 Z" id="path10273-path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

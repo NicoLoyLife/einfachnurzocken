@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DE Trusted Shops</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 499.996511 0 499.996511 500 0 500"></polygon>
+    </defs>
+    <g id="DE-Trusted-Shops" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Group-32" transform="translate(200, 50)">
+                <g id="Group-3">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M249.998255,411.524892 C160.900083,411.524892 88.6744884,339.294313 88.6744884,250.201125 C88.6744884,161.102953 160.900083,88.8723735 249.998255,88.8723735 C339.096427,88.8723735 411.322022,161.102953 411.322022,250.201125 C411.322022,339.294313 339.096427,411.524892 249.998255,411.524892 M249.998255,-0.00149535394 C111.927242,-0.00149535394 0,111.930731 0,249.99676 C0,388.067773 111.927242,500 249.998255,500 C388.069269,500 499.996511,388.067773 499.996511,249.99676 C499.996511,111.930731 388.069269,-0.00149535394 249.998255,-0.00149535394" id="Fill-1" fill="#000000" mask="url(#mask-5)"></path>
+                </g>
+                <path d="M292.498208,177.649543 C292.498208,166.200116 286.048248,157.247931 274.10037,157.247931 C238.246767,157.247931 219.799084,226.951362 212.850673,254.351231 C246.147221,244.397158 292.498208,216.997289 292.498208,177.649543 L292.498208,177.649543 Z M316.398948,298.648599 C293.500095,332.548273 261.599211,363.397424 218.797197,363.397424 C173.497942,363.397424 147.09996,335.000653 147.09996,289.197962 C147.09996,214.9985 201.899698,142.299376 279.099837,142.299376 C304.999367,142.299376 339.846098,152.7519 339.846098,184.149348 C339.846098,240.399579 251.699968,259.350697 208.349658,270.296688 C206.849319,279.747325 205.348981,289.197962 205.348981,298.698444 C205.348981,318.098169 215.79652,336.047401 237.20002,336.047401 C265.098339,336.047401 287.498741,309.150968 303.947635,289.247807 L316.398948,298.648599 Z" id="Fill-4" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

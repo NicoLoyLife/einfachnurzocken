@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WW Wechat Payment</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="2.84217094e-14" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="WW-Wechat-Payment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-3)" fill="#09BB07" fill-rule="nonzero">
+                <g transform="translate(163, 50)" id="Path">
+                    <path d="M208.78501,315.679131 C206.148579,317.010458 203.448944,317.645864 200.171728,317.645864 C192.842706,317.645864 186.86451,313.712398 183.520728,307.8122 L182.171919,305.214095 L129.654433,192.31152 C129.011631,190.980193 129.011631,189.712743 129.011631,188.381416 C129.011631,183.116623 132.997543,179.183157 138.332937,179.183157 C140.326565,179.183157 142.318849,179.817891 144.312477,181.149218 L206.148579,224.471134 C210.777293,227.069238 216.113359,229.036644 222.089538,229.036644 C225.432648,229.036644 228.712553,228.401238 232.055663,227.069238 L522.026064,99.7715228 C470.152054,39.3884503 384.399135,-1.91103975e-14 287.272111,-1.91103975e-14 C129.011631,-1.91103975e-14 0,105.671049 0,236.205638 C0,307.053747 38.5688101,371.366923 99.0581198,414.688839 C103.684145,417.986899 107.027255,423.887098 107.027255,429.783935 C107.027255,431.750668 106.38378,433.717401 105.678446,435.684134 C101.051748,453.380024 93.0167196,482.303438 93.0167196,483.573577 C92.3725725,485.536948 91.6632039,488.139087 91.6632039,490.801741 C91.6632039,496.066534 95.6497884,500 100.985854,500 C102.978138,500 104.971766,499.365266 106.321248,498.033267 L168.800824,461.943549 C173.430211,459.34141 178.765604,457.375349 184.10167,457.375349 C186.734739,457.375349 190.078521,458.010083 192.714952,458.706676 C221.961112,467.208342 253.910269,471.838401 286.499538,471.838401 C444.760691,471.838401 573.770304,366.167352 573.770304,235.632764 C573.770304,196.244313 561.815258,158.884456 541.181707,126.03161 L210.777293,314.347132 L208.78501,315.678459 L208.78501,315.679131 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

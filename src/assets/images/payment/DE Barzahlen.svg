@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DE Barzahlen</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="2.84217094e-14" y="0" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="DE-Barzahlen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" transform="translate(277, 50)" fill-rule="nonzero">
+                <path d="M173.097554,500 C162.742525,500 152.880592,483.727811 147.20998,475.098619 L5.44469415,266.765286 C1.7464693,261.341223 -0.225917287,255.177515 0.0206310365,248.52071 L2.23956595,108.974359 C2.48611427,101.084813 5.44469415,93.1952663 11.1153056,87.5246548 L87.2987375,9.36883629 C93.2158973,3.20512821 101.351992,0 109.734635,0 L236.707022,0 C245.089665,0 253.225759,3.45167653 259.142919,9.36883629 L335.326351,87.5246548 C340.996962,93.1952663 343.955542,100.838264 344.202091,108.974359 L346.421026,248.52071 C346.421026,254.930966 344.695187,261.341223 340.996962,266.765286 L199.231676,475.098619 C193.067968,483.974359 183.452584,500 173.097554,500" id="Path" fill="#5FB246"></path>
+                <path d="M88.2849308,89.0039448 L88.2849308,300.542406 C88.2849308,300.542406 142.77211,300.542406 177.535424,300.542406 C191.588678,300.542406 270.484142,292.406312 272.949625,215.729783 C275.415108,131.656805 144.497949,158.77712 144.497949,158.77712 L144.497949,191.568047 C144.497949,191.568047 235.967377,175.295858 230.050217,220.66075 C226.351992,248.52071 199.478225,258.87574 182.712939,259.615385 C165.208008,260.601578 127.732663,259.861933 127.732663,259.861933 L127.732663,119.08284 C127.732663,119.08284 156.578816,113.412229 183.94568,113.16568 C216.490059,112.919132 246.568955,120.56213 246.568955,120.56213 L257.663629,83.5798817 C257.663629,83.5798817 233.99499,75.1972387 187.643905,74.4575937 C144.991045,73.7179487 88.2849308,89.0039448 88.2849308,89.0039448" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

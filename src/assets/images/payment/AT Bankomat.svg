@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AT Bankomat</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="AT-Bankomat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#003375" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-2)">
+                <g transform="translate(197.9712, 50.2204)">
+                    <path d="M0.0258878891,0 C131.222103,0.0208133476 262.42852,0.0102006011 393.624838,0.0102006011 C411.718026,0.597610972 429.316535,6.80029768 444.689459,16.1869114 C460.948805,26.1816458 475.054382,39.7617369 485.419944,55.8149071 C504.244587,85.1079422 508.850313,122.901684 498.031596,155.955753 C492.117205,174.28613 481.978529,191.225104 468.697141,205.155828 C454.385285,218.385493 437.590356,229.38988 418.734803,234.820103 C408.235396,238.003618 397.261919,239.137121 386.32976,239.291676 C257.554796,239.30198 128.790342,239.271275 0.0153781789,239.312386 C0.00114289504,159.541522 -0.0153266607,79.7709672 0.0258878891,0 L0.0258878891,0 Z" id="path4" fill="#ACD261"></path>
+                    <path d="M0.0153781789,260.713041 C82.4341741,260.774657 164.86348,260.506865 247.282276,260.929212 C294.689311,260.918908 342.106548,260.939721 389.523784,260.918908 C408.194182,260.300587 426.483138,266.606413 442.474383,275.900397 C469.026857,291.768101 490.623281,317.238487 498.608497,347.448855 C505.058574,369.818052 504.666933,394.083118 497.57803,416.246345 C492.354086,433.030868 483.431239,448.589463 471.911669,461.839941 C467.676977,466.86791 462.483944,470.968861 457.342532,475.028391 C442.639138,486.51705 425.370345,495.02806 406.895923,498.211575 C394.696417,500.550501 382.239216,499.891274 369.895458,499.973703 C246.602132,499.9634 123.308704,499.994104 0.0153781789,499.9634 C-0.00512605963,420.213246 -0.00512605963,340.463092 0.0153781789,260.712938 L0.0153781789,260.713041 Z" id="path6" fill="#00ADEF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

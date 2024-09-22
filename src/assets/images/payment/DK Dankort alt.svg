@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="680px" viewBox="0 0 980 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DK Dankort alt</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-6.31088724e-30" y="-2.84217094e-14" width="900" height="600" rx="80"></rect>
+        <filter x="-6.7%" y="-10.0%" width="113.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="DK-Dankort-alt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(40, 40)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Logo" mask="url(#mask-3)" fill="#E21F28">
+                <g transform="translate(50, 65)">
+                    <path d="M631.627837,217.693417 L758.343126,368.391881 C784.586797,330.467315 800,284.492593 800,234.970783 C800,182.70451 782.830182,134.367718 753.852006,95.2979673 L631.627837,217.693417 Z" id="Fill-6"></path>
+                    <path d="M272.556373,82.5768469 C367.184556,82.5768469 438.48481,106.653628 445.823956,186.382448 L545.415274,82.5648972 L743.717611,82.5648972 C700.578966,32.0731644 636.47247,3.40502157e-14 565.014877,3.40502157e-14 L183.952862,3.40502157e-14 C112.469379,3.40502157e-14 48.3509327,32.0731644 5.21029592,82.5768469 L272.556373,82.5768469 Z" id="Fill-8"></path>
+                    <path d="M116.644626,183.086703 L82.8526873,275.994121 L219.189527,275.994121 C259.494087,275.994121 271.68882,259.31026 280.7089,227.185313 C289.635373,195.414876 267.213634,183.086703 239.66943,183.086703 L116.644626,183.086703 Z" id="Fill-10"></path>
+                    <path d="M546.2416,381.076355 L440.914396,247.967943 C421.430307,338.724403 357.680312,381.062414 238.172722,381.062414 L0,381.062414 C43.0868628,435.202807 109.529538,469.980602 183.952663,469.980602 L565.014678,469.980602 C639.413904,469.980602 705.842638,435.216749 748.9295,381.076355 L546.2416,381.076355 Z" id="Fill-12"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
