@@ -115,18 +115,18 @@ const providersData = {
         "Betano gehört zur Kaizen Gaming International Ltd., einem Unternehmen mit langjähriger Erfahrung in der iGaming-Branche. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
     },
     pros: [
-      "Attraktiver Willkommensbonus mit fairen Bedingungen",
-      "Umfangreiches Wettangebot mit vielen Sportarten und Wettmärkten",
-      "Hervorragender Kundensupport, der rund um die Uhr erreichbar ist",
+      "Attraktiver Willkommensbonus mit 100% bis zu 80€ und 20€ Freiwette ohne Einzahlung",
+      "Breites Wettangebot mit vielfältigen Sportarten und Spezialwetten",
       "Benutzerfreundliche Mobile App für iOS und Android",
+      "Sichere und schnelle Auszahlungen ohne Gebühren",
       "Innovative Funktionen wie Bet Mentor und Match Combo",
-      "Umfangreiches Treueprogramm mit echten Mehrwerten"
+      "Umfangreiches Treueprogramm für Stammkunden",
+      "Flexible Cash-Out-Optionen für mehr Kontrolle",
     ],
     cons: [
-      "Wettsteuer wird an Kunden weitergegeben",
-      "Keine Übernahme der Wettsteuer bei Aktionen",
-      "Begrenzte Zahlungsmethoden für Auszahlungen, einige E-Wallets fehlen",
-      "Gelegentliche Ladezeiten bei Live-Wetten, die den Spielfluss minimal beeinträchtigen",
+      "Wettsteuer von 5% wird auf Gewinne umgelegt",
+      "Telefonischer Kundensupport nicht rund um die Uhr verfügbar",
+      "Auswahl bei Auszahlungsoptionen könnte größer sein",
     ],
   },
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import providersData from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
@@ -27,58 +27,77 @@ const BetanoReview = () => {
   }
 
   const summary =
-    "Betano hat sich in den letzten Jahren als einer der dynamischsten und innovativsten Sportwetten-Anbieter auf dem deutschen Markt etabliert. Mit einer breiten Palette von Sportarten, attraktiven Bonusangeboten und einer benutzerfreundlichen Plattform zieht Betano sowohl Anfänger als auch erfahrene Wettende an. In diesem umfassenden Test teilen wir unsere Betano Erfahrungen und untersuchen, ob der Anbieter seriös ist und ob er deinen individuellen Bedürfnissen entspricht.";
+    "Betano hat sich seit seiner Gründung im Jahr 2016 zu einem der führenden Sportwetten-Anbieter in Deutschland entwickelt. Mit einem breiten Angebot an Sportarten, attraktiven Bonusaktionen und einer benutzerfreundlichen Plattform spricht Betano sowohl Anfänger als auch erfahrene Wettfans an. In diesem Test teilen wir unsere aktuellen Betano Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen individuellen Anforderungen entspricht.";
 
   const bonusContent = (
     <>
+      <Typography variant="h4" component="h3">
+        Willkommensbonus: 100% Einzahlungsbonus bis 80€ + 20€ Freiwette ohne
+        Einzahlung
+      </Typography>
       <Typography variant="body1" paragraph>
-        Betano begrüßt neue Kunden mit einem großzügigen Willkommensbonus. Du
-        erhältst einen 100% Einzahlungsbonus von bis zu 100€ auf deine erste
-        Einzahlung. Dieser Bonus ermöglicht es dir, mit doppeltem Budget in die
-        Welt der Sportwetten einzusteigen. Zusätzlich gibt es eine 20€
-        Gratiswette ohne Einzahlung.
+        Entdecke den ultimativen Sportwettenanbieter und profitiere von einem
+        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen{" "}
+        <strong>100% Einzahlungsbonus bis zu 80€</strong> auf die erste
+        Einzahlung. Das bedeutet, dass du deine erste Einzahlung verdoppelst und
+        mit einem größeren Wettguthaben durchstarten kannst. Aber das ist noch
+        nicht alles: Zusätzlich erhältst du eine{" "}
+        <strong>20€ Freiwette ohne Einzahlung</strong>. Einfach registrieren,
+        Freiwette sichern und loslegen!
       </Typography>
       <Typography variant="body1" paragraph>
         Um den Bonus zu erhalten, musst du dich registrieren und eine
         Mindesteinzahlung von 10€ tätigen. Der Bonusbetrag muss innerhalb von 90
-        Tagen fünfmal mit einer Mindestquote von 1,65 umgesetzt werden. Es
-        zählen sowohl Einzel- als auch Kombiwetten, jedoch sind Systemwetten von
-        der Bonusaktion ausgeschlossen.
+        Tagen fünfmal mit einer Mindestquote von 1,65 umgesetzt werden.
       </Typography>
       <Typography variant="body1" paragraph>
-        Neben dem Willkommensbonus bietet Betano regelmäßig Promotionen für
-        Bestandskunden an. Dazu gehören Gratiswetten, Quotenboosts und
-        Cashback-Aktionen. Besonders hervorzuheben ist das Loyalitätsprogramm,
-        bei dem du für jede Wette Punkte sammelst, die du später gegen Boni oder
-        Gratiswetten eintauschen kannst.
+        Deine Vorteile auf einen Blick:
+      </Typography>
+      <Box component="ul" sx={{ pl: 4 }}>
+        <li>100% Bonus bis 80€ auf deine erste Einzahlung</li>
+        <li>20€ Freiwette ohne Einzahlung</li>
+        <li>Attraktive Quoten und eine riesige Auswahl an Sportwetten</li>
+        <li>Sichere und schnelle Auszahlungen</li>
+      </Box>
+      <Typography variant="body1" paragraph>
+        Betano bietet zudem regelmäßige Promotionen für Bestandskunden, darunter
+        Einzahlungsboni, Gratiswetten, Cashback-Angebote und ein umfangreiches
+        Treueprogramm. Diese Vielfalt an Bonusangeboten sorgt dafür, dass immer
+        für Abwechslung und zusätzliche Gewinnchancen gesorgt ist.
       </Typography>
       <Typography variant="body1" paragraph>
-        Unsere Erfahrungen zeigen, dass Betano eines der attraktivsten
-        Bonusprogramme auf dem Markt bietet, das sowohl für Neulinge als auch
-        für erfahrene Wettende interessant ist.
+        Verpasse nicht deine Chance, mit diesem unschlagbaren Angebot
+        durchzustarten!
       </Typography>
+      <Box sx={{ mt: 4, textAlign: "center" }}>
+        <Button
+          variant="contained"
+          color="primary"
+          href={provider.ctaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Jetzt bei Betano anmelden und Bonus sichern!
+        </Button>
+      </Box>
     </>
   );
 
   const oddsContent = (
     <>
       <Typography variant="body1" paragraph>
-        Betano überzeugt durch wettbewerbsfähige Quoten, die oft über dem
-        Branchendurchschnitt liegen. Besonders bei Top-Events in Sportarten wie
-        Fußball, Basketball und Tennis kannst du von hohen Quoten profitieren.
-        Der durchschnittliche Quotenschlüssel liegt bei 95% bis 97%, was
-        bedeutet, dass Betano nur eine geringe Marge einbehält und dir somit
-        bessere Gewinnchancen bietet.
+        Betano überzeugt durch attraktive Wettquoten, die im Vergleich zum Markt
+        durchaus konkurrenzfähig sind. Besonders bei populären Sportarten wie
+        Fußball, Basketball und Tennis bietet Betano Quoten, die häufig über dem
+        Branchendurchschnitt liegen. Obwohl der Quotenschlüssel nicht immer an
+        der absoluten Spitze liegt, sind die Quoten insgesamt sehr fair und
+        bieten ein gutes Preis-Leistungs-Verhältnis.
       </Typography>
       <Typography variant="body1" paragraph>
-        In unseren Tests haben wir Betano mit anderen führenden Anbietern
-        verglichen und festgestellt, dass Betano insbesondere bei Fußballwetten
-        sehr attraktive Quoten anbietet. Auch die Live-Quoten sind stabil und
-        passen sich schnell an das aktuelle Spielgeschehen an.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Durch die hohen Wettquoten maximierst du deine potenziellen Gewinne und
-        erhältst ein ausgezeichnetes Preis-Leistungs-Verhältnis.
+        Unsere Erfahrungen zeigen, dass Betano insbesondere bei Top-Events und
+        beliebten Ligen sehr gute Quoten anbietet. In Kombination mit den
+        zahlreichen Wettmärkten und Spezialwetten können Wettende hier das
+        Maximum aus ihren Einsätzen herausholen.
       </Typography>
     </>
   );
@@ -86,56 +105,19 @@ const BetanoReview = () => {
   const sportsOfferContent = (
     <>
       <Typography variant="body1" paragraph>
-        Das Wettangebot von Betano ist beeindruckend und deckt sowohl
-        Mainstream- als auch Nischensportarten ab. Du kannst aus über 30
-        verschiedenen Sportarten wählen, darunter Fußball, Basketball, Tennis,
-        E-Sports, Handball, Volleyball und sogar Spezialwetten auf politische
-        Ereignisse oder Unterhaltungsshows.
+        Das Wettangebot von Betano ist beeindruckend und verdient die
+        Höchstnote. Mit einer Vielfalt von über 30 Sportarten und unzähligen
+        Ligen und Wettbewerben lässt der Anbieter keine Wünsche offen. Ob
+        Fußball, Basketball, Tennis, Eishockey oder exotischere Sportarten wie
+        Darts und Snooker – bei Betano findest du nahezu alles.
       </Typography>
       <Typography variant="body1" paragraph>
-        Im Bereich Fußball sind nahezu alle internationalen Ligen und
-        Wettbewerbe vertreten. Von der Bundesliga über die Premier League bis
-        hin zur Champions League findest du ein umfangreiches Angebot. Auch
-        untere Ligen und regionale Wettbewerbe sind verfügbar, was besonders für
-        Fans des Amateurfußballs interessant ist.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die Anzahl der Wettmärkte pro Spiel ist ebenfalls beeindruckend. Du
-        kannst aus über 200 verschiedenen Wettoptionen wählen, darunter
-        klassische Wetten wie Sieg, Unentschieden oder Niederlage, aber auch
-        Spezialwetten wie Handicap, Over/Under, beide Teams treffen oder genaue
-        Ergebniswetten.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Betano punktet zudem mit innovativen Funktionen wie dem Bet Mentor,
-        einem Tool, das dir basierend auf deinen Präferenzen und deinem Budget
-        Wettempfehlungen gibt. Die Match Combo-Funktion ermöglicht es dir,
-        mehrere Wetten innerhalb eines Spiels zu kombinieren, um höhere Quoten
-        zu erzielen.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Mit diesem vielfältigen Angebot findest du garantiert die passenden
-        Wetten für deine Interessen und Strategien.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die angebotenen Sportarten umfassen unter anderem:
-      </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>Fußball</li>
-        <li>Tennis</li>
-        <li>Basketball</li>
-        <li>Eishockey</li>
-        <li>Handball</li>
-        <li>Darts</li>
-        <li>Snooker</li>
-        <li>Tischtennis</li>
-        <li>eSports</li>
-        {/* Weitere Sportarten */}
-      </Box>
-      <Typography variant="body1" paragraph>
-        Die Tiefe des Wettangebots ist ebenfalls beeindruckend. Für einzelne
-        Spiele stehen oft mehrere hundert Wettmärkte zur Verfügung, darunter
-        Spezialwetten, Handicap-Wetten und Langzeitwetten.
+        Besonders hervorzuheben sind die Spezialwetten wie Spielerwetten und
+        Handicap-Wetten. Du kannst beispielsweise auf die Leistung einzelner
+        Spieler setzen oder spezielle Ereignisse innerhalb eines Spiels
+        vorhersagen. Dieses breite Angebot ermöglicht es dir, deine
+        Wettstrategien individuell zu gestalten und vielfältige
+        Wettmöglichkeiten zu nutzen.
       </Typography>
     </>
   );
@@ -143,23 +125,20 @@ const BetanoReview = () => {
   const paymentMethodsContent = (
     <>
       <Typography variant="body1" paragraph>
-        Betano legt großen Wert auf sichere und schnelle Transaktionen und
-        bietet eine Vielzahl bewährter Zahlungsmethoden an. Für Einzahlungen
-        stehen dir Kreditkarten (Visa, Mastercard), E-Wallets (PayPal, Skrill,
-        Neteller), Prepaid-Karten (Paysafecard) und Banküberweisungen
-        (Sofortüberweisung, Trustly) zur Verfügung. Die Mindesteinzahlung
-        beträgt 10€, und der Betrag steht dir sofort zum Wetten zur Verfügung.
+        Betano bietet eine umfangreiche Auswahl an Zahlungsmethoden, die sowohl
+        sicher als auch benutzerfreundlich sind. Du kannst Einzahlungen über
+        Kreditkarten (Visa, Mastercard), E-Wallets (PayPal, Skrill, Neteller),
+        Banküberweisungen und Prepaid-Karten (Paysafecard) tätigen. Die
+        Einzahlungen sind in der Regel sofort auf deinem Wettkonto verfügbar,
+        und es fallen keine Gebühren an.
       </Typography>
       <Typography variant="body1" paragraph>
-        Auszahlungen können ebenfalls über verschiedene Methoden erfolgen,
-        darunter Kreditkarten, E-Wallets und Banküberweisungen. Die
-        Bearbeitungszeit für Auszahlungen liegt in der Regel zwischen 24 und 48
-        Stunden, je nach gewählter Methode. Positiv hervorzuheben ist, dass
-        Betano keine Gebühren für Ein- oder Auszahlungen erhebt.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die Vielfalt der Zahlungsmethoden sowie die schnellen Bearbeitungszeiten
-        sorgen für ein reibungsloses Wetterlebnis.
+        Auszahlungen erfolgen ebenfalls schnell und zuverlässig. Die
+        Bearbeitungszeit liegt meistens zwischen 24 und 48 Stunden. Auch hier
+        stehen dir verschiedene Methoden zur Verfügung, wobei die Auswahl bei
+        Auszahlungen etwas eingeschränkter ist als bei Einzahlungen. Trotzdem
+        überzeugt Betano durch sichere und schnelle Auszahlungen, sodass du
+        deine Gewinne zügig erhältst.
       </Typography>
       <Typography variant="body1" paragraph>
         Zu den verfügbaren Zahlungsmethoden gehören:
@@ -171,20 +150,17 @@ const BetanoReview = () => {
   const customerSupportContent = (
     <>
       <Typography variant="body1" paragraph>
-        Der Kundensupport von Betano ist erstklassig und steht dir rund um die
-        Uhr zur Verfügung. Du kannst den Support über Live-Chat, E-Mail oder
-        eine kostenlose Hotline erreichen. Die Mitarbeiter sind kompetent,
-        freundlich und bemüht, dein Anliegen schnell zu lösen.
+        Der Kundensupport von Betano ist professionell und gut erreichbar. Du
+        kannst den Support über Live-Chat, E-Mail und Telefon kontaktieren. Die
+        Mitarbeiter sind kompetent und bemüht, deine Anliegen schnell und
+        zufriedenstellend zu lösen. Die Reaktionszeiten sind insgesamt gut,
+        wobei der Live-Chat die schnellste Option darstellt.
       </Typography>
       <Typography variant="body1" paragraph>
-        Besonders der Live-Chat überzeugt durch schnelle Reaktionszeiten; in
-        unseren Tests haben wir in der Regel innerhalb von wenigen Sekunden eine
-        Antwort erhalten. Die Hilfeseiten auf der Webseite sind ebenfalls
-        ausführlich und beantworten die häufigsten Fragen bereits im Vorfeld.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Unsere Erfahrungen zeigen, dass Betano großen Wert auf
-        Kundenzufriedenheit legt und sich durch exzellenten Service auszeichnet.
+        Es gibt allerdings leichte Abzüge, da der telefonische Support nicht
+        rund um die Uhr verfügbar ist. Dennoch zeigt sich Betano bemüht, einen
+        hohen Standard im Kundenservice zu halten, und bietet umfangreiche
+        Hilfeseiten und FAQs auf der Webseite an.
       </Typography>
     </>
   );
@@ -192,38 +168,26 @@ const BetanoReview = () => {
   const taxFeesContent = (
     <>
       <Typography variant="body1" paragraph>
-        In Deutschland unterliegen Sportwetten einer gesetzlichen Wettsteuer von
-        5%. Betano legt diese Wettsteuer auf die Kunden um, was bedeutet, dass
+        In Deutschland fällt eine gesetzliche Wettsteuer von 5% auf Sportwetten
+        an. Betano legt diese Wettsteuer auf die Kunden um, was bedeutet, dass
         bei erfolgreichen Wetten 5% deines Gewinns einbehalten werden. Dein
-        Einsatz bleibt dabei unverändert, sodass die Wettsteuer nur im
+        Einsatz bleibt dabei vollständig erhalten, sodass die Wettsteuer nur im
         Gewinnfall anfällt.
       </Typography>
       <Typography variant="body1" paragraph>
-        Um dies zu veranschaulichen: Wenn du 100€ auf eine Quote von 2,0 setzt
-        und gewinnst, beträgt dein Bruttogewinn 200€. Von diesem Betrag zieht
-        Betano die Wettsteuer in Höhe von 5% ab, was 10€ entspricht. Dein
-        Nettogewinn beläuft sich somit auf 190€. Bei verlorenen Wetten erfolgt
-        kein Steuerabzug, da die Wettsteuer nur auf Gewinne erhoben wird.
+        Beispielrechnung:
       </Typography>
+      <Box component="ul" sx={{ pl: 4 }}>
+        <li>Einsatz: 100€ auf eine Quote von 2,0</li>
+        <li>Bruttogewinn: 200€</li>
+        <li>Abzug Wettsteuer (5% von 200€): 10€</li>
+        <li>Nettogewinn: 190€</li>
+      </Box>
       <Typography variant="body1" paragraph>
-        Hinsichtlich der Gebühren für Ein- und Auszahlungen zeigt sich Betano
-        kundenfreundlich. Einzahlungen sind generell gebührenfrei und werden in
-        der Regel sofort deinem Wettkonto gutgeschrieben. Auch Auszahlungen sind
-        in den meisten Fällen kostenfrei. Die Bearbeitungszeit für Auszahlungen
-        variiert je nach gewählter Zahlungsmethode, liegt aber meistens zwischen
-        24 und 48 Stunden. Es ist wichtig zu beachten, dass bei bestimmten
-        Zahlungsmethoden oder bei häufigen Auszahlungen innerhalb kurzer Zeit
-        gelegentlich Gebühren anfallen können. Es empfiehlt sich daher, die
-        aktuellen Konditionen auf der Betano-Webseite zu prüfen oder den
-        Kundensupport zu kontaktieren.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Obwohl die Umlegung der Wettsteuer auf den Kunden zunächst als Nachteil
-        erscheinen mag, bleibt dein Einsatz vollständig für die Wette verfügbar.
-        Es ist daher wichtig, die Wettsteuer in deine Gewinnkalkulation
-        einzubeziehen, um realistische Erwartungen zu haben. Insgesamt zeigt
-        sich Betano transparent in der Kommunikation über Steuern und Gebühren,
-        was zu einem vertrauenswürdigen Gesamteindruck beiträgt.
+        Ein- und Auszahlungen sind in der Regel gebührenfrei. Dennoch fällt die
+        Bewertung in diesem Bereich weniger positiv aus, da einige Konkurrenten
+        die Wettsteuer für ihre Kunden übernehmen und somit steuerfreies Wetten
+        ermöglichen.
       </Typography>
     </>
   );
@@ -231,11 +195,12 @@ const BetanoReview = () => {
   const mobileAppContent = (
     <>
       <Typography variant="body1" paragraph>
-        In einer Zeit, in der mobiles Wetten immer wichtiger wird, hat Betano
-        eine hervorragende Mobile App entwickelt. Die App ist für iOS und
-        Android verfügbar und bietet das vollständige Wettangebot, das du auch
-        auf der Desktop-Version findest. Die Benutzeroberfläche ist intuitiv
-        gestaltet, sodass du dich schnell zurechtfindest.
+        Die mobile App von Betano ist hervorragend umgesetzt und bietet alle
+        Funktionen der Desktop-Version. Sie ist für iOS und Android verfügbar
+        und überzeugt durch ein ansprechendes Design und eine intuitive
+        Benutzeroberfläche. Die App läuft stabil und ermöglicht es dir, auch
+        unterwegs problemlos Wetten zu platzieren, Ein- und Auszahlungen
+        vorzunehmen und Bonusangebote zu nutzen.
       </Typography>
       {/* Optionaler Screenshot der App */}
       {/* <Box sx={{ textAlign: 'center', my: 4 }}>
@@ -246,19 +211,10 @@ const BetanoReview = () => {
         />
       </Box> */}
       <Typography variant="body1" paragraph>
-        Besonders praktisch ist die Möglichkeit, Push-Benachrichtigungen zu
-        aktivieren. So bleibst du immer auf dem Laufenden und verpasst keine
-        wichtigen Ereignisse oder Promotionen. Die App läuft stabil und
-        überzeugt durch schnelle Ladezeiten.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Solltest du keine App installieren wollen, kannst du auch die mobile
-        Webseite von Betano nutzen. Diese ist für alle gängigen Browser
-        optimiert und bietet ebenfalls alle Funktionen der Desktop-Version.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die Betano App bietet somit ein herausragendes mobiles Wetterlebnis und
-        ermöglicht es dir, jederzeit und überall zu wetten.
+        Die mobile Webseite ist ebenfalls optimiert und passt sich verschiedenen
+        Bildschirmgrößen an. Die Navigation ist einfach, und die Ladezeiten sind
+        kurz. Insgesamt bietet Betano ein reibungsloses mobiles Wetterlebnis auf
+        höchstem Niveau.
       </Typography>
     </>
   );
@@ -266,21 +222,17 @@ const BetanoReview = () => {
   const loyaltyProgramContent = (
     <>
       <Typography variant="body1" paragraph>
-        Betano belohnt seine treuen Kunden mit einem umfangreichen
-        Loyalitätsprogramm. Für jede platzierte Wette sammelst du
-        Loyalitätspunkte, die du im Betano Shop gegen Gratiswetten, Boni oder
-        Merchandise eintauschen kannst. Je aktiver du bist, desto schneller
-        steigst du in höhere Level auf und erhältst bessere Prämien.
+        Betano belohnt treue Kunden mit einem umfangreichen Treueprogramm. Für
+        jede platzierte Wette sammelst du Punkte, die du gegen Gratiswetten,
+        Boni oder andere Prämien eintauschen kannst. Je aktiver du bist, desto
+        mehr Vorteile kannst du genießen.
       </Typography>
       <Typography variant="body1" paragraph>
-        Für High Roller und besonders aktive Kunden bietet Betano zudem
-        exklusive VIP-Services an. Dazu gehören ein persönlicher Account
-        Manager, individuelle Bonusangebote, höhere Einsatzlimits und
-        Einladungen zu exklusiven Events.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Das Treueprogramm von Betano ist eines der besten in der Branche und
-        bietet echten Mehrwert für regelmäßige Nutzer.
+        Für besonders aktive Kunden gibt es zudem VIP-Services. Diese umfassen
+        exklusive Bonusangebote, persönliche Betreuung durch einen Account
+        Manager und Einladungen zu besonderen Events. Obwohl das Treueprogramm
+        bereits viel bietet, gibt es im VIP-Bereich noch Luft nach oben, weshalb
+        hier nicht die Höchstnote vergeben wird.
       </Typography>
     </>
   );
@@ -288,23 +240,17 @@ const BetanoReview = () => {
   const cashOutContent = (
     <>
       <Typography variant="body1" paragraph>
-        Die Cash-Out-Funktion von Betano ermöglicht es dir, deine Wetten
-        vorzeitig auszuwerten. Das ist besonders praktisch, wenn sich der
-        Spielverlauf anders entwickelt als erwartet oder du bereits einen
-        Teilgewinn sichern möchtest.
+        Die Cash-Out-Funktion von Betano ist vielseitig und bietet dir maximale
+        Flexibilität. Du kannst sowohl einen vollständigen als auch einen
+        teilweisen Cash-Out vornehmen. Zudem gibt es die Möglichkeit des
+        automatischen Cash-Outs, bei dem du einen Schwellenwert festlegst, ab
+        dem die Wette automatisch ausgezahlt wird.
       </Typography>
       <Typography variant="body1" paragraph>
-        Du hast die Möglichkeit, einen vollständigen oder teilweisen Cash-Out
-        vorzunehmen. Bei der teilweisen Auszahlung lässt du einen Teil deines
-        Einsatzes weiterlaufen, während du den restlichen Betrag sicherst. Zudem
-        bietet Betano einen automatischen Cash-Out an, bei dem du einen
-        Schwellenwert festlegst, ab dem die Wette automatisch ausgezahlt wird.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die Cash-Out-Option steht für eine Vielzahl von Sportarten und Wettarten
-        zur Verfügung, sowohl für Einzel- als auch für Kombiwetten. Dadurch hast
-        du mehr Kontrolle über deine Wetten und kannst flexibel auf das
-        Spielgeschehen reagieren.
+        Diese Funktion steht für zahlreiche Sportarten und Wettmärkte zur
+        Verfügung, sowohl für Einzel- als auch für Kombiwetten. Sie ermöglicht
+        es dir, Gewinne frühzeitig zu sichern oder Verluste zu minimieren, was
+        dein Wett-Erlebnis noch dynamischer gestaltet.
       </Typography>
     </>
   );
@@ -312,13 +258,17 @@ const BetanoReview = () => {
   const conclusionContent = (
     <>
       <Typography variant="body1" paragraph>
-        Insgesamt hat Betano in unserem Test überzeugt. Der Anbieter punktet mit einem umfangreichen Wettangebot, attraktiven Bonusaktionen und einer benutzerfreundlichen Plattform. Besonders hervorzuheben sind die hervorragende mobile App und der kompetente Kundensupport.
+        Unsere Betano Erfahrungen aus dem Jahr 2024 zeigen, dass es sich um
+        einen seriösen und empfehlenswerten Sportwetten-Anbieter handelt. Trotz
+        der Umlegung der Wettsteuer auf den Kunden überzeugt Betano durch ein
+        herausragendes Bonusangebot, ein umfangreiches Wettangebot und
+        exzellente mobile Lösungen. Die innovativen Funktionen und das
+        attraktive Treueprogramm runden das positive Gesamtbild ab.
       </Typography>
       <Typography variant="body1" paragraph>
-        Ein kleiner Nachteil ist die Weitergabe der Wettsteuer an die Kunden, was jedoch bei vielen Anbietern der Branche üblich ist. Dennoch überwiegen die Vorteile bei Weitem, und wir können Betano uneingeschränkt empfehlen.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Wenn du auf der Suche nach einem zuverlässigen und innovativen Wettanbieter bist, der dir ein erstklassiges Wetterlebnis bietet, solltest du Betano definitiv ausprobieren.
+        Wenn du auf der Suche nach einem zuverlässigen Wettanbieter mit
+        attraktiven Boni und vielfältigen Wettmöglichkeiten bist, ist Betano
+        definitiv eine Top-Wahl.
       </Typography>
     </>
   );
@@ -384,16 +334,13 @@ const BetanoReview = () => {
         ratings={provider.ratings}
       />
 
-      <ProsConsSection
-        pros={provider.pros}
-        cons={provider.cons}
-        summary="Insgesamt überwiegen die Vorteile bei Weitem und die wenigen Nachteile fallen im Gesamtbild kaum ins Gewicht."
-      />
+      <ProsConsSection pros={provider.pros} cons={provider.cons} />
 
       <ConclusionSection
         conclusionContent={conclusionContent}
         ratings={provider.ratings}
         ctaLink={provider.ctaLink}
+        buttonTitle="Jetzt bei Betano anmelden und vom Willkommensbonus profitieren!"
       />
 
       <FAQSection faqs={provider.faqs} />

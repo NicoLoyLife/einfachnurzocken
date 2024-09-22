@@ -12,7 +12,7 @@ import {
   Button
 } from '@mui/material';
 
-const ConclusionSection = ({ conclusionContent, ratings, ctaLink }) => {
+const ConclusionSection = ({ conclusionContent, ratings, ctaLink, buttonTitle }) => {
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
@@ -58,7 +58,7 @@ const ConclusionSection = ({ conclusionContent, ratings, ctaLink }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Jetzt zu Betano
+            {buttonTitle}
           </Button>
         </Box>
       )}

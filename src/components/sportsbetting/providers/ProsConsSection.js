@@ -11,7 +11,7 @@ import {
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
-const ProsConsSection = ({ pros, cons, summary }) => (
+const ProsConsSection = ({ pros, cons }) => (
   <Box sx={{ mb: 4 }}>
     <Typography variant="h2" component="h2" gutterBottom>
       Vorteile und Nachteile
@@ -42,9 +42,7 @@ const ProsConsSection = ({ pros, cons, summary }) => (
         </List>
       </Grid>
     </Grid>
-    <Typography variant="body1" paragraph>
-      {summary}
-    </Typography>
+
   </Box>
 );
 
