@@ -35,7 +35,7 @@ const HappybetReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Du bist bereit, das Beste aus deinen Sportwetten herauszuholen? Dann
-        sichere dir jetzt das exklusive Angebot von Happybet. Mit einem{" "}
+        sichere dir jetzt das exklusive Angebot von Happybet. Mit einem 
         <strong>150% Einzahlungsbonus bis zu 100€</strong> startest du mit noch
         mehr Guthaben in deine Wettabenteuer. Das bedeutet, dass du bei einer
         Einzahlung von 67€ insgesamt 167€ Wettguthaben erhältst.

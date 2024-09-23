@@ -36,11 +36,11 @@ const BetanoReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Entdecke den ultimativen Sportwettenanbieter und profitiere von einem
-        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen{" "}
+        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen 
         <strong>100% Einzahlungsbonus bis zu 80€</strong> auf die erste
         Einzahlung. Das bedeutet, dass du deine erste Einzahlung verdoppelst und
         mit einem größeren Wettguthaben durchstarten kannst. Aber das ist noch
-        nicht alles: Zusätzlich erhältst du eine{" "}
+        nicht alles: Zusätzlich erhältst du eine 
         <strong>20€ Freiwette ohne Einzahlung</strong>. Einfach registrieren,
         Freiwette sichern und loslegen!
       </Typography>

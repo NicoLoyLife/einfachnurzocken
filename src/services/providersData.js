@@ -1,5 +1,6 @@
 import betanoLogo from "../assets/images/sportsbooks/betano.png";
 import happybetLogo from "../assets/images/sportsbooks/happybet.jpg";
+import merkurbetsLogo from "../assets/images/sportsbooks/merkurbets.jpg";
 
 import visaLogo from "../assets/images/payment/WW VISA.svg";
 import mastercardLogo from "../assets/images/payment/WW Mastercard.svg";
@@ -13,8 +14,7 @@ const providersData = {
   betano: {
     name: "Betano",
     slug: "betano",
-    title:
-      "Betano Erfahrungen & Test 2024 | Ist Betano seriös?",
+    title: "Betano Erfahrungen & Test 2024 | Ist Betano seriös?",
     metaDescription:
       "Ausführlicher Betano Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
     ctaLink: "https://www.betano.com/de/",
@@ -133,8 +133,7 @@ const providersData = {
   happybet: {
     name: "Happybet",
     slug: "happybet",
-    title:
-      "Happybet Erfahrungen & Test 2024 | Ist Happybet seriös?",
+    title: "Happybet Erfahrungen & Test 2024 | Ist Happybet seriös?",
     metaDescription:
       "Ausführlicher Happybet Test mit echten Erfahrungen ✓ 150% Bonus bis 100€ ✓ Steuerfreie Wetten ✓ Jetzt informieren und profitieren!",
     ctaLink: "https://www.hpybet.com/",
@@ -145,7 +144,7 @@ const providersData = {
       "Exklusive VIP-Kundenbetreuung für persönlichen Service und exklusive Angebote",
       "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
       "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
-      "Gutes Treueprogramm mit attraktiven Prämien"
+      "Gutes Treueprogramm mit attraktiven Prämien",
     ],
     bonus: {
       type: "150% Einzahlungsbonus",
@@ -236,8 +235,11 @@ const providersData = {
         "Cash-Out-Funktion",
         "Mobile App für iOS und Android",
       ],
-      website: "www.betano.com",
-      security: ["SSL-Verschlüsselung", "Maßnahmen zum verantwortungsbewussten Spielen"],
+      website: "www.hpybet.com",
+      security: [
+        "SSL-Verschlüsselung",
+        "Maßnahmen zum verantwortungsbewussten Spielen",
+      ],
     },
     pros: [
       "Attraktiver Willkommensbonus mit 150% bis zu 100€",
@@ -252,6 +254,131 @@ const providersData = {
       "Cash-Out-Funktion bietet weniger Flexibilität",
       "Kundensupport nicht rund um die Uhr verfügbar",
       "Mobile App könnte in Design und Performance verbessert werden",
+    ],
+  },
+  merkurbets: {
+    name: "Merkur Bets",
+    slug: "merkurbets",
+    title: "Merkur Bets Erfahrungen & Test 2024 | Ist Merkur Bets seriös?",
+    metaDescription:
+      "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 100% Bonus bis 100€ ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
+    ctaLink: "https://www.merkurbets.de/",
+    logo: merkurbetsLogo,
+    highlights: [
+      "10€ Freiwette ohne Einzahlung, sofort nach Registrierung verfügbar",
+      "Wettsteuer wird vom Anbieter übernommen, volle Gewinne ohne Abzüge",
+      "Breites Wettangebot mit Betbuilder und Quickbet-Funktion",
+      "Kombi Boost: Bis zu 30% extra Gewinn auf Kombiwetten",
+      "Benutzerfreundliche Mobile App für iOS und Android",
+      "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
+      "3er-Kombi-Versicherung: Bis zu 90€ Cashback als Freebet",
+    ],
+    bonus: {
+      /* TODO: Update bonus details */
+      type: "10€ Freiwette ohne Einzahlung + 90€ Cashback als Freiwette",
+      maxBonus: "100€",
+      minDeposit: "10€",
+      maxDeposit: "67€",
+      wageringRequirements: "1x Einzahung + 6x Bonus",
+      oddsRequirement: "2.00",
+      timeframe: "90 Tage (ab Gutschrift)",
+      validity: "1x pro Haushalt",
+      availableIn: "Deutschland und Österreich",
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 5 },
+      { category: "Wettquoten", score: 5 },
+      { category: "Sportarten- & Wettangebot", score: 5 },
+      { category: "Zahlungsmethoden", score: 5 },
+      { category: "Kundensupport", score: 4 },
+      { category: "Wettsteuer & Gebühren", score: 5 },
+      { category: "Mobile App & Optimierung", score: 5 },
+      { category: "Treueprogramme & VIP-Services", score: 4 },
+      { category: "Cash-Out-Funktion", score: 4 },
+    ],
+    faqs: [
+      {
+        question: "Ist Merkur Bets ein seriöser Anbieter?",
+        answer:
+          "Ja, Merkur Bets ist Teil der Gauselmann Gruppe, einem etablierten deutschen Unternehmen mit langer Tradition in der Glücksspielbranche. Der Anbieter verfügt über eine deutsche Sportwetten-Lizenz und setzt auf hohe Sicherheitsstandards.",
+      },
+      {
+        question: "Wie erhalte ich die 10€ Freiwette ohne Einzahlung?",
+        answer:
+          "Nach der Registrierung auf der Merkur Bets Webseite wird dir die 10 € Freiwette automatisch gutgeschrieben. Du musst keine Einzahlung tätigen.",
+      },
+      {
+        question: "Muss ich die Wettsteuer bei Merkur Bets zahlen?",
+        answer:
+          "Nein, die gesetzliche Wettsteuer von 5% wird vollständig vom Anbieter übernommen. Deine Gewinne werden nicht durch die Steuer gemindert.",
+      },
+      {
+        question: "Bietet Merkur Bets eine Mobile App an?",
+        answer:
+          "Ja, Merkur Bets bietet eine benutzerfreundliche App für iOS und Android an, die alle Funktionen der Desktop-Version beinhaltet.",
+      },
+      {
+        question: "Welche Zahlungsmethoden stehen zur Verfügung?",
+        answer:
+          "Du kannst Ein- und Auszahlungen über verschiedene Methoden tätigen, darunter Kreditkarten, E-Wallets wie PayPal, Banküberweisungen und Prepaid-Karten.",
+      },
+      {
+        question: "Was ist der Betbuilder?",
+        answer:
+          "Der Betbuilder ist eine Funktion, mit der du verschiedene Wettmärkte innerhalb eines Spiels kombinieren kannst, um deine individuelle Wunschwette zu erstellen.",
+      },
+      {
+        question: "Wie funktioniert der Kombi Boost?",
+        answer:
+          "Beim Kombi Boost erhältst du bis zu 30% extra Gewinn auf deine Kombiwetten. Je mehr Auswahlen du kombinierst, desto höher fällt dein Bonus aus.",
+      },
+      {
+        question: "Gibt es eine Cash-Out-Funktion?",
+        answer:
+          "Ja, Merkur Bets bietet eine Cash-Out-Funktion an, mit der du Wetten vorzeitig auszahlen lassen kannst. Teilweiser oder automatischer Cash-Out sind jedoch nicht verfügbar.",
+      },
+    ],
+    paymentMethods: [
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Skrill", logo: skrillLogo },
+      {
+        name: "Paysafecard",
+        logo: paysafecardLogo,
+      },
+      {
+        name: "Sofortüberweisung",
+        logo: sofortLogo,
+      },
+      { name: "Banküberweisung", logo: bankLogo },
+    ],
+    overview: {
+      foundingYear: "2016",
+      licence: "Deutsche Sportwetten-Lizenz gemäß Glücksspielstaatsvertrag",
+      specialFeatures: [
+        "10€ Freiwette ohne Einzahlung",
+        "Wettsteuer wird vom Anbieter übernommen",
+      ],
+      website: "www.merkurbets.de",
+      security: [
+        "SSL-Verschlüsselung",
+        "Maßnahmen zum verantwortungsbewussten Spielen",
+      ],
+    },
+    pros: [
+      "10€ Freiwette ohne Einzahlung, ideal für den Einstieg",
+      "Wettsteuer wird vom Anbieter übernommen, höhere Gewinne für dich",
+      "Breites Wettangebot mit innovativen Funktionen wie Betbuilder",
+      "Benutzerfreundliche Mobile App mit Quickbet-Funktion",
+      "Kombi Boost mit bis zu 30% extra Gewinn auf Kombiwetten",
+      "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
+      "3er-Kombi-Versicherung bietet Cashback bei verlorenen Kombiwetten",
+    ],
+    cons: [
+      "Kundensupport nicht rund um die Uhr erreichbar",
+      "Kein teilweiser oder automatischer Cash-Out verfügbar",
+      "VIP-Services könnten ausgebaut werden",
     ],
   },
 };
