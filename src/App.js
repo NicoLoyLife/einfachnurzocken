@@ -1,38 +1,40 @@
-import React from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import { ThemeProvider, GlobalStyles } from '@mui/material';
-import Home from './pages/Home';
-import News from './pages/News';
-import OnlineSpielotheken from './pages/OnlineSpielotheken';
-import Sportwetten from './pages/Sportwetten';
-import Guides from './pages/Guides';
-import Bonusangebote from './pages/Bonusangebote';
-import Promotions from './pages/Promotions';
-import Navbar from './components/common/Navbar';
-import Footer from './components/common/Footer';
-import Wrapper from './components/common/Wrapper';
-import Impressum from './pages/Impressum';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import Spielerschutz from './pages/Spielerschutz';
-import AGB from './pages/AGB';
-import About from './pages/About';
-import themes from './theme';
-import SportwettenRoutes from './routes/SportwettenRoutes';
+import React, { useMemo } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { ThemeProvider, GlobalStyles, CssBaseline } from "@mui/material";
+import Home from "./pages/Home";
+import News from "./pages/News";
+import OnlineSpielotheken from "./pages/OnlineSpielotheken";
+import Sportwetten from "./pages/Sportwetten";
+import Guides from "./pages/Guides";
+import Bonusangebote from "./pages/Bonusangebote";
+import Promotions from "./pages/Promotions";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
+import Wrapper from "./components/common/Wrapper";
+import Impressum from "./pages/Impressum";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Spielerschutz from "./pages/Spielerschutz";
+import AGB from "./pages/AGB";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import { CasinoTheme, SportwettenTheme } from "./theme/themes";
+import SportwettenRoutes from "./routes/SportwettenRoutes";
 
 function App() {
   const location = useLocation();
 
   // Wähle das Theme basierend auf der aktuellen Route
-  const getTheme = () => {
-    if (location.pathname.includes('/sportwetten')) {
-      return themes.sportwettenTheme; // Sportwetten Theme für den Sportwetten-Bereich
+  const currentTheme = useMemo(() => {
+    if (location.pathname.startsWith("/sportwetten")) {
+      return SportwettenTheme;
     } else {
-      return themes.casinoTheme; // Casino Theme für den Online-Spielotheken-Bereich
+      return CasinoTheme;
     }
-  };
+  }, [location.pathname]);
 
   return (
-    <ThemeProvider theme={getTheme()}>
+    <ThemeProvider theme={currentTheme}>
+      <CssBaseline />
       {/* Global Styles setzen */}
       <GlobalStyles
         styles={(theme) => ({
@@ -41,14 +43,14 @@ function App() {
             color: theme.palette.text.primary, // Textfarbe
             margin: 0,
             padding: 0,
-            boxSizing: 'border-box',
-            minHeight: '100vh',
+            boxSizing: "border-box",
+            minHeight: "100vh",
           },
-          '*': {
-            boxSizing: 'inherit',
+          "*": {
+            boxSizing: "inherit",
           },
-          '#root': {
-            height: '100vh',
+          "#root": {
+            height: "100vh",
           },
         })}
       />
@@ -57,8 +59,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
-          <Route path="/online-spielotheken" element={<OnlineSpielotheken />} />
-          <Route path="/sportwetten" element={<Sportwetten />} />
+          <Route
+            path="/online-spielotheken/*"
+            element={<OnlineSpielotheken />}
+          />
+          <Route path="/sportwetten/*" element={<Sportwetten />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/bonusangebote" element={<Bonusangebote />} />
           <Route path="/promotions" element={<Promotions />} />
@@ -69,6 +74,8 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* Sportwetten-Routen einbinden */}
           {SportwettenRoutes()}
+          {/* 404 Not Found Route */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Wrapper>
       <Footer />
