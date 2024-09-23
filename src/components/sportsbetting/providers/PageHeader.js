@@ -14,7 +14,7 @@ const Banner = styled(Box)(({ theme }) => ({
   },
 }));
 
-const PageHeader = ({ title, metaDescription, logo, ctaLink }) => (
+const PageHeader = ({ title, metaDescription, logo, ctaLink, providerName }) => (
   <>
     {/* SEO Meta-Tags */}
     <Helmet>
@@ -27,7 +27,7 @@ const PageHeader = ({ title, metaDescription, logo, ctaLink }) => (
       {/* Avatar mit Anbieterlogo */}
       <Avatar
         src={logo}
-        alt="Anbieter Logo"
+        alt={`${providerName} Logo`}
         sx={{ width: 80, height: 80, mb: 2, mx: 'auto' }}
       />
 

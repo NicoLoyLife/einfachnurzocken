@@ -19,7 +19,6 @@ import ConclusionSection from "../../components/sportsbetting/providers/Conclusi
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 
 const BetanoReview = () => {
-  // Angenommen, wir verwenden React Router und holen den Anbieternamen aus der URL
   const provider = providersData[["betano"]];
 
   if (!provider) {
@@ -280,6 +279,7 @@ const BetanoReview = () => {
         metaDescription={provider.metaDescription}
         logo={provider.logo}
         ctaLink={provider.ctaLink}
+        providerName={provider.name}
       />
 
       <IntroductionSection
