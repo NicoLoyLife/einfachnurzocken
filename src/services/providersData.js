@@ -283,7 +283,7 @@ const providersData = {
       oddsRequirement: "2.00",
       timeframe: "90 Tage (ab Gutschrift)",
       validity: "1x pro Haushalt",
-      availableIn: "Deutschland und Österreich",
+      availableIn: "Deutschland",
     },
     ratings: [
       { category: "Bonusangebote & Promotionen", score: 5 },
@@ -359,6 +359,7 @@ const providersData = {
       specialFeatures: [
         "10€ Freiwette ohne Einzahlung",
         "Wettsteuer wird vom Anbieter übernommen",
+        "exklusive Features wie Quickbet und Bet Builder",
       ],
       website: "www.merkurbets.de",
       security: [
