@@ -21,7 +21,7 @@ function TopbarTabs() {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: "primary.dark",
+        backgroundColor: "primary.main",
         backgroundImage: "none",
         boxShadow: "none",
         borderBottom: (theme) => `4px solid ${theme.palette.secondary.main}`, // BorderBottom in Primärfarbe

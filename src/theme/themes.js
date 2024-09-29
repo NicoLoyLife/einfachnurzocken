@@ -3,6 +3,9 @@ import { commonColors, casinoColors, sportwettenColors } from "./colors";
 
 // Casino-Theme
 export const CasinoTheme = createTheme({
+  shape: {
+    borderRadius: 15, // Einheitlicher Border-Radius für Banner
+  },
   palette: {
     mode: "dark",
     primary: {
@@ -115,6 +118,9 @@ export const CasinoTheme = createTheme({
 
 // Sportwetten-Theme
 export const SportwettenTheme = createTheme({
+  shape: {
+    borderRadius: 15, // Einheitlicher Border-Radius für Banner und Buttons
+  },
   palette: {
     mode: "dark",
     primary: {
