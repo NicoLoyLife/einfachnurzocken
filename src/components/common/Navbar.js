@@ -11,6 +11,7 @@ import {
   Box,
   Typography,
   Divider,
+  Container,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -111,67 +112,69 @@ function Navbar() {
           zIndex: theme.zIndex.appBar,
         }}
       >
-        <Toolbar sx={{ justifyContent: "space-between", height: "100%" }}>
-          {/* Logo */}
-          <Box
-            component={Link}
-            to="/"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              textDecoration: "none",
-            }}
-          >
-            <img
-              src={logo}
-              alt="EinfachNurZocken"
-              style={{
-                height: isScrolled ? "40px" : "55px",
-                transition: "height 0.3s",
+        <Container maxWidth="xl">
+          <Toolbar sx={{ justifyContent: "space-between", height: "100%" }}>
+            {/* Logo */}
+            <Box
+              component={Link}
+              to="/"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
               }}
-            />
-          </Box>
-
-          {/* Navigation Links für Desktop */}
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              alignItems: "center",
-            }}
-          >
-            {menuItems.map((item) => (
-              <Typography
-                key={item.text}
-                component={Link}
-                to={item.link}
-                variant="h6"
-                sx={{
-                  color: theme.palette.text.primary,
-                  textDecoration: "none",
-                  marginLeft: theme.spacing(3),
-                  "&:hover": {
-                    color: theme.palette.primary.main,
-                  },
+            >
+              <img
+                src={logo}
+                alt="EinfachNurZocken"
+                style={{
+                  height: isScrolled ? "40px" : "55px",
+                  transition: "height 0.3s",
                 }}
-              >
-                {item.text}
-              </Typography>
-            ))}
-          </Box>
+              />
+            </Box>
 
-          {/* Hamburger Menu für Mobile */}
-          <IconButton
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer(true)}
-            sx={{
-              display: { xs: "flex", md: "none" },
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
+            {/* Navigation Links für Desktop */}
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+              }}
+            >
+              {menuItems.map((item) => (
+                <Typography
+                  key={item.text}
+                  component={Link}
+                  to={item.link}
+                  variant="h6"
+                  sx={{
+                    color: theme.palette.text.primary,
+                    textDecoration: "none",
+                    marginLeft: theme.spacing(3),
+                    "&:hover": {
+                      color: theme.palette.primary.main,
+                    },
+                  }}
+                >
+                  {item.text}
+                </Typography>
+              ))}
+            </Box>
+
+            {/* Hamburger Menu für Mobile */}
+            <IconButton
+              edge="end"
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+              sx={{
+                display: { xs: "flex", md: "none" },
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </Container>
       </AppBar>
 
       {/* Offset für den Inhalt */}
