@@ -14,7 +14,6 @@ import TaxFeesSection from "../../components/sportsbetting/providers/TaxFeesSect
 import MobileAppSection from "../../components/sportsbetting/providers/MobileAppSection";
 import LoyaltyProgramSection from "../../components/sportsbetting/providers/LoyaltyProgramSection";
 import CashOutSection from "../../components/sportsbetting/providers/CashOutSection";
-import ProsConsSection from "../../components/sportsbetting/providers/ProsConsSection";
 import ConclusionSection from "../../components/sportsbetting/providers/ConclusionSection";
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 
@@ -343,7 +342,8 @@ const MerkurbetsReview = () => {
 
       <IntroductionSection
         summary={summary}
-        highlights={provider.highlights}
+        pros={provider.pros}
+        cons={provider.cons}
         ratings={provider.ratings}
       />
 
@@ -392,9 +392,7 @@ const MerkurbetsReview = () => {
         cashOutContent={cashOutContent}
         ratings={provider.ratings}
       />
-
-      <ProsConsSection pros={provider.pros} cons={provider.cons} />
-
+      
       <ConclusionSection
         conclusionContent={conclusionContent}
         ratings={provider.ratings}

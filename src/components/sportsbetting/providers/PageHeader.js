@@ -1,13 +1,14 @@
-// PageHeader.js
 import React from "react";
 import { Box, Typography, Button, Avatar } from "@mui/material";
 import { styled } from "@mui/system";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async"; // Empfehlung: Verwende react-helmet-async
 import { useTheme } from "@mui/material/styles";
+import PropTypes from "prop-types";
+import defaultLogo from "../../../assets/images/logo.png";
 
 const Banner = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main, // Verwendet die Primärfarbe aus dem Theme
-  color: theme.palette.primary.contrastText, // Stellt sicher, dass der Text lesbar ist
+  backgroundColor: theme.palette.primary.main,
+  color: theme.palette.primary.contrastText,
   padding: theme.spacing(8, 2),
   textAlign: "center",
   borderRadius: theme.shape.borderRadius,
@@ -17,11 +18,11 @@ const Banner = styled(Box)(({ theme }) => ({
 }));
 
 const PageHeader = ({
-  title,
-  metaDescription,
-  logo,
-  ctaLink,
-  providerName,
+  title = "Standardtitel",
+  metaDescription = "Standardbeschreibung",
+  logo = defaultLogo,
+  ctaLink = "#",
+  providerName = "Standardanbieter",
 }) => {
   const theme = useTheme();
 
@@ -31,6 +32,11 @@ const PageHeader = ({
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={metaDescription} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
       </Helmet>
 
       {/* Banner mit Primärfarbe */}
@@ -39,7 +45,12 @@ const PageHeader = ({
         <Avatar
           src={logo}
           alt={`${providerName} Logo`}
-          sx={{ width: 80, height: 80, mb: 2, mx: "auto" }}
+          sx={{
+            width: { xs: 60, sm: 80 },
+            height: { xs: 60, sm: 80 },
+            mb: 2,
+            mx: "auto",
+          }}
         />
 
         {/* H1-Überschrift */}
@@ -54,11 +65,11 @@ const PageHeader = ({
           href={ctaLink}
           target="_blank"
           rel="noopener noreferrer"
-          sx={{ 
+          sx={{
             mt: 2,
-            color: theme.palette.primary.contrastText,
+            color: theme.palette.secondary.contrastText, // Korrektur der Textfarbe
             "&:hover": {
-              backgroundColor: theme.palette.primary.dark,
+              backgroundColor: theme.palette.secondary.dark, // Korrektur des Hover-Zustands
             },
           }}
         >
@@ -67,6 +78,14 @@ const PageHeader = ({
       </Banner>
     </>
   );
+};
+
+PageHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  metaDescription: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  ctaLink: PropTypes.string.isRequired,
+  providerName: PropTypes.string.isRequired,
 };
 
 export default PageHeader;

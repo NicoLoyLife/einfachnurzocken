@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ThemeProvider, GlobalStyles, CssBaseline } from "@mui/material";
 import Home from "./pages/Home";
@@ -47,53 +48,55 @@ function App() {
   }, [location.pathname, dispatch]);
 
   return (
-    <ThemeProvider theme={currentTheme}>
-      <CssBaseline />
-      {/* Global Styles setzen */}
-      <GlobalStyles
-        styles={(theme) => ({
-          body: {
-            backgroundColor: theme.palette.background.default, // Hintergrundfarbe für den Body
-            color: theme.palette.text.primary,
-            margin: 0,
-            padding: 0,
-            boxSizing: "border-box",
-            minHeight: "100vh",
-          },
-          "*": {
-            boxSizing: "inherit",
-          },
-          "#root": {
-            height: "100vh",
-          },
-        })}
-      />
-      <Navbar />
-      <Wrapper>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route
-            path="/online-spielotheken/*"
-            element={<OnlineSpielotheken />}
-          />
-          <Route path="/sportwetten/*" element={<Sportwetten />} />
-          <Route path="/guides" element={<Guides />} />
-          <Route path="/bonusangebote" element={<Bonusangebote />} />
-          <Route path="/promotions" element={<Promotions />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/datenschutz" element={<PrivacyPolicy />} />
-          <Route path="/spielerschutz" element={<Spielerschutz />} />
-          <Route path="/agb" element={<AGB />} />
-          <Route path="/about" element={<About />} />
-          {/* Sportwetten-Routen einbinden */}
-          {SportwettenRoutes()}
-          {/* 404 Not Found Route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Wrapper>
-      <Footer />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider theme={currentTheme}>
+        <CssBaseline />
+        {/* Global Styles setzen */}
+        <GlobalStyles
+          styles={(theme) => ({
+            body: {
+              backgroundColor: theme.palette.background.default, // Hintergrundfarbe für den Body
+              color: theme.palette.text.primary,
+              margin: 0,
+              padding: 0,
+              boxSizing: "border-box",
+              minHeight: "100vh",
+            },
+            "*": {
+              boxSizing: "inherit",
+            },
+            "#root": {
+              height: "100vh",
+            },
+          })}
+        />
+        <Navbar />
+        <Wrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route
+              path="/online-spielotheken/*"
+              element={<OnlineSpielotheken />}
+            />
+            <Route path="/sportwetten/*" element={<Sportwetten />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/bonusangebote" element={<Bonusangebote />} />
+            <Route path="/promotions" element={<Promotions />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<PrivacyPolicy />} />
+            <Route path="/spielerschutz" element={<Spielerschutz />} />
+            <Route path="/agb" element={<AGB />} />
+            <Route path="/about" element={<About />} />
+            {/* Sportwetten-Routen einbinden */}
+            {SportwettenRoutes()}
+            {/* 404 Not Found Route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Wrapper>
+        <Footer />
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 

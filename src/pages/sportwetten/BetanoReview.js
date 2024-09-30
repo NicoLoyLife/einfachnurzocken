@@ -14,7 +14,6 @@ import TaxFeesSection from "../../components/sportsbetting/providers/TaxFeesSect
 import MobileAppSection from "../../components/sportsbetting/providers/MobileAppSection";
 import LoyaltyProgramSection from "../../components/sportsbetting/providers/LoyaltyProgramSection";
 import CashOutSection from "../../components/sportsbetting/providers/CashOutSection";
-import ProsConsSection from "../../components/sportsbetting/providers/ProsConsSection";
 import ConclusionSection from "../../components/sportsbetting/providers/ConclusionSection";
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 
@@ -36,11 +35,11 @@ const BetanoReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Entdecke den ultimativen Sportwettenanbieter und profitiere von einem
-        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen 
+        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen
         <strong>100% Einzahlungsbonus bis zu 80€</strong> auf die erste
         Einzahlung. Das bedeutet, dass du deine erste Einzahlung verdoppelst und
         mit einem größeren Wettguthaben durchstarten kannst. Aber das ist noch
-        nicht alles: Zusätzlich erhältst du eine 
+        nicht alles: Zusätzlich erhältst du eine
         <strong>20€ Freiwette ohne Einzahlung</strong>. Einfach registrieren,
         Freiwette sichern und loslegen!
       </Typography>
@@ -284,7 +283,8 @@ const BetanoReview = () => {
 
       <IntroductionSection
         summary={summary}
-        highlights={provider.highlights}
+        pros={provider.pros}
+        cons={provider.cons}
         ratings={provider.ratings}
       />
 
@@ -333,8 +333,6 @@ const BetanoReview = () => {
         cashOutContent={cashOutContent}
         ratings={provider.ratings}
       />
-
-      <ProsConsSection pros={provider.pros} cons={provider.cons} />
 
       <ConclusionSection
         conclusionContent={conclusionContent}

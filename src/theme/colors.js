@@ -20,8 +20,9 @@ export const casinoColors = {
 export const sportwettenColors = {
   primary: "#1E90FF", // Elektrisches Blau
   secondary: "#32CD32", // Sportgrün
-  success: "#FFFF33", // Neongelb
-  warning: "#FF4500", // Orangerot
-  error: "#000080", // Dunkles Marineblau
+  success: "#32CD32", // Sportgrün
+  warning: "#FFFF33", // Neongelb
+  error: "#FF4500", // Orangerot
   icon: "#1E90FF",
+  darkblue: "#000080", // Dunkles Marineblau
 };
