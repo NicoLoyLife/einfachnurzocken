@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ThemeProvider, GlobalStyles, CssBaseline } from "@mui/material";
 import Home from "./pages/Home";
@@ -19,9 +19,12 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import { CasinoTheme, SportwettenTheme } from "./theme/themes";
 import SportwettenRoutes from "./routes/SportwettenRoutes";
+import { useDispatch } from "react-redux";
+import { setSection, SECTIONS } from "./redux/sectionSlice";
 
 function App() {
   const location = useLocation();
+  const dispatch = useDispatch();
 
   // Wähle das Theme basierend auf der aktuellen Route
   const currentTheme = useMemo(() => {
@@ -32,6 +35,17 @@ function App() {
     }
   }, [location.pathname]);
 
+  // Effekt, um die Sektion bei der Pfadänderung zu aktualisieren
+  useEffect(() => {
+    if (location.pathname.includes("/sportwetten")) {
+      dispatch(setSection(SECTIONS.SPORTWETTEN));
+    } else if (location.pathname.includes("/online-spielotheken")) {
+      dispatch(setSection(SECTIONS.ONLINE_SPIELOTHEKEN));
+    } else {
+      dispatch(setSection(SECTIONS.DEFAULT));
+    }
+  }, [location.pathname, dispatch]);
+
   return (
     <ThemeProvider theme={currentTheme}>
       <CssBaseline />
@@ -40,7 +54,7 @@ function App() {
         styles={(theme) => ({
           body: {
             backgroundColor: theme.palette.background.default, // Hintergrundfarbe für den Body
-            color: theme.palette.text.primary, // Textfarbe
+            color: theme.palette.text.primary,
             margin: 0,
             padding: 0,
             boxSizing: "border-box",
