@@ -29,12 +29,13 @@ function TopbarTabs() {
 
   return (
     <AppBar
-      position="sticky"
+      position="fixed"
       sx={{
         top: 0,
         zIndex: theme.zIndex.appBar + 1,
         backgroundColor: theme.palette.background.paper,
         borderBottom: `1px solid ${theme.palette.divider}`,
+        height: '48px',
       }}
     >
       <Tabs
@@ -43,6 +44,9 @@ function TopbarTabs() {
         indicatorColor="primary"
         textColor="inherit"
         variant="fullWidth"
+        sx={{
+          minHeight: '48px',
+        }}
       >
         <Tab
           label="Online Spielotheken"
@@ -54,6 +58,7 @@ function TopbarTabs() {
                 : theme.palette.text.secondary,
             fontWeight:
               currentTab === SECTIONS.ONLINE_SPIELOTHEKEN ? "bold" : "normal",
+            minHeight: '48px',
           }}
         />
         <Tab
@@ -65,6 +70,7 @@ function TopbarTabs() {
                 ? theme.palette.primary.main
                 : theme.palette.text.secondary,
             fontWeight: currentTab === SECTIONS.SPORTWETTEN ? "bold" : "normal",
+            minHeight: '48px',
           }}
         />
       </Tabs>

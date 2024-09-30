@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import logo from "../../assets/images/logo.png";
 import TopbarTabs from "./Topbar";
@@ -24,11 +24,15 @@ import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const location = useLocation();
   const theme = useTheme();
   const currentSection = useSelector((state) => state.section.currentSection); // Redux state für die aktuelle Section (sportwetten oder online-spielotheken)
 
   // State für Scroll-Status
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Überprüfen, ob wir auf der Startseite sind
+  const isHomePage = location.pathname === "/";
 
   // Event Listener für Scroll-Event
   useEffect(() => {
@@ -90,18 +94,19 @@ function Navbar() {
   return (
     <>
       {/* Topbar nur auf Unterseiten sichtbar (Mobile und Desktop) */}
-      {currentSection !== SECTIONS.DEFAULT && <TopbarTabs />}
+      {!isHomePage && <TopbarTabs />}
 
       {/* Navbar */}
       <AppBar
-        position="sticky"
+        position="fixed"
         color="inherit"
         elevation={isScrolled ? 4 : 0}
         sx={{
+          top: isHomePage ? 0 : "48px", // Dynamische Positionierung
           backgroundColor: isScrolled
             ? theme.palette.background.paper
             : "transparent",
-          transition: "background-color 0.3s, height 0.3s",
+          transition: "background-color 0.3s, height 0.3s, top 0.3s",
           height: isScrolled ? "64px" : "90px",
           zIndex: theme.zIndex.appBar,
         }}
@@ -168,6 +173,17 @@ function Navbar() {
           </IconButton>
         </Toolbar>
       </AppBar>
+
+      {/* Offset für den Inhalt */}
+      {/* Wenn die Topbar nicht angezeigt wird, ist das Offset geringer */}
+      {isHomePage ? (
+        <Box sx={{ height: isScrolled ? "64px" : "90px" }} />
+      ) : (
+        <>
+          <Box sx={{ height: "48px" }} />
+          <Box sx={{ height: isScrolled ? "64px" : "90px" }} />
+        </>
+      )}
 
       {/* Drawer für Mobile */}
       <Drawer
