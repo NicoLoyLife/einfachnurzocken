@@ -1,0 +1,31 @@
+{
+    "short_name": "EinfachNurZocken",
+    "name": "EinfachNurZocken - Casino und Sportwetten",
+    "icons": [
+      {
+        "src": "favicon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "favicon-256x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "favicon-384x384.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "favicon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#121212",
+    "background_color": "#121212",
+    "description": "Die besten Online-Spielotheken und Sportwetten-Anbieter im Überblick."
+  }  

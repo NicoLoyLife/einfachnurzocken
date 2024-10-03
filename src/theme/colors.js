@@ -2,7 +2,7 @@
 export const commonColors = {
   background: "#121212",
   paper: "#1e1e1e",
-  textPrimary: "#ffffff",
+  textPrimary: "#f2f2f2",
   textSecondary: "#a0a0a0",
 };
 

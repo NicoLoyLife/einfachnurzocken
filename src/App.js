@@ -47,6 +47,20 @@ function App() {
     }
   }, [location.pathname, dispatch]);
 
+  // Dynamische Aktualisierung der Theme-Farbe
+  useEffect(() => {
+    const themeColor = currentTheme.palette.primary.main || "#121212"; // Fallback-Farbe
+    const metaTag = document.querySelector('meta[name="theme-color"]');
+    if (metaTag) {
+      metaTag.setAttribute("content", themeColor);
+    } else {
+      const newMetaTag = document.createElement("meta");
+      newMetaTag.setAttribute("name", "theme-color");
+      newMetaTag.setAttribute("content", themeColor);
+      document.head.appendChild(newMetaTag);
+    }
+  }, [currentTheme]);
+
   return (
     <HelmetProvider>
       <ThemeProvider theme={currentTheme}>
