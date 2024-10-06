@@ -29,7 +29,7 @@ const BetanoReview = () => {
 
   const bonusContent = (
     <>
-      <Typography variant="h4" component="h3">
+      <Typography variant="h3" component="h3" gutterBottom>
         Willkommensbonus: 100% Einzahlungsbonus bis 80€ + 20€ Freiwette ohne
         Einzahlung
       </Typography>

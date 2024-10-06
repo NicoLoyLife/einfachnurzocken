@@ -32,6 +32,10 @@ export const CasinoTheme = createTheme({
     error: {
       main: casinoColors.error,
     },
+    link: {
+      main: casinoColors.primary,
+      hover: casinoColors.linkHover,
+    },
   },
   typography: {
     fontFamily:
@@ -41,28 +45,33 @@ export const CasinoTheme = createTheme({
       fontWeight: 700,
       fontSize: "2rem",
       letterSpacing: "0.05em",
+      color: commonColors.textPrimary,
     },
     h2: {
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 700,
       fontSize: "1.75rem",
       letterSpacing: "0.05em",
+      color: casinoColors.primary,
     },
     h3: {
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 700,
       fontSize: "1.5rem",
       letterSpacing: "0.05em",
+      color: casinoColors.primary,
     },
     body1: {
       fontFamily: '"Open Sans", sans-serif',
       fontSize: "1rem",
       lineHeight: 1.5,
+      color: commonColors.textPrimary,
     },
     body2: {
       fontFamily: '"Open Sans", sans-serif',
       fontSize: "0.875rem",
       lineHeight: 1.5,
+      color: commonColors.textPrimary,
     },
   },
   components: {
@@ -76,14 +85,14 @@ export const CasinoTheme = createTheme({
           backgroundColor: casinoColors.primary,
           color: commonColors.background,
           "&:hover": {
-            backgroundColor: "#c29e34", // Etwas dunkleres Gold beim Hover
+            backgroundColor: casinoColors.linkHover,
           },
         },
         outlinedPrimary: {
           borderColor: casinoColors.primary,
           color: casinoColors.primary,
           "&:hover": {
-            backgroundColor: "rgba(212, 175, 55, 0.1)",
+            backgroundColor: casinoColors.outlinedPrimaryHoverBg,
           },
         },
       },
@@ -111,6 +120,45 @@ export const CasinoTheme = createTheme({
         root: {
           color: casinoColors.icon,
         },
+      },
+    },
+    MuiTypography: {
+      defaultProps: {
+        color: "textPrimary", // Standardfarbe für Typography
+      },
+      variants: [
+        {
+          props: { variant: "h1" },
+          style: {
+            color: commonColors.textPrimary,
+          },
+        },
+        {
+          props: { variant: "h2" },
+          style: {
+            color: casinoColors.primary,
+          },
+        },
+        {
+          props: { variant: "h3" },
+          style: {
+            color: casinoColors.primary,
+          },
+        },
+        // Weitere Varianten nach Bedarf
+      ],
+    },
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+      },
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.link.main,
+          "&:hover": {
+            color: theme.palette.link.hover,
+          },
+        }),
       },
     },
   },
@@ -147,6 +195,10 @@ export const SportwettenTheme = createTheme({
     error: {
       main: sportwettenColors.error,
     },
+    link: {
+      main: sportwettenColors.primary,
+      hover: sportwettenColors.linkHover,
+    },
   },
   typography: {
     fontFamily:
@@ -156,28 +208,33 @@ export const SportwettenTheme = createTheme({
       fontWeight: 700,
       fontSize: "2rem",
       letterSpacing: "0.05em",
+      color: commonColors.textPrimary,
     },
     h2: {
       fontFamily: '"Roboto", sans-serif',
       fontWeight: 700,
       fontSize: "1.75rem",
       letterSpacing: "0.05em",
+      color: sportwettenColors.primary,
     },
     h3: {
       fontFamily: '"Roboto", sans-serif',
       fontWeight: 600,
       fontSize: "1.5rem",
       letterSpacing: "0.05em",
+      color: sportwettenColors.primary,
     },
     body1: {
       fontFamily: '"Lato", sans-serif',
       fontSize: "1rem",
       lineHeight: 1.5,
+      color: commonColors.textPrimary,
     },
     body2: {
       fontFamily: '"Lato", sans-serif',
       fontSize: "0.875rem",
       lineHeight: 1.5,
+      color: commonColors.textSecondary,
     },
   },
   components: {
@@ -191,14 +248,14 @@ export const SportwettenTheme = createTheme({
           backgroundColor: sportwettenColors.primary,
           color: sportwettenColors.contrastText,
           "&:hover": {
-            backgroundColor: "#1C86EE", // Dunkleres Blau beim Hover
+            backgroundColor: sportwettenColors.linkHover,
           },
         },
         outlinedPrimary: {
           borderColor: sportwettenColors.secondary,
           color: sportwettenColors.secondary,
           "&:hover": {
-            backgroundColor: "rgba(50, 205, 50, 0.1)",
+            backgroundColor: sportwettenColors.outlinedPrimaryHoverBg,
           },
         },
       },
@@ -226,6 +283,45 @@ export const SportwettenTheme = createTheme({
         root: {
           color: sportwettenColors.icon,
         },
+      },
+    },
+    MuiTypography: {
+      defaultProps: {
+        color: "textPrimary", // Standardfarbe für Typography
+      },
+      variants: [
+        {
+          props: { variant: "h1" },
+          style: {
+            color: commonColors.textPrimary,
+          },
+        },
+        {
+          props: { variant: "h2" },
+          style: {
+            color: sportwettenColors.primary,
+          },
+        },
+        {
+          props: { variant: "h3" },
+          style: {
+            color: sportwettenColors.primary,
+          },
+        },
+        // Weitere Varianten nach Bedarf
+      ],
+    },
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+      },
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.link.main,
+          "&:hover": {
+            color: theme.palette.link.hover,
+          },
+        }),
       },
     },
   },

@@ -4,6 +4,7 @@ import {
   Box,
   Typography,
   Grid,
+  Divider,
   List,
   ListItem,
   ListItemIcon,
@@ -35,7 +36,13 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
       </Typography>
 
       {/* Vorteile und Nachteile */}
-      <Typography variant="h2" color={theme.palette.primary.main} gutterBottom sx={{ mt: 4 }}>
+      <Typography
+        variant="h2"
+        component="h2"
+        gutterBottom
+        color={theme.palette.primary.main}
+        sx={{ mt: 4 }}
+      >
         Vorteile und Nachteile
       </Typography>
       <Grid container spacing={4}>
@@ -68,7 +75,12 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
       {/* Gesamtbewertung */}
       {overallRating !== null ? (
         <Box sx={{ mt: 4, display: "flex", alignItems: "center" }}>
-          <Typography variant="h5" component="h3" gutterBottom sx={{ mr: 2, mb: 0 }}>
+          <Typography
+            variant="h5"
+            component="h3"
+            gutterBottom
+            sx={{ mr: 2, mb: 0 }}
+          >
             Gesamtbewertung:
           </Typography>
           <Rating
@@ -86,6 +98,9 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
           Noch keine Bewertungen verfügbar.
         </Typography>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
 };

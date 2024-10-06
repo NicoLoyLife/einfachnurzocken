@@ -1,108 +1,126 @@
-import React from 'react';
-import { Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import InfoIcon from '@mui/icons-material/Info';
+import React from "react";
+import PropTypes from "prop-types";
+import {
+  Box,
+  Typography,
+  Divider,
+  TableContainer,
+  Table,
+  TableBody,
+  TableRow,
+  TableCell,
+  Paper,
+  useTheme,
+} from "@mui/material";
 
-const OverviewSection = ({ overview }) => (
-  <Box sx={{ mb: 4 }}>
-    {/* Überschrift */}
-    <Typography variant="h2" component="h2" gutterBottom>
-      Überblick
-    </Typography>
+const OverviewSection = ({ overview }) => {
+  const theme = useTheme();
 
-    {/* Liste der Übersichtspunkte */}
-    <List>
-      {overview.foundingYear && (
-        <ListItem disableGutters>
-          <ListItemIcon>
-            <InfoIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText primary="Gründungsjahr" secondary={overview.foundingYear} />
-        </ListItem>
+  const data = [
+    { label: "Gründungsjahr", value: overview.foundingYear },
+    { label: "Lizenz", value: overview.licence },
+    { label: "Webseite", value: overview.website },
+    { label: "Besonderheiten", value: overview.specialFeatures },
+    { label: "Sicherheit", value: overview.security },
+  ];
+
+  return (
+    <Box sx={{ mb: 4 }}>
+      {/* Überschrift */}
+      <Typography
+        variant="h2"
+        component="h2"
+        gutterBottom
+        color={theme.palette.primary.main}
+        sx={{ mt: 4 }}
+      >
+        Überblick
+      </Typography>
+
+      {/* Tabelle mit den wichtigsten Informationen */}
+      <TableContainer
+        component={Paper}
+        elevation={3}
+        sx={{ borderRadius: 1, overflowX: "auto" }}
+      >
+        <Table>
+          <TableBody>
+            {data.map((item, index) => (
+              <TableRow key={index}>
+                {/* Beschriftungsspalte */}
+                <TableCell
+                  component="th"
+                  scope="row"
+                  sx={{
+                    borderBottom: "none",
+                    paddingY: 1,
+                    width: "30%",
+                    fontWeight: "bold",
+                    color: theme.palette.text.primary,
+                  }}
+                >
+                  {item.label}
+                </TableCell>
+                {/* Wertespalte */}
+                <TableCell
+                  sx={{
+                    borderBottom: "none",
+                    paddingY: 1,
+                    color: theme.palette.text.secondary,
+                  }}
+                >
+                  {Array.isArray(item.value) ? (
+                    <ul style={{ paddingLeft: "1.2em", margin: 0 }}>
+                      {item.value.map((val, idx) => (
+                        <li key={idx} style={{ listStyleType: "disc" }}>
+                          {val}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : item.label === "Webseite" ? (
+                    <a
+                      href={`https://${item.value}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: theme.palette.primary.main,
+                        textDecoration: "none",
+                      }}
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    item.value
+                  )}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+
+      {/* Beschreibung */}
+      {overview.description && (
+        <Box sx={{ mt: 2 }}>
+          <Typography variant="body1">{overview.description}</Typography>
+        </Box>
       )}
 
-      {overview.licence && (
-        <ListItem disableGutters>
-          <ListItemIcon>
-            <InfoIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText primary="Lizenz" secondary={overview.licence} />
-        </ListItem>
-      )}
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+    </Box>
+  );
+};
 
-      {overview.specialFeatures && overview.specialFeatures.length > 0 && (
-        <ListItem disableGutters alignItems="flex-start">
-          <ListItemIcon>
-            <InfoIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary="Besonderheiten"
-            secondary={
-              <>
-                {overview.specialFeatures.map((feature, index) => (
-                  <Typography
-                    key={index}
-                    variant="body2"
-                    component="span"
-                    display="block"
-                  >
-                    - {feature}
-                  </Typography>
-                ))}
-              </>
-            }
-          />
-        </ListItem>
-      )}
-
-      {overview.website && (
-        <ListItem disableGutters>
-          <ListItemIcon>
-            <InfoIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary="Webseite"
-            secondary={
-              <a href={`https://${overview.website}`} target="_blank" rel="noopener noreferrer">
-                {overview.website}
-              </a>
-            }
-          />
-        </ListItem>
-      )}
-
-      {overview.security && overview.security.length > 0 && (
-        <ListItem disableGutters alignItems="flex-start">
-          <ListItemIcon>
-            <InfoIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary="Sicherheit"
-            secondary={
-              <>
-                {overview.security.map((item, index) => (
-                  <Typography
-                    key={index}
-                    variant="body2"
-                    component="span"
-                    display="block"
-                  >
-                    - {item}
-                  </Typography>
-                ))}
-              </>
-            }
-          />
-        </ListItem>
-      )}
-    </List>
-
-    {/* Beschreibung */}
-    {overview.description && (
-      <Box sx={{ mt: 2 }}>
-        <Typography variant="body1">{overview.description}</Typography>
-      </Box>
-    )}
-  </Box>
-);
+OverviewSection.propTypes = {
+  overview: PropTypes.shape({
+    foundingYear: PropTypes.string,
+    licence: PropTypes.string,
+    specialFeatures: PropTypes.arrayOf(PropTypes.string),
+    website: PropTypes.string,
+    security: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.string,
+  }).isRequired,
+};
 
 export default OverviewSection;
