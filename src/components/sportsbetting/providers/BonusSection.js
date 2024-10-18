@@ -1,3 +1,5 @@
+// BonusSection.js
+
 import React from "react";
 import PropTypes from "prop-types";
 import {
@@ -9,6 +11,7 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
+  Link,
   useTheme,
 } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
@@ -36,20 +39,19 @@ const BonusSection = ({ bonusContent, ratings, bonusDetails }) => {
         { label: "Mindestquote", value: bonusDetails.oddsRequirement },
         { label: "Zeitraum", value: bonusDetails.timeframe },
         { label: "Gültigkeit", value: bonusDetails.validity },
-        { label: "Verfügbar in", value: bonusDetails.availableIn },
+        {
+          label: "Verfügbar in",
+          value: Array.isArray(bonusDetails.availableIn)
+            ? bonusDetails.availableIn.join(", ")
+            : bonusDetails.availableIn || "Nicht angegeben",
+        },
       ]
     : [];
 
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
-      <Typography
-        variant="h2"
-        component="h2"
-        gutterBottom
-        sx={{ mt: 4 }}
-        color={theme.palette.primary.main}
-      >
+      <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
         Bonusangebote & Promotionen
       </Typography>
 
@@ -64,7 +66,20 @@ const BonusSection = ({ bonusContent, ratings, bonusDetails }) => {
           </Typography>
           <List>
             {bonusData.map((item, index) => (
-              <ListItem key={index} disableGutters sx={{ py: 0.5 }}>
+              <ListItem
+                key={index}
+                disableGutters
+                sx={{
+                  py: 0.5,
+                  backgroundColor:
+                    index % 2 === 0
+                      ? theme.palette.action.hover
+                      : "inherit",
+                  "&:hover": {
+                    backgroundColor: theme.palette.action.selected,
+                  },
+                }}
+              >
                 <ListItemIcon sx={{ minWidth: "auto", mr: 2 }}>
                   <InfoIcon color="primary" />
                 </ListItemIcon>
@@ -81,12 +96,26 @@ const BonusSection = ({ bonusContent, ratings, bonusDetails }) => {
                     </Typography>
                   }
                   secondary={
-                    <Typography
-                      variant="body1"
-                      sx={{ color: theme.palette.text.secondary }}
-                    >
-                      {item.value}
-                    </Typography>
+                    item.label === "Webseite" ? (
+                      <Link
+                        href={`https://${item.value}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          color: theme.palette.link.main,
+                          textDecoration: "none",
+                        }}
+                      >
+                        {item.value}
+                      </Link>
+                    ) : (
+                      <Typography
+                        variant="body1"
+                        sx={{ color: theme.palette.text.secondary }}
+                      >
+                        {item.value}
+                      </Typography>
+                    )
                   }
                 />
               </ListItem>
@@ -130,7 +159,10 @@ BonusSection.propTypes = {
     oddsRequirement: PropTypes.string,
     timeframe: PropTypes.string,
     validity: PropTypes.string,
-    availableIn: PropTypes.arrayOf(PropTypes.string),
+    availableIn: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.string,
+    ]),
   }),
 };
 
