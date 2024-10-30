@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { sportwetten } from "../../services/dummyData";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, Divider } from "@mui/material";
 import SportsBettingCard from "./SportsBettingCard";
-
-// Sportwetten nach Rating sortieren
-const sortedSportsbooks = [...sportwetten].sort((a, b) => b.rating - a.rating);
+import providersData from "../../services/providersData";
+import { getSortedProvidersByRating } from "../../services/helpers";
 
 function SportsBettingList() {
   // State für die Anzahl der angezeigten Sportwetten-Anbieter (initial 3 für Mobile)
   const [visibleSportsbooks, setVisibleSportsbooks] = useState(3);
+
+  // Hole die sortierten Anbieter
+  const sortedSportsbooks = getSortedProvidersByRating(providersData);
 
   // Funktion zum Anzeigen weiterer Sportwetten-Anbieter
   const showMoreSportsbooks = () => {
@@ -25,11 +26,7 @@ function SportsBettingList() {
         Top Sportwetten-Anbieter im Vergleich
       </Typography>
 
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ mb: 4, textAlign: "center" }}
-      >
+      <Typography variant="body1" Paragraph sx={{ mb: 4, textAlign: "center" }}>
         Unsere Auswahl der besten Sportwetten-Anbieter basiert auf gründlichen
         Tests und Bewertungen durch unser Expertenteam. Diese Anbieter zeichnen
         sich durch hervorragende Quoten, vielseitige Wettmärkte und exzellenten
@@ -50,16 +47,24 @@ function SportsBettingList() {
 
       {/* Button zum Laden weiterer Sportwetten-Anbieter */}
       {visibleSportsbooks < sortedSportsbooks.length && (
-        <Button
-          variant="contained"
-          color="primary"
-          sx={{ mt: 4, display: "block", margin: "0 auto" }}
-          size="large"
-          onClick={showMoreSportsbooks}
-        >
-          Mehr Anbieter laden
-        </Button>
+        <Box sx={{ mt: 4, textAlign: "center" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              width: { xs: "75%", sm: "auto" },
+              maxWidth: { sm: 400 },
+              whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
+            }}
+            onClick={showMoreSportsbooks}
+          >
+            Mehr Anbieter laden
+          </Button>
+        </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
 }

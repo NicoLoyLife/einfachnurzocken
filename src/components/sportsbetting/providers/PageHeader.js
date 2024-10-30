@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Typography, Button, Avatar } from "@mui/material";
 import { styled } from "@mui/system";
-import { Helmet } from "react-helmet-async"; // Empfehlung: Verwende react-helmet-async
 import { useTheme } from "@mui/material/styles";
 import PropTypes from "prop-types";
 import defaultLogo from "../../../assets/images/logo.png";
+import OpenGraphMeta from "../../common/OpenGraphMeta";
 
 const Banner = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -29,15 +29,12 @@ const PageHeader = ({
   return (
     <>
       {/* SEO Meta-Tags */}
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={logo} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
-      </Helmet>
+      <OpenGraphMeta
+        title={title}
+        description={metaDescription}
+        image={logo}
+        url={ctaLink}
+      />
 
       {/* Banner mit Primärfarbe */}
       <Banner>

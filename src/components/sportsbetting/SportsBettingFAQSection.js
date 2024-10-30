@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Box, Typography, Divider } from "@mui/material";
 
 function SportsBettingFAQSection() {
   const faqItems = [
@@ -38,29 +31,31 @@ function SportsBettingFAQSection() {
   ];
 
   return (
-    <Box sx={{ mt: 8, mb: 8 }}>
+    <Box sx={{ mb: 4 }}>
       <Typography
         variant="h2"
         component="h2"
-        sx={{ mb: 4, textAlign: "center" }}
+        gutterBottom
+        sx={{ mt: 4, textAlign: "center" }}
       >
         Häufig gestellte Fragen zu Sportwetten
       </Typography>
 
-      <Box>
-        {faqItems.map((item, index) => (
-          <Accordion key={index} sx={{ mb: 2 }}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls={`faq-content-${index}`}
-              id={`faq-header-${index}`}
-            >
-              <Typography variant="h6">{item.question}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography variant="body1">{item.answer}</Typography>
-            </AccordionDetails>
-          </Accordion>
+      <Box sx={{ mt: 2 }}>
+        {faqItems.map((faq, index) => (
+          <Box key={index} sx={{ mb: 3 }}>
+            {/* Frage */}
+            <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+              {faq.question}
+            </Typography>
+
+            {/* Antwort */}
+            <Typography variant="body2" sx={{ mt: 1 }}>
+              {faq.answer}
+            </Typography>
+            {/* Trennlinie */}
+            {index < faqItems.length - 1 && <Divider sx={{ mt: 3 }} />}
+          </Box>
         ))}
       </Box>
     </Box>

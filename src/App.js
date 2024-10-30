@@ -22,6 +22,7 @@ import { CasinoTheme, SportwettenTheme } from "./theme/themes";
 import SportwettenRoutes from "./routes/SportwettenRoutes";
 import { useDispatch } from "react-redux";
 import { setSection, SECTIONS } from "./redux/sectionSlice";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -86,6 +87,7 @@ function App() {
         />
         <Navbar />
         <Wrapper>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/news" element={<News />} />

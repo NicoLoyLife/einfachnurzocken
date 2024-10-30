@@ -50,7 +50,7 @@ const Sidebar = ({ isSticky }) => {
       }}
     >
       {/* Top 5 Anbieter */}
-      <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+      <Typography variant="h3" gutterBottom sx={{ mt: 4 }}>
         Top 5 Sportwetten-Anbieter
       </Typography>
       <List>
@@ -118,7 +118,7 @@ const Sidebar = ({ isSticky }) => {
           color="primary"
           fullWidth
           component={Link}
-          to="/bonus"
+          to="/sportwetten/bonus"
         >
           Zum Bonusbereich
         </Button>

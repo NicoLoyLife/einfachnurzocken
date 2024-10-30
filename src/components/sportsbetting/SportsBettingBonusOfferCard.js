@@ -7,107 +7,126 @@ import {
   Card,
   CardContent,
   Rating,
+  useTheme,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function SportsBettingBonusOfferCard({ offer, placement }) {
+  const theme = useTheme();
+
   return (
     <Card
       sx={{
-        mb: 4,
-        boxShadow: 3,
-        borderRadius: "15px",
+        mb: theme.spacing(4),
+        boxShadow: theme.shadows[3],
         overflow: "hidden",
-        height: "500px",
-        position: "relative",
+        height: { xs: "auto", md: "500px" },
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <CardContent
+      {/* Header */}
+      <Box
         sx={{
-          p: 0,
+          backgroundColor: theme.palette.primary.main,
+          p: theme.spacing(2),
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          height: "100%",
+          alignItems: "center",
         }}
       >
+        {/* Platzierung */}
         <Box
           sx={{
-            backgroundColor: "primary.main",
-            p: 2,
-            borderRadius: "15px 15px 0 0",
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            position: 'relative',
+            color: theme.palette.primary.main,
+            backgroundColor: theme.palette.common.white,
+            padding: theme.spacing(0.5, 1.25),
           }}
         >
-          <Box
-            sx={{
-              color: "primary.main",
-              backgroundColor: "#fff",
-              padding: "4px 10px",
-              borderRadius: "5px",
-              position: "absolute",
-              left: 16,
-            }}
-          >
-            <Typography variant="body1"><strong>{placement}</strong></Typography>
-          </Box>
-
-          <Typography variant="h5" component="h5">
-            {offer.provider}
+          <Typography variant="h3" component="h3">
+            <strong>{placement}</strong>
           </Typography>
         </Box>
 
-        <Box sx={{ padding: 3 }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
-              <Typography variant="h5">{offer.rating}/5</Typography>
-              <Rating value={offer.rating} readOnly precision={0.1} />
-            </Grid>
+        {/* Anbietername */}
+        <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ color: theme.palette.common.white }}>
+            {offer.name}
+          </Typography>
+        </Box>
 
-            <Grid item xs={12} md={8} sx={{ textAlign: "center" }}>
-              <Typography
-                variant="h4"
-                component="div"
-                sx={{ fontWeight: "bold" }}
-                color="primary"
-              >
-                {offer.bonus}
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{ mt: 1, fontStyle: "italic" }}
-              >
-                {offer.bonusType}
-              </Typography>
-            </Grid>
+        {/* Logo */}
+        <Box sx={{ width: 40, height: 40 }}>
+          <img
+            src={offer.logo}
+            alt={`${offer.name} Logo`}
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </Box>
+      </Box>
+
+      {/* Inhalt */}
+      <CardContent
+        sx={{
+          p: theme.spacing(3),
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        {/* Bewertung und Bonus */}
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+            <Typography variant="h3" component="h3" sx={{ color: theme.palette.common.white }}>{offer.averageRating}/5</Typography>
+            <Rating value={offer.averageRating} readOnly precision={0.1} />
           </Grid>
 
-          <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
-            <Typography variant="body2">
-              Quoten: <strong>{offer.quoten}%</strong>
+          <Grid item xs={12} md={8} sx={{ textAlign: "center" }}>
+            <Typography variant="h3" component="h3" sx={{ color: theme.palette.common.white }}>
+              {offer.bonus.type}
             </Typography>
-            <Typography variant="body2">
-              Auszahlung: <strong>{offer.withdrawal_time}</strong>
-            </Typography>
-          </Box>
+          </Grid>
+        </Grid>
 
-          <Box sx={{ mt: 2, textAlign: "center" }}>
-            <Typography variant="body2">
-              <strong>Umsatzbedingungen:</strong>
-            </Typography>
-            <Typography variant="body2">{offer.wageringRequirements}</Typography>
-          </Box>
+        {/* Umsatzbedingungen */}
+        <Box sx={{ mt: theme.spacing(2), textAlign: "center" }}>
+          <Typography variant="body2">
+            <strong>Umsatzbedingungen:</strong>
+          </Typography>
+          <Typography variant="body1">
+            {offer.bonus.wageringRequirements}
+          </Typography>
+        </Box>
 
-          <Box sx={{ display: "flex", justifyContent: "space-around", mt: 3 }}>
-            <Button variant="contained" color="primary">
-              Jetzt wetten
-            </Button>
-            <Button variant="outlined" color="secondary">
-              Details
-            </Button>
-          </Box>
+        {/* CTA-Buttons */}
+        <Box
+          sx={{
+            mt: theme.spacing(2),
+            display: "flex",
+            gap: theme.spacing(1),
+          }}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            fullWidth
+            href={offer.ctaLink || `/${offer.slug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Jetzt wetten bei ${offer.name}`}
+          >
+            Jetzt wetten
+          </Button>
+          <Button
+            variant="outlined"
+            color="primary"
+            fullWidth
+            component={Link}
+            to={`/sportwetten/${offer.slug}`}
+            aria-label={`${offer.name} Bonus Details ansehen`}
+          >
+            Details
+          </Button>
         </Box>
       </CardContent>
     </Card>
