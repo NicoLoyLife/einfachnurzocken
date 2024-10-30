@@ -1,15 +1,16 @@
 import React from 'react';
 import { Box, Typography, Button, Grid } from '@mui/material';
-import { sportwetten } from '../services/dummyData';
+import providersData from '../services/providersData';
+import { getSortedProvidersByRating } from '../services/helpers';
 import SportsBettingCard from './sportsbetting/SportsBettingCard';
 
 function TopSportwetten() {
 
-  // Sortieren der Sportwetten-Anbieter nach Rating in absteigender Reihenfolge
-  const sortedSportwetten = sportwetten.sort((a, b) => b.rating - a.rating);
+  // Hole die sortierten Anbieter
+  const sortedSportsbooks = getSortedProvidersByRating(providersData);
 
   // Filtern der Sportwetten-Anbieter mit den höchsten Ratings
-  const topSportwetten = sortedSportwetten.slice(0, 3);
+  const topSportwetten = sortedSportsbooks.slice(0, 3);
 
   return (
     <Box sx={{ mt: 8, mb: 8 }}>
