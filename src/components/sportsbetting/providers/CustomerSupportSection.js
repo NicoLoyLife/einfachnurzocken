@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Rating } from '@mui/material';
+import PropTypes from 'prop-types';
+import { Box, Typography, Rating, Divider } from '@mui/material';
 
 const CustomerSupportSection = ({ customerSupportContent, ratings }) => {
   // Finde die Bewertung für die Kategorie "Kundensupport"
@@ -12,12 +13,14 @@ const CustomerSupportSection = ({ customerSupportContent, ratings }) => {
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
         Kundensupport
       </Typography>
 
       {/* Inhalt */}
-      {customerSupportContent}
+      <Box sx={{ mt: 2 }}>
+        {customerSupportContent}
+      </Box>
 
       {/* Bewertung */}
       {score !== null && (
@@ -31,8 +34,21 @@ const CustomerSupportSection = ({ customerSupportContent, ratings }) => {
           </Typography>
         </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
+};
+
+CustomerSupportSection.propTypes = {
+  customerSupportContent: PropTypes.node.isRequired,
+  ratings: PropTypes.arrayOf(
+    PropTypes.shape({
+      category: PropTypes.string.isRequired,
+      score: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default CustomerSupportSection;

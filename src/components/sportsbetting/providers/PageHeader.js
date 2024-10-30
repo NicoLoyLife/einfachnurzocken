@@ -45,6 +45,7 @@ const PageHeader = ({
         <Avatar
           src={logo}
           alt={`${providerName} Logo`}
+          variant="square"
           sx={{
             width: { xs: 60, sm: 80 },
             height: { xs: 60, sm: 80 },
@@ -71,6 +72,9 @@ const PageHeader = ({
             "&:hover": {
               backgroundColor: theme.palette.secondary.dark, // Korrektur des Hover-Zustands
             },
+            width: { xs: "75%", sm: "auto" },
+            maxWidth: { sm: 400 },
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
         >
           Jetzt Bonus sichern

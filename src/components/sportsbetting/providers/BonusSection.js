@@ -71,6 +71,7 @@ const BonusSection = ({ bonusContent, ratings, bonusDetails }) => {
                 disableGutters
                 sx={{
                   py: 0.5,
+                  px: 2,
                   backgroundColor:
                     index % 2 === 0
                       ? theme.palette.action.hover

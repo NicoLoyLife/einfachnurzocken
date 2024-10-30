@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Rating } from '@mui/material';
+import PropTypes from 'prop-types';
+import { Box, Typography, Rating, Divider } from '@mui/material';
 
 const LoyaltyProgramSection = ({ loyaltyProgramContent, ratings }) => {
   // Finde die Bewertung für die Kategorie "Treueprogramme & VIP-Services"
@@ -12,12 +13,14 @@ const LoyaltyProgramSection = ({ loyaltyProgramContent, ratings }) => {
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
         Treueprogramme & VIP-Services
       </Typography>
 
       {/* Inhalt */}
-      {loyaltyProgramContent}
+      <Box sx={{ mt: 2 }}>
+        {loyaltyProgramContent}
+      </Box>
 
       {/* Bewertung */}
       {score !== null && (
@@ -31,8 +34,21 @@ const LoyaltyProgramSection = ({ loyaltyProgramContent, ratings }) => {
           </Typography>
         </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
+};
+
+LoyaltyProgramSection.propTypes = {
+  loyaltyProgramContent: PropTypes.node.isRequired,
+  ratings: PropTypes.arrayOf(
+    PropTypes.shape({
+      category: PropTypes.string.isRequired,
+      score: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default LoyaltyProgramSection;

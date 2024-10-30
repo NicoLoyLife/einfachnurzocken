@@ -1,5 +1,13 @@
 import React from "react";
-import { Typography, Box, Button } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import providersData from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
@@ -16,6 +24,8 @@ import LoyaltyProgramSection from "../../components/sportsbetting/providers/Loya
 import CashOutSection from "../../components/sportsbetting/providers/CashOutSection";
 import ConclusionSection from "../../components/sportsbetting/providers/ConclusionSection";
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
+
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const BetanoReview = () => {
   const provider = providersData[["betano"]];
@@ -35,11 +45,11 @@ const BetanoReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Entdecke den ultimativen Sportwettenanbieter und profitiere von einem
-        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen
+        unschlagbaren Willkommensangebot! Betano bietet neuen Kunden einen{" "}
         <strong>100% Einzahlungsbonus bis zu 80€</strong> auf die erste
         Einzahlung. Das bedeutet, dass du deine erste Einzahlung verdoppelst und
         mit einem größeren Wettguthaben durchstarten kannst. Aber das ist noch
-        nicht alles: Zusätzlich erhältst du eine
+        nicht alles: Zusätzlich erhältst du eine{" "}
         <strong>20€ Freiwette ohne Einzahlung</strong>. Einfach registrieren,
         Freiwette sichern und loslegen!
       </Typography>
@@ -48,15 +58,60 @@ const BetanoReview = () => {
         Mindesteinzahlung von 10€ tätigen. Der Bonusbetrag muss innerhalb von 90
         Tagen fünfmal mit einer Mindestquote von 1,65 umgesetzt werden.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Deine Vorteile auf einen Blick:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>100% Bonus bis 80€ auf deine erste Einzahlung</li>
-        <li>20€ Freiwette ohne Einzahlung</li>
-        <li>Attraktive Quoten und eine riesige Auswahl an Sportwetten</li>
-        <li>Sichere und schnelle Auszahlungen</li>
-      </Box>
+
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                100% Bonus bis 80€ auf deine erste Einzahlung
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                20€ Freiwette ohne Einzahlung
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Attraktive Quoten und eine riesige Auswahl an Sportwetten
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Sichere und schnelle Auszahlungen
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
       <Typography variant="body1" paragraph>
         Betano bietet zudem regelmäßige Promotionen für Bestandskunden, darunter
         Einzahlungsboni, Gratiswetten, Cashback-Angebote und ein umfangreiches
@@ -74,6 +129,11 @@ const BetanoReview = () => {
           href={provider.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            width: { xs: '75%', sm: 'auto' },
+            maxWidth: { sm: 400 },
+            whiteSpace: 'normal', // Ermöglicht Zeilenumbruch bei langem Text
+          }}
         >
           Jetzt bei Betano anmelden und Bonus sichern!
         </Button>
@@ -172,15 +232,59 @@ const BetanoReview = () => {
         Einsatz bleibt dabei vollständig erhalten, sodass die Wettsteuer nur im
         Gewinnfall anfällt.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Beispielrechnung:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>Einsatz: 100€ auf eine Quote von 2,0</li>
-        <li>Bruttogewinn: 200€</li>
-        <li>Abzug Wettsteuer (5% von 200€): 10€</li>
-        <li>Nettogewinn: 190€</li>
-      </Box>
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Einsatz:</strong> 100€ auf eine Quote von 2,0
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Bruttogewinn:</strong> 200€
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Abzug Wettsteuer (5% von 200€):</strong> 10€
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Nettogewinn:</strong> 190€
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
       <Typography variant="body1" paragraph>
         Ein- und Auszahlungen sind in der Regel gebührenfrei. Dennoch fällt die
         Bewertung in diesem Bereich weniger positiv aus, da einige Konkurrenten

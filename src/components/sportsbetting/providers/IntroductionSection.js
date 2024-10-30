@@ -76,10 +76,10 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
       {overallRating !== null ? (
         <Box sx={{ mt: 4, display: "flex", alignItems: "center" }}>
           <Typography
-            variant="h5"
+            variant="h3"
             component="h3"
             gutterBottom
-            sx={{ mr: 2, mb: 0 }}
+            sx={{ mr: 2 }}
           >
             Gesamtbewertung:
           </Typography>
@@ -87,7 +87,6 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
             value={overallRating}
             precision={0.1}
             readOnly
-            sx={{ color: theme.palette.secondary.main }}
           />
           <Typography variant="body1" sx={{ ml: 1 }}>
             {overallRating} / 5

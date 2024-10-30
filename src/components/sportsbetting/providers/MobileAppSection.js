@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Rating } from '@mui/material';
+import PropTypes from 'prop-types';
+import { Box, Typography, Rating, Divider } from '@mui/material';
 
 const MobileAppSection = ({ mobileAppContent, ratings }) => {
   // Finde die Bewertung für die Kategorie "Mobile App & Optimierung"
@@ -12,12 +13,14 @@ const MobileAppSection = ({ mobileAppContent, ratings }) => {
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
         Mobile App & Optimierung
       </Typography>
 
       {/* Inhalt */}
-      {mobileAppContent}
+      <Box sx={{ mb: 4 }}>
+        {mobileAppContent}
+      </Box>
 
       {/* Bewertung */}
       {score !== null && (
@@ -31,8 +34,21 @@ const MobileAppSection = ({ mobileAppContent, ratings }) => {
           </Typography>
         </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
+};
+
+MobileAppSection.propTypes = {
+  mobileAppContent: PropTypes.node.isRequired,
+  ratings: PropTypes.arrayOf(
+    PropTypes.shape({
+      category: PropTypes.string.isRequired,
+      score: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default MobileAppSection;

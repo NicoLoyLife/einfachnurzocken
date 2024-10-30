@@ -1,46 +1,105 @@
 // Sidebar.js
-import React from 'react';
+import React from "react";
 import {
   Box,
   Typography,
   Button,
   List,
   ListItem,
-  ListItemText,
-  ListItemButton,
+  Avatar,
   Paper,
   useTheme,
-} from '@mui/material';
-import { Link } from 'react-router-dom'; // Angenommen, dass react-router-dom verwendet wird
-
-const topProviders = [
-  { name: 'Betano', link: '/betano' },
-  { name: 'Happybet', link: '/happybet' },
-  { name: 'Bet365', link: '/bet365' },
-  { name: 'Tipico', link: '/tipico' },
-  { name: 'Bwin', link: '/bwin' },
-];
+  Rating,
+} from "@mui/material";
+import { Link } from "react-router-dom"; // Angenommen, dass react-router-dom verwendet wird
+import providersData from "../../services/providersData"; // Import der Anbieterdaten
 
 const Sidebar = ({ isSticky }) => {
   const theme = useTheme();
 
+  // Hilfsfunktion zur Berechnung des durchschnittlichen Ratings
+  const calculateAverageRating = (ratings) => {
+    if (!ratings || ratings.length === 0) return 0;
+    const totalScore = ratings.reduce((sum, item) => sum + item.score, 0);
+    const average = totalScore / ratings.length;
+    return Math.round(average * 10) / 10; // Rundet auf eine Dezimalstelle
+  };
+
+  // Konvertiere providersData in ein Array
+  const providersArray = Object.values(providersData);
+
+  // Erstelle eine neue Liste von Anbietern mit dem Gesamtrating
+  const providersWithRatings = providersArray.map((provider) => ({
+    ...provider,
+    averageRating: calculateAverageRating(provider.ratings),
+  }));
+
+  // Sortiere die Anbieter nach dem Gesamtrating in absteigender Reihenfolge
+  const sortedProviders = providersWithRatings.sort(
+    (a, b) => b.averageRating - a.averageRating
+  );
+
+  // Wähle die Top 5 Anbieter aus
+  const topProviders = sortedProviders.slice(0, 5);
+
   return (
     <Box
       sx={{
-        position: isSticky ? 'sticky' : 'static',
-        top: isSticky ? theme.spacing(10) : 'auto', // Abstand von der Oberkante
+        position: isSticky ? "sticky" : "static",
+        top: isSticky ? theme.spacing(10) : "auto", // Abstand von der Oberkante
       }}
     >
       {/* Top 5 Anbieter */}
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
         Top 5 Sportwetten-Anbieter
       </Typography>
       <List>
         {topProviders.map((provider, index) => (
-          <ListItem disablePadding key={index}>
-            <ListItemButton component={Link} to={provider.link}>
-              <ListItemText primary={`${index + 1}. ${provider.name}`} />
-            </ListItemButton>
+          <ListItem
+            key={index}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              paddingY: 1,
+            }}
+            disableGutters
+          >
+            {/* Platzierung */}
+            <Typography
+              variant="body1"
+              sx={{ width: "24px", flexShrink: 0, textAlign: "center" }}
+            >
+              {index + 1}.
+            </Typography>
+
+            {/* Logo */}
+            <Avatar
+              alt={provider.name}
+              src={provider.logo}
+              variant="square"
+              sx={{ width: 40, height: 40, mx: 1 }}
+            />
+
+            {/* Anbietername und Bewertung */}
+            <Box sx={{ flexGrow: 1, mx: 1 }}>
+              <Typography variant="body1">{provider.name}</Typography>
+              <Rating
+                value={provider.averageRating}
+                precision={0.1}
+                readOnly
+              />
+            </Box>
+
+            {/* CTA-Button */}
+            <Button
+              variant="contained"
+              color="primary"
+              href={provider.ctaLink || `/${provider.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jetzt wetten
+            </Button>
           </ListItem>
         ))}
       </List>
@@ -51,9 +110,16 @@ const Sidebar = ({ isSticky }) => {
           Hol dir den besten Sportwetten Bonus!
         </Typography>
         <Typography variant="body1" gutterBottom>
-          Entdecke exklusive Bonusangebote bei den besten Sportwettenanbietern. Sichere dir jetzt deinen Bonus!
+          Entdecke exklusive Bonusangebote bei den besten Sportwettenanbietern.
+          Sichere dir jetzt deinen Bonus!
         </Typography>
-        <Button variant="contained" color="primary" fullWidth component={Link} to="/bonus">
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          component={Link}
+          to="/bonus"
+        >
           Zum Bonusbereich
         </Button>
       </Paper>

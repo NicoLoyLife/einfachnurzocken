@@ -1,35 +1,36 @@
-import React from 'react';
-import {
-  Box,
-  Typography,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-} from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import React from "react";
+import PropTypes from "prop-types";
+import { Box, Typography, Divider } from "@mui/material";
 
 const FAQSection = ({ faqs }) => (
   <Box sx={{ mb: 4 }}>
-    <Typography variant="h2" component="h2" gutterBottom>
+    <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
       Häufig gestellte Fragen (FAQ)
     </Typography>
-    {faqs.map((faq, index) => (
-      <Accordion key={index}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls={`faq-content-${index}`}
-          id={`faq-header-${index}`}
-        >
-          <Typography variant="h5" component="h5">
-            {faq.question}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography variant="body1">{faq.answer}</Typography>
-        </AccordionDetails>
-      </Accordion>
-    ))}
+
+    <Box sx={{ mt: 2 }}>
+      {faqs.map((faq, index) => (
+        <Box key={index} sx={{ mb: 3 }}>
+          {/* Frage */}
+          <Typography variant="subtitle1">{faq.question}</Typography>
+
+          {/* Antwort */}
+          <Typography variant="body2">{faq.answer}</Typography>
+          {/* Trennlinie */}
+          {index < faqs.length - 1 && <Divider sx={{ mt: 3 }} />}
+        </Box>
+      ))}
+    </Box>
   </Box>
 );
+
+FAQSection.propTypes = {
+  faqs: PropTypes.arrayOf(
+    PropTypes.shape({
+      question: PropTypes.string.isRequired,
+      answer: PropTypes.node.isRequired,
+    })
+  ).isRequired,
+};
 
 export default FAQSection;

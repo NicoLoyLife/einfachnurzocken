@@ -1,5 +1,13 @@
 import React from "react";
-import { Typography, Box, Button } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import providersData from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
@@ -17,6 +25,8 @@ import CashOutSection from "../../components/sportsbetting/providers/CashOutSect
 import ConclusionSection from "../../components/sportsbetting/providers/ConclusionSection";
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
 const MerkurbetsReview = () => {
   const provider = providersData[["merkurbets"]];
 
@@ -29,7 +39,7 @@ const MerkurbetsReview = () => {
 
   const bonusContent = (
     <>
-      <Typography variant="h4" component="h3">
+      <Typography variant="h3" component="h3" gutterBottom>
         Willkommensbonus: 100% 3er-Kombi Cashback + 10€ Gratiswette
       </Typography>
       <Typography variant="body1" paragraph>
@@ -39,7 +49,7 @@ const MerkurbetsReview = () => {
         Paket ermöglicht es dir, mit einem größeren Wettguthaben zu starten und
         deine ersten Wetten risikofrei auszuprobieren.
       </Typography>
-      <Typography variant="h4" component="h3">
+      <Typography variant="body1" paragraph>
         Du musst lediglich eine Mindesteinzahlung von 10€ tätigen, um den Bonus
         zu aktivieren. Sollte deine erste 3er-Kombiwette nicht erfolgreich sein,
         erhältst du bis zu 90€ Cashback als Freebet. Zusätzlich steht dir die
@@ -47,39 +57,116 @@ const MerkurbetsReview = () => {
         Dieses Angebot ist einmalig pro Haushalt und innerhalb von 7 Tagen nach
         Gutschrift gültig.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Deine Vorteile auf einen Blick:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>
-          10€ Freebet ohne Einzahlung – starte sofort ohne eigenes Risiko.
-        </li>
-        <li>
-          100% 3er-Kombi Cashback bis zu 90€ – sichere dir bis zu 90€ Cashback
-          bei deiner ersten 3er-Kombiwette.
-        </li>
-        <li>
-          Keine Wettsteuer – Merkur Bets übernimmt die Wettsteuer, sodass du
-          deine Gewinne in voller Höhe erhältst.
-        </li>
-        <li>
-          Quickbet – platziere deine Wetten blitzschnell, ideal für Live-Wetten.
-        </li>
-        <li>
-          Kombi Boost – sichere dir bis zu 30% zusätzlichen Gewinn bei
-          erfolgreichen Kombiwetten.
-        </li>
-        <li>
-          Bet Builder – erstelle individuelle Wetten nach deinen Vorlieben.
-        </li>
-        <li>
-          Mobile App – bequem von unterwegs wetten und keine Chance verpassen.
-        </li>
-        <li>
-          3er-Kombi-Versicherung – wenn deine erste Kombi scheitert, gibt's bis
-          zu 90€ Cashback als Freebet.
-        </li>
-      </Box>
+
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                10€ Freebet ohne Einzahlung – starte sofort ohne eigenes Risiko.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                100% 3er-Kombi Cashback bis zu 90€ – sichere dir bis zu 90€
+                Cashback bei deiner ersten 3er-Kombiwette.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Keine Wettsteuer – Merkur Bets übernimmt die Wettsteuer, sodass
+                du deine Gewinne in voller Höhe erhältst.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Quickbet – platziere deine Wetten blitzschnell, ideal für
+                Live-Wetten.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Kombi Boost – sichere dir bis zu 30% zusätzlichen Gewinn bei
+                erfolgreichen Kombiwetten.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Bet Builder – erstelle individuelle Wetten nach deinen
+                Vorlieben.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Mobile App – bequem von unterwegs wetten und keine Chance
+                verpassen.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                3er-Kombi-Versicherung – wenn deine erste Kombi scheitert,
+                gibt's bis zu 90€ Cashback als Freebet.
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
+
       <Typography variant="body1" paragraph>
         Verpasse nicht die Chance, deine erste Einzahlung zu maximieren und mit
         einem satten Bonus durchzustarten!
@@ -91,6 +178,11 @@ const MerkurbetsReview = () => {
           href={provider.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            width: { xs: "75%", sm: "auto" },
+            maxWidth: { sm: 400 },
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
+          }}
         >
           Jetzt bei Merkur Bets anmelden und Bonus kassieren!
         </Button>
@@ -128,40 +220,87 @@ const MerkurbetsReview = () => {
         Fußball, Basketball, Tennis und Eishockey findest du auch Wetten auf
         Nischensportarten wie Darts, Snooker und E-Sports.
       </Typography>
-      <Typography variant="h4" component="h3">
+      <Typography variant="h3" component="h3">
         Highlights des Wettangebots:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>
-          <strong>Betbuilder:</strong> Mit dieser Funktion kannst du
-          verschiedene Wettmärkte innerhalb eines Spiels kombinieren und so
-          deine individuelle Wunschwette erstellen. Dies ermöglicht es dir,
-          komplexe Wettstrategien zu verfolgen und maßgeschneiderte Wetten zu
-          platzieren.
-        </li>
-        <li>
-          <strong>Quickbet:</strong> Die Quickbet-Funktion erlaubt es dir,
-          Wetten in Sekundenschnelle zu platzieren, was besonders bei Livewetten
-          von Vorteil ist. So kannst du schnell auf neue Entwicklungen reagieren
-          und keine Wettchancen verpassen.
-        </li>
-        <li>
-          <strong>Kombi Boost:</strong> Sichere dir bis zu 30% zusätzlichen
-          Gewinn bei erfolgreichen Kombiwetten. Je mehr Auswahlen du
-          kombinierst, desto höher fällt dein Bonus aus, was deine Gewinnchancen
-          erheblich steigert.
-        </li>
-        <li>
-          <strong>Livewetten:</strong> Ein umfangreiches Livewetten-Programm
-          ermöglicht es dir, in Echtzeit auf laufende Spiele zu wetten und von
-          dynamischen Quoten zu profitieren.
-        </li>
-        <li>
-          <strong>Spezialwetten:</strong> Neben klassischen Wettmärkten bietet
-          Merkur Bets eine Vielzahl von Spezialwetten, beispielsweise auf
-          Spielerleistungen, Eckbälle oder Karten.
-        </li>
-      </Box>
+
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Betbuilder:</strong> Mit dieser Funktion kannst du
+                verschiedene Wettmärkte innerhalb eines Spiels kombinieren und
+                so deine individuelle Wunschwette erstellen. Dies ermöglicht es
+                dir, komplexe Wettstrategien zu verfolgen und maßgeschneiderte
+                Wetten zu platzieren.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Quickbet:</strong> Die Quickbet-Funktion erlaubt es dir,
+                Wetten in Sekundenschnelle zu platzieren, was besonders bei
+                Livewetten von Vorteil ist. So kannst du schnell auf neue
+                Entwicklungen reagieren und keine Wettchancen verpassen.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Kombi Boost:</strong> Sichere dir bis zu 30%
+                zusätzlichen Gewinn bei erfolgreichen Kombiwetten. Je mehr
+                Auswahlen du kombinierst, desto höher fällt dein Bonus aus, was
+                deine Gewinnchancen erheblich steigert.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Livewetten:</strong> Ein umfangreiches
+                Livewetten-Programm ermöglicht es dir, in Echtzeit auf laufende
+                Spiele zu wetten und von dynamischen Quoten zu profitieren.
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Spezialwetten:</strong> Neben klassischen Wettmärkten
+                bietet Merkur Bets eine Vielzahl von Spezialwetten,
+                beispielsweise auf Spielerleistungen, Eckbälle oder Karten.
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
+
       <Typography variant="body1" paragraph>
         Die Plattform ist übersichtlich gestaltet, sodass du schnell die
         gewünschten Wetten findest. Die Kombination aus breitem Angebot und
@@ -183,7 +322,7 @@ const MerkurbetsReview = () => {
         positiven Aspekt darstellt. Die Vielfalt der Zahlungsmethoden bietet dir
         Flexibilität und Komfort bei der Kontoverwaltung.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Zu den verfügbaren Zahlungsmethoden gehören:
       </Typography>
       {/* Die Zahlungsmethoden werden in der Komponente angezeigt */}
@@ -215,14 +354,61 @@ const MerkurbetsReview = () => {
         weder dein Einsatz noch dein Gewinn durch die Wettsteuer gemindert
         werden.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Beispielrechnung:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>Einsatz: 100€ auf eine Quote von 2,0</li>
-        <li>Gewinn: 200€</li>
-        <li>Netto-Gewinn: 200€ (da die Wettsteuer übernommen wird)</li>
-      </Box>
+
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Einsatz:</strong> 100€ auf eine Quote von 2,0
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Bruttogewinn:</strong> 200€
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Abzug Wettsteuer:</strong> 0€ (da die Wettsteuer übernommen wird)
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                <strong>Nettogewinn:</strong> 200€
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
+
       <Typography variant="body1" paragraph>
         Ein- und Auszahlungen sind gebührenfrei, was das Wetterlebnis zusätzlich
         positiv beeinflusst. Durch die Übernahme der Wettsteuer steigert Merkur
@@ -392,7 +578,7 @@ const MerkurbetsReview = () => {
         cashOutContent={cashOutContent}
         ratings={provider.ratings}
       />
-      
+
       <ConclusionSection
         conclusionContent={conclusionContent}
         ratings={provider.ratings}

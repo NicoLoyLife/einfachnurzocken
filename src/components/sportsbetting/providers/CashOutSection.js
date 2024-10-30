@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Rating } from '@mui/material';
+import PropTypes from 'prop-types';
+import { Box, Typography, Rating, Divider } from '@mui/material';
 
 const CashOutSection = ({ cashOutContent, ratings }) => {
   // Finde die Bewertung für die Kategorie "Cash-Out-Funktion"
@@ -12,12 +13,14 @@ const CashOutSection = ({ cashOutContent, ratings }) => {
   return (
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
         Cash-Out-Funktion
       </Typography>
 
       {/* Inhalt */}
-      {cashOutContent}
+      <Box sx={{ mt: 2 }}>
+        {cashOutContent}
+      </Box>
 
       {/* Bewertung */}
       {score !== null && (
@@ -31,8 +34,21 @@ const CashOutSection = ({ cashOutContent, ratings }) => {
           </Typography>
         </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
+};
+
+CashOutSection.propTypes = {
+  cashOutContent: PropTypes.node.isRequired,
+  ratings: PropTypes.arrayOf(
+    PropTypes.shape({
+      category: PropTypes.string.isRequired,
+      score: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default CashOutSection;

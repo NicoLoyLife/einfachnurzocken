@@ -1,5 +1,13 @@
 import React from "react";
-import { Typography, Box, Button } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import providersData from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
@@ -17,6 +25,8 @@ import CashOutSection from "../../components/sportsbetting/providers/CashOutSect
 import ConclusionSection from "../../components/sportsbetting/providers/ConclusionSection";
 import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
 const HappybetReview = () => {
   const provider = providersData[["happybet"]];
 
@@ -29,7 +39,7 @@ const HappybetReview = () => {
 
   const bonusContent = (
     <>
-      <Typography variant="h4" component="h3">
+      <Typography variant="h3" component="h3" gutterBottom>
         Willkommensbonus: 150% Einzahlungsbonus bis zu 100€
       </Typography>
       <Typography variant="body1" paragraph>
@@ -39,26 +49,64 @@ const HappybetReview = () => {
         mehr Guthaben in deine Wettabenteuer. Das bedeutet, dass du bei einer
         Einzahlung von 67€ insgesamt 167€ Wettguthaben erhältst.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Deine Vorteile auf einen Blick:
       </Typography>
-      <Box component="ul" sx={{ pl: 4 }}>
-        <li>
-          150% Bonus auf deine erste Einzahlung – zahle 67€ ein und wette mit
-          167€!
-        </li>
-        <li>
-          Attraktive Quoten auf eine breite Auswahl an Sportarten und Events
-        </li>
-        <li>
-          Riesiges Livewetten-Angebot – wette live und profitiere von
-          Echtzeitquoten
-        </li>
-        <li>
-          Schnelle und sichere Ein- und Auszahlungen – dein Geld ist immer
-          schnell verfügbar
-        </li>
-      </Box>
+
+      <List sx={{ pl: 2 }}>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                150% Bonus auf deine erste Einzahlung – zahle 67€ ein und wette
+                mit 167€!
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Attraktive Quoten auf eine breite Auswahl an Sportarten und
+                Events
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Riesiges Livewetten-Angebot – wette live und profitiere von
+                Echtzeitquoten
+              </Typography>
+            }
+          />
+        </ListItem>
+        <ListItem disableGutters>
+          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
+            <ArrowRightIcon color="primary" />
+          </ListItemIcon>
+          <ListItemText
+            primary={
+              <Typography variant="body1">
+                Schnelle und sichere Ein- und Auszahlungen – dein Geld ist immer
+                schnell verfügbar
+              </Typography>
+            }
+          />
+        </ListItem>
+      </List>
       <Typography variant="body1" paragraph>
         Happybet bietet zudem regelmäßige Promotionen für Bestandskunden,
         darunter Gratiswetten, Cashback-Angebote und ein attraktives
@@ -76,6 +124,11 @@ const HappybetReview = () => {
           href={provider.ctaLink}
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            width: { xs: '75%', sm: 'auto' },
+            maxWidth: { sm: 400 },
+            whiteSpace: 'normal', // Ermöglicht Zeilenumbruch bei langem Text
+          }}
         >
           Jetzt bei Happybet anmelden und Bonus kassieren!
         </Button>
@@ -137,7 +190,7 @@ const HappybetReview = () => {
         Zahlungsmethode. Auch hier fallen keine Gebühren an, was einen weiteren
         Pluspunkt darstellt.
       </Typography>
-      <Typography variant="body1" paragraph>
+      <Typography variant="h3" component="h3">
         Zu den verfügbaren Zahlungsmethoden gehören:
       </Typography>
       {/* Die Zahlungsmethoden werden in der Komponente angezeigt */}
