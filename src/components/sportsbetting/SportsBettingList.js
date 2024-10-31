@@ -26,7 +26,7 @@ function SportsBettingList() {
         Top Sportwetten-Anbieter im Vergleich
       </Typography>
 
-      <Typography variant="body1" Paragraph sx={{ mb: 4, textAlign: "center" }}>
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
         Unsere Auswahl der besten Sportwetten-Anbieter basiert auf gründlichen
         Tests und Bewertungen durch unser Expertenteam. Diese Anbieter zeichnen
         sich durch hervorragende Quoten, vielseitige Wettmärkte und exzellenten

@@ -67,7 +67,7 @@ function Navbar() {
   // Menü für Sportwetten-Bereich
   const menuItemsSportwetten = [
     { text: "Home", link: "/sportwetten" },
-    { text: "Sportwetten-Bonus", link: "/sportwetten-bonus" },
+    { text: "Sportwetten-Bonus", link: "/sportwetten/bonus" },
     { text: "Wett-Tipps", link: "/sportwetten/wett-tipps" },
     { text: "Guides", link: "/sportwetten/guides-sportwetten" },
   ];

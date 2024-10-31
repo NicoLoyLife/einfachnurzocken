@@ -44,7 +44,7 @@ function SportsBettingHeader() {
       </Typography>
 
       <Typography
-        variant="body1"
+        variant="body2"
         sx={{
           mb: 4,
           maxWidth: "800px",
