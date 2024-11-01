@@ -20,6 +20,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import { CasinoTheme, SportwettenTheme } from "./theme/themes";
 import SportwettenRoutes from "./routes/SportwettenRoutes";
+import CasinoRoutes from "./routes/CasinoRoutes";
 import { useDispatch } from "react-redux";
 import { setSection, SECTIONS } from "./redux/sectionSlice";
 import ScrollToTop from "./components/common/ScrollToTop";
@@ -107,6 +108,8 @@ function App() {
               <Route path="/about" element={<About />} />
               {/* Sportwetten-Routen einbinden */}
               {SportwettenRoutes()}
+              {/* Casino-Routen einbinden */}
+              {CasinoRoutes()}
               {/* 404 Not Found Route */}
               <Route path="*" element={<NotFound />} />
             </Routes>

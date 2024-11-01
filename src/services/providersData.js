@@ -10,13 +10,13 @@ import paysafecardLogo from "../assets/images/payment/WW paysafecard.svg";
 import sofortLogo from "../assets/images/payment/EU Klarna Sofort.svg";
 import bankLogo from "../assets/images/payment/DE U╠êberweisung.svg";
 
-const providersData = {
+export const sportsbettingProvidersData = {
   betano: {
     name: "Betano",
     slug: "betano",
-    title: "Betano Erfahrungen & Test 2024 | Ist Betano seriös?",
+    title: "Betano Sportwetten Erfahrungen & Test 2024 | Ist Betano seriös?",
     metaDescription:
-      "Ausführlicher Betano Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
+      "Ausführlicher Betano Sportwetten Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
     ctaLink: "https://www.betano.com/de/",
     logo: betanoLogo,
     highlights: [
@@ -388,4 +388,110 @@ const providersData = {
   },
 };
 
-export default providersData;
+export const onlineCasinoProviderData = {
+  betano: {
+    name: "Betano",
+    slug: "betano",
+    title: "Betano Slots Erfahrungen & Test 2024 | Ist Betano seriös?",
+    metaDescription:
+      "Ausführlicher Betano Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus bis zu 100€ + 150 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+    ctaLink: "https://www.betano.com/de/",
+    logo: betanoLogo,
+    highlights: [
+      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
+      "Bis zu 150 Freispiele für spannende Slot-Spiele",
+      "Eine riesige Auswahl an Spielen, wie z.B. Play'n'Go & Novomatic",
+      "Sichere und schnelle EIn- und Auszahlungen",
+      "Top Casino-Erlebnis auf allen Geräten"
+    ],
+    bonus: {
+      type: "100% Einzahlungsbonus + 150 Freispiele",
+      maxBonus: "100€ + 150 Freispiele",
+      minDeposit: "10€",
+      maxDeposit: "100€",
+      maxWager: "1€ pro Spin",
+      wageringRequirements: "35x Bonus",
+      timeframe: "30 Tage (ab Gutschrift)",
+      validity: "1x pro Haushalt",
+      availableIn: ["Deutschland"],
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 5 },
+      { category: "Spielauswahl", score: 3 },
+      { category: "Kundensupport", score: 5 },
+      { category: "Treueprogramme", score: 5 },
+      { category: "Auszahlungsbedingungen", score: 5 },
+    ],
+    faqs: [
+      {
+        question: "Ist Betano Casino seriös und sicher?",
+        answer:
+          "Ja, Betano Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Betano auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+      },
+      {
+        question: "Gibt es einen Betano Casino Bonus für Neukunden?",
+        answer:
+          "Ja, Betano Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 150 Freispiele für ausgewählte Slots.",
+      },
+      {
+        question: "Welche Spiele bietet Betano Casino an?",
+        answer:
+          "Betano Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele, Live-Casino und Jackpot-Slots. Die Spiele stammen von renommieren Anbietern wie Play'n'Go, NetEnt, Microgaming und vielen mehr.",
+      },
+      {
+        question: "Kann ich bei Betano Casino auch mobil spielen?",
+        answer:
+          "Ja, Betano Casino verfügt über eine benutzerfreundliche App, die es Kunden ermöglicht, auch unterwegs zu spielen. Die App ist sowohl für iOS als auch für Android verfügbar und bietet alle Funktionen der Desktop-Version.",
+      },
+      {
+        question: "Wie erreiche ich den Betano Casino Kundensupport?",
+        answer:
+          "Der Betano Casino Kundensupport steht Kunden per Live-Chat, E-Mail und Telefon zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+      },
+    ],
+    paymentMethods: [
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Skrill", logo: skrillLogo },
+      {
+        name: "Paysafecard",
+        logo: paysafecardLogo,
+      },
+      {
+        name: "Sofortüberweisung",
+        logo: sofortLogo,
+      },
+      { name: "Banküberweisung", logo: bankLogo },
+    ],
+    overview: {
+      foundingYear: "2016",
+      licence:
+        "Malta Gaming Authority (MGA), Deutsche Lizenz gemäß Glücksspielstaatsvertrag",
+      specialFeatures: [
+        "Umfangreiches Slot-Angebot",
+        "Exklusive Spiele",
+        "Schnelle Auszahlungen",
+        "Mobile App"
+      ],
+      website: "www.betano.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      description:
+        "Betano gehört zur Kaizen Gaming International Ltd., einem renommierten Unternehmen mit langjähriger Erfahrung in der iGaming-Branche. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+    },
+    pros: [
+      "Attraktiver Willkommensbonus: 100% Einzahlungsbonus bis zu 100€ + bis zu 150 Freispiele",
+      "Große Spielauswahl: Hunderte Slots, Tischspiele und Live-Casino-Angebote von Top-Anbietern",
+      "Benutzerfreundliche Mobile App: Verfügbar für iOS und Android",
+      "Sichere und schnelle Ein- und Auszahlungen: Vielfältige Zahlungsmethoden ohne Gebühren",
+      "Deutsche Lizenz: Höchste Sicherheitsstandards gemäß deutschem Glücksspielstaatsvertrag",
+      "Exklusive Spiele: Bekannte Titel von Play’n GO, Novomatic und Gamomat",
+      "Umfangreiches Treueprogramm: VIP-Programme und regelmäßige Promotionen für Bestandskunden",
+    ],
+    cons: [
+      "Spielauswahl im Vergleich zu Konkurrenz begrenzt: Weniger Tischspiele und Live-Casino-Optionen als einige Mitbewerber",
+      "Umsatzbedingungen beim Bonus: Hohe Umsatzanforderungen könnten abschreckend wirken",
+      "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
+    ],
+  },
+};

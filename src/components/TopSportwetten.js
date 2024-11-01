@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Button, Grid, Divider } from "@mui/material";
-import providersData from "../services/providersData";
+import { sportsbettingProvidersData as providersData } from "../services/providersData";
 import { getSortedProvidersByRating } from "../services/helpers";
 import SportsBettingCard from "./sportsbetting/SportsBettingCard";
 import { Link } from "react-router-dom";

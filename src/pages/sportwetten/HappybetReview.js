@@ -8,7 +8,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import providersData from "../../services/providersData";
+import { sportsbettingProvidersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
 import IntroductionSection from "../../components/sportsbetting/providers/IntroductionSection";
@@ -28,7 +28,7 @@ import FAQSection from "../../components/sportsbetting/providers/FAQSection";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const HappybetReview = () => {
-  const provider = providersData[["happybet"]];
+  const provider = sportsbettingProvidersData[["happybet"]];
 
   if (!provider) {
     return <div>Anbieter nicht gefunden</div>;

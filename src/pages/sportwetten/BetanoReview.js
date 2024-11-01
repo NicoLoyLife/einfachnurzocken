@@ -8,7 +8,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import providersData from "../../services/providersData";
+import { sportsbettingProvidersData as providersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/sportsbetting/providers/PageHeader";
 import IntroductionSection from "../../components/sportsbetting/providers/IntroductionSection";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Button, Grid, Typography, Divider } from "@mui/material";
 import SportsBettingCard from "./SportsBettingCard";
-import providersData from "../../services/providersData";
+import { sportsbettingProvidersData } from "../../services/providersData";
 import { getSortedProvidersByRating } from "../../services/helpers";
 
 function SportsBettingList() {
@@ -9,7 +9,7 @@ function SportsBettingList() {
   const [visibleSportsbooks, setVisibleSportsbooks] = useState(3);
 
   // Hole die sortierten Anbieter
-  const sortedSportsbooks = getSortedProvidersByRating(providersData);
+  const sortedSportsbooks = getSortedProvidersByRating(sportsbettingProvidersData);
 
   // Funktion zum Anzeigen weiterer Sportwetten-Anbieter
   const showMoreSportsbooks = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Grid, Divider } from "@mui/material";
 import SportsBettingBonusOfferCard from "./SportsBettingBonusOfferCard"; // Verwendung deiner neuen BonusCard
-import providersData from "../../services/providersData";
+import { sportsbettingProvidersData as providersData } from "../../services/providersData";
 import { getSortedProvidersByRating } from "../../services/helpers";
 import { Link } from "react-router-dom";
 

@@ -12,7 +12,7 @@ import {
   Rating,
 } from "@mui/material";
 import { Link } from "react-router-dom"; // Angenommen, dass react-router-dom verwendet wird
-import providersData from "../../services/providersData"; // Import der Anbieterdaten
+import { sportsbettingProvidersData as providersData } from "../../services/providersData";
 
 const Sidebar = ({ isSticky }) => {
   const theme = useTheme();

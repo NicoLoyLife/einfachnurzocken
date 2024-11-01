@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import logo from "../../assets/images/logo.png";
 import OpenGraphMeta from "../../components/common/OpenGraphMeta";
-import providersData from "../../services/providersData";
+import { sportsbettingProvidersData } from "../../services/providersData";
 import { getSortedProvidersByRating } from "../../services/helpers";
 import SportsBettingBonusOfferCard from "../../components/sportsbetting/SportsBettingBonusOfferCard";
 
@@ -25,7 +25,7 @@ function Bonus() {
   const pageImage = logo;
 
   // Hole die sortierten Anbieter
-  const sortedBonusOffers = getSortedProvidersByRating(providersData);
+  const sortedBonusOffers = getSortedProvidersByRating(sportsbettingProvidersData);
 
   // State für die Anzahl der angezeigten Bonusangebote (initial 3 für Mobile)
   const [visibleBonusOffers, setVisibleBonusOffers] = useState(3);
