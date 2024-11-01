@@ -1,9 +1,22 @@
+import React from "react";
+import { Box, Typography, Container } from "@mui/material";
+import MainLayout from "../../components/layout/MainLayout";
+
 function WettTipps() {
   return (
-    <div>
-      <h1>Wett Tipps</h1>
-      <p>Willkommen auf der Wett Tipps Seite</p>
-    </div>
+    <MainLayout>
+      <Container maxWidth="lg">
+        <Box sx={{ mt: 4, mb: 8, textAlign: "center" }}>
+          <Typography variant="h1" gutterBottom>
+            WettTipps
+          </Typography>
+          <Typography variant="body1">
+            Dieser Bereich ist aktuell im Aufbau. Schau bald wieder vorbei, um
+            die neuesten WettTipps zu erhalten!
+          </Typography>
+        </Box>
+      </Container>
+    </MainLayout>
   );
 }
 

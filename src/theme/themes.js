@@ -35,6 +35,8 @@ const getTheme = (colors, typography) =>
       link: {
         main: colors.primary,
         hover: colors.linkHover,
+        visited: colors.primary,
+        active: colors.primary,
       },
     },
     typography: {
@@ -97,6 +99,12 @@ const getTheme = (colors, typography) =>
             color: theme.palette.link.main,
             "&:hover": {
               color: theme.palette.link.hover,
+            },
+            "&:visited": {
+              color: theme.palette.link.visited,
+            },
+            "&:active": {
+              color: theme.palette.link.active,
             },
           }),
         },

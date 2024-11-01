@@ -46,7 +46,7 @@ const Sidebar = ({ isSticky }) => {
     <Box
       sx={{
         position: isSticky ? "sticky" : "static",
-        top: isSticky ? theme.spacing(10) : "auto", // Abstand von der Oberkante
+        top: isSticky ? theme.spacing(16) : "auto", // Abstand von der Oberkante
       }}
     >
       {/* Top 5 Anbieter */}

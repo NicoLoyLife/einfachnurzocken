@@ -69,7 +69,7 @@ function Navbar() {
     { text: "Home", link: "/sportwetten" },
     { text: "Sportwetten-Bonus", link: "/sportwetten/bonus" },
     { text: "Wett-Tipps", link: "/sportwetten/wett-tipps" },
-    { text: "Guides", link: "/sportwetten/guides-sportwetten" },
+    { text: "Guides", link: "/sportwetten/guides" },
   ];
 
   // Menü für Online-Spielotheken-Bereich

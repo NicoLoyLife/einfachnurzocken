@@ -8,6 +8,7 @@ function Wrapper({ children }) {
         margin: "0 auto", // Zentriere den Inhalt horizontal
         paddingLeft: "20px",
         paddingRight: "20px",
+        flexGrow: 1,
       }}
       maxWidth='xl'
     >
