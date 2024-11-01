@@ -12,6 +12,12 @@ function Footer() {
       textDecoration: 'underline',
       color: 'inherit',
     },
+    '&:visited': {
+      color: 'inherit',
+    },
+    '&:active': {
+      color: 'inherit',
+    },
   };
 
   return (

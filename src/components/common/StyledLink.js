@@ -10,7 +10,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
     textDecoration: "underline",
   },
   "&:visited": {
-    color: theme.palette.secondary.main, // Unterschiedliche Farbe für :visited
+    color: theme.palette.primary.main, // Unterschiedliche Farbe für :visited
   },
   "&:active": {
     color: theme.palette.primary.dark,

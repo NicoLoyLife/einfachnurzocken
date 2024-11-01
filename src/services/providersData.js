@@ -424,29 +424,43 @@ export const onlineCasinoProviderData = {
     ],
     faqs: [
       {
-        question: "Ist Betano Casino seriös und sicher?",
+        question: "Ist Betano seriös und sicher?",
         answer:
-          "Ja, Betano Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Betano auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+          "Ja, Betano ist ein seriöses Casino mit einer Lizenz der Malta Gaming Authority und einer deutschen Lizenz gemäß dem Glücksspielstaatsvertrag. Der Anbieter setzt auf moderne Sicherheitsstandards und fördert verantwortungsvolles Spielen.",
       },
       {
-        question: "Gibt es einen Betano Casino Bonus für Neukunden?",
+        question: "Welche Boni bietet Betano für Neukunden?",
         answer:
-          "Ja, Betano Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 150 Freispiele für ausgewählte Slots.",
+          "Neukunden erhalten einen 100% Einzahlungsbonus bis zu 100€ sowie bis zu 150 Freispiele für ausgewählte Slot-Spiele. Diese Boni helfen dir, mit einem größeren Guthaben in die Casino-Welt einzusteigen.",
       },
       {
-        question: "Welche Spiele bietet Betano Casino an?",
+        question: "Welche Spiele bietet Betano an?",
         answer:
-          "Betano Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele, Live-Casino und Jackpot-Slots. Die Spiele stammen von renommieren Anbietern wie Play'n'Go, NetEnt, Microgaming und vielen mehr.",
+          "Betano bietet eine breite Palette an Spielen, darunter hunderte Slots von Anbietern wie Play’n GO, Novomatic und Gamomat, klassische Tischspiele wie Blackjack und Roulette sowie ein Live-Casino mit echten Dealern.",
       },
       {
-        question: "Kann ich bei Betano Casino auch mobil spielen?",
+        question: "Kann ich bei Betano auch mobil spielen?",
         answer:
-          "Ja, Betano Casino verfügt über eine benutzerfreundliche App, die es Kunden ermöglicht, auch unterwegs zu spielen. Die App ist sowohl für iOS als auch für Android verfügbar und bietet alle Funktionen der Desktop-Version.",
+          "Ja, Betano verfügt über eine benutzerfreundliche App für iOS und Android, die es dir ermöglicht, auch unterwegs problemlos zu spielen. Die mobile Webseite ist ebenfalls optimiert und bietet alle Funktionen der Desktop-Version.",
       },
       {
-        question: "Wie erreiche ich den Betano Casino Kundensupport?",
+        question: "Wie erreiche ich den Betano Kundensupport?",
         answer:
-          "Der Betano Casino Kundensupport steht Kunden per Live-Chat, E-Mail und Telefon zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+          "Der Kundensupport ist über Live-Chat, E-Mail und Telefon erreichbar. Der Live-Chat ist die schnellste Möglichkeit, um Hilfe zu erhalten, während E-Mail und Telefon ebenfalls zur Verfügung stehen.",
+      },
+      {
+        question: "Welche Zahlungsmethoden stehen bei Betano zur Verfügung?",
+        answer:
+          "Betano unterstützt eine Vielzahl von Zahlungsmethoden, darunter Visa, Mastercard, PayPal, Skrill, Paysafecard, Sofortüberweisung und Banküberweisung. Ein- und Auszahlungen sind in der Regel gebührenfrei und schnell bearbeitet.",
+      },
+      {
+        question: "Gibt es bei Betano ein Treueprogramm?",
+        answer: "Ja, Betano bietet ein umfangreiches Treueprogramm, in dem du für jede Spielrunde Punkte sammelst, die du gegen Boni, Gratiswetten oder andere Prämien eintauschen kannst. Zudem gibt es VIP-Services für besonders aktive Kunden mit exklusiven Vorteilen.",
+      },
+      {
+        question: "Sind die Auszahlungen bei Betano schnell?",
+        answer:
+          "Ja, Auszahlungen werden in der Regel innerhalb von 24 bis 48 Stunden bearbeitet. Die Bearbeitungszeit kann je nach gewählter Zahlungsmethode variieren, ist jedoch insgesamt sehr zuverlässig und zügig.",
       },
     ],
     paymentMethods: [
