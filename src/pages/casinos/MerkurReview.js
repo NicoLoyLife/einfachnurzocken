@@ -47,7 +47,7 @@ const MerkurReview = () => {
       <Typography variant="h3" component="h3" gutterBottom>
         🎰 Erlebe das ultimative Online-Casino-Erlebnis mit Merkur Slots! 🎰
       </Typography>
-      <Typography variant="body1" paragraph></Typography>
+      <Typography variant="body1" paragraph>
       Merkur bietet neuen Kunden einen großzügigen Willkommensbonus, der einen
       optimalen Start in die Welt der Online-Casinos ermöglicht. Du erhältst{" "}
       <strong>50 Freispiele ohne Einzahlung</strong>, die es dir erlauben, die
@@ -58,6 +58,7 @@ const MerkurReview = () => {
       Spielspaß und Gewinnmöglichkeiten bieten. Diese großzügigen Bonusangebote
       sorgen dafür, dass du mit einem starken Start ins Spielgeschehen
       eintauchst und deine Gewinnchancen von Anfang an maximierst.
+      </Typography>
       <Typography variant="h3" component="h3">
         Deine Vorteile auf einen Blick:
       </Typography>

@@ -600,7 +600,8 @@ export const onlineCasinoProvidersData = {
       security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
       shortDescription:
         "Merkur gehört zur Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
-      description: "Merkur ist seit 2001 im Markt und gehört zur renommierten Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Gibraltar Gambling Commission. Mit einer Vielzahl an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Merkur ein zuverlässiges und unterhaltsames Casino-Erlebnis.",
+      description:
+        "Merkur ist seit 2001 im Markt und gehört zur renommierten Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Gibraltar Gambling Commission. Mit einer Vielzahl an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Merkur ein zuverlässiges und unterhaltsames Casino-Erlebnis.",
     },
     pros: [
       "50 Freispiele ohne Einzahlung – risikofreier Einstieg",
@@ -615,7 +616,111 @@ export const onlineCasinoProvidersData = {
       "Telefonischer Kundensupport nicht verfügbar",
       "Bonusbedingungen könnten für einige Spieler hoch erscheinen",
       "Auswahl bei Auszahlungsmethoden könnte größer sein",
-    ]
+    ],
   },
-  // happybet: {},
+  happybet: {
+    name: "Happybet",
+    slug: "happybet",
+    title: "Happybet Slots Erfahrungen & Test 2024 | Ist Happybet seriös?",
+    metaDescription:
+      "Umfassender Happybet Slots Test mit echten Erfahrungen ✓ Keine aktuellen Bonusangebote ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+    ctaLink: "https://www.hpybet.com/",
+    logo: happybetLogo,
+    highlights: [
+      "Große Auswahl an Slots von Top-Anbietern wie NetEnt und Play'n GO",
+      "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
+      "Moderne und aufregende Slot-Spiele ohne erforderliche Boni",
+      "Sichere und schnelle Ein- und Auszahlungen",
+      "Benutzerfreundliche Plattform auf allen Geräten",
+    ],
+    bonus: {
+      type: "Aktuell kein Bonus",
+      maxBonus: "Aktuell kein Bonus",
+      minDeposit: "Aktuell kein Bonus",
+      wageringRequirements: "Aktuell kein Bonus",
+      maxDeposit: "Aktuell kein Bonus",
+      timeframe: "Aktuell kein Bonus",
+      validity: "Aktuell kein Bonus",
+      availableIn: ["Deutschland"],
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 0 },
+      { category: "Spielauswahl", score: 5 },
+      { category: "Kundensupport", score: 4 },
+      { category: "Treueprogramme", score: 5 },
+      { category: "Auszahlungsbedingungen", score: 5 },
+    ],
+    faqs: [
+      {
+        question: "Ist Happybet Casino seriös und sicher?",
+        answer:
+          "Ja, Happybet Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Happybet auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+      },
+      {
+        question: "Gibt es einen Happybet Casino Bonus für Neukunden?",
+        answer:
+          "Aktuell bietet Happybet keinen speziellen Willkommensbonus für Neukunden an. Dennoch überzeugt das Casino durch seine umfangreiche Spielauswahl und benutzerfreundliche Plattform.",
+      },
+      {
+        question: "Welche Spiele bietet Happybet Casino an?",
+        answer:
+          "Happybet Casino bietet eine große Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play'n GO, Pragmatic Play, Red Tiger und Novomatic, was für hohe Qualität und Vielfalt sorgt.",
+      },
+      {
+        question: "Kann ich bei Happybet Casino auch mobil spielen?",
+        answer:
+          "Ja, Happybet Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+      },
+      {
+        question: "Wie erreiche ich den Happybet Casino Kundensupport?",
+        answer:
+          "Der Happybet Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+      },
+    ],
+    paymentMethods: [
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Skrill", logo: skrillLogo },
+      {
+        name: "Paysafecard",
+        logo: paysafecardLogo,
+      },
+      {
+        name: "Sofortüberweisung",
+        logo: sofortLogo,
+      },
+      { name: "Banküberweisung", logo: bankLogo },
+    ],
+    overview: {
+      foundingYear: "2018",
+      licence:
+        "Malta Gaming Authority (MGA), deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+      specialFeatures: [
+        "Große Auswahl an Slots von Top-Anbietern",
+        "Benutzerfreundliche mobile Plattform",
+        "Sichere und schnelle Auszahlungen",
+        "Umfangreiches Treueprogramm für Stammkunden",
+      ],
+      website: "www.happybet.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      shortDescription:
+        "Happybet ist ein etabliertes Unternehmen in der Online-Casino-Branche, das seit seiner Gründung großen Wert auf Spielerschutz und Transparenz legt. Mit einer Lizenz der Malta Gaming Authority und der deutschen Glücksspielbehörde bietet Happybet ein sicheres und vertrauenswürdiges Casino-Erlebnis. Die umfangreiche Spielauswahl, kombiniert mit schnellen Auszahlungen und einem zuverlässigen Kundensupport, macht Happybet zu einer attraktiven Wahl für Slot-Enthusiasten.",
+        description: "Happybet ist seit 2018 eine feste Größe auf dem deutschen Online-Casino-Markt und gehört zur renommierten Happybet Gruppe, einem etablierten Unternehmen mit langjähriger Erfahrung in der Glücksspielbranche. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Malta Gaming Authority (MGA), was höchste Sicherheitsstandards und fairen Spielbetrieb garantiert. Mit einer beeindruckenden Vielfalt an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Happybet ein zuverlässiges und unterhaltsames Casino-Erlebnis für Spieler aller Erfahrungsstufen.",
+    },
+    pros: [
+      "Große Auswahl an hochwertigen Slots von Top-Anbietern",
+      "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
+      "Moderne und aufregende Slot-Spiele ohne notwendige Boni",
+      "Sichere und schnelle Ein- und Auszahlungen",
+      "Benutzerfreundliche Plattform auf allen Geräten",
+      "Umfangreiches Treueprogramm für Stammkunden",
+      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
+    ],
+    cons: [
+      "Aktuell keine Bonusangebote verfügbar",
+      "Telefonischer Kundensupport nicht verfügbar",
+      "Auswahl bei Auszahlungsmethoden könnte größer sein",
+    ],
+  },
 };

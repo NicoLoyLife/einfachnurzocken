@@ -67,7 +67,7 @@ function Navbar() {
   // Menü für Sportwetten-Bereich
   const menuItemsSportwetten = [
     { text: "Home", link: "/sportwetten" },
-    { text: "Sportwetten-Bonus", link: "/sportwetten/bonus" },
+    { text: "Bonus", link: "/sportwetten/bonus" },
     { text: "Wett-Tipps", link: "/sportwetten/wett-tipps" },
     { text: "Guides", link: "/sportwetten/guides" },
   ];
@@ -76,8 +76,8 @@ function Navbar() {
   const menuItemsOnlineSpielotheken = [
     { text: "Home", link: "/online-spielotheken" },
     {
-      text: "Anbieter-Vergleich",
-      link: "/online-spielotheken/anbieter-vergleich",
+      text: "Bonus",
+      link: "/online-spielotheken/bonus",
     },
     { text: "News", link: "/online-spielotheken/news" },
     { text: "Spiele", link: "/online-spielotheken/spiele" },

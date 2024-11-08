@@ -46,7 +46,7 @@ function LatestBonusangebote() {
             whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
           component={Link}
-          to="/online-spielotheken/anbieter-vergleich"
+          to="/online-spielotheken/bonus"
         >
           Zu den Bonusangeboten
         </Button>

@@ -10,6 +10,7 @@ import {
   Paper,
   useTheme,
   Rating,
+  Link as MuiLink,
 } from "@mui/material";
 import { Link } from "react-router-dom"; // Angenommen, dass react-router-dom verwendet wird
 import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
@@ -41,6 +42,21 @@ const CasinoSidebar = ({ isSticky }) => {
 
   // Wähle die Top 5 Anbieter aus
   const topProviders = sortedProviders.slice(0, 5);
+
+  const linkStyles = {
+    color: "inherit",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+      color: 'inherit',
+    },
+    "&:visited": {
+      color: "inherit",
+    },
+    "&:active": {
+      color: "inherit",
+    },
+  };
 
   return (
     <Box
@@ -82,7 +98,15 @@ const CasinoSidebar = ({ isSticky }) => {
 
             {/* Anbietername und Bewertung */}
             <Box sx={{ flexGrow: 1, mx: 1 }}>
-              <Typography variant="body1">{provider.name}</Typography>
+              <Typography variant="body1">
+                <MuiLink
+                  component={Link}
+                  to={`/online-spielotheken/${provider.slug}`}
+                  sx={linkStyles}
+                >
+                  {provider.name}
+                </MuiLink>
+              </Typography>
               <Rating
                 value={provider.averageRating}
                 precision={0.1}
@@ -118,7 +142,7 @@ const CasinoSidebar = ({ isSticky }) => {
           color="primary"
           fullWidth
           component={Link}
-          to="/online-spielotheken/anbieter-vergleich"
+          to="/online-spielotheken/bonus"
         >
           Zum Bonusbereich
         </Button>

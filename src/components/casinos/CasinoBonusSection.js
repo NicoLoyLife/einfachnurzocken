@@ -44,7 +44,7 @@ function CasinoBonusSection() {
             whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
           component={Link}
-          to="/online-spielotheken/anbieter-vergleich"
+          to="/online-spielotheken/bonus"
         >
           Alle Bonusangebote anzeigen
         </Button>
