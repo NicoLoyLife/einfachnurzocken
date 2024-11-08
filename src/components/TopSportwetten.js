@@ -22,7 +22,7 @@ function TopSportwetten() {
         Unsere Empfehlungen für Sportwetten
       </Typography>
 
-      <Typography variant="body2" paragraph sx={{ mb: 4, textAlign: "center" }}>
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
         Egal, ob du ein Fan von Fußball, Basketball oder Tennis bist - hier
         findest du die besten Sportwetten-Anbieter, die dir die besten Quoten
         und ein umfangreiches Wettangebot bieten.
@@ -51,6 +51,7 @@ function TopSportwetten() {
           Zu den Sportwetten-Anbietern
         </Button>
       </Box>
+      
       {/* Visuelle Abgrenzung */}
       <Divider sx={{ my: 4 }} />
     </Box>

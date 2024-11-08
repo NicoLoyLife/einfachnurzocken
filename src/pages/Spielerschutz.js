@@ -1,110 +1,425 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
+import React from "react";
+import {
+  Box,
+  Typography,
+  useTheme,
+  Divider,
+} from "@mui/material";
+import logo from "../assets/images/logo.png";
+import OpenGraphMeta from "../components/common/OpenGraphMeta";
+import StyledLink from "../components/common/StyledLink";
 
 function Spielerschutz() {
+  const theme = useTheme();
+
+  // Open Graph Daten
+  const pageTitle = "Infos & Hilfen zur Glücksspielsucht";
+  const pageDescription =
+    "Erfahre mehr über Spielerschutz und verantwortungsbewusstes Spielen bei EinfachNurZocken.com";
+  const pageUrl = "https://einfachnurzocken.com/spielerschutz";
+  const pageImage = logo;
+
+  const faqItems = [
+    {
+      question: "Was sind Anzeichen einer Glücksspielsucht?",
+      answer:
+        "Typische Anzeichen sind ein starker Drang zu spielen, Kontrollverlust, Vernachlässigung sozialer Kontakte und Verpflichtungen sowie finanzielle Probleme durch exzessives Spielen.",
+    },
+    {
+      question: "Wie entsteht Glücksspielsucht?",
+      answer:
+        "Glücksspielsucht entsteht durch ein Zusammenspiel aus biologischen, psychologischen und sozialen Faktoren. Risikofaktoren können Stress, persönliche Krisen oder das Verlangen nach schnellen Gewinnen sein.",
+    },
+    {
+      question: "Kann ich die Glücksspielsucht alleine überwinden?",
+      answer:
+        "Es ist schwierig, eine Glücksspielsucht ohne professionelle Hilfe zu überwinden. Beratung und Therapie bieten Unterstützung und Strategien zur Bewältigung.",
+    },
+    {
+      question: "Sind Online-Casinos gefährlicher als traditionelle Spielbanken?",
+      answer:
+        "Online-Casinos sind durch ihre ständige Verfügbarkeit und Anonymität besonders risikoreich. Die Hemmschwelle ist niedriger, und Verlustsummen können sich schneller anhäufen.",
+    },
+    {
+      question: "Wie kann ich mich vor Glücksspielsucht schützen?",
+      answer:
+        "Setze Dir klare Grenzen, sowohl zeitlich als auch finanziell. Nutze Selbstsperren und Limits, informiere Dich über Risiken und sei ehrlich zu Dir selbst über Dein Spielverhalten.",
+    },
+  ];
+
   return (
-    <Box sx={{ padding: '2rem' }}>
-      <Typography variant="h1" component="h1" gutterBottom>
-        Spielerschutz
+    <Box
+      sx={{
+        mt: theme.spacing(4),
+        mb: theme.spacing(6),
+      }}
+    >
+      <OpenGraphMeta
+        title={pageTitle}
+        description={pageDescription}
+        url={pageUrl}
+        image={pageImage}
+      />
+
+      <Typography
+        variant="h1"
+        component="h1"
+        sx={{
+          mb: 2,
+          fontSize: {
+            xs: "2rem",
+            sm: "3rem",
+            md: "4rem",
+          },
+          textAlign: "center",
+        }}
+      >
+        {pageTitle}
+      </Typography>
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Was ist Glücksspielsucht?
+      </Typography>
+
+      <Typography variant="body1" paragraph sx={{ mb: 4 }}>
+        Glücksspielsucht, auch pathologisches Spielen genannt, wird von der
+        Weltgesundheitsorganisation (WHO) als Krankheit anerkannt und ist im
+        aktuellen Klassifikationssystem ICD-11 unter den "Störungen durch
+        Suchtverhalten" aufgeführt. Sie beschreibt einen unkontrollierbaren
+        Drang, an Glücksspielen teilzunehmen, trotz negativer Konsequenzen oder
+        des Wunsches, aufzuhören. Wichtig ist die Unterscheidung zwischen
+        Glücksspielsucht und Computerspielsucht; hier fokussieren wir uns
+        ausschließlich auf die Glücksspielsucht im Zusammenhang mit
+        Online-Glücksspiel und Automatenspiel.
+      </Typography>
+
+      <Typography variant="body1" paragraph sx={{ mb: 4 }}>
+        Seit den 1980er Jahren ist die Thematik der Glücksspielsucht in
+        Deutschland zunehmend in den Fokus gerückt. Was einst als Randproblem
+        galt, hat sich zu einer ernsthaften gesellschaftlichen Herausforderung
+        entwickelt. Die Zahl der Betroffenen ist signifikant gestiegen, und
+        Glücksspielsucht wird mittlerweile als Krankheit anerkannt, die es zu
+        behandeln gilt.
+      </Typography>
+
+      <Typography variant="body1" paragraph sx={{ mb: 4 }}>
+        Moderne Glücksspiele, insbesondere Automatenspiele und Online-Slots,
+        nutzen gezielte psychologische Mechanismen, um Spieler zu binden und das
+        Suchtpotenzial zu erhöhen. Bei uns von [IhreWebseite.de] steht der
+        Spielerschutz an oberster Stelle. In diesem Artikel beleuchten wir die
+        Strategien der Glücksspielindustrie, bieten Selbsttests an und zeigen
+        Dir Wege auf, wie Du die Glücksspielsucht überwinden kannst. Zudem
+        findest Du eine Liste der besten Anlaufstellen für professionelle Hilfe.
+      </Typography>
+
+      <Typography variant="body1" sx={{ mb: 4 }}>
+        <strong>
+          Wir sind selbst Spieler und es ist uns wichtig, dass du bewusst
+          spielst und due Kontrolle behältst!
+        </strong>
+      </Typography>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Glücksspielsucht - Ein kurzer Selbsttest
       </Typography>
 
       <Typography variant="body1" paragraph>
-        Bei <strong>EinfachNurZocken</strong> setzen wir uns für den Schutz unserer Spieler ein und fördern verantwortungsbewusstes Spielen. Glücksspiel kann eine unterhaltsame Freizeitaktivität sein, birgt jedoch auch Risiken. Um sicherzustellen, dass Glücksspiel nicht zum Problem wird, bieten wir umfassende Informationen und Hilfsmittel, die Spielern helfen, die Kontrolle über ihr Spielverhalten zu behalten.
+        Dieser Selbsttest besteht aus allgemeinen Fragen und ersetzt keine
+        professionelle Diagnose. Er kann jedoch erste Hinweise darauf geben, ob
+        ein problematisches Spielverhalten vorliegt.
       </Typography>
 
-      <Typography variant="h2" component="h2" gutterBottom>
-        Erkennen von problematischem Spielverhalten
+      <ol>
+        <li>
+          Hast du Schwierigkeiten, dein Spielverhalten zu kontrollieren oder zu
+          beenden?
+        </li>
+        <li>
+          Denkst du häufig ans Spielen, selbst wenn du gerade nicht spielst?
+        </li>
+        <li>Versuchst du, Verluste durch erneutes SPielen zurückzugewinnen?</li>
+        <li>
+          Hast du wegen des Spielens schon gelogen oder wichtige Verpflichtungen
+          vernachlässigt?
+        </li>
+        <li>
+          Fühlst du dich unruhig oder gerezit, wenn du nicht spielen kannst?
+        </li>
+      </ol>
+
+      <Typography variant="body1" paragraph>
+        <strong>
+          Wenn du mehrere dieser Fragen mit "Ja" beantwortet hast, empfehlen wir
+          dir, professionelle Hilfe in Anspruch zu nehmen.
+        </strong>
+      </Typography>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Hilfe bei Glücksspielsucht - Die besten Anlaufstellen
       </Typography>
 
       <Typography variant="body1" paragraph>
-        Glücksspiel kann zur Sucht führen, und es ist wichtig, die Anzeichen von problematischem Spielverhalten frühzeitig zu erkennen. Hier sind einige Warnzeichen, die darauf hindeuten, dass Glücksspiel zu einem Problem geworden sein könnte:
+        Der erste Schritt zur Bewältigung einer Glücksspielsucht ist das
+        Eingeständnis des Problems. Es gibt zahlreiche Einrichtungen und
+        Organisationen, die dir anonym und kostenlos helfen können.
+      </Typography>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Bundeszentrale für gesundheitliche Aufklärung (BZgA)
       </Typography>
       <ul>
-        <li>Sie spielen häufiger und länger als geplant.</li>
-        <li>Sie geben mehr Geld aus, als Sie sich leisten können.</li>
-        <li>Sie leihen sich Geld, um zu spielen.</li>
-        <li>Sie vernachlässigen berufliche, soziale oder familiäre Verpflichtungen.</li>
-        <li>Sie versuchen, Verluste durch weiteres Spielen auszugleichen.</li>
+        <li>
+          <strong>Telefon-Hotline:</strong> 0800 1 37 27 00 (kostenlos)
+        </li>
+        <li>
+          <strong>Erreichbarkeit:</strong> Montag bis Donnerstag: 10 - 22 Uhr,
+          Freitag bis Sonntag: 10 - 18 Uhr
+        </li>
+        <li>
+          <strong>Website:</strong>{" "}
+          <StyledLink href="https://www.bzga.de" target="_blank" rel="noreferrer">
+            www.bzga.de
+          </StyledLink>
+        </li>
+      </ul>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Check-dein-Spiel
+      </Typography>
+
+      <ul>
+        <li>
+          <strong>Selbsttest & umfangreiche Infos:</strong>{" "}
+          <StyledLink
+            href="https://www.check-dein-spiel.de"
+            target="_blank"
+            rel="noreferrer"
+          >
+            www.check-dein-spiel.de
+          </StyledLink>
+        </li>
+      </ul>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Bundeszentrale für gesundheitliche Aufklärung - Suchtprävention
+      </Typography>
+
+      <ul>
+        <li>
+          <strong>Alles rund um Gesundheit & Süchte:</strong>{" "}
+          <StyledLink
+            href="https://www.kenn-dein-limit.de"
+            target="_blank"
+            rel="noreferrer"
+          >
+            www.kenn-dein-limit.de
+          </StyledLink>
+        </li>
+      </ul>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Deutsche Hauptstelle für Suchtanfragen e.V. (DHS)
+      </Typography>
+
+      <ul>
+        <li>
+          <strong>Beratung und Hilfe:</strong>{" "}
+          <StyledLink href="https://www.dhs.de" target="_blank" rel="noreferrer">
+            www.dhs.de
+          </StyledLink>
+        </li>
+      </ul>
+
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
+        <strong>
+          Denke daran: Schwach ist nicht, wer süchtig ist, sondern wer es nicht
+          zugeben kann!
+        </strong>
+      </Typography>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Häufige Fragen zur Glücksspielsucht
+      </Typography>
+
+      <Box sx={{ mt: 2 }}>
+        {faqItems.map((faq, index) => (
+          <Box key={index} sx={{ mb: 3 }}>
+          {/* Frage */}
+          <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+            {faq.question}
+          </Typography>
+
+          {/* Antwort */}
+          <Typography variant="body2" sx={{ mt: 1 }}>
+            {faq.answer}
+          </Typography>
+          {/* Trennlinie */}
+          {index < faqItems.length - 1 && <Divider sx={{ mt: 3 }} />}
+        </Box>
+        ))}
+      </Box>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        So manipuliert das Glücksspiel unser Gehirn - Spielautomaten und
+        Online-Slots
+      </Typography>
+
+      <Typography variant="body1" paragraph>
+        Glücksspiele sind so konzipiert, dass sie das Belohnungssystem unseres
+        Gehirns aktivieren. Durch variable Verstärkungen, also unvorhersehbare
+        Gewinne, wird Dopamin ausgeschüttet, was Glücksgefühle auslöst und das
+        Verlangen nach weiterem Spielen steigert.
+      </Typography>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Psychologische Mechanismen:
+      </Typography>
+
+      <ul>
+        <li>
+          <strong>Variable Belohnungen:</strong> Unregelmäßige Gewinnintervalle
+          halten die Spannung hoch.
+        </li>
+        <li>
+          <strong>Nahe Gewinne:</strong> Knappes Verfehlen eines Gewinns
+          suggeriert, dass der nächste Gewinn bevorsteht.
+        </li>
+        <li>
+          <strong>Jackpots und Bonusspiele:</strong> Zusätzliche Gewinnchancen
+          erhöhen den Reiz.
+        </li>
+        <li>
+          <strong>Audiovisuelle Effekte:</strong> Farben, Geräusche und
+          Animationen verstärken das Spielerlebnis und die emotionale Bindung.
+        </li>
+      </ul>
+
+      <Typography variant="h3" component="h3" sx={{ mb: 2 }}>
+        Die Rolle der Glücksspielindustrie
+      </Typography>
+
+      <Typography variant="body1" paragraph>
+        Hinter jedem Glücksspiel stehen Unternehmen mit wirtschaftlichen
+        Interessen. Sie investieren in Forschung und Entwicklung, um Spiele zu
+        schaffen, die Spieler möglichst lange binden. Es ist wichtig, sich
+        dieser Strategien bewusst zu sein und kritisch zu hinterfragen.
+      </Typography>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Aktuelle Rechtslage und Spielerschutz in Deutschland
+      </Typography>
+
+      <Typography variant="body1" paragraph>
+        Mit dem neuen Glücksspielstaatsvertrag 2021 (GlüStV 2021), der am 1.
+        Juli 2021 in Kraft getreten ist, wurden umfangreiche Regelungen zum
+        Schutz der Spieler eingeführt:
+      </Typography>
+
+      <ul>
+        <li>
+          <strong>Einzahlungslimits:</strong> Maximal 1.000 € pro Monat für
+          Einzahlungen bei Online-Casinos.
+        </li>
+        <li>
+          <strong>Panik-Button:</strong> Sofortige 24-Stunden-Sperre auf
+          Spielerwunsch.
+        </li>
+        <li>
+          <strong>Zentrale Sperrdatei (OASIS):</strong> Möglichkeit zur
+          Selbstsperre, die für alle lizenzierten Anbieter gilt.
+        </li>
+        <li>
+          <strong>Werbebeschränkungen:</strong> Strenge Regeln für Werbung, um
+          besonders gefährdete Gruppen zu schützen.
+        </li>
+        <li>
+          <strong>Verifizierungspflicht:</strong> Spieler müssen ihre Identität
+          nachweisen, um Minderjährige und Gesperrte auszuschließen.
+        </li>
       </ul>
 
       <Typography variant="body1" paragraph>
-        Wenn Sie bei sich oder bei anderen Anzeichen eines problematischen Spielverhaltens feststellen, sollten Sie handeln und Hilfe in Anspruch nehmen.
+        Diese Maßnahmen sollen das Risiko von Glücksspielsucht reduzieren und
+        einen sicheren Rahmen für Glücksspiel bieten.
       </Typography>
 
-      <Typography variant="h2" component="h2" gutterBottom>
-        Tools und Maßnahmen zum Spielerschutz
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
+
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
+        Unsere Verantwortung
       </Typography>
 
       <Typography variant="body1" paragraph>
-        Wir bei <strong>EinfachNurZocken</strong> arbeiten mit lizenzierten und regulierten Online Spielotheken und Sportwettenanbietern zusammen, die strenge Spielerschutzmaßnahmen implementieren. Hier sind einige der Maßnahmen, die Ihnen helfen können, verantwortungsbewusst zu spielen:
+        Als Plattform, die verschiedene Online-Casinos, Spielotheken und
+        Sportwettenanbieter vergleicht, liegt es in unserer Verantwortung, dich
+        über die Risiken aufzuklären und dir Tools an die Hand zu geben, um
+        verantwortungsvoll zu spielen.
       </Typography>
 
-      <Typography variant="h3" component="h3" gutterBottom>
-        1. Selbstlimitierung
-      </Typography>
       <Typography variant="body1" paragraph>
-        Viele Anbieter ermöglichen es Spielern, persönliche Limits für Einzahlungen, Verluste oder Spielzeiten festzulegen. Diese Limits helfen Ihnen, Ihre Spielaktivität zu kontrollieren und verhindern, dass Sie mehr ausgeben, als Sie sich leisten können.
+        <strong>
+          Wir empfehlen ausschließlich Anbieter, die sich an die gesetzlichen
+          Vorgaben halten und effektive Maßnahmen zum Spielerschutz
+          implementiert haben.
+        </strong>
       </Typography>
 
-      <Typography variant="h3" component="h3" gutterBottom>
-        2. Selbstausschluss
-      </Typography>
       <Typography variant="body1" paragraph>
-        Wenn Sie eine Pause vom Spielen einlegen oder sich vorübergehend oder dauerhaft vom Glücksspiel ausschließen möchten, bieten viele Plattformen eine <strong>Selbstausschluss-Funktion</strong> an.
+        Glücksspiel sollte immer als Form der Unterhaltung gesehen werden, nicht
+        als Einkommensquelle. Sei dir der Risiken bewusst, setze klare Grenzen
+        und zögere nicht, Hilfe zu suchen, wenn du das Gefühl hast, die
+        Kontrolle zu verlieren.
       </Typography>
 
-      <Typography variant="h3" component="h3" gutterBottom>
-        3. Realitäts-Checks
-      </Typography>
       <Typography variant="body1" paragraph>
-        Einige Anbieter bieten <strong>Realitäts-Checks</strong> an, die Sie in regelmäßigen Abständen daran erinnern, wie lange Sie bereits spielen.
-      </Typography>
-
-      <Typography variant="h3" component="h3" gutterBottom>
-        4. Zeitbeschränkungen
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Mit Zeitlimits können Sie Ihre tägliche oder wöchentliche Spielzeit begrenzen, um problematisches Spielverhalten zu verhindern.
-      </Typography>
-
-      <Typography variant="h2" component="h2" gutterBottom>
-        Unterstützung und Hilfsorganisationen
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Wenn Sie das Gefühl haben, dass Sie oder jemand in Ihrem Umfeld Schwierigkeiten mit dem Glücksspiel hat, gibt es zahlreiche Organisationen, die Unterstützung bieten:
-      </Typography>
-      <ul>
-        <li>Bundeszentrale für gesundheitliche Aufklärung (BZgA)</li>
-        <li>Gamblers Anonymous</li>
-        <li>Beratung durch Sucht- und Schuldnerberatungsstellen</li>
-      </ul>
-
-      <Typography variant="h2" component="h2" gutterBottom>
-        Glücksspiel und Jugendschutz
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Der Zugang zu <strong>Online Spielotheken</strong> und <strong>Sportwetten</strong> ist strikt auf volljährige Personen ab 18 Jahren beschränkt. Verantwortungsbewusstes Glücksspiel bedeutet auch, den Jugendschutz ernst zu nehmen.
-      </Typography>
-
-      <Typography variant="h2" component="h2" gutterBottom>
-        Lizenzen und Regulierung
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Die von uns empfohlenen <strong>Online Spielotheken</strong> und <strong>Sportwetten-Anbieter</strong> sind durch offizielle Regulierungsbehörden lizenziert und überwacht. Diese Lizenzierungsstellen stellen sicher, dass die Anbieter die höchsten Standards für Spielerschutz einhalten.
-      </Typography>
-
-      <Typography variant="h2" component="h2" gutterBottom>
-        Ihr Spielverhalten unter Kontrolle halten
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Bei <strong>EinfachNurZocken</strong> ermutigen wir unsere Spieler, das Glücksspiel als eine unterhaltsame Aktivität zu betrachten. Setzen Sie sich feste Grenzen und stellen Sie sicher, dass das Glücksspiel nicht in den Mittelpunkt Ihres Lebens rückt.
-      </Typography>
-
-      <Typography variant="h2" component="h2" gutterBottom>
-        Kontakt für weitere Informationen
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Falls Sie Fragen oder Bedenken zum Thema Spielerschutz haben, zögern Sie nicht, uns zu kontaktieren. Wir stehen Ihnen gerne zur Verfügung und unterstützen Sie dabei, eine sichere und kontrollierte Glücksspielerfahrung zu gewährleisten.
+        <strong>
+          Deine Gesundheit und Dein Wohlbefinden stehen an erster Stelle. Spiele
+          verantwortungsvoll!
+        </strong>
       </Typography>
     </Box>
   );

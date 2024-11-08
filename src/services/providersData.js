@@ -388,7 +388,7 @@ export const sportsbettingProvidersData = {
   },
 };
 
-export const onlineCasinoProviderData = {
+export const onlineCasinoProvidersData = {
   betano: {
     name: "Betano",
     slug: "betano",

@@ -1,35 +1,13 @@
-import React, {useMemo} from "react";
-import { Box, Typography, Button, Grid } from "@mui/material";
-import BonusOfferCard from "../bonus/BonusOfferCard";
-import { bonusangebote, findCasinoByName } from "../../services/dummyData";
+import React from "react";
+import { Box, Typography, Button, Grid, Divider } from "@mui/material";
+import CasinoBonusOfferCard from "./CasinoBonusOfferCard";
+import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
+import { getSortedProvidersByRating } from "../../services/helpers";
+import { Link } from "react-router-dom";
 
 function CasinoBonusSection() {
-
-    const enrichedOffers = useMemo(() => {
-        const sortedOffers = [...bonusangebote].sort((a, b) => b.rating - a.rating);
-        const topOffers = sortedOffers.slice(0, 3);
-    
-        return topOffers.map((offer) => {
-          const casino = findCasinoByName(offer.provider);
-          if (!casino) {
-            console.error(`Casino nicht gefunden für Anbieter: ${offer.provider}`);
-            return null;
-          }
-    
-          return {
-            ...offer,
-            image: casino.image,
-            deposit_methods: casino.deposit_methods,
-            withdrawal_time: casino.withdrawal_time,
-          };
-        }).filter(offer => offer !== null);
-      }, []);
-      
-    const handleViewAllOffers = () => {
-        console.log("Button 'Alle Bonusangebote anzeigen' geklickt");
-        // Hier kannst du die gewünschte Funktionalität hinzufügen
-        // Zum Beispiel eine Navigation zu einer anderen Seite
-    }
+  // Hole die sortierten Anbieter
+  const sortedCasinos = getSortedProvidersByRating(providersData);
 
   return (
     <Box sx={{ mt: 8, mb: 8 }}>
@@ -41,11 +19,7 @@ function CasinoBonusSection() {
         Attraktive Bonusangebote der besten Online Spielotheken
       </Typography>
 
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ mb: 4, textAlign: "center" }}
-      >
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
         Einer der größten Vorteile beim Spielen in Online Spielotheken sind die
         attraktiven Bonusangebote. Diese reichen von Willkommensboni über
         Freispiele bis hin zu Cashback-Angeboten. Nutze diese Angebote, um dein
@@ -53,16 +27,30 @@ function CasinoBonusSection() {
       </Typography>
 
       <Grid container spacing={4} justifyContent="center">
-        {enrichedOffers.map((offer, index) => (
+        {sortedCasinos.slice(0, 3).map((offer, index) => (
           <Grid item xs={12} md={4} key={index}>
-            <BonusOfferCard offer={offer} placement={index + 1} />
+            <CasinoBonusOfferCard offer={offer} placement={index + 1} />
           </Grid>
         ))}
       </Grid>
 
-      <Button variant='contained' color='primary' sx={{ mt: 4, display: 'block', margin: '0 auto' }} size='large' onClick={handleViewAllOffers}>
-        Alle Bonusangebote anzeigen
-      </Button>
+      <Box sx={{ mt: 4, textAlign: "center" }}>
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{
+            width: { xs: "75%", sm: "auto" },
+            maxWidth: { sm: 400 },
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
+          }}
+          component={Link}
+          to="/online-spielotheken/anbieter-vergleich"
+        >
+          Alle Bonusangebote anzeigen
+        </Button>
+      </Box>
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
 }

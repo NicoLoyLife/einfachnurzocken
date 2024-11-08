@@ -115,36 +115,36 @@ const getTheme = (colors, typography) =>
 // Casino-Theme
 export const CasinoTheme = getTheme(casinoColors, {
   fontFamily:
-    '"Montserrat", "Open Sans", "Roboto", "Helvetica", "Arial", sans-serif',
+    '"Roboto", "Lato", "Montserrat", "Open Sans", "Helvetica", "Arial", sans-serif',
   h1: {
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: '"Roboto", sans-serif',
     fontWeight: 700,
     fontSize: "2rem",
     letterSpacing: "0.05em",
     color: commonColors.textPrimary,
   },
   h2: {
-    fontFamily: '"Montserrat", sans-serif',
+    fontFamily: '"Roboto", sans-serif',
     fontWeight: 700,
     fontSize: "1.75rem",
     letterSpacing: "0.05em",
     color: casinoColors.primary,
   },
   h3: {
-    fontFamily: '"Montserrat", sans-serif',
-    fontWeight: 700,
+    fontFamily: '"Roboto", sans-serif',
+    fontWeight: 600,
     fontSize: "1.5rem",
     letterSpacing: "0.05em",
     color: casinoColors.primary,
   },
   body1: {
-    fontFamily: '"Open Sans", sans-serif',
+    fontFamily: '"Lato", sans-serif',
     fontSize: "1rem",
     lineHeight: 1.5,
     color: commonColors.textPrimary,
   },
   body2: {
-    fontFamily: '"Open Sans", sans-serif',
+    fontFamily: '"Lato", sans-serif',
     fontSize: "0.875rem",
     lineHeight: 1.5,
     color: commonColors.textSecondary,

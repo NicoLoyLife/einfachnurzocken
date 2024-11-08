@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { casinos } from "../../services/dummyData";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography, Divider } from "@mui/material";
 import CasinoCard from "./CasinoCard";
-
-// Casinos nach Rating sortieren
-const sortedCasinos = [...casinos].sort((a, b) => b.rating - a.rating);
+import { onlineCasinoProvidersData } from "../../services/providersData";
+import { getSortedProvidersByRating } from "../../services/helpers";
 
 function OnlineCasinoList() {
   // State für die Anzahl der angezeigten Casinos (initial 3 für Mobile)
   const [visibleCasinos, setVisibleCasinos] = useState(3);
+
+  // Casinos nach Rating sortieren
+  const sortedCasinos = getSortedProvidersByRating(onlineCasinoProvidersData);
 
   // Funktion zum Anzeigen weiterer Casinos
   const showMoreCasinos = () => {
@@ -25,14 +26,10 @@ function OnlineCasinoList() {
         Top Online Spielotheken im Vergleich
       </Typography>
 
-      <Typography
-        variant="body1"
-        component="p"
-        sx={{ mb: 4, textAlign: "center" }}
-      >
-        Unsere Auswahl der besten Online Spielotheken basiert auf gründlichen Tests
-        und Bewertungen durch unser Expertenteam. Diese Anbieter zeichnen sich
-        durch erstklassige Bonusangebote, eine vielfältige Spielauswahl und
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
+        Unsere Auswahl der besten Online Spielotheken basiert auf gründlichen
+        Tests und Bewertungen durch unser Expertenteam. Diese Anbieter zeichnen
+        sich durch erstklassige Bonusangebote, eine vielfältige Spielauswahl und
         exzellenten Kundenservice aus. Finde die perfekte Spielothek, das deinen
         Bedürfnissen entspricht, und genieße ein sicheres und unterhaltsames
         Spielerlebnis.
@@ -49,16 +46,24 @@ function OnlineCasinoList() {
 
       {/* Button zum Laden weiterer Casinos */}
       {visibleCasinos < sortedCasinos.length && (
-        <Button
-          variant="contained"
-          color="primary"
-          sx={{ mt: 4, display: "block", margin: "0 auto" }}
-          size="large"
-          onClick={showMoreCasinos}
-        >
-          Mehr Spielotheken laden
-        </Button>
+        <Box sx={{ mt: 4, textAlign: "center" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              width: { xs: "75%", sm: "auto" },
+              maxWidth: { sm: 400 },
+              whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
+            }}
+            onClick={showMoreCasinos}
+          >
+            Mehr Spielotheken laden
+          </Button>
+        </Box>
       )}
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
 }

@@ -19,7 +19,7 @@ function SportsBettingBonusSection() {
         Attraktive Bonusangebote der besten Sportwetten-Anbieter
       </Typography>
 
-      <Typography variant="body2" paragraph sx={{ mb: 4, textAlign: "center" }}>
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
         Einer der größten Vorteile beim Platzieren von Sportwetten online sind
         die attraktiven Bonusangebote. Diese reichen von Willkommensboni über
         Gratiswetten bis hin zu Cashback-Angeboten. Nutze diese Angebote, um
@@ -29,7 +29,7 @@ function SportsBettingBonusSection() {
       <Grid container spacing={4} justifyContent="center">
         {sortedSportsbooks.slice(0, 3).map((offer, index) => (
           <Grid item xs={12} md={4} key={index}>
-            <SportsBettingBonusOfferCard offer={offer} placement={index + 1} />{" "}
+            <SportsBettingBonusOfferCard offer={offer} placement={index + 1} />
           </Grid>
         ))}
       </Grid>

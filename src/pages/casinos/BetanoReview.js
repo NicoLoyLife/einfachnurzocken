@@ -8,7 +8,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import { onlineCasinoProviderData as providersData } from "../../services/providersData";
+import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/casinos/providers/PageHeader";
 import IntroductionSection from "../../components/casinos/providers/IntroductionSection";

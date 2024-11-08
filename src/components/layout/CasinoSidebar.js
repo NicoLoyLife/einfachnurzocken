@@ -12,9 +12,9 @@ import {
   Rating,
 } from "@mui/material";
 import { Link } from "react-router-dom"; // Angenommen, dass react-router-dom verwendet wird
-import { sportsbettingProvidersData as providersData } from "../../services/providersData";
+import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
 
-const Sidebar = ({ isSticky }) => {
+const CasinoSidebar = ({ isSticky }) => {
   const theme = useTheme();
 
   // Hilfsfunktion zur Berechnung des durchschnittlichen Ratings
@@ -51,7 +51,7 @@ const Sidebar = ({ isSticky }) => {
     >
       {/* Top 5 Anbieter */}
       <Typography variant="h3" gutterBottom sx={{ mt: 4 }}>
-        Top 5 Sportwetten-Anbieter
+        Top 5 Online Spielotheken-Anbieter
       </Typography>
       <List>
         {topProviders.map((provider, index) => (
@@ -98,7 +98,7 @@ const Sidebar = ({ isSticky }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Jetzt wetten
+              Jetzt spielen
             </Button>
           </ListItem>
         ))}
@@ -107,10 +107,10 @@ const Sidebar = ({ isSticky }) => {
       {/* Bonus-Box */}
       <Paper sx={{ mt: 4, p: 2 }} elevation={3}>
         <Typography variant="h6" gutterBottom>
-          Hol dir den besten Sportwetten Bonus!
+          Hol dir den besten Online Spielotheken Bonus!
         </Typography>
         <Typography variant="body1" gutterBottom>
-          Entdecke exklusive Bonusangebote bei den besten Sportwettenanbietern.
+          Entdecke exklusive Bonusangebote bei den besten Online Spielotheken.
           Sichere dir jetzt deinen Bonus!
         </Typography>
         <Button
@@ -118,7 +118,7 @@ const Sidebar = ({ isSticky }) => {
           color="primary"
           fullWidth
           component={Link}
-          to="/sportwetten/bonus"
+          to="/online-spielotheken/anbieter-vergleich"
         >
           Zum Bonusbereich
         </Button>
@@ -127,4 +127,4 @@ const Sidebar = ({ isSticky }) => {
   );
 };
 
-export default Sidebar;
+export default CasinoSidebar;

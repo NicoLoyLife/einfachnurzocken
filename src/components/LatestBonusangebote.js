@@ -1,54 +1,59 @@
-import React from 'react';
-import { Box, Typography, Button, Grid } from '@mui/material';
-import { bonusangebote, findCasinoByName } from '../services/dummyData';
-import BonusOfferCard from './bonus/BonusOfferCard';
+import React from "react";
+import { Box, Typography, Button, Grid, Divider } from "@mui/material";
+import CasinoBonusOfferCard from "./casinos/CasinoBonusOfferCard";
+import { onlineCasinoProvidersData as providersData } from "../services/providersData";
+import { getSortedProvidersByRating } from "../services/helpers";
+import { Link } from "react-router-dom";
 
 function LatestBonusangebote() {
-
   // Sortieren der Bonusangebote nach Rating in absteigender Reihenfolge
-  const sortedOffers = bonusangebote.sort((a, b) => b.rating - a.rating);
+  const sortedOffers = getSortedProvidersByRating(providersData);
 
   // Filtern der Bonusangebote mit den höchsten Ratings
   const topOffers = sortedOffers.slice(0, 5);
 
-  // Anreichern der Bonusangebote mit Casino-Informationen
-  const enrichedOffers = topOffers.map(offer => {
-    const casino = findCasinoByName(offer.provider);
-    if (!casino) {
-        console.error(`Casino nicht gefunden für Anbieter: ${offer.provider}`);
-        return null;
-    }
-    
-    const enrichedOffer = {
-        ...offer,
-        image: casino.image,
-        deposit_methods: casino.deposit_methods,
-        withdrawal_time: casino.withdrawal_time,
-    };
-    return enrichedOffer;
-  }).filter(offer => offer !== null);
-
   return (
     <Box sx={{ mt: 8, mb: 8 }}>
-      <Typography variant="h3" component='h3' sx={{ mb: 4, textAlign: 'center' }}>
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{ mb: 4, textAlign: "center" }}
+      >
         Aktuelle Bonusangebote und Promotions
       </Typography>
 
-      <Typography variant='body1' component='p' sx={{ mb: 4, textAlign: 'center' }}>
-        Verpasse nicht die besten Bonusangebote der Woche! Von großzügigen Willkommensboni bis hin zu spannenden Promotions - hier findest du alles, was du brauchst, um dein Spielerlebnis zu maximieren.
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
+        Verpasse nicht die besten Bonusangebote der Woche! Von großzügigen
+        Willkommensboni bis hin zu spannenden Promotions - hier findest du
+        alles, was du brauchst, um dein Spielerlebnis zu maximieren.
       </Typography>
 
-      <Grid container spacing={1} justifyContent='center'>
-        {enrichedOffers.map((offer, index) => (
+      <Grid container spacing={1} justifyContent="center">
+        {topOffers.map((offer, index) => (
           <Grid item key={index} xs={12} md={4}>
-            <BonusOfferCard offer={offer} placement={index + 1} />
+            <CasinoBonusOfferCard offer={offer} placement={index + 1} />
           </Grid>
         ))}
       </Grid>
 
-      <Button variant='contained' color='primary' sx={{ display: 'block', margin: '0 auto' }} size='large'>
-        Zu den Bonusangeboten
-      </Button>
+      <Box sx={{ mt: 4, textAlign: "center" }}>
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{
+            width: { xs: "75%", sm: "auto" },
+            maxWidth: { sm: 400 },
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
+          }}
+          component={Link}
+          to="/online-spielotheken/anbieter-vergleich"
+        >
+          Zu den Bonusangeboten
+        </Button>
+      </Box>
+
+      {/* Visuelle Abgrenzung */}
+      <Divider sx={{ my: 4 }} />
     </Box>
   );
 }

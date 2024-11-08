@@ -1,32 +1,38 @@
-import React from 'react';
-import { Box, Typography, Link as MuiLink, Grid, useTheme } from '@mui/material';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  Box,
+  Typography,
+  Link as MuiLink,
+  Grid,
+  useTheme,
+} from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const theme = useTheme();
 
   const linkStyles = {
-    color: 'inherit',
-    textDecoration: 'none',
-    '&:hover': {
-      textDecoration: 'underline',
-      color: 'inherit',
+    color: "inherit",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+      color: theme.palette.secondary.main,
     },
-    '&:visited': {
-      color: 'inherit',
+    "&:visited": {
+      color: "inherit",
     },
-    '&:active': {
-      color: 'inherit',
+    "&:active": {
+      color: "inherit",
     },
   };
 
   return (
-    <Box 
+    <Box
       sx={{
-        backgroundColor: 'primary.main',
-        color: 'white',
+        backgroundColor: "primary.main",
+        color: "white",
         padding: theme.spacing(2.5),
-        textAlign: 'center',
+        textAlign: "center",
         marginTop: theme.spacing(2.5),
       }}
     >
@@ -62,6 +68,15 @@ function Footer() {
       {/* Copyright Hinweis */}
       <Typography variant="body1" sx={{ marginTop: theme.spacing(2) }}>
         © 2024 EinfachNurZocken. Alle Rechte vorbehalten.
+      </Typography>
+
+      <Typography variant="body1" sx={{ marginTop: theme.spacing(2) }}>
+        18+ Glücksspiel kann süchtig machen - Hilfe findest du auf buwei.de,
+        www.check-dein-Spiel.de, www.gamblingtherapy.org.lu, www.sos-jeu.ch,
+        www.sos-spielsucht.ch and www.gamblingtherapy.org. Alle Anbieter auf
+        dieser Webseite sind lizenziert. Wenn du diese Webseite von Deutschland
+        aus besuchst, werden dir nur Anbieter angezeigt, die von der gemeinsamen
+        Glücksspielbehörde der Länder lizenziert und reguliert sind.
       </Typography>
     </Box>
   );

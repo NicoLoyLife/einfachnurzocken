@@ -44,16 +44,9 @@ function SportsBettingHeader() {
       </Typography>
 
       <Typography
-        variant="body2"
+        variant="body1"
         sx={{
           mb: 4,
-          maxWidth: "800px",
-          mx: "auto",
-          fontSize: {
-            xs: "1rem",
-            sm: "1.125rem",
-            md: "1.25rem",
-          },
         }}
       >
         {pageDescription} Finde den idealen Anbieter mit attraktiven

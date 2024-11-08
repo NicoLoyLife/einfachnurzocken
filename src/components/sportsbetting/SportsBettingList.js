@@ -9,7 +9,9 @@ function SportsBettingList() {
   const [visibleSportsbooks, setVisibleSportsbooks] = useState(3);
 
   // Hole die sortierten Anbieter
-  const sortedSportsbooks = getSortedProvidersByRating(sportsbettingProvidersData);
+  const sortedSportsbooks = getSortedProvidersByRating(
+    sportsbettingProvidersData
+  );
 
   // Funktion zum Anzeigen weiterer Sportwetten-Anbieter
   const showMoreSportsbooks = () => {

@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function SportsBettingBonusOfferCard({ offer, placement }) {
+function CasinoBonusOfferCard({ offer, placement }) {
   const theme = useTheme();
 
   return (
@@ -137,7 +137,7 @@ function SportsBettingBonusOfferCard({ offer, placement }) {
             href={offer.ctaLink || `/${offer.slug}`}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Jetzt wetten bei ${offer.name}`}
+            aria-label={`Jetzt spielen bei ${offer.name}`}
           >
             Jetzt wetten
           </Button>
@@ -146,7 +146,7 @@ function SportsBettingBonusOfferCard({ offer, placement }) {
             color="primary"
             fullWidth
             component={Link}
-            to={`/sportwetten/${offer.slug}`}
+            to={`/online-spielotheken/${offer.slug}`}
             aria-label={`${offer.name} Bonus Details ansehen`}
           >
             Details
@@ -157,4 +157,4 @@ function SportsBettingBonusOfferCard({ offer, placement }) {
   );
 }
 
-export default SportsBettingBonusOfferCard;
+export default CasinoBonusOfferCard;
