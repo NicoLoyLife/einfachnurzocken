@@ -30,8 +30,20 @@ const BetanoReview = () => {
     return <div>Anbieter nicht gefunden</div>;
   }
 
-  const summary =
-    "Betano hat sich seit seiner Gründung im Jahr 2016 nicht nur als führender Sportwetten-Anbieter in Deutschland etabliert, sondern bietet auch ein beeindruckendes Online Casino Erlebnis. Mit einer umfangreichen Spielauswahl, attraktiven Bonusaktionen und einer benutzerfreundlichen Plattform spricht Betano sowohl Casino-Neulinge als auch erfahrene Spieler an. In diesem Test teilen wir unsere aktuellen Betano Casino Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen individuellen Anforderungen entspricht.";
+  const summary = (
+    <>
+      <Typography variant="body1" gutterBottom>
+        Betano hat sich seit seiner Gründung im Jahr 2016 nicht nur als
+        führender Sportwetten-Anbieter in Deutschland etabliert, sondern bietet
+        auch ein beeindruckendes Online Casino Erlebnis. Mit einer umfangreichen
+        Spielauswahl, attraktiven Bonusaktionen und einer benutzerfreundlichen
+        Plattform spricht Betano sowohl Casino-Neulinge als auch erfahrene
+        Spieler an. In diesem Test teilen wir unsere aktuellen Betano Casino
+        Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist
+        und deinen individuellen Anforderungen entspricht.
+      </Typography>
+    </>
+  );
 
   const bonusContent = (
     <>

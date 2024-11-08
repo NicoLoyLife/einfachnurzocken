@@ -5,7 +5,7 @@ import { Box, Typography, Rating, Divider } from '@mui/material';
 const LoyaltyProgramSection = ({ loyaltyProgramContent, ratings }) => {
   // Finde die Bewertung für die Kategorie "Treueprogramme & VIP-Services"
   const categoryRating = ratings.find(
-    (item) => item.category === 'Treueprogramme & VIP-Services'
+    (item) => item.category === 'Treueprogramme'
   );
 
   const score = categoryRating ? categoryRating.score : null;
@@ -14,7 +14,7 @@ const LoyaltyProgramSection = ({ loyaltyProgramContent, ratings }) => {
     <Box sx={{ mb: 4 }}>
       {/* Überschrift */}
       <Typography variant="h2" component="h2" gutterBottom sx={{ mt: 4 }}>
-        Treueprogramme & VIP-Services
+        Treueprogramme
       </Typography>
 
       {/* Inhalt */}

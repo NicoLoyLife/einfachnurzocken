@@ -1,6 +1,7 @@
 import betanoLogo from "../assets/images/sportsbooks/betano.png";
 import happybetLogo from "../assets/images/sportsbooks/happybet.jpg";
 import merkurbetsLogo from "../assets/images/sportsbooks/merkurbets.jpg";
+import merkurLogo from "../assets/images/casinos/merkur.jpg";
 
 import visaLogo from "../assets/images/payment/WW VISA.svg";
 import mastercardLogo from "../assets/images/payment/WW Mastercard.svg";
@@ -402,7 +403,7 @@ export const onlineCasinoProvidersData = {
       "Bis zu 150 Freispiele für spannende Slot-Spiele",
       "Eine riesige Auswahl an Spielen, wie z.B. Play'n'Go & Novomatic",
       "Sichere und schnelle EIn- und Auszahlungen",
-      "Top Casino-Erlebnis auf allen Geräten"
+      "Top Casino-Erlebnis auf allen Geräten",
     ],
     bonus: {
       type: "100% Einzahlungsbonus + 150 Freispiele",
@@ -455,7 +456,8 @@ export const onlineCasinoProvidersData = {
       },
       {
         question: "Gibt es bei Betano ein Treueprogramm?",
-        answer: "Ja, Betano bietet ein umfangreiches Treueprogramm, in dem du für jede Spielrunde Punkte sammelst, die du gegen Boni, Gratiswetten oder andere Prämien eintauschen kannst. Zudem gibt es VIP-Services für besonders aktive Kunden mit exklusiven Vorteilen.",
+        answer:
+          "Ja, Betano bietet ein umfangreiches Treueprogramm, in dem du für jede Spielrunde Punkte sammelst, die du gegen Boni, Gratiswetten oder andere Prämien eintauschen kannst. Zudem gibt es VIP-Services für besonders aktive Kunden mit exklusiven Vorteilen.",
       },
       {
         question: "Sind die Auszahlungen bei Betano schnell?",
@@ -486,7 +488,7 @@ export const onlineCasinoProvidersData = {
         "Umfangreiches Slot-Angebot",
         "Exklusive Spiele",
         "Schnelle Auszahlungen",
-        "Mobile App"
+        "Mobile App",
       ],
       website: "www.betano.com",
       security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
@@ -508,4 +510,112 @@ export const onlineCasinoProvidersData = {
       "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
     ],
   },
+  merkur: {
+    name: "Merkur",
+    slug: "merkur",
+    title: "Merkur Slots Erfahrungen & Test 2024 | Ist Merkur seriös?",
+    metaDescription:
+      "Umfassender Merkur Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 100 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+    ctaLink: "https://www.merkur.de/",
+    logo: merkurLogo,
+    highlights: [
+      "50 Freispiele ohne Einzahlung – risikofreier Start",
+      "100% Bonus bis zu 50€ auf deine erste Einzahlung",
+      "50 zusätzliche Freispiele mit deiner ersten Einzahlung",
+      "Eine große Auswahl an Merkur-Klassikern wie Book of Ra und El Toro",
+      "Sichere und schnelle Ein- und Auszahlungen",
+      "Top Casino-Erlebnis auf allen Geräten",
+    ],
+    bonus: {
+      type: "100% Einzahlungsbonus + 100 Freispiele",
+      maxBonus: "50€ + 100 Freispiele",
+      minDeposit: "10€",
+      maxDeposit: "50€",
+      maxWager: "1€ pro Spin",
+      wageringRequirements: "35x Bonus",
+      timeframe: "30 Tage (ab Gutschrift)",
+      validity: "1x pro Haushalt",
+      availableIn: ["Deutschland"],
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 5 },
+      { category: "Spielauswahl", score: 5 },
+      { category: "Kundensupport", score: 4 },
+      { category: "Treueprogramme", score: 4 },
+      { category: "Auszahlungsbedingungen", score: 5 },
+    ],
+    faqs: [
+      {
+        question: "Ist Merkur Casino seriös und sicher?",
+        answer:
+          "Ja, Merkur Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Merkur auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+      },
+      {
+        question: "Gibt es einen Merkur Casino Bonus für Neukunden?",
+        answer:
+          "Ja, Merkur Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 50€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+      },
+      {
+        question: "Welche Spiele bietet Merkur Casino an?",
+        answer:
+          "Merkur Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele, Live-Casino und Jackpot-Slots. Die Spiele stammen von renommierten Anbietern wie Merkur, Play'n'GO, Pragmatic Play, Red Tiger und Novomatic.",
+      },
+      {
+        question: "Kann ich bei Merkur Casino auch mobil spielen?",
+        answer:
+          "Ja, Merkur Casino verfügt über eine benutzerfreundliche App, die es Kunden ermöglicht, auch unterwegs zu spielen. Die App ist sowohl für iOS als auch für Android verfügbar und bietet alle Funktionen der Desktop-Version.",
+      },
+      {
+        question: "Wie erreiche ich den Merkur Casino Kundensupport?",
+        answer:
+          "Der Merkur Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+      },
+    ],
+    paymentMethods: [
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Skrill", logo: skrillLogo },
+      {
+        name: "Paysafecard",
+        logo: paysafecardLogo,
+      },
+      {
+        name: "Sofortüberweisung",
+        logo: sofortLogo,
+      },
+      { name: "Banküberweisung", logo: bankLogo },
+    ],
+    overview: {
+      foundingYear: "2001",
+      licence:
+        "Gibraltar Gambling Commission, deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+      specialFeatures: [
+        "Beliebte Merkur-Klassiker und exklusive Spiele",
+        "Innovative Funktionen wie Turbo Spins und Autoplay",
+        "Cash-Out-Funktion",
+        "Mobile App für iOS und Android",
+      ],
+      website: "www.merkur.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      shortDescription:
+        "Merkur gehört zur Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+      description: "Merkur ist seit 2001 im Markt und gehört zur renommierten Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Gibraltar Gambling Commission. Mit einer Vielzahl an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Merkur ein zuverlässiges und unterhaltsames Casino-Erlebnis.",
+    },
+    pros: [
+      "50 Freispiele ohne Einzahlung – risikofreier Einstieg",
+      "Attraktiver Willkommensbonus mit 100% bis zu 50€ und 50 Freispiele",
+      "Breite Spielauswahl mit beliebten Merkur-Klassikern",
+      "Benutzerfreundliche Mobile App für iOS und Android",
+      "Sichere und schnelle Auszahlungen ohne Gebühren",
+      "Innovative Funktionen wie Turbo Spins und Cash-Out",
+      "Umfangreiches Treueprogramm für Stammkunden",
+    ],
+    cons: [
+      "Telefonischer Kundensupport nicht verfügbar",
+      "Bonusbedingungen könnten für einige Spieler hoch erscheinen",
+      "Auswahl bei Auszahlungsmethoden könnte größer sein",
+    ]
+  },
+  // happybet: {},
 };

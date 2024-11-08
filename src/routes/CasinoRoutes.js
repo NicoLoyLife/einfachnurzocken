@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 // import Guides from '../pages/casinos/Guides';
 import BetanoReview from '../pages/casinos/BetanoReview';
 // import HappybetReview from '../pages/casinos/HappybetReview';
-// import MerkurbetsReview from '../pages/casinos/MerkurbetsReview';
+import MerkurReview from '../pages/casinos/MerkurReview';
 // Weitere Anbieter-Review-Komponenten importieren...
 
 const CasinoRoutes = () => {
@@ -16,7 +16,7 @@ const CasinoRoutes = () => {
       {/* <Route path="/online-spielotheken/guides" element={<Guides />} /> */}
       <Route path="/online-spielotheken/betano" element={<BetanoReview />} />
       {/* <Route path="/online-spielotheken/happybet" element={<HappybetReview />} /> */}
-      {/* <Route path="/online-spielotheken/merkurbets" element={<MerkurbetsReview />} /> */}
+      <Route path="/online-spielotheken/merkur" element={<MerkurReview />} />
       {/* Weitere Routen für Anbieter hinzufügen... */}
     </>
   );

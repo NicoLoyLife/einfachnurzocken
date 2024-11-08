@@ -31,9 +31,7 @@ const IntroductionSection = ({ summary, pros, cons, ratings }) => {
   return (
     <Box sx={{ my: 4 }}>
       {/* Kurze Zusammenfassung */}
-      <Typography variant="body1" gutterBottom>
-        {summary}
-      </Typography>
+      {summary}
 
       {/* Vorteile und Nachteile */}
       <Typography
