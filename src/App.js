@@ -24,6 +24,8 @@ import CasinoRoutes from "./routes/CasinoRoutes";
 import { useDispatch } from "react-redux";
 import { setSection, SECTIONS } from "./redux/sectionSlice";
 import ScrollToTop from "./components/common/ScrollToTop";
+// import CookieConsent from "react-cookie-consent";
+// import { Cookie } from "@mui/icons-material";
 
 function App() {
   const location = useLocation();
@@ -66,6 +68,26 @@ function App() {
   return (
     <HelmetProvider>
       <ThemeProvider theme={currentTheme}>
+        {/* <CookieConsent
+          location="bottom"
+          buttonText="Ich stimme zu"
+          declineButtonText="Ablehnen"
+          enableDeclineButton
+          expires={30}
+          overlay={true}
+          icon={<Cookie />}
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          declineButtonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          onAccept={() => {
+            console.log("Cookies accepted");
+          }}
+          onDecline={() => {
+            console.log("Cookies declined");
+          }}
+        >
+          Diese Website verwendet Cookies, die Benutzererfahrung zu verbessern.
+        </CookieConsent> */}
         <CssBaseline />
         {/* Global Styles setzen */}
         <GlobalStyles
@@ -86,7 +108,9 @@ function App() {
             },
           })}
         />
-        <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
+        >
           <Navbar />
           <Wrapper>
             <ScrollToTop />

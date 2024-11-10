@@ -51,7 +51,7 @@ function FAQ() {
         Häufig gestellte Fragen (FAQ)
       </Typography>
 
-      <Typography variant="body2" paragraph sx={{ mb: 4, textAlign: "center" }}>
+      <Typography variant="body1" paragraph sx={{ mb: 4, textAlign: "center" }}>
         Du hast Fragen? Hier findest du Antworten auf die am häufigsten
         gestellten Fragen rund um Online Casinos, Bonusangebote,
         Zahlungsmethoden und vieles mehr.
