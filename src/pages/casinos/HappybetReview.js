@@ -3,10 +3,10 @@ import {
   Typography,
   Box,
   Button,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
+  // List,
+  // ListItem,
+  // ListItemIcon,
+  // ListItemText,
 } from "@mui/material";
 import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
@@ -21,7 +21,7 @@ import LoyaltyProgramSection from "../../components/casinos/providers/LoyaltyPro
 import ConclusionSection from "../../components/casinos/providers/ConclusionSection";
 import FAQSection from "../../components/casinos/providers/FAQSection";
 
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+// import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 const HappybetReview = () => {
   const provider = providersData[["happybet"]];

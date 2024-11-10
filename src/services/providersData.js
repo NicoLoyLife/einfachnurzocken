@@ -516,7 +516,7 @@ export const onlineCasinoProvidersData = {
     title: "Merkur Slots Erfahrungen & Test 2024 | Ist Merkur seriös?",
     metaDescription:
       "Umfassender Merkur Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 100 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.merkur.de/",
+    ctaLink: "https://www.merkur.com/",
     logo: merkurLogo,
     highlights: [
       "50 Freispiele ohne Einzahlung – risikofreier Start",
