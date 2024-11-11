@@ -131,139 +131,139 @@ export const sportsbettingProvidersData = {
       "Auswahl bei Auszahlungsoptionen könnte größer sein",
     ],
   },
-  happybet: {
-    name: "Happybet",
-    slug: "happybet",
-    title: "Happybet Erfahrungen & Test 2024 | Ist Happybet seriös?",
-    metaDescription:
-      "Ausführlicher Happybet Test mit echten Erfahrungen ✓ 150% Bonus bis 100€ ✓ Steuerfreie Wetten ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.hpybet.com/",
-    logo: happybetLogo,
-    highlights: [
-      "150% Einzahlungsbonus bis zu 100€ – zahle 67€ ein und wette mit 167€",
-      "Steuerfreie Wetten ab 2er Kombis, mehr Gewinn ohne zusätzliche Kosten",
-      "Exklusive VIP-Kundenbetreuung für persönlichen Service und exklusive Angebote",
-      "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
-      "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
-      "Gutes Treueprogramm mit attraktiven Prämien",
-    ],
-    bonus: {
-      type: "150% Einzahlungsbonus",
-      maxBonus: "100€",
-      minDeposit: "10€",
-      maxDeposit: "67€",
-      wageringRequirements: "1x Einzahung + 6x Bonus",
-      oddsRequirement: "2.00",
-      timeframe: "90 Tage (ab Gutschrift)",
-      validity: "1x pro Haushalt",
-      availableIn: ["Deutschland", "Österreich"],
-    },
-    ratings: [
-      { category: "Bonusangebote & Promotionen", score: 5 },
-      { category: "Wettquoten", score: 4 },
-      { category: "Sportarten- & Wettangebot", score: 4 },
-      { category: "Zahlungsmethoden", score: 5 },
-      { category: "Kundensupport", score: 4 },
-      { category: "Wettsteuer & Gebühren", score: 4 },
-      { category: "Mobile App & Optimierung", score: 4 },
-      { category: "Treueprogramme & VIP-Services", score: 4 },
-      { category: "Cash-Out-Funktion", score: 3 },
-    ],
-    faqs: [
-      {
-        question: "Ist Happybet ein seriöser Anbieter?",
-        answer:
-          "Ja, Happybet verfügt über Lizenzen der Malta Gaming Authority und der deutschen Glücksspielbehörde. Der Anbieter legt großen Wert auf Sicherheit und verantwortungsbewusstes Spielen.",
-      },
-      {
-        question: "Wie erhalte ich den Happybet Willkommensbonus?",
-        answer:
-          "Registriere dich auf der Happybet-Webseite und tätige eine Mindesteinzahlung von 10€. Bei einer Einzahlung von 67€ erhältst du den maximalen Bonus von 100€ und startest mit insgesamt 167€ Wettguthaben.",
-      },
-      {
-        question: "Muss ich die Wettsteuer bei Happybet zahlen?",
-        answer:
-          "Bei Einzelwetten wird die gesetzliche Wettsteuer von 5% auf den Kunden umgelegt. Ab 2er Kombiwetten entfällt die Wettsteuer, sodass du deine Gewinne ohne Abzüge erhältst.",
-      },
-      {
-        question: "Bietet Happybet eine mobile App an?",
-        answer:
-          "Ja, Happybet bietet eine App für iOS und Android. Die App ermöglicht es dir, auch unterwegs Wetten zu platzieren und dein Konto zu verwalten.",
-      },
-      {
-        question: "Wie kann ich den Kundensupport erreichen?",
-        answer:
-          "Der Kundensupport ist per Live-Chat, E-Mail und Telefon erreichbar. Beachte jedoch, dass der Support nicht rund um die Uhr verfügbar ist.",
-      },
-      {
-        question: "Welche Zahlungsmethoden stehen zur Verfügung?",
-        answer:
-          "Du kannst Einzahlungen über Kreditkarten, E-Wallets wie PayPal, Banküberweisungen und Prepaid-Karten tätigen. Auszahlungen erfolgen über die gleichen Methoden.",
-      },
-      {
-        question: "Gibt es ein Treueprogramm bei Happybet?",
-        answer:
-          "Ja, durch regelmäßiges Wetten sammelst du Punkte, die du gegen Boni oder Gratiswetten eintauschen kannst. Als VIP-Kunde profitierst du von zusätzlichen Vorteilen.",
-      },
-      {
-        question: "Wie funktioniert die Cash-Out-Funktion?",
-        answer:
-          "Bei ausgewählten Wetten kannst du die Cash-Out-Option nutzen, um deine Wette vorzeitig auszuwerten. Teilweiser oder automatischer Cash-Out sind allerdings nicht verfügbar.",
-      },
-    ],
-    paymentMethods: [
-      { name: "Visa", logo: visaLogo },
-      { name: "Mastercard", logo: mastercardLogo },
-      { name: "PayPal", logo: paypalLogo },
-      { name: "Skrill", logo: skrillLogo },
-      {
-        name: "Paysafecard",
-        logo: paysafecardLogo,
-      },
-      {
-        name: "Sofortüberweisung",
-        logo: sofortLogo,
-      },
-      { name: "Banküberweisung", logo: bankLogo },
-    ],
-    overview: {
-      foundingYear: "2017",
-      licence:
-        "Malta Gaming Authority (MGA), deutsche Lizenz gemäß Glücksspielstaatsvertrag",
-      specialFeatures: [
-        "Steuerfreie Wetten ab 2er Kombis",
-        "Exklusive VIP-Kundenbetreuung",
-        "Cash-Out-Funktion",
-        "Mobile App für iOS und Android",
-      ],
-      website: "www.hpybet.com",
-      security: [
-        "SSL-Verschlüsselung",
-        "Maßnahmen zum verantwortungsbewussten Spielen",
-      ],
-    },
-    pros: [
-      "Attraktiver Willkommensbonus mit 150% bis zu 100€",
-      "Steuerfreie Wetten ab 2er Kombis, mehr Gewinn für dich",
-      "Exklusive VIP-Kundenbetreuung mit persönlichen Services",
-      "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
-      "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
-      "Gutes Treueprogramm für Stammkunden",
-    ],
-    cons: [
-      "Wettsteuer wird bei Einzelwetten auf den Kunden umgelegt",
-      "Cash-Out-Funktion bietet weniger Flexibilität",
-      "Kundensupport nicht rund um die Uhr verfügbar",
-      "Mobile App könnte in Design und Performance verbessert werden",
-    ],
-  },
+  // happybet: {
+  //   name: "Happybet",
+  //   slug: "happybet",
+  //   title: "Happybet Erfahrungen & Test 2024 | Ist Happybet seriös?",
+  //   metaDescription:
+  //     "Ausführlicher Happybet Test mit echten Erfahrungen ✓ 150% Bonus bis 100€ ✓ Steuerfreie Wetten ✓ Jetzt informieren und profitieren!",
+  //   ctaLink: "https://www.hpybet.com/",
+  //   logo: happybetLogo,
+  //   highlights: [
+  //     "150% Einzahlungsbonus bis zu 100€ – zahle 67€ ein und wette mit 167€",
+  //     "Steuerfreie Wetten ab 2er Kombis, mehr Gewinn ohne zusätzliche Kosten",
+  //     "Exklusive VIP-Kundenbetreuung für persönlichen Service und exklusive Angebote",
+  //     "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
+  //     "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
+  //     "Gutes Treueprogramm mit attraktiven Prämien",
+  //   ],
+  //   bonus: {
+  //     type: "150% Einzahlungsbonus",
+  //     maxBonus: "100€",
+  //     minDeposit: "10€",
+  //     maxDeposit: "67€",
+  //     wageringRequirements: "1x Einzahung + 6x Bonus",
+  //     oddsRequirement: "2.00",
+  //     timeframe: "90 Tage (ab Gutschrift)",
+  //     validity: "1x pro Haushalt",
+  //     availableIn: ["Deutschland", "Österreich"],
+  //   },
+  //   ratings: [
+  //     { category: "Bonusangebote & Promotionen", score: 5 },
+  //     { category: "Wettquoten", score: 4 },
+  //     { category: "Sportarten- & Wettangebot", score: 4 },
+  //     { category: "Zahlungsmethoden", score: 5 },
+  //     { category: "Kundensupport", score: 4 },
+  //     { category: "Wettsteuer & Gebühren", score: 4 },
+  //     { category: "Mobile App & Optimierung", score: 4 },
+  //     { category: "Treueprogramme & VIP-Services", score: 4 },
+  //     { category: "Cash-Out-Funktion", score: 3 },
+  //   ],
+  //   faqs: [
+  //     {
+  //       question: "Ist Happybet ein seriöser Anbieter?",
+  //       answer:
+  //         "Ja, Happybet verfügt über Lizenzen der Malta Gaming Authority und der deutschen Glücksspielbehörde. Der Anbieter legt großen Wert auf Sicherheit und verantwortungsbewusstes Spielen.",
+  //     },
+  //     {
+  //       question: "Wie erhalte ich den Happybet Willkommensbonus?",
+  //       answer:
+  //         "Registriere dich auf der Happybet-Webseite und tätige eine Mindesteinzahlung von 10€. Bei einer Einzahlung von 67€ erhältst du den maximalen Bonus von 100€ und startest mit insgesamt 167€ Wettguthaben.",
+  //     },
+  //     {
+  //       question: "Muss ich die Wettsteuer bei Happybet zahlen?",
+  //       answer:
+  //         "Bei Einzelwetten wird die gesetzliche Wettsteuer von 5% auf den Kunden umgelegt. Ab 2er Kombiwetten entfällt die Wettsteuer, sodass du deine Gewinne ohne Abzüge erhältst.",
+  //     },
+  //     {
+  //       question: "Bietet Happybet eine mobile App an?",
+  //       answer:
+  //         "Ja, Happybet bietet eine App für iOS und Android. Die App ermöglicht es dir, auch unterwegs Wetten zu platzieren und dein Konto zu verwalten.",
+  //     },
+  //     {
+  //       question: "Wie kann ich den Kundensupport erreichen?",
+  //       answer:
+  //         "Der Kundensupport ist per Live-Chat, E-Mail und Telefon erreichbar. Beachte jedoch, dass der Support nicht rund um die Uhr verfügbar ist.",
+  //     },
+  //     {
+  //       question: "Welche Zahlungsmethoden stehen zur Verfügung?",
+  //       answer:
+  //         "Du kannst Einzahlungen über Kreditkarten, E-Wallets wie PayPal, Banküberweisungen und Prepaid-Karten tätigen. Auszahlungen erfolgen über die gleichen Methoden.",
+  //     },
+  //     {
+  //       question: "Gibt es ein Treueprogramm bei Happybet?",
+  //       answer:
+  //         "Ja, durch regelmäßiges Wetten sammelst du Punkte, die du gegen Boni oder Gratiswetten eintauschen kannst. Als VIP-Kunde profitierst du von zusätzlichen Vorteilen.",
+  //     },
+  //     {
+  //       question: "Wie funktioniert die Cash-Out-Funktion?",
+  //       answer:
+  //         "Bei ausgewählten Wetten kannst du die Cash-Out-Option nutzen, um deine Wette vorzeitig auszuwerten. Teilweiser oder automatischer Cash-Out sind allerdings nicht verfügbar.",
+  //     },
+  //   ],
+  //   paymentMethods: [
+  //     { name: "Visa", logo: visaLogo },
+  //     { name: "Mastercard", logo: mastercardLogo },
+  //     { name: "PayPal", logo: paypalLogo },
+  //     { name: "Skrill", logo: skrillLogo },
+  //     {
+  //       name: "Paysafecard",
+  //       logo: paysafecardLogo,
+  //     },
+  //     {
+  //       name: "Sofortüberweisung",
+  //       logo: sofortLogo,
+  //     },
+  //     { name: "Banküberweisung", logo: bankLogo },
+  //   ],
+  //   overview: {
+  //     foundingYear: "2017",
+  //     licence:
+  //       "Malta Gaming Authority (MGA), deutsche Lizenz gemäß Glücksspielstaatsvertrag",
+  //     specialFeatures: [
+  //       "Steuerfreie Wetten ab 2er Kombis",
+  //       "Exklusive VIP-Kundenbetreuung",
+  //       "Cash-Out-Funktion",
+  //       "Mobile App für iOS und Android",
+  //     ],
+  //     website: "www.hpybet.com",
+  //     security: [
+  //       "SSL-Verschlüsselung",
+  //       "Maßnahmen zum verantwortungsbewussten Spielen",
+  //     ],
+  //   },
+  //   pros: [
+  //     "Attraktiver Willkommensbonus mit 150% bis zu 100€",
+  //     "Steuerfreie Wetten ab 2er Kombis, mehr Gewinn für dich",
+  //     "Exklusive VIP-Kundenbetreuung mit persönlichen Services",
+  //     "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
+  //     "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
+  //     "Gutes Treueprogramm für Stammkunden",
+  //   ],
+  //   cons: [
+  //     "Wettsteuer wird bei Einzelwetten auf den Kunden umgelegt",
+  //     "Cash-Out-Funktion bietet weniger Flexibilität",
+  //     "Kundensupport nicht rund um die Uhr verfügbar",
+  //     "Mobile App könnte in Design und Performance verbessert werden",
+  //   ],
+  // },
   merkurbets: {
     name: "Merkur Bets",
     slug: "merkurbets",
     title: "Merkur Bets Erfahrungen & Test 2024 | Ist Merkur Bets seriös?",
     metaDescription:
       "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 100% 3er-Kombi Cashback + 10€ Gratiswette ✓ Wettsteuer übernommen ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.merkurbets.de/",
+    ctaLink: "https://media.cashpointpartners.com/C.ashx?btag=a_8433b_2360c_&affid=4834&siteid=8433&adid=2360&c=",
     logo: merkurbetsLogo,
     highlights: [
       "10€ Freiwette ohne Einzahlung, sofort nach Registrierung verfügbar",
@@ -510,217 +510,217 @@ export const onlineCasinoProvidersData = {
       "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
     ],
   },
-  merkur: {
-    name: "Merkur",
-    slug: "merkur",
-    title: "Merkur Slots Erfahrungen & Test 2024 | Ist Merkur seriös?",
-    metaDescription:
-      "Umfassender Merkur Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 100 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.merkur.com/",
-    logo: merkurLogo,
-    highlights: [
-      "50 Freispiele ohne Einzahlung – risikofreier Start",
-      "100% Bonus bis zu 50€ auf deine erste Einzahlung",
-      "50 zusätzliche Freispiele mit deiner ersten Einzahlung",
-      "Eine große Auswahl an Merkur-Klassikern wie Book of Ra und El Toro",
-      "Sichere und schnelle Ein- und Auszahlungen",
-      "Top Casino-Erlebnis auf allen Geräten",
-    ],
-    bonus: {
-      type: "100% Einzahlungsbonus + 100 Freispiele",
-      maxBonus: "50€ + 100 Freispiele",
-      minDeposit: "10€",
-      maxDeposit: "50€",
-      maxWager: "1€ pro Spin",
-      wageringRequirements: "35x Bonus",
-      timeframe: "30 Tage (ab Gutschrift)",
-      validity: "1x pro Haushalt",
-      availableIn: ["Deutschland"],
-    },
-    ratings: [
-      { category: "Bonusangebote & Promotionen", score: 5 },
-      { category: "Spielauswahl", score: 5 },
-      { category: "Kundensupport", score: 4 },
-      { category: "Treueprogramme", score: 4 },
-      { category: "Auszahlungsbedingungen", score: 5 },
-    ],
-    faqs: [
-      {
-        question: "Ist Merkur Casino seriös und sicher?",
-        answer:
-          "Ja, Merkur Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Merkur auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
-      },
-      {
-        question: "Gibt es einen Merkur Casino Bonus für Neukunden?",
-        answer:
-          "Ja, Merkur Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 50€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
-      },
-      {
-        question: "Welche Spiele bietet Merkur Casino an?",
-        answer:
-          "Merkur Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele, Live-Casino und Jackpot-Slots. Die Spiele stammen von renommierten Anbietern wie Merkur, Play'n'GO, Pragmatic Play, Red Tiger und Novomatic.",
-      },
-      {
-        question: "Kann ich bei Merkur Casino auch mobil spielen?",
-        answer:
-          "Ja, Merkur Casino verfügt über eine benutzerfreundliche App, die es Kunden ermöglicht, auch unterwegs zu spielen. Die App ist sowohl für iOS als auch für Android verfügbar und bietet alle Funktionen der Desktop-Version.",
-      },
-      {
-        question: "Wie erreiche ich den Merkur Casino Kundensupport?",
-        answer:
-          "Der Merkur Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
-      },
-    ],
-    paymentMethods: [
-      { name: "Visa", logo: visaLogo },
-      { name: "Mastercard", logo: mastercardLogo },
-      { name: "PayPal", logo: paypalLogo },
-      { name: "Skrill", logo: skrillLogo },
-      {
-        name: "Paysafecard",
-        logo: paysafecardLogo,
-      },
-      {
-        name: "Sofortüberweisung",
-        logo: sofortLogo,
-      },
-      { name: "Banküberweisung", logo: bankLogo },
-    ],
-    overview: {
-      foundingYear: "2001",
-      licence:
-        "Gibraltar Gambling Commission, deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
-      specialFeatures: [
-        "Beliebte Merkur-Klassiker und exklusive Spiele",
-        "Innovative Funktionen wie Turbo Spins und Autoplay",
-        "Cash-Out-Funktion",
-        "Mobile App für iOS und Android",
-      ],
-      website: "www.merkur.com",
-      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
-      shortDescription:
-        "Merkur gehört zur Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
-      description:
-        "Merkur ist seit 2001 im Markt und gehört zur renommierten Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Gibraltar Gambling Commission. Mit einer Vielzahl an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Merkur ein zuverlässiges und unterhaltsames Casino-Erlebnis.",
-    },
-    pros: [
-      "50 Freispiele ohne Einzahlung – risikofreier Einstieg",
-      "Attraktiver Willkommensbonus mit 100% bis zu 50€ und 50 Freispiele",
-      "Breite Spielauswahl mit beliebten Merkur-Klassikern",
-      "Benutzerfreundliche Mobile App für iOS und Android",
-      "Sichere und schnelle Auszahlungen ohne Gebühren",
-      "Innovative Funktionen wie Turbo Spins und Cash-Out",
-      "Umfangreiches Treueprogramm für Stammkunden",
-    ],
-    cons: [
-      "Telefonischer Kundensupport nicht verfügbar",
-      "Bonusbedingungen könnten für einige Spieler hoch erscheinen",
-      "Auswahl bei Auszahlungsmethoden könnte größer sein",
-    ],
-  },
-  happybet: {
-    name: "Happybet",
-    slug: "happybet",
-    title: "Happybet Slots Erfahrungen & Test 2024 | Ist Happybet seriös?",
-    metaDescription:
-      "Umfassender Happybet Slots Test mit echten Erfahrungen ✓ Keine aktuellen Bonusangebote ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.hpybet.com/",
-    logo: happybetLogo,
-    highlights: [
-      "Große Auswahl an Slots von Top-Anbietern wie NetEnt und Play'n GO",
-      "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
-      "Moderne und aufregende Slot-Spiele ohne erforderliche Boni",
-      "Sichere und schnelle Ein- und Auszahlungen",
-      "Benutzerfreundliche Plattform auf allen Geräten",
-    ],
-    bonus: {
-      type: "Aktuell kein Bonus",
-      maxBonus: "Aktuell kein Bonus",
-      minDeposit: "Aktuell kein Bonus",
-      wageringRequirements: "Aktuell kein Bonus",
-      maxDeposit: "Aktuell kein Bonus",
-      timeframe: "Aktuell kein Bonus",
-      validity: "Aktuell kein Bonus",
-      availableIn: ["Deutschland"],
-    },
-    ratings: [
-      { category: "Bonusangebote & Promotionen", score: 0 },
-      { category: "Spielauswahl", score: 5 },
-      { category: "Kundensupport", score: 4 },
-      { category: "Treueprogramme", score: 5 },
-      { category: "Auszahlungsbedingungen", score: 5 },
-    ],
-    faqs: [
-      {
-        question: "Ist Happybet Casino seriös und sicher?",
-        answer:
-          "Ja, Happybet Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Happybet auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
-      },
-      {
-        question: "Gibt es einen Happybet Casino Bonus für Neukunden?",
-        answer:
-          "Aktuell bietet Happybet keinen speziellen Willkommensbonus für Neukunden an. Dennoch überzeugt das Casino durch seine umfangreiche Spielauswahl und benutzerfreundliche Plattform.",
-      },
-      {
-        question: "Welche Spiele bietet Happybet Casino an?",
-        answer:
-          "Happybet Casino bietet eine große Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play'n GO, Pragmatic Play, Red Tiger und Novomatic, was für hohe Qualität und Vielfalt sorgt.",
-      },
-      {
-        question: "Kann ich bei Happybet Casino auch mobil spielen?",
-        answer:
-          "Ja, Happybet Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
-      },
-      {
-        question: "Wie erreiche ich den Happybet Casino Kundensupport?",
-        answer:
-          "Der Happybet Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
-      },
-    ],
-    paymentMethods: [
-      { name: "Visa", logo: visaLogo },
-      { name: "Mastercard", logo: mastercardLogo },
-      { name: "PayPal", logo: paypalLogo },
-      { name: "Skrill", logo: skrillLogo },
-      {
-        name: "Paysafecard",
-        logo: paysafecardLogo,
-      },
-      {
-        name: "Sofortüberweisung",
-        logo: sofortLogo,
-      },
-      { name: "Banküberweisung", logo: bankLogo },
-    ],
-    overview: {
-      foundingYear: "2018",
-      licence:
-        "Malta Gaming Authority (MGA), deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
-      specialFeatures: [
-        "Große Auswahl an Slots von Top-Anbietern",
-        "Benutzerfreundliche mobile Plattform",
-        "Sichere und schnelle Auszahlungen",
-        "Umfangreiches Treueprogramm für Stammkunden",
-      ],
-      website: "www.happybet.com",
-      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
-      shortDescription:
-        "Happybet ist ein etabliertes Unternehmen in der Online-Casino-Branche, das seit seiner Gründung großen Wert auf Spielerschutz und Transparenz legt. Mit einer Lizenz der Malta Gaming Authority und der deutschen Glücksspielbehörde bietet Happybet ein sicheres und vertrauenswürdiges Casino-Erlebnis. Die umfangreiche Spielauswahl, kombiniert mit schnellen Auszahlungen und einem zuverlässigen Kundensupport, macht Happybet zu einer attraktiven Wahl für Slot-Enthusiasten.",
-        description: "Happybet ist seit 2018 eine feste Größe auf dem deutschen Online-Casino-Markt und gehört zur renommierten Happybet Gruppe, einem etablierten Unternehmen mit langjähriger Erfahrung in der Glücksspielbranche. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Malta Gaming Authority (MGA), was höchste Sicherheitsstandards und fairen Spielbetrieb garantiert. Mit einer beeindruckenden Vielfalt an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Happybet ein zuverlässiges und unterhaltsames Casino-Erlebnis für Spieler aller Erfahrungsstufen.",
-    },
-    pros: [
-      "Große Auswahl an hochwertigen Slots von Top-Anbietern",
-      "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
-      "Moderne und aufregende Slot-Spiele ohne notwendige Boni",
-      "Sichere und schnelle Ein- und Auszahlungen",
-      "Benutzerfreundliche Plattform auf allen Geräten",
-      "Umfangreiches Treueprogramm für Stammkunden",
-      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
-    ],
-    cons: [
-      "Aktuell keine Bonusangebote verfügbar",
-      "Telefonischer Kundensupport nicht verfügbar",
-      "Auswahl bei Auszahlungsmethoden könnte größer sein",
-    ],
-  },
+  // merkur: {
+  //   name: "Merkur",
+  //   slug: "merkur",
+  //   title: "Merkur Slots Erfahrungen & Test 2024 | Ist Merkur seriös?",
+  //   metaDescription:
+  //     "Umfassender Merkur Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 100 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+  //   ctaLink: "https://www.merkur.com/",
+  //   logo: merkurLogo,
+  //   highlights: [
+  //     "50 Freispiele ohne Einzahlung – risikofreier Start",
+  //     "100% Bonus bis zu 50€ auf deine erste Einzahlung",
+  //     "50 zusätzliche Freispiele mit deiner ersten Einzahlung",
+  //     "Eine große Auswahl an Merkur-Klassikern wie Book of Ra und El Toro",
+  //     "Sichere und schnelle Ein- und Auszahlungen",
+  //     "Top Casino-Erlebnis auf allen Geräten",
+  //   ],
+  //   bonus: {
+  //     type: "100% Einzahlungsbonus + 100 Freispiele",
+  //     maxBonus: "50€ + 100 Freispiele",
+  //     minDeposit: "10€",
+  //     maxDeposit: "50€",
+  //     maxWager: "1€ pro Spin",
+  //     wageringRequirements: "35x Bonus",
+  //     timeframe: "30 Tage (ab Gutschrift)",
+  //     validity: "1x pro Haushalt",
+  //     availableIn: ["Deutschland"],
+  //   },
+  //   ratings: [
+  //     { category: "Bonusangebote & Promotionen", score: 5 },
+  //     { category: "Spielauswahl", score: 5 },
+  //     { category: "Kundensupport", score: 4 },
+  //     { category: "Treueprogramme", score: 4 },
+  //     { category: "Auszahlungsbedingungen", score: 5 },
+  //   ],
+  //   faqs: [
+  //     {
+  //       question: "Ist Merkur Casino seriös und sicher?",
+  //       answer:
+  //         "Ja, Merkur Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Merkur auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+  //     },
+  //     {
+  //       question: "Gibt es einen Merkur Casino Bonus für Neukunden?",
+  //       answer:
+  //         "Ja, Merkur Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 50€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+  //     },
+  //     {
+  //       question: "Welche Spiele bietet Merkur Casino an?",
+  //       answer:
+  //         "Merkur Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele, Live-Casino und Jackpot-Slots. Die Spiele stammen von renommierten Anbietern wie Merkur, Play'n'GO, Pragmatic Play, Red Tiger und Novomatic.",
+  //     },
+  //     {
+  //       question: "Kann ich bei Merkur Casino auch mobil spielen?",
+  //       answer:
+  //         "Ja, Merkur Casino verfügt über eine benutzerfreundliche App, die es Kunden ermöglicht, auch unterwegs zu spielen. Die App ist sowohl für iOS als auch für Android verfügbar und bietet alle Funktionen der Desktop-Version.",
+  //     },
+  //     {
+  //       question: "Wie erreiche ich den Merkur Casino Kundensupport?",
+  //       answer:
+  //         "Der Merkur Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+  //     },
+  //   ],
+  //   paymentMethods: [
+  //     { name: "Visa", logo: visaLogo },
+  //     { name: "Mastercard", logo: mastercardLogo },
+  //     { name: "PayPal", logo: paypalLogo },
+  //     { name: "Skrill", logo: skrillLogo },
+  //     {
+  //       name: "Paysafecard",
+  //       logo: paysafecardLogo,
+  //     },
+  //     {
+  //       name: "Sofortüberweisung",
+  //       logo: sofortLogo,
+  //     },
+  //     { name: "Banküberweisung", logo: bankLogo },
+  //   ],
+  //   overview: {
+  //     foundingYear: "2001",
+  //     licence:
+  //       "Gibraltar Gambling Commission, deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+  //     specialFeatures: [
+  //       "Beliebte Merkur-Klassiker und exklusive Spiele",
+  //       "Innovative Funktionen wie Turbo Spins und Autoplay",
+  //       "Cash-Out-Funktion",
+  //       "Mobile App für iOS und Android",
+  //     ],
+  //     website: "www.merkur.com",
+  //     security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+  //     shortDescription:
+  //       "Merkur gehört zur Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+  //     description:
+  //       "Merkur ist seit 2001 im Markt und gehört zur renommierten Gauselmann Gruppe, einem etablierten Unternehmen in der Glücksspielbranche mit langjähriger Erfahrung. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Gibraltar Gambling Commission. Mit einer Vielzahl an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Merkur ein zuverlässiges und unterhaltsames Casino-Erlebnis.",
+  //   },
+  //   pros: [
+  //     "50 Freispiele ohne Einzahlung – risikofreier Einstieg",
+  //     "Attraktiver Willkommensbonus mit 100% bis zu 50€ und 50 Freispiele",
+  //     "Breite Spielauswahl mit beliebten Merkur-Klassikern",
+  //     "Benutzerfreundliche Mobile App für iOS und Android",
+  //     "Sichere und schnelle Auszahlungen ohne Gebühren",
+  //     "Innovative Funktionen wie Turbo Spins und Cash-Out",
+  //     "Umfangreiches Treueprogramm für Stammkunden",
+  //   ],
+  //   cons: [
+  //     "Telefonischer Kundensupport nicht verfügbar",
+  //     "Bonusbedingungen könnten für einige Spieler hoch erscheinen",
+  //     "Auswahl bei Auszahlungsmethoden könnte größer sein",
+  //   ],
+  // },
+  // happybet: {
+  //   name: "Happybet",
+  //   slug: "happybet",
+  //   title: "Happybet Slots Erfahrungen & Test 2024 | Ist Happybet seriös?",
+  //   metaDescription:
+  //     "Umfassender Happybet Slots Test mit echten Erfahrungen ✓ Keine aktuellen Bonusangebote ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+  //   ctaLink: "https://www.hpybet.com/",
+  //   logo: happybetLogo,
+  //   highlights: [
+  //     "Große Auswahl an Slots von Top-Anbietern wie NetEnt und Play'n GO",
+  //     "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
+  //     "Moderne und aufregende Slot-Spiele ohne erforderliche Boni",
+  //     "Sichere und schnelle Ein- und Auszahlungen",
+  //     "Benutzerfreundliche Plattform auf allen Geräten",
+  //   ],
+  //   bonus: {
+  //     type: "Aktuell kein Bonus",
+  //     maxBonus: "Aktuell kein Bonus",
+  //     minDeposit: "Aktuell kein Bonus",
+  //     wageringRequirements: "Aktuell kein Bonus",
+  //     maxDeposit: "Aktuell kein Bonus",
+  //     timeframe: "Aktuell kein Bonus",
+  //     validity: "Aktuell kein Bonus",
+  //     availableIn: ["Deutschland"],
+  //   },
+  //   ratings: [
+  //     { category: "Bonusangebote & Promotionen", score: 0 },
+  //     { category: "Spielauswahl", score: 5 },
+  //     { category: "Kundensupport", score: 4 },
+  //     { category: "Treueprogramme", score: 5 },
+  //     { category: "Auszahlungsbedingungen", score: 5 },
+  //   ],
+  //   faqs: [
+  //     {
+  //       question: "Ist Happybet Casino seriös und sicher?",
+  //       answer:
+  //         "Ja, Happybet Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Happybet auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+  //     },
+  //     {
+  //       question: "Gibt es einen Happybet Casino Bonus für Neukunden?",
+  //       answer:
+  //         "Aktuell bietet Happybet keinen speziellen Willkommensbonus für Neukunden an. Dennoch überzeugt das Casino durch seine umfangreiche Spielauswahl und benutzerfreundliche Plattform.",
+  //     },
+  //     {
+  //       question: "Welche Spiele bietet Happybet Casino an?",
+  //       answer:
+  //         "Happybet Casino bietet eine große Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play'n GO, Pragmatic Play, Red Tiger und Novomatic, was für hohe Qualität und Vielfalt sorgt.",
+  //     },
+  //     {
+  //       question: "Kann ich bei Happybet Casino auch mobil spielen?",
+  //       answer:
+  //         "Ja, Happybet Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+  //     },
+  //     {
+  //       question: "Wie erreiche ich den Happybet Casino Kundensupport?",
+  //       answer:
+  //         "Der Happybet Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+  //     },
+  //   ],
+  //   paymentMethods: [
+  //     { name: "Visa", logo: visaLogo },
+  //     { name: "Mastercard", logo: mastercardLogo },
+  //     { name: "PayPal", logo: paypalLogo },
+  //     { name: "Skrill", logo: skrillLogo },
+  //     {
+  //       name: "Paysafecard",
+  //       logo: paysafecardLogo,
+  //     },
+  //     {
+  //       name: "Sofortüberweisung",
+  //       logo: sofortLogo,
+  //     },
+  //     { name: "Banküberweisung", logo: bankLogo },
+  //   ],
+  //   overview: {
+  //     foundingYear: "2018",
+  //     licence:
+  //       "Malta Gaming Authority (MGA), deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+  //     specialFeatures: [
+  //       "Große Auswahl an Slots von Top-Anbietern",
+  //       "Benutzerfreundliche mobile Plattform",
+  //       "Sichere und schnelle Auszahlungen",
+  //       "Umfangreiches Treueprogramm für Stammkunden",
+  //     ],
+  //     website: "www.happybet.com",
+  //     security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+  //     shortDescription:
+  //       "Happybet ist ein etabliertes Unternehmen in der Online-Casino-Branche, das seit seiner Gründung großen Wert auf Spielerschutz und Transparenz legt. Mit einer Lizenz der Malta Gaming Authority und der deutschen Glücksspielbehörde bietet Happybet ein sicheres und vertrauenswürdiges Casino-Erlebnis. Die umfangreiche Spielauswahl, kombiniert mit schnellen Auszahlungen und einem zuverlässigen Kundensupport, macht Happybet zu einer attraktiven Wahl für Slot-Enthusiasten.",
+  //       description: "Happybet ist seit 2018 eine feste Größe auf dem deutschen Online-Casino-Markt und gehört zur renommierten Happybet Gruppe, einem etablierten Unternehmen mit langjähriger Erfahrung in der Glücksspielbranche. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Malta Gaming Authority (MGA), was höchste Sicherheitsstandards und fairen Spielbetrieb garantiert. Mit einer beeindruckenden Vielfalt an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Happybet ein zuverlässiges und unterhaltsames Casino-Erlebnis für Spieler aller Erfahrungsstufen.",
+  //   },
+  //   pros: [
+  //     "Große Auswahl an hochwertigen Slots von Top-Anbietern",
+  //     "Beliebte Klassiker wie Book of Ra und Lord of the Ocean",
+  //     "Moderne und aufregende Slot-Spiele ohne notwendige Boni",
+  //     "Sichere und schnelle Ein- und Auszahlungen",
+  //     "Benutzerfreundliche Plattform auf allen Geräten",
+  //     "Umfangreiches Treueprogramm für Stammkunden",
+  //     "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
+  //   ],
+  //   cons: [
+  //     "Aktuell keine Bonusangebote verfügbar",
+  //     "Telefonischer Kundensupport nicht verfügbar",
+  //     "Auswahl bei Auszahlungsmethoden könnte größer sein",
+  //   ],
+  // },
 };
