@@ -18,7 +18,7 @@ export const sportsbettingProvidersData = {
     title: "Betano Sportwetten Erfahrungen & Test 2024 | Ist Betano seriös?",
     metaDescription:
       "Ausführlicher Betano Sportwetten Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.betano.com/de/",
+    ctaLink: "https://gml-grp.com/C.ashx?btag=a_10846b_3503c_&affid=3453&siteid=10846&adid=3503&c=",
     logo: betanoLogo,
     highlights: [
       "100% Einzahlungsbonus bis zu 80€",
