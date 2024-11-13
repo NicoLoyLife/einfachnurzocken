@@ -283,7 +283,7 @@ function AGB() {
         <br />
         Wilmersdorfer Str. 122-123, D-10627 Berlin
         <br />
-        E-Mail: info@einfachnurzocken.com
+        E-Mail: E-Mail: felix@goldengoalsport.de
       </Typography>
     </Box>
   );

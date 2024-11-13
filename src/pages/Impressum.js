@@ -34,7 +34,7 @@ function Impressum() {
           <br />
           Telefon:
           <br />
-          E-Mail: info@einfachnurzocken.com
+          E-Mail: felix@goldengoalsport.de
         </Typography>
 
         {/* Umsatzsteuer-ID */}
