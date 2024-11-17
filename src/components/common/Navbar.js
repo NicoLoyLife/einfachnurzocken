@@ -243,7 +243,7 @@ function Navbar() {
               gap: theme.spacing(2),
             }}
           >
-            <IconButton>
+            {/* <IconButton>
               <Facebook />
             </IconButton>
             <IconButton>
@@ -254,7 +254,7 @@ function Navbar() {
             </IconButton>
             <IconButton>
               <YouTube />
-            </IconButton>
+            </IconButton> */}
           </Box>
         </Box>
       </Drawer>

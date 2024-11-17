@@ -1,7 +1,9 @@
 import betanoLogo from "../assets/images/sportsbooks/betano.png";
-import happybetLogo from "../assets/images/sportsbooks/happybet.jpg";
+// import happybetLogo from "../assets/images/sportsbooks/happybet.jpg";
 import merkurbetsLogo from "../assets/images/sportsbooks/merkurbets.jpg";
-import merkurLogo from "../assets/images/casinos/merkur.jpg";
+// import merkurLogo from "../assets/images/casinos/merkur.jpg";
+import jackpotPiratenLogo from "../assets/images/casinos/jackpotpiraten.jpg";
+import bingBongLogo from "../assets/images/casinos/bingbong.png";
 
 import visaLogo from "../assets/images/payment/WW VISA.svg";
 import mastercardLogo from "../assets/images/payment/WW Mastercard.svg";
@@ -10,6 +12,10 @@ import skrillLogo from "../assets/images/payment/EU Skrill.svg";
 import paysafecardLogo from "../assets/images/payment/WW paysafecard.svg";
 import sofortLogo from "../assets/images/payment/EU Klarna Sofort.svg";
 import bankLogo from "../assets/images/payment/DE U╠êberweisung.svg";
+import klarnaLogo from "../assets/images/payment/EU Klarna.svg";
+import trustlyLogo from "../assets/images/payment/Trustly.png";
+import netellerLogo from "../assets/images/payment/neteller_logo_icon_169926.png";
+import giropayLogo from "../assets/images/payment/DE Giropay.svg";
 
 export const sportsbettingProvidersData = {
   betano: {
@@ -18,7 +24,8 @@ export const sportsbettingProvidersData = {
     title: "Betano Sportwetten Erfahrungen & Test 2024 | Ist Betano seriös?",
     metaDescription:
       "Ausführlicher Betano Sportwetten Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://gml-grp.com/C.ashx?btag=a_10846b_3503c_&affid=3453&siteid=10846&adid=3503&c=",
+    ctaLink:
+      "https://gml-grp.com/C.ashx?btag=a_10846b_3503c_&affid=3453&siteid=10846&adid=3503&c=",
     logo: betanoLogo,
     highlights: [
       "100% Einzahlungsbonus bis zu 80€",
@@ -263,7 +270,8 @@ export const sportsbettingProvidersData = {
     title: "Merkur Bets Erfahrungen & Test 2024 | Ist Merkur Bets seriös?",
     metaDescription:
       "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 100% 3er-Kombi Cashback + 10€ Gratiswette ✓ Wettsteuer übernommen ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://media.cashpointpartners.com/C.ashx?btag=a_8433b_2360c_&affid=4834&siteid=8433&adid=2360&c=",
+    ctaLink:
+      "https://media.cashpointpartners.com/C.ashx?btag=a_8433b_2360c_&affid=4834&siteid=8433&adid=2360&c=",
     logo: merkurbetsLogo,
     highlights: [
       "10€ Freiwette ohne Einzahlung, sofort nach Registrierung verfügbar",
@@ -508,6 +516,209 @@ export const onlineCasinoProvidersData = {
       "Spielauswahl im Vergleich zu Konkurrenz begrenzt: Weniger Tischspiele und Live-Casino-Optionen als einige Mitbewerber",
       "Umsatzbedingungen beim Bonus: Hohe Umsatzanforderungen könnten abschreckend wirken",
       "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
+    ],
+  },
+  jackpotPiraten: {
+    name: "Jackpot Piraten",
+    slug: "jackpot-piraten",
+    title:
+      "Jackpot Piraten Slots Erfahrungen & Test 2024 | Ist Jackpot Piraten seriös?",
+    metaDescription:
+      "Umfassender Jackpot Piraten Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 50 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+    ctaLink:
+      "https://cjih.boell.jackpotpiraten.de/ts/i5544453/tsc?typ=r&amc=networks.cap.526088.535942.CRT-GYr1T0Y",
+    logo: jackpotPiratenLogo,
+    highlights: [
+      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
+      "50 Freispiele für spannende Slot-Spiele",
+      "Eine große Auswahl an beliebten Spielen wie Book of Ra und El Toro",
+      "Sichere und schnelle Ein- und Auszahlungen",
+      "Benutzerfreundliche Plattform auf allen Geräten",
+    ],
+    bonus: {
+      type: "100% Einzahlungsbonus + 50 Freispiele",
+      maxBonus: "100€ + 50 Freispiele",
+      minDeposit: "1€",
+      maxDeposit: "100€",
+      maxWager: "1€ pro Spin",
+      wageringRequirements: "35x Bonus",
+      timeframe: "30 Tage (ab Gutschrift)",
+      validity: "1x pro Haushalt",
+      availableIn: ["Deutschland"],
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 4 },
+      { category: "Spielauswahl", score: 3 },
+      { category: "Kundensupport", score: 5 },
+      { category: "Treueprogramme", score: 5 },
+      { category: "Auszahlungsbedingungen", score: 5 },
+    ],
+    faqs: [
+      {
+        question: "Ist Jackpot Piraten Casino seriös und sicher?",
+        answer:
+          "Ja, Jackpot Piraten Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Jackpot Piraten auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+      },
+      {
+        question: "Gibt es einen Jackpot Piraten Casino Bonus für Neukunden?",
+        answer:
+          "Ja, Jackpot Piraten Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+      },
+      {
+        question: "Welche Spiele bietet Jackpot Piraten Casino an?",
+        answer:
+          "Jackpot Piraten Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play’n GO, Pragmatic Play, Red Tiger und Novomatic.",
+      },
+      {
+        question: "Kann ich bei Jackpot Piraten Casino auch mobil spielen?",
+        answer:
+          "Ja, Jackpot Piraten Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+      },
+      {
+        question: "Wie erreiche ich den Jackpot Piraten Casino Kundensupport?",
+        answer:
+          "Der Jackpot Piraten Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+      },
+    ],
+    paymentMethods: [
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Sofortüberweisung", logo: sofortLogo },
+      { name: "Klarna", logo: klarnaLogo },
+      { name: "Trustly", logo: trustlyLogo },
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "Skrill", logo: skrillLogo },
+      { name: "Neteller", logo: netellerLogo },
+    ],
+    overview: {
+      foundingYear: "2020",
+      licence: "GGL (Deutschland)",
+      specialFeatures: [
+        "Große Auswahl an Slots von Top-Anbietern",
+        "Benutzerfreundliche mobile Plattform",
+        "Sichere und schnelle Auszahlungen",
+        "Umfangreiches Treueprogramm für Stammkunden",
+      ],
+      website: "www.jackpotpiraten.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      shortDescription:
+        "Jackpot Piraten gehört zur renommierten Pirate Group, einem etablierten Unternehmen in der Online-Casino-Branche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+      description:
+        "Bing Bong ist seit 2020 eine feste Größe auf dem deutschen Online-Casino-Markt und gehört zur renommierten Bing Group, einem etablierten Unternehmen mit langjähriger Erfahrung in der Glücksspielbranche. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Malta Gaming Authority (MGA), was höchste Sicherheitsstandards und fairen Spielbetrieb garantiert. Mit einer beeindruckenden Vielfalt an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Bing Bong ein zuverlässiges und unterhaltsames Casino-Erlebnis für Spieler aller Erfahrungsstufen.",
+    },
+    pros: [
+      "Attraktiver Willkommensbonus mit 100% bis zu 100€ und 50 Freispiele",
+      "Breite Spielauswahl mit beliebten Klassikern wie Book of Ra und El Toro",
+      "Benutzerfreundliche mobile Plattform für iOS und Android",
+      "Sichere und schnelle Auszahlungen ohne Gebühren",
+      "Umfangreiches Treueprogramm für Stammkunden",
+      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
+    ],
+    cons: [
+      "Spielauswahl könnte noch vielfältiger sein",
+      "Keine telefonische Unterstützung verfügbar",
+      "Auswahl bei Auszahlungsmethoden könnte größer sein",
+    ],
+  },
+  bingBong: {
+    name: "Bing Bong",
+    slug: "bing-bong",
+    title: "Bing Bong Slots Erfahrungen & Test 2024 | Ist Bing Bong seriös?",
+    metaDescription:
+      "Umfassender Bing Bong Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 50 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+    ctaLink:
+      "https://opwu.grass.bingbong.de/ts/i5044752/tsc?typ=r&amc=networks.cap.526088.535942.CRTBbxuBVCq",
+    logo: bingBongLogo,
+    highlights: [
+      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
+      "50 Freispiele für spannende Slot-Spiele",
+      "Eine große Auswahl an beliebten Spielen wie Book of Ra und El Toro",
+      "Sichere und schnelle Ein- und Auszahlungen",
+      "Benutzerfreundliche Plattform auf allen Geräten",
+    ],
+    bonus: {
+      type: "100% Einzahlungsbonus + 50 Freispiele",
+      maxBonus: "100€ + 50 Freispiele",
+      minDeposit: "1€",
+      maxDeposit: "100€",
+      maxWager: "1€ pro Spin",
+      wageringRequirements: "35x Bonus",
+      timeframe: "30 Tage (ab Gutschrift)",
+      validity: "1x pro Haushalt",
+      availableIn: ["Deutschland"],
+    },
+    ratings: [
+      { category: "Bonusangebote & Promotionen", score: 4 },
+      { category: "Spielauswahl", score: 3 },
+      { category: "Kundensupport", score: 5 },
+      { category: "Treueprogramme", score: 5 },
+      { category: "Auszahlungsbedingungen", score: 5 },
+    ],
+    faqs: [
+      {
+        question: "Ist Bing Bong Casino seriös und sicher?",
+        answer:
+          "Ja, Bing Bong Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Bing Bong auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+      },
+      {
+        question: "Gibt es einen Bing Bong Casino Bonus für Neukunden?",
+        answer:
+          "Ja, Bing Bong Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+      },
+      {
+        question: "Welche Spiele bietet Bing Bong Casino an?",
+        answer:
+          "Bing Bong Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play’n GO, Pragmatic Play, Red Tiger und Novomatic.",
+      },
+      {
+        question: "Kann ich bei Bing Bong Casino auch mobil spielen?",
+        answer:
+          "Ja, Bing Bong Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+      },
+      {
+        question: "Wie erreiche ich den Bing Bong Casino Kundensupport?",
+        answer:
+          "Der Bing Bong Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+      },
+    ],
+    paymentMethods: [
+      { name: "PayPal", logo: paypalLogo },
+      { name: "Sofortüberweisung", logo: sofortLogo },
+      { name: "Giropay", logo: giropayLogo },
+      { name: "Trustly", logo: trustlyLogo },
+      { name: "Visa", logo: visaLogo },
+      { name: "Mastercard", logo: mastercardLogo },
+      { name: "Klarna", logo: klarnaLogo },
+      { name: "Skrill", logo: skrillLogo },
+      { name: "Neteller", logo: netellerLogo },
+    ],
+    overview: {
+      foundingYear: "2020",
+      licence:
+        "Malta Gaming Authority (MGA), deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+      specialFeatures: [
+        "Große Auswahl an Slots von Top-Anbietern",
+        "Benutzerfreundliche mobile Plattform",
+        "Sichere und schnelle Auszahlungen",
+        "Umfangreiches Treueprogramm für Stammkunden",
+      ],
+      website: "www.bingbong.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      description:
+        "Bing Bong gehört zur renommierten Bing Group, einem etablierten Unternehmen in der Online-Casino-Branche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+    },
+    pros: [
+      "Attraktiver Willkommensbonus mit 100% bis zu 100€ und 50 Freispiele",
+      "Breite Spielauswahl mit beliebten Klassikern wie Book of Ra und El Toro",
+      "Benutzerfreundliche mobile Plattform für iOS und Android",
+      "Sichere und schnelle Auszahlungen ohne Gebühren",
+      "Umfangreiches Treueprogramm für Stammkunden",
+      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
+    ],
+    cons: [
+      "Spielauswahl könnte noch vielfältiger sein",
+      "Keine telefonische Unterstützung verfügbar",
+      "Auswahl bei Auszahlungsmethoden könnte größer sein",
     ],
   },
   // merkur: {

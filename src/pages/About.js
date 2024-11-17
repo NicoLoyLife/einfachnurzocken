@@ -152,7 +152,7 @@ function About() {
       <Typography variant="body1" sx={{ mb: 4 }}>
         Bleibe stets informiert über die neuesten Entwicklungen in der
         Gaming-Welt. Wir berichten über neue Spiele, aktuelle politische
-        ENtscheidungen, neue Bonus-Angebote und vieles mehr.
+        Entscheidungen, neue Bonus-Angebote und vieles mehr.
       </Typography>
 
       <Typography variant="h3" component="h3">
