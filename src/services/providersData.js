@@ -118,7 +118,7 @@ export const sportsbettingProvidersData = {
         "Cash-Out-Funktion",
         "Mobile App für iOS und Android",
       ],
-      website: "www.betano.com",
+      website: "www.betano.de",
       security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
       description:
         "Betano gehört zur Kaizen Gaming International Ltd., einem Unternehmen mit langjähriger Erfahrung in der iGaming-Branche. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
