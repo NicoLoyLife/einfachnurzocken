@@ -18,6 +18,7 @@ import Spielerschutz from "./pages/Spielerschutz";
 import AGB from "./pages/AGB";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Kontakt from "./pages/Kontakt";
 import { CasinoTheme, SportwettenTheme } from "./theme/themes";
 import SportwettenRoutes from "./routes/SportwettenRoutes";
 import CasinoRoutes from "./routes/CasinoRoutes";
@@ -130,6 +131,7 @@ function App() {
               <Route path="/spielerschutz" element={<Spielerschutz />} />
               <Route path="/agb" element={<AGB />} />
               <Route path="/about" element={<About />} />
+              <Route path="/kontakt" element={<Kontakt />} />
               {/* Sportwetten-Routen einbinden */}
               {SportwettenRoutes()}
               {/* Casino-Routen einbinden */}
