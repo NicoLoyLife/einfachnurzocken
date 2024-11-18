@@ -36,6 +36,7 @@ export const sportsbettingProvidersData = {
     bonus: {
       type: "100% Einzahlungsbonus + 20€ Freiwette",
       maxBonus: "100€ (80€ Einzahlungsbonus + 20€ Freiwette)",
+      freiwette: "20€ Freiwette ohne Einzahlung",
       minDeposit: "10€",
       maxDeposit: "80€",
       wageringRequirements: "5x Bonus + Einzahlung",
@@ -286,6 +287,7 @@ export const sportsbettingProvidersData = {
     bonus: {
       type: "25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette",
       maxBonus: "100€ (25 € Freiwette + 75 € Cashback)",
+      freiwette: "25€ Freiwette ab 1€ Einzahlung",
       minDeposit:
         "1€ für die 25€ Freiwette; 10€ für die risikofreie Kombiwette",
       maxDeposit: "Keine Angabe",
@@ -377,7 +379,7 @@ export const sportsbettingProvidersData = {
         "SSL-Verschlüsselung",
         "Maßnahmen zum verantwortungsbewussten Spielen",
       ],
-      description: ""
+      description: "",
     },
     pros: [
       "25€ Freiwette ab 1€ Einzahlung – starte sofort mit minimalem Einsatz",
@@ -416,6 +418,7 @@ export const onlineCasinoProvidersData = {
   //   bonus: {
   //     type: "100% Einzahlungsbonus + 150 Freispiele",
   //     maxBonus: "100€ + 150 Freispiele",
+  //     freispiele: "150 Freispiele",
   //     minDeposit: "10€",
   //     maxDeposit: "100€",
   //     maxWager: "1€ pro Spin",
@@ -519,29 +522,48 @@ export const onlineCasinoProvidersData = {
   //   ],
   // },
   jackpotPiraten: {
-    name: "Jackpot Piraten",
-    slug: "jackpot-piraten",
+    name: "JackpotPiraten",
+    slug: "jackpotpiraten",
     title:
-      "Jackpot Piraten Slots Erfahrungen & Test 2024 | Ist Jackpot Piraten seriös?",
+      "JackpotPiraten Online-Spielothek: 100% Bonus bis 100 € + 50 Freispiele im Test",
     metaDescription:
-      "Umfassender Jackpot Piraten Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 50 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+      "JackpotPiraten im Test: 100 % Bonus bis 100 € + 50 Freispiele, deutsche Lizenz, über 620 Slots. Jetzt spannende Abenteuer erleben und gewinnen!",
     ctaLink:
       "https://cjih.boell.jackpotpiraten.de/ts/i5544453/tsc?typ=r&amc=networks.cap.526088.535942.CRT-GYr1T0Y",
     logo: jackpotPiratenLogo,
+    pros: [
+      "Attraktiver Willkommensbonus mit fairen Bedingungen",
+      "Über 620 Slots von renommierten Anbietern",
+      "Blitz-Auszahlungen und PayPal als Zahlungsmethode",
+    ],
+    cons: ["Keine Live-Casino-Spiele"],
+    overview: {
+      foundingYear: "2020",
+      licence: "GGL (Deutschland)",
+      specialFeatures: [
+        "Große Auswahl an Slots von Top-Anbietern",
+        "Benutzerfreundliche mobile Plattform",
+        "Sichere und schnelle Auszahlungen",
+        "Umfangreiches Treueprogramm für Stammkunden",
+      ],
+      website: "jackpotpiraten.com",
+      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+      description:
+        "JackpotPiraten, gegründet von zwei Branchengrößen – der Gauselmann Gruppe und Novomatic –, ist eine der ersten legalen Online-Spielotheken in Deutschland. Mit über 620 Slots, einer deutschen Lizenz der Gemeinsamen Glücksspielbehörde der Länder (GGL) und einer benutzerfreundlichen Plattform bietet JackpotPiraten ein abgerundetes Spielerlebnis.",
+    },
     highlights: [
-      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
-      "50 Freispiele für spannende Slot-Spiele",
-      "Eine große Auswahl an beliebten Spielen wie Book of Ra und El Toro",
-      "Sichere und schnelle Ein- und Auszahlungen",
-      "Benutzerfreundliche Plattform auf allen Geräten",
+      "Über 620 Spiele von Top-Entwicklern wie Merkur, Novomatic und Pragmatic Play",
+      "Deutsche Lizenz für maximale Sicherheit",
+      "Blitz-Auszahlungen innerhalb von 24 Stunden",
     ],
     bonus: {
-      type: "100% Einzahlungsbonus + 50 Freispiele",
+      type: "50 Freispiele + 100€ Einzahlungsbonus (100%)",
       maxBonus: "100€ + 50 Freispiele",
+      freispiele: "50 Freispiele für „Book of Ra Deluxe“",
       minDeposit: "1€",
       maxDeposit: "100€",
       maxWager: "1€ pro Spin",
-      wageringRequirements: "35x Bonus",
+      wageringRequirements: "30x Bonus",
       timeframe: "30 Tage (ab Gutschrift)",
       validity: "1x pro Haushalt",
       availableIn: ["Deutschland"],
@@ -555,29 +577,29 @@ export const onlineCasinoProvidersData = {
     ],
     faqs: [
       {
-        question: "Ist Jackpot Piraten Casino seriös und sicher?",
+        question: "Ist JackpotPiraten legal?",
         answer:
-          "Ja, Jackpot Piraten Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Jackpot Piraten auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+          "Ja, JackpotPiraten besitzt eine deutsche Lizenz der GGL und erfüllt alle gesetzlichen Vorgaben.",
       },
       {
-        question: "Gibt es einen Jackpot Piraten Casino Bonus für Neukunden?",
+        question: "Wie hoch ist der Willkommensbonus?",
         answer:
-          "Ja, Jackpot Piraten Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+          "Der Bonus beträgt 100 % bis zu 100 € sowie 50 Freispiele für „Book of Ra Deluxe“.",
       },
       {
-        question: "Welche Spiele bietet Jackpot Piraten Casino an?",
+        question: "Welche Zahlungsmethoden bietet JackpotPiraten?",
         answer:
-          "Jackpot Piraten Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play’n GO, Pragmatic Play, Red Tiger und Novomatic.",
+          "PayPal, Klarna, Trustly, Visa, Mastercard, Skrill und viele weitere sichere Methoden.",
       },
       {
-        question: "Kann ich bei Jackpot Piraten Casino auch mobil spielen?",
+        question: "Was kann ich bei JackpotPiraten spielen?",
         answer:
-          "Ja, Jackpot Piraten Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+          "Über 620 Slots, darunter Klassiker wie Book of Ra Deluxe und moderne Hits wie Big Bass Bonanza.",
       },
       {
-        question: "Wie erreiche ich den Jackpot Piraten Casino Kundensupport?",
+        question: "Wie schnell sind Auszahlungen?",
         answer:
-          "Der Jackpot Piraten Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+          "Dank der Blitz-Auszahlung sind Gewinne innerhalb von 24 Stunden auf deinem Konto verfügbar.",
       },
     ],
     paymentMethods: [
@@ -590,57 +612,28 @@ export const onlineCasinoProvidersData = {
       { name: "Skrill", logo: skrillLogo },
       { name: "Neteller", logo: netellerLogo },
     ],
-    overview: {
-      foundingYear: "2020",
-      licence: "GGL (Deutschland)",
-      specialFeatures: [
-        "Große Auswahl an Slots von Top-Anbietern",
-        "Benutzerfreundliche mobile Plattform",
-        "Sichere und schnelle Auszahlungen",
-        "Umfangreiches Treueprogramm für Stammkunden",
-      ],
-      website: "www.jackpotpiraten.com",
-      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
-      shortDescription:
-        "Jackpot Piraten gehört zur renommierten Pirate Group, einem etablierten Unternehmen in der Online-Casino-Branche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
-      description:
-        "Bing Bong ist seit 2020 eine feste Größe auf dem deutschen Online-Casino-Markt und gehört zur renommierten Bing Group, einem etablierten Unternehmen mit langjähriger Erfahrung in der Glücksspielbranche. Das Casino verfügt über eine deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag sowie eine Lizenz der Malta Gaming Authority (MGA), was höchste Sicherheitsstandards und fairen Spielbetrieb garantiert. Mit einer beeindruckenden Vielfalt an Spielen, sicheren Zahlungsmethoden und einem starken Fokus auf Spielerschutz bietet Bing Bong ein zuverlässiges und unterhaltsames Casino-Erlebnis für Spieler aller Erfahrungsstufen.",
-    },
-    pros: [
-      "Attraktiver Willkommensbonus mit 100% bis zu 100€ und 50 Freispiele",
-      "Breite Spielauswahl mit beliebten Klassikern wie Book of Ra und El Toro",
-      "Benutzerfreundliche mobile Plattform für iOS und Android",
-      "Sichere und schnelle Auszahlungen ohne Gebühren",
-      "Umfangreiches Treueprogramm für Stammkunden",
-      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
-    ],
-    cons: [
-      "Spielauswahl könnte noch vielfältiger sein",
-      "Keine telefonische Unterstützung verfügbar",
-      "Auswahl bei Auszahlungsmethoden könnte größer sein",
-    ],
   },
   bingBong: {
     name: "Bing Bong",
     slug: "bing-bong",
-    title: "Bing Bong Slots Erfahrungen & Test 2024 | Ist Bing Bong seriös?",
+    title:
+      "Bing Bong Online-Spielothek: Attraktive Boni & über 650 Slots im Test",
     metaDescription:
-      "Umfassender Bing Bong Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus + 50 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+      "Bing Bong im Test: 100 % Bonus bis 100 € + 50 Freispiele, deutsche Lizenz, über 650 Slots von Merkur, Novomatic & Co. Jetzt mehr erfahren!",
     ctaLink:
       "https://opwu.grass.bingbong.de/ts/i5044752/tsc?typ=r&amc=networks.cap.526088.535942.CRTBbxuBVCq",
     logo: bingBongLogo,
     highlights: [
-      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
-      "50 Freispiele für spannende Slot-Spiele",
-      "Eine große Auswahl an beliebten Spielen wie Book of Ra und El Toro",
-      "Sichere und schnelle Ein- und Auszahlungen",
-      "Benutzerfreundliche Plattform auf allen Geräten",
+      "Über 650 Slots von Top-Entwicklern wie Merkus, Novomatic und Pragmatic Play",
+      "PayPal als beliebte Zahlungsmethode",
+      "Mobile App für iOS und Android",
     ],
     bonus: {
-      type: "100% Einzahlungsbonus + 50 Freispiele",
+      type: "50 Freispiele + 100€ Einzahlungsbonus (100%)",
       maxBonus: "100€ + 50 Freispiele",
+      freispiele: "50 Freispiele für „Book of Ra Deluxe“",
       minDeposit: "1€",
-      maxDeposit: "100€",
+      maxDeposit: "100€ (für maximalen Bonus)",
       maxWager: "1€ pro Spin",
       wageringRequirements: "35x Bonus",
       timeframe: "30 Tage (ab Gutschrift)",
@@ -656,29 +649,29 @@ export const onlineCasinoProvidersData = {
     ],
     faqs: [
       {
-        question: "Ist Bing Bong Casino seriös und sicher?",
+        question: "Ist Bing Bong legal?",
         answer:
-          "Ja, Bing Bong Casino ist ein seriöser Anbieter. Der Betreiber verfügt über eine deutsche Lizenz und unterliegt den strengen Auflagen der deutschen Glücksspielbehörde. Zudem setzt Bing Bong auf moderne Sicherheitsstandards und verschlüsselt sämtliche Datenübertragungen.",
+          "Ja, Bing Bong besitzt eine deutsche Lizenz der GGL und erfüllt alle gesetzlichen Vorgaben.",
       },
       {
-        question: "Gibt es einen Bing Bong Casino Bonus für Neukunden?",
+        question: "Wie hoch ist der Willkommensbonus?",
         answer:
-          "Ja, Bing Bong Casino bietet neuen Kunden einen attraktiven Willkommensbonus. Der Anbieter verdoppelt die erste Einzahlung bis zu einem Betrag von 100€ und schenkt zusätzlich 50 Freispiele für ausgewählte Slots.",
+          "Der Bonus beträgt 100 % bis zu 100 € sowie 50 Freispiele für „Book of Ra Deluxe“.",
       },
       {
-        question: "Welche Spiele bietet Bing Bong Casino an?",
+        question: "Welche Zahlungsmethoden bietet Bing Bong?",
         answer:
-          "Bing Bong Casino überzeugt mit einer großen Auswahl an Spielen, darunter Slots, Tischspiele und Live-Casino-Angebote. Die Spiele stammen von renommierten Anbietern wie NetEnt, Play’n GO, Pragmatic Play, Red Tiger und Novomatic.",
+          "PayPal, Klarna, Trustly, Visa, Mastercard, Skrill und viele weitere sichere Methoden.",
       },
       {
-        question: "Kann ich bei Bing Bong Casino auch mobil spielen?",
+        question: "Was kann ich bei Bing Bong spielen?",
         answer:
-          "Ja, Bing Bong Casino verfügt über eine benutzerfreundliche mobile Plattform, die es Kunden ermöglicht, auch unterwegs zu spielen. Die mobile Version ist sowohl für iOS als auch für Android optimiert und bietet alle Funktionen der Desktop-Version.",
+          "Über 650 Slots, darunter Klassiker wie Book of Ra Deluxe und moderne Hits wie Sweet Bonanza.",
       },
       {
-        question: "Wie erreiche ich den Bing Bong Casino Kundensupport?",
+        question: "Wie schnell sind Auszahlungen?",
         answer:
-          "Der Bing Bong Casino Kundensupport steht Kunden per Live-Chat und E-Mail zur Verfügung. Der Live-Chat ist die schnellste und einfachste Möglichkeit, um Hilfe zu erhalten. Alternativ können Kunden auch eine E-Mail schreiben.",
+          "Dank der Blitz-Auszahlung sind Gewinne innerhalb von 24 Stunden auf deinem Konto verfügbar.",
       },
     ],
     paymentMethods: [
@@ -693,32 +686,26 @@ export const onlineCasinoProvidersData = {
       { name: "Neteller", logo: netellerLogo },
     ],
     overview: {
-      foundingYear: "2020",
-      licence:
-        "Malta Gaming Authority (MGA), deutsche Lizenz gemäß dem neuen Glücksspielstaatsvertrag",
+      foundingYear: "2024",
+      licence: "Gemeinsame Glücksspielbehörde der Länder (GGL), Deutschland",
       specialFeatures: [
-        "Große Auswahl an Slots von Top-Anbietern",
-        "Benutzerfreundliche mobile Plattform",
-        "Sichere und schnelle Auszahlungen",
-        "Umfangreiches Treueprogramm für Stammkunden",
+        "Breites Spielangebot mit über 650 Slots",
+        "PayPal als Zahlungsmethode",
+        "Blitz-Auszahlungen innerhalb von 24 Stunden",
+        "Mobile App für iOS und Android",
       ],
-      website: "www.bingbong.com",
+      website: "bingbong.de",
       security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
       description:
-        "Bing Bong gehört zur renommierten Bing Group, einem etablierten Unternehmen in der Online-Casino-Branche mit langjähriger Erfahrung. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+        "Bing Bong wurde 2024 gegründet und gehört zu den wenigen Online-Spielotheken in Deutschland mit einer Lizenz der Gemeinsamen Glücksspielbehörde der Länder (GGL). Dies garantiert ein sicheres und faires Spielerlebnis. Neben der rechtlichen Sicherheit punktet der Anbieter mit einem modernen Design, einer intuitiven Navigation und innovativen Features wie Blitz-Auszahlungen innerhalb von 24 Stunden.",
     },
     pros: [
-      "Attraktiver Willkommensbonus mit 100% bis zu 100€ und 50 Freispiele",
-      "Breite Spielauswahl mit beliebten Klassikern wie Book of Ra und El Toro",
-      "Benutzerfreundliche mobile Plattform für iOS und Android",
-      "Sichere und schnelle Auszahlungen ohne Gebühren",
-      "Umfangreiches Treueprogramm für Stammkunden",
-      "Zuverlässiger Kundensupport via Live-Chat und E-Mail",
+      "Attraktiver Willkommensbonus mit fairen Bedingungen",
+      "Über 650 Spiele von renommierten Anbietern",
+      "Sichere Ein- und Auszahlungen mit PayPal und weiteren Methoden",
     ],
     cons: [
-      "Spielauswahl könnte noch vielfältiger sein",
-      "Keine telefonische Unterstützung verfügbar",
-      "Auswahl bei Auszahlungsmethoden könnte größer sein",
+      "Fokus liegt ausschließlich auf Slots, keine Tischspiele oder Live-Casino",
     ],
   },
   // merkur: {

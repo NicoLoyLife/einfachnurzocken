@@ -21,7 +21,7 @@ import logo from "../../assets/images/logo.png";
 import TopbarTabs from "./Topbar";
 import { useSelector } from "react-redux";
 import { SECTIONS } from "../../redux/sectionSlice";
-import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
+// import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  Button,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/casinos/providers/PageHeader";
@@ -20,8 +12,7 @@ import CustomerSupportSection from "../../components/casinos/providers/CustomerS
 import LoyaltyProgramSection from "../../components/casinos/providers/LoyaltyProgramSection";
 import ConclusionSection from "../../components/casinos/providers/ConclusionSection";
 import FAQSection from "../../components/casinos/providers/FAQSection";
-
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import CustomList from "../../components/common/CustomList";
 
 const JackpotPiratenReview = () => {
   const provider = providersData[["jackpotPiraten"]];
@@ -33,15 +24,13 @@ const JackpotPiratenReview = () => {
   const summary = (
     <>
       <Typography variant="body1" gutterBottom>
-        Ahoi, Matrose! Wenn du auf der Suche nach einer aufregenden
-        Online-Spielothek bist, die sowohl Spannung als auch Sicherheit bietet,
-        dann bist du bei Jackpot Piraten genau richtig. Unter der Führung von
-        Captain Jack Pott navigierst du durch ein breites Angebot an
-        Spielautomaten, entdecke legale Spielmöglichkeiten in Deutschland und
-        sichere dir lukrative Gewinne. In diesem ausführlichen Test nehmen wir
-        Jackpot Piraten genau unter die Lupe und zeigen dir, warum dieses Casino
-        eine der besten Online-Spielotheken für furchtlose Piraten im Jahr 2024
-        ist.
+        JackpotPiraten entführt dich auf eine spannende Reise durch die Welt der
+        Online-Spielautomaten. Unter der Flagge von Captain Jack Pott erwartet
+        dich ein Abenteuer voller Bonusangebote, fesselnder Slots und
+        blitzschneller Auszahlungen. Ob du ein erfahrener Spieler oder ein
+        neugieriger Einsteiger bist, bei JackpotPiraten findest du eine sichere
+        und abwechslungsreiche Plattform, die mit einer deutschen Lizenz und
+        einem Top-Angebot überzeugt.
       </Typography>
     </>
   );
@@ -49,100 +38,29 @@ const JackpotPiratenReview = () => {
   const bonusContent = (
     <>
       <Typography variant="h3" component="h3" gutterBottom>
-        Willkommensbonus: 100% Einzahlungsbonus bis 100€ + 150 Freispiele
+        50 Freispiele + 100€ Einzahlungsbonus (100%)
       </Typography>
+
+      <CustomList
+        listItems={[
+          "50 Freispiele für Book of Ra Deluxe",
+          "100€ Einzahlungsbonus (100%)",
+          "Mindestumsatz: 30x Bonusbetrag",
+          "Mindesteinzahlung nur 1€",
+        ]}
+      />
 
       <Typography variant="body1" paragraph>
-        Melde dich jetzt bei Betano an und sichere dir einen 100%
-        Einzahlungsbonus bis zu 100€ – verdopple deine erste Einzahlung und
-        starte mit mehr Guthaben in die aufregende Casino-Welt! Zusätzlich
-        erhältst du als Neukunde bis zu 150 Freispiele für ausgewählte
-        Slot-Spiele. Einfach registrieren, Bonus sichern und loslegen!
+        Zusätzliche Aktionen:
       </Typography>
 
-      <Typography variant="body1" paragraph>
-        Dieser Bonus ermöglicht es dir, deine erste Einzahlung zu verdoppeln und
-        zusätzlich zahlreiche Freispiele für ausgewählte Slots zu erhalten -
-        perfekt, um direkt ins Spiel einzusteigen und deine Gewinnschancen zu
-        maximieren.
-      </Typography>
-
-      <Typography variant="h3" component="h3">
-        Deine Vorteile auf einen Blick:
-      </Typography>
-
-      <List sx={{ pl: 2 }}>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                <strong>100% Bonus bis zu 100€</strong> auf deine erste
-                Einzahlung
-              </Typography>
-            }
-          />
-        </ListItem>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                <strong>Bis zu 150 Freispiele</strong> für spannende Slot-Spiele
-              </Typography>
-            }
-          />
-        </ListItem>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                <strong>Große Spielauswahl</strong> mit renommierten Anbietern
-                wie Play'n'Go & Novomatic
-              </Typography>
-            }
-          />
-        </ListItem>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                <strong>Sichere und schnelle Ein- und Auszahlungen</strong>
-              </Typography>
-            }
-          />
-        </ListItem>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                <strong>Top Casino-Erlebnis</strong> auf allen Geräten
-              </Typography>
-            }
-          />
-        </ListItem>
-      </List>
-
-      <Typography variant="body1" paragraph>
-        <strong>Weitere Bonusangebote:</strong> Betano bietet regelmäßige
-        Promotionen für Bestandskunden, darunter Einzahlungsboni, Freispiele,
-        Cashback-Angebote und ein umfangreiches Treueprogramm. Diese Vielfalt an
-        Bonusangeboten sorgt dafür, dass immer für Abwechslung und zusätzliche
-        Gewinnchancen gesorgt ist.
-      </Typography>
+      <CustomList
+        listItems={[
+          "Freispiel-Montag: Wöchentliche Freispiele für den Slot der Woche",
+          "Donnerstags-Jackpot: Bis zu 5.000 Freispiele ohne Einzahlung",
+          "Drops & Wins: Tägliche Cash-Gewinne an ausgewählten Slots",
+        ]}
+      />
 
       <Box sx={{ mt: 4, textAlign: "center" }}>
         <Button
@@ -157,7 +75,7 @@ const JackpotPiratenReview = () => {
             whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
         >
-          Jetzt bei Betano anmelden und Bonus sichern!
+          Jetzt bei Jackpot Piraten anmelden und Bonus sichern!
         </Button>
       </Box>
     </>
@@ -166,53 +84,69 @@ const JackpotPiratenReview = () => {
   const gamesContent = (
     <>
       <Typography variant="body1" paragraph>
-        Das Spielangebot von Betano ist beeindruckend und bietet eine Vielzahl
-        an Möglichkeiten für jeden Spielertyp. Mit hunderten Slots von führenden
-        Anbietern wie Play’n GO, Novomatic und Gamomat, klassischen Tischspielen
-        wie Blackjack und Roulette sowie einem Live-Casino, in dem du gegen
-        echte Dealer antreten kannst, kommt jeder auf seine Kosten.
+        Mit mehr als 620 Slots bietet JackpotPiraten eine beeindruckende
+        Vielfalt. Die Spiele stammen von renommierten Entwicklern wie Merkur,
+        Novomatic, Gamomat und Pragmatic Play. Spieler können aus einer Vielzahl
+        von Themen und Spielmechaniken wählen.
       </Typography>
+
+      <Typography variant="body1" paragraph>
+        Beliebte Slots bei Jackpot Piraten:
+      </Typography>
+
+      <CustomList
+        listItems={[
+          "Book of Ra Deluxe: Entdecke die Schätze des alten Ägyptens.",
+          "Eye of Horus: Tauche ein in die mystische Welt der ägyptischen Götter.",
+          "Big Bass Bonanza: Gewinne mit aufregenden Angeltouren.",
+          "Fruitinator: Ein fruchtiger Klassiker mit einfachen, schnellen Gewinnen.",
+        ]}
+      />
     </>
   );
 
   const paymentMethodsContent = (
     <>
       <Typography variant="body1" paragraph>
-        Betano bietet eine umfangreiche Auswahl an sicheren und
-        benutzerfreundlichen Zahlungsmethoden. Du kannst Einzahlungen über
-        Kreditkarten (Visa, Mastercard), E-Wallets (PayPal, Skrill, Neteller),
-        Banküberweisungen und Prepaid-Karten (Paysafecard) tätigen. Die
-        Einzahlungen sind in der Regel sofort auf deinem Konto verfügbar, und es
-        fallen keine Gebühren an.
+        JackpotPiraten setzt auf sichere und zuverlässige Zahlungsmethoden, die
+        schnelle und gebührenfreie Ein- und Auszahlungen ermöglichen.
       </Typography>
-      <Typography variant="body1" paragraph>
-        Betano überzeugt durch faire Auszahlungsbedingungen. Die
-        Umsatzanforderungen beim Bonus sind hoch, was jedoch bei der großzügigen
-        Bonusstruktur durch die zahlreichen Promotionen ausgeglichen wird.
-        Auszahlungen erfolgen transparent und zügig, sodass du deine Gewinne
-        schnell erhältst.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Auszahlungen erfolgen schnell und zuverlässig innerhalb von 24 bis 48
-        Stunden. Die Auswahl bei Auszahlungen ist etwas eingeschränkter, umfasst
-        jedoch gängige Methoden wie Visa, Mastercard, Skrill und
-        Banküberweisung.
-      </Typography>
+
       <Typography variant="body1" paragraph>
         Zu den verfügbaren Zahlungsmethoden gehören:
       </Typography>
       {/* Die Zahlungsmethoden werden in der Komponente angezeigt */}
+
+      <Typography variant="body1" paragraph>
+        <strong>Blitz-Auszahlungen:</strong> Gewinne können innerhalb von nur 24
+        Stunden auf dein Konto überwiesen werden – ein Highlight für jeden
+        Spieler.
+      </Typography>
     </>
   );
 
   const customerSupportContent = (
     <>
       <Typography variant="body1" paragraph>
-        Der Kundensupport von Betano ist professionell und gut erreichbar. Du
-        kannst den Support über Live-Chat, E-Mail und Telefon kontaktieren. Die
-        Mitarbeiter sind kompetent und bemüht, deine Anliegen schnell und
-        zufriedenstellend zu lösen. Die Reaktionszeiten sind insgesamt gut,
-        wobei der Live-Chat die schnellste Option darstellt.
+        Der Kundensupport von JackpotPiraten überzeugt mit schnellen
+        Reaktionszeiten und kompetenter Hilfe.
+      </Typography>
+
+      <Typography variant="body1" paragraph>
+        Kontaktmöglichkeiten:
+      </Typography>
+
+      <CustomList
+        listItems={[
+          "Live-Chat (24/7 verfügbar)",
+          "Telefonische Hotline",
+          "E-Mail-Support",
+        ]}
+      />
+
+      <Typography variant="body1" paragraph>
+        Ergänzt wird der Support durch eine umfangreiche FAQ-Sektion, die
+        Antworten auf häufige Fragen bietet.
       </Typography>
     </>
   );
@@ -220,35 +154,35 @@ const JackpotPiratenReview = () => {
   const loyaltyProgramContent = (
     <>
       <Typography variant="body1" paragraph>
-        Betano belohnt treue Kunden mit einem umfangreichen Treueprogramm. Für
-        jede Spielrunde sammelst du Punkte, die du gegen Gratiswetten, Boni oder
-        andere Prämien eintauschen kannst. Je aktiver du bist, desto mehr
-        Vorteile kannst du genießen.
+        JackpotPiraten belohnt seine treuen Spieler mit regelmäßigen Aktionen
+        und exklusiven Angeboten:
       </Typography>
-      <Typography variant="body1" paragraph>
-        Für besonders aktive Kunden gibt es zudem VIP-Services, die exklusive
-        Bonusangebote, persönliche Betreuung durch einen Account Manager und
-        Einladungen zu besonderen Events umfassen. Obwohl das Treueprogramm
-        bereits viel bietet, gibt es im VIP-Bereich noch Luft nach oben.
-      </Typography>
+
+      <CustomList
+        listItems={[
+          "Wöchentliche Freispiele: Jeden Montag und Freitag gibt es Freispiele für den Slot der Woche.",
+          "Donnerstags-Jackpot: Gewinne bis zu 5.000 Freispiele ohne Einzahlung.",
+          "Drops & Wins: Zusätzliche Preise bei ausgewählten Slots von Pragmatic Play.",
+        ]}
+      />
     </>
   );
 
   const conclusionContent = (
     <>
       <Typography variant="body1" paragraph>
-        Unsere Betano Online Casino Erfahrungen aus dem Jahr 2024 zeigen, dass
-        es sich um einen seriösen und empfehlenswerten Casino-Anbieter handelt.
-        Mit einem attraktiven Willkommensbonus, einer umfangreichen Spielauswahl
-        und exzellenten mobilen Lösungen überzeugt Betano sowohl neue als auch
-        erfahrene Spieler. Die exklusiven Spiele und das attraktive
-        Treueprogramm runden das positive Gesamtbild ab.
+        JackpotPiraten ist eine herausragende Online-Spielothek, die Sicherheit,
+        Vielfalt und Spannung vereint. Das breite Spielangebot, die attraktiven
+        Bonusaktionen und die blitzschnellen Auszahlungen machen sie zur idealen
+        Wahl für Spieler in Deutschland.
       </Typography>
 
       <Typography variant="body1" paragraph>
-        Wenn du auf der Suche nach einem zuverlässigen Online Casino mit
-        attraktiven Boni und vielfältigen Spielmöglichkeiten bist, ist Betano
-        definitiv eine Top-Wahl.
+        JackpotPiraten besitzt eine deutsche Lizenz und garantiert damit ein
+        sicheres und seriöses Spielerlebnis. Alle sensiblen Daten werden durch
+        moderne Verschlüsselungstechnologien geschützt. Die Plattform erfüllt
+        alle Vorgaben des Glücksspielstaatsvertrags und bietet umfassende
+        Maßnahmen zum Spieler- und Jugendschutz.
       </Typography>
     </>
   );
