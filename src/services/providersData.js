@@ -398,126 +398,126 @@ export const sportsbettingProvidersData = {
 };
 
 export const onlineCasinoProvidersData = {
-  betano: {
-    name: "Betano",
-    slug: "betano",
-    title: "Betano Slots Erfahrungen & Test 2024 | Ist Betano seriös?",
-    metaDescription:
-      "Ausführlicher Betano Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus bis zu 100€ + 150 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
-    ctaLink: "https://www.betano.com/de/",
-    logo: betanoLogo,
-    highlights: [
-      "100% Bonus bis zu 100€ auf deine erste Einzahlung",
-      "Bis zu 150 Freispiele für spannende Slot-Spiele",
-      "Eine riesige Auswahl an Spielen, wie z.B. Play'n'Go & Novomatic",
-      "Sichere und schnelle EIn- und Auszahlungen",
-      "Top Casino-Erlebnis auf allen Geräten",
-    ],
-    bonus: {
-      type: "100% Einzahlungsbonus + 150 Freispiele",
-      maxBonus: "100€ + 150 Freispiele",
-      minDeposit: "10€",
-      maxDeposit: "100€",
-      maxWager: "1€ pro Spin",
-      wageringRequirements: "35x Bonus",
-      timeframe: "30 Tage (ab Gutschrift)",
-      validity: "1x pro Haushalt",
-      availableIn: ["Deutschland"],
-    },
-    ratings: [
-      { category: "Bonusangebote & Promotionen", score: 5 },
-      { category: "Spielauswahl", score: 3 },
-      { category: "Kundensupport", score: 5 },
-      { category: "Treueprogramme", score: 5 },
-      { category: "Auszahlungsbedingungen", score: 5 },
-    ],
-    faqs: [
-      {
-        question: "Ist Betano seriös und sicher?",
-        answer:
-          "Ja, Betano ist ein seriöses Casino mit einer Lizenz der Malta Gaming Authority und einer deutschen Lizenz gemäß dem Glücksspielstaatsvertrag. Der Anbieter setzt auf moderne Sicherheitsstandards und fördert verantwortungsvolles Spielen.",
-      },
-      {
-        question: "Welche Boni bietet Betano für Neukunden?",
-        answer:
-          "Neukunden erhalten einen 100% Einzahlungsbonus bis zu 100€ sowie bis zu 150 Freispiele für ausgewählte Slot-Spiele. Diese Boni helfen dir, mit einem größeren Guthaben in die Casino-Welt einzusteigen.",
-      },
-      {
-        question: "Welche Spiele bietet Betano an?",
-        answer:
-          "Betano bietet eine breite Palette an Spielen, darunter hunderte Slots von Anbietern wie Play’n GO, Novomatic und Gamomat, klassische Tischspiele wie Blackjack und Roulette sowie ein Live-Casino mit echten Dealern.",
-      },
-      {
-        question: "Kann ich bei Betano auch mobil spielen?",
-        answer:
-          "Ja, Betano verfügt über eine benutzerfreundliche App für iOS und Android, die es dir ermöglicht, auch unterwegs problemlos zu spielen. Die mobile Webseite ist ebenfalls optimiert und bietet alle Funktionen der Desktop-Version.",
-      },
-      {
-        question: "Wie erreiche ich den Betano Kundensupport?",
-        answer:
-          "Der Kundensupport ist über Live-Chat, E-Mail und Telefon erreichbar. Der Live-Chat ist die schnellste Möglichkeit, um Hilfe zu erhalten, während E-Mail und Telefon ebenfalls zur Verfügung stehen.",
-      },
-      {
-        question: "Welche Zahlungsmethoden stehen bei Betano zur Verfügung?",
-        answer:
-          "Betano unterstützt eine Vielzahl von Zahlungsmethoden, darunter Visa, Mastercard, PayPal, Skrill, Paysafecard, Sofortüberweisung und Banküberweisung. Ein- und Auszahlungen sind in der Regel gebührenfrei und schnell bearbeitet.",
-      },
-      {
-        question: "Gibt es bei Betano ein Treueprogramm?",
-        answer:
-          "Ja, Betano bietet ein umfangreiches Treueprogramm, in dem du für jede Spielrunde Punkte sammelst, die du gegen Boni, Gratiswetten oder andere Prämien eintauschen kannst. Zudem gibt es VIP-Services für besonders aktive Kunden mit exklusiven Vorteilen.",
-      },
-      {
-        question: "Sind die Auszahlungen bei Betano schnell?",
-        answer:
-          "Ja, Auszahlungen werden in der Regel innerhalb von 24 bis 48 Stunden bearbeitet. Die Bearbeitungszeit kann je nach gewählter Zahlungsmethode variieren, ist jedoch insgesamt sehr zuverlässig und zügig.",
-      },
-    ],
-    paymentMethods: [
-      { name: "Visa", logo: visaLogo },
-      { name: "Mastercard", logo: mastercardLogo },
-      { name: "PayPal", logo: paypalLogo },
-      { name: "Skrill", logo: skrillLogo },
-      {
-        name: "Paysafecard",
-        logo: paysafecardLogo,
-      },
-      {
-        name: "Sofortüberweisung",
-        logo: sofortLogo,
-      },
-      { name: "Banküberweisung", logo: bankLogo },
-    ],
-    overview: {
-      foundingYear: "2016",
-      licence:
-        "Malta Gaming Authority (MGA), Deutsche Lizenz gemäß Glücksspielstaatsvertrag",
-      specialFeatures: [
-        "Umfangreiches Slot-Angebot",
-        "Exklusive Spiele",
-        "Schnelle Auszahlungen",
-        "Mobile App",
-      ],
-      website: "www.betano.com",
-      security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
-      description:
-        "Betano gehört zur Kaizen Gaming International Ltd., einem renommierten Unternehmen mit langjähriger Erfahrung in der iGaming-Branche. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
-    },
-    pros: [
-      "Attraktiver Willkommensbonus: 100% Einzahlungsbonus bis zu 100€ + bis zu 150 Freispiele",
-      "Große Spielauswahl: Hunderte Slots, Tischspiele und Live-Casino-Angebote von Top-Anbietern",
-      "Benutzerfreundliche Mobile App: Verfügbar für iOS und Android",
-      "Sichere und schnelle Ein- und Auszahlungen: Vielfältige Zahlungsmethoden ohne Gebühren",
-      "Deutsche Lizenz: Höchste Sicherheitsstandards gemäß deutschem Glücksspielstaatsvertrag",
-      "Exklusive Spiele: Bekannte Titel von Play’n GO, Novomatic und Gamomat",
-      "Umfangreiches Treueprogramm: VIP-Programme und regelmäßige Promotionen für Bestandskunden",
-    ],
-    cons: [
-      "Spielauswahl im Vergleich zu Konkurrenz begrenzt: Weniger Tischspiele und Live-Casino-Optionen als einige Mitbewerber",
-      "Umsatzbedingungen beim Bonus: Hohe Umsatzanforderungen könnten abschreckend wirken",
-      "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
-    ],
-  },
+  // betano: {
+  //   name: "Betano",
+  //   slug: "betano",
+  //   title: "Betano Slots Erfahrungen & Test 2024 | Ist Betano seriös?",
+  //   metaDescription:
+  //     "Ausführlicher Betano Slots Test mit echten Erfahrungen ✓ 100% Einzahlungsbonus bis zu 100€ + 150 Freispiele ✓ Große Spielauswahl ✓ Jetzt informieren und profitieren!",
+  //   ctaLink: "https://www.betano.com/de/",
+  //   logo: betanoLogo,
+  //   highlights: [
+  //     "100% Bonus bis zu 100€ auf deine erste Einzahlung",
+  //     "Bis zu 150 Freispiele für spannende Slot-Spiele",
+  //     "Eine riesige Auswahl an Spielen, wie z.B. Play'n'Go & Novomatic",
+  //     "Sichere und schnelle EIn- und Auszahlungen",
+  //     "Top Casino-Erlebnis auf allen Geräten",
+  //   ],
+  //   bonus: {
+  //     type: "100% Einzahlungsbonus + 150 Freispiele",
+  //     maxBonus: "100€ + 150 Freispiele",
+  //     minDeposit: "10€",
+  //     maxDeposit: "100€",
+  //     maxWager: "1€ pro Spin",
+  //     wageringRequirements: "35x Bonus",
+  //     timeframe: "30 Tage (ab Gutschrift)",
+  //     validity: "1x pro Haushalt",
+  //     availableIn: ["Deutschland"],
+  //   },
+  //   ratings: [
+  //     { category: "Bonusangebote & Promotionen", score: 5 },
+  //     { category: "Spielauswahl", score: 3 },
+  //     { category: "Kundensupport", score: 5 },
+  //     { category: "Treueprogramme", score: 5 },
+  //     { category: "Auszahlungsbedingungen", score: 5 },
+  //   ],
+  //   faqs: [
+  //     {
+  //       question: "Ist Betano seriös und sicher?",
+  //       answer:
+  //         "Ja, Betano ist ein seriöses Casino mit einer Lizenz der Malta Gaming Authority und einer deutschen Lizenz gemäß dem Glücksspielstaatsvertrag. Der Anbieter setzt auf moderne Sicherheitsstandards und fördert verantwortungsvolles Spielen.",
+  //     },
+  //     {
+  //       question: "Welche Boni bietet Betano für Neukunden?",
+  //       answer:
+  //         "Neukunden erhalten einen 100% Einzahlungsbonus bis zu 100€ sowie bis zu 150 Freispiele für ausgewählte Slot-Spiele. Diese Boni helfen dir, mit einem größeren Guthaben in die Casino-Welt einzusteigen.",
+  //     },
+  //     {
+  //       question: "Welche Spiele bietet Betano an?",
+  //       answer:
+  //         "Betano bietet eine breite Palette an Spielen, darunter hunderte Slots von Anbietern wie Play’n GO, Novomatic und Gamomat, klassische Tischspiele wie Blackjack und Roulette sowie ein Live-Casino mit echten Dealern.",
+  //     },
+  //     {
+  //       question: "Kann ich bei Betano auch mobil spielen?",
+  //       answer:
+  //         "Ja, Betano verfügt über eine benutzerfreundliche App für iOS und Android, die es dir ermöglicht, auch unterwegs problemlos zu spielen. Die mobile Webseite ist ebenfalls optimiert und bietet alle Funktionen der Desktop-Version.",
+  //     },
+  //     {
+  //       question: "Wie erreiche ich den Betano Kundensupport?",
+  //       answer:
+  //         "Der Kundensupport ist über Live-Chat, E-Mail und Telefon erreichbar. Der Live-Chat ist die schnellste Möglichkeit, um Hilfe zu erhalten, während E-Mail und Telefon ebenfalls zur Verfügung stehen.",
+  //     },
+  //     {
+  //       question: "Welche Zahlungsmethoden stehen bei Betano zur Verfügung?",
+  //       answer:
+  //         "Betano unterstützt eine Vielzahl von Zahlungsmethoden, darunter Visa, Mastercard, PayPal, Skrill, Paysafecard, Sofortüberweisung und Banküberweisung. Ein- und Auszahlungen sind in der Regel gebührenfrei und schnell bearbeitet.",
+  //     },
+  //     {
+  //       question: "Gibt es bei Betano ein Treueprogramm?",
+  //       answer:
+  //         "Ja, Betano bietet ein umfangreiches Treueprogramm, in dem du für jede Spielrunde Punkte sammelst, die du gegen Boni, Gratiswetten oder andere Prämien eintauschen kannst. Zudem gibt es VIP-Services für besonders aktive Kunden mit exklusiven Vorteilen.",
+  //     },
+  //     {
+  //       question: "Sind die Auszahlungen bei Betano schnell?",
+  //       answer:
+  //         "Ja, Auszahlungen werden in der Regel innerhalb von 24 bis 48 Stunden bearbeitet. Die Bearbeitungszeit kann je nach gewählter Zahlungsmethode variieren, ist jedoch insgesamt sehr zuverlässig und zügig.",
+  //     },
+  //   ],
+  //   paymentMethods: [
+  //     { name: "Visa", logo: visaLogo },
+  //     { name: "Mastercard", logo: mastercardLogo },
+  //     { name: "PayPal", logo: paypalLogo },
+  //     { name: "Skrill", logo: skrillLogo },
+  //     {
+  //       name: "Paysafecard",
+  //       logo: paysafecardLogo,
+  //     },
+  //     {
+  //       name: "Sofortüberweisung",
+  //       logo: sofortLogo,
+  //     },
+  //     { name: "Banküberweisung", logo: bankLogo },
+  //   ],
+  //   overview: {
+  //     foundingYear: "2016",
+  //     licence:
+  //       "Malta Gaming Authority (MGA), Deutsche Lizenz gemäß Glücksspielstaatsvertrag",
+  //     specialFeatures: [
+  //       "Umfangreiches Slot-Angebot",
+  //       "Exklusive Spiele",
+  //       "Schnelle Auszahlungen",
+  //       "Mobile App",
+  //     ],
+  //     website: "www.betano.com",
+  //     security: ["SSL-Verschlüsselung", "Responsible Gaming Maßnahmen"],
+  //     description:
+  //       "Betano gehört zur Kaizen Gaming International Ltd., einem renommierten Unternehmen mit langjähriger Erfahrung in der iGaming-Branche. Der Anbieter legt großen Wert auf Transparenz und Spielerschutz, was sich in seinen umfangreichen Maßnahmen zur Förderung von verantwortungsbewusstem Spielen widerspiegelt.",
+  //   },
+  //   pros: [
+  //     "Attraktiver Willkommensbonus: 100% Einzahlungsbonus bis zu 100€ + bis zu 150 Freispiele",
+  //     "Große Spielauswahl: Hunderte Slots, Tischspiele und Live-Casino-Angebote von Top-Anbietern",
+  //     "Benutzerfreundliche Mobile App: Verfügbar für iOS und Android",
+  //     "Sichere und schnelle Ein- und Auszahlungen: Vielfältige Zahlungsmethoden ohne Gebühren",
+  //     "Deutsche Lizenz: Höchste Sicherheitsstandards gemäß deutschem Glücksspielstaatsvertrag",
+  //     "Exklusive Spiele: Bekannte Titel von Play’n GO, Novomatic und Gamomat",
+  //     "Umfangreiches Treueprogramm: VIP-Programme und regelmäßige Promotionen für Bestandskunden",
+  //   ],
+  //   cons: [
+  //     "Spielauswahl im Vergleich zu Konkurrenz begrenzt: Weniger Tischspiele und Live-Casino-Optionen als einige Mitbewerber",
+  //     "Umsatzbedingungen beim Bonus: Hohe Umsatzanforderungen könnten abschreckend wirken",
+  //     "Keine 24/7 Telefon-Hotline: Support ist nicht rund um die Uhr telefonisch erreichbar",
+  //   ],
+  // },
   jackpotPiraten: {
     name: "Jackpot Piraten",
     slug: "jackpot-piraten",
