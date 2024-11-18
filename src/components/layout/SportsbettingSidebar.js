@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom"; // Angenommen, dass react-router-dom verwendet wird
 import { sportsbettingProvidersData as providersData } from "../../services/providersData";
+import GoldengoalPremiumBanner from "../sportsbetting/GoldengoalPremiumBanner";
 
 const SportsbettingSidebar = ({ isSticky }) => {
   const theme = useTheme();
@@ -124,6 +125,9 @@ const SportsbettingSidebar = ({ isSticky }) => {
           </ListItem>
         ))}
       </List>
+
+      {/* Goldengoal Premium Banner */}
+      <GoldengoalPremiumBanner />
 
       {/* Bonus-Box */}
       <Paper sx={{ mt: 4, p: 2 }} elevation={3}>
