@@ -109,6 +109,8 @@ export const sportsbettingProvidersData = {
         logo: sofortLogo,
       },
       { name: "Trustly", logo: trustlyLogo },
+      { name: "Apple Pay", logo: applePayLogo },
+      { name: "Google Pay", logo: googlePayLogo },
     ],
     overview: {
       foundingYear: "2016",
