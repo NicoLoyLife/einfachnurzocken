@@ -16,6 +16,8 @@ import klarnaLogo from "../assets/images/payment/EU Klarna.svg";
 import trustlyLogo from "../assets/images/payment/Trustly.png";
 import netellerLogo from "../assets/images/payment/neteller_logo_icon_169926.png";
 import giropayLogo from "../assets/images/payment/DE Giropay.svg";
+import applePayLogo from "../assets/images/payment/WW Apple Pay.svg";
+import googlePayLogo from "../assets/images/payment/WW Google Pay.svg";
 
 export const sportsbettingProvidersData = {
   betano: {
@@ -106,7 +108,7 @@ export const sportsbettingProvidersData = {
         name: "Sofortüberweisung",
         logo: sofortLogo,
       },
-      { name: "Banküberweisung", logo: bankLogo },
+      { name: "Trustly", logo: trustlyLogo },
     ],
     overview: {
       foundingYear: "2016",
