@@ -54,14 +54,14 @@ const MerkurbetsReview = () => {
   const bonusContent = (
     <>
       <Typography variant="h3" component="h3" gutterBottom>
-      25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette
+        25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette
       </Typography>
       <Typography variant="body1" paragraph>
         Merkur Bets begrüßt neue Kunden mit einem exklusiven Willkommensangebot,
         das keine Wünsche offenlässt. Erhalte einen 100% 3er-Kombi Cashback bis
-        zu 75€ sowie eine 25€ Gratiswette ab einer Einzahlung von nur 1€. Dieses attraktive
-        Paket ermöglicht es dir, mit einem größeren Wettguthaben zu starten und
-        deine ersten Wetten risikofrei auszuprobieren.
+        zu 75€ sowie eine 25€ Gratiswette ab einer Einzahlung von nur 1€. Dieses
+        attraktive Paket ermöglicht es dir, mit einem größeren Wettguthaben zu
+        starten und deine ersten Wetten risikofrei auszuprobieren.
       </Typography>
       <Typography variant="body1" paragraph>
         Du musst lediglich eine Mindesteinzahlung von 10€ tätigen, um den Bonus
@@ -83,7 +83,8 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                25€ Freebet ab einer Einzahlung von nur 1€ – starte sofort ohne eigenes Risiko.
+                25€ Freebet ab einer Einzahlung von nur 1€ – starte sofort ohne
+                eigenes Risiko.
               </Typography>
             }
           />
@@ -535,7 +536,10 @@ const MerkurbetsReview = () => {
         ratings={provider.ratings}
       />
 
-      <OverviewSection overview={provider.overview} />
+      <OverviewSection
+        overview={provider.overview}
+        ctaLink={provider.ctaLink}
+      />
 
       <BonusSection
         bonusContent={bonusContent}

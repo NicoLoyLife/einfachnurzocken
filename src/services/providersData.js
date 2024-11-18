@@ -635,7 +635,7 @@ export const onlineCasinoProvidersData = {
       minDeposit: "1€",
       maxDeposit: "100€ (für maximalen Bonus)",
       maxWager: "1€ pro Spin",
-      wageringRequirements: "35x Bonus",
+      wageringRequirements: "30x Bonus",
       timeframe: "30 Tage (ab Gutschrift)",
       validity: "1x pro Haushalt",
       availableIn: ["Deutschland"],

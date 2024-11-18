@@ -403,7 +403,10 @@ const BetanoReview = () => {
         ratings={provider.ratings}
       />
 
-      <OverviewSection overview={provider.overview} />
+      <OverviewSection
+        overview={provider.overview}
+        ctaLink={provider.ctaLink}
+      />
 
       <BonusSection
         bonusContent={bonusContent}

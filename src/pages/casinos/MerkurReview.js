@@ -48,16 +48,17 @@ const MerkurReview = () => {
         🎰 Erlebe das ultimative Online-Casino-Erlebnis mit Merkur Slots! 🎰
       </Typography>
       <Typography variant="body1" paragraph>
-      Merkur bietet neuen Kunden einen großzügigen Willkommensbonus, der einen
-      optimalen Start in die Welt der Online-Casinos ermöglicht. Du erhältst{" "}
-      <strong>50 Freispiele ohne Einzahlung</strong>, die es dir erlauben, die
-      Slots von Merkur ohne eigenes Risiko auszuprobieren. Darüber hinaus
-      verdoppelt der <strong>100% Bonus bis zu 50€</strong> deine erste
-      Einzahlung, wodurch dein Spielguthaben effektiv erhöht wird. Zusätzlich
-      erhältst du <strong>50 weitere Freispiele</strong>, die dir noch mehr
-      Spielspaß und Gewinnmöglichkeiten bieten. Diese großzügigen Bonusangebote
-      sorgen dafür, dass du mit einem starken Start ins Spielgeschehen
-      eintauchst und deine Gewinnchancen von Anfang an maximierst.
+        Merkur bietet neuen Kunden einen großzügigen Willkommensbonus, der einen
+        optimalen Start in die Welt der Online-Casinos ermöglicht. Du erhältst{" "}
+        <strong>50 Freispiele ohne Einzahlung</strong>, die es dir erlauben, die
+        Slots von Merkur ohne eigenes Risiko auszuprobieren. Darüber hinaus
+        verdoppelt der <strong>100% Bonus bis zu 50€</strong> deine erste
+        Einzahlung, wodurch dein Spielguthaben effektiv erhöht wird. Zusätzlich
+        erhältst du <strong>50 weitere Freispiele</strong>, die dir noch mehr
+        Spielspaß und Gewinnmöglichkeiten bieten. Diese großzügigen
+        Bonusangebote sorgen dafür, dass du mit einem starken Start ins
+        Spielgeschehen eintauchst und deine Gewinnchancen von Anfang an
+        maximierst.
       </Typography>
       <Typography variant="h3" component="h3">
         Deine Vorteile auf einen Blick:
@@ -280,16 +281,17 @@ const MerkurReview = () => {
         ein sicheres, vielfältiges und benutzerfreundliches Online-Casino
         suchen. Mit einem großzügigen Willkommensbonus, einer beeindruckenden
         Spielauswahl und einem zuverlässigen Kundensupport überzeugt Merkur auf
-        ganzer Linie. Besonders die <strong>benutzerfreundliche Mobile App</strong> und die
-        <strong>innovativen Funktionen</strong> wie Turbo Spins und die Cash-Out-Funktion bieten
-        ein herausragendes Spielerlebnis, das sowohl für neue als auch für
-        erfahrene Spieler attraktiv ist. Trotz kleinerer Nachteile wie der
-        fehlenden telefonischen Unterstützung und der begrenzten Auswahl bei
-        Auszahlungsmethoden bietet Merkur ein rundum gelungenes Casino-Erlebnis,
-        das durch seine Seriosität, Sicherheit und Spielqualität besticht. Ob du
-        nun auf der Suche nach klassischen Slots, modernen Video-Slots oder
-        spannenden Live-Casino-Spielen bist – bei Merkur findest du garantiert
-        das passende Angebot.
+        ganzer Linie. Besonders die{" "}
+        <strong>benutzerfreundliche Mobile App</strong> und die
+        <strong>innovativen Funktionen</strong> wie Turbo Spins und die
+        Cash-Out-Funktion bieten ein herausragendes Spielerlebnis, das sowohl
+        für neue als auch für erfahrene Spieler attraktiv ist. Trotz kleinerer
+        Nachteile wie der fehlenden telefonischen Unterstützung und der
+        begrenzten Auswahl bei Auszahlungsmethoden bietet Merkur ein rundum
+        gelungenes Casino-Erlebnis, das durch seine Seriosität, Sicherheit und
+        Spielqualität besticht. Ob du nun auf der Suche nach klassischen Slots,
+        modernen Video-Slots oder spannenden Live-Casino-Spielen bist – bei
+        Merkur findest du garantiert das passende Angebot.
       </Typography>
     </>
   );
@@ -311,8 +313,11 @@ const MerkurReview = () => {
         ratings={provider.ratings}
       />
 
-      <OverviewSection overview={provider.overview} />
-
+      <OverviewSection
+        overview={provider.overview}
+        ctaLink={provider.ctaLink}
+      />
+      
       <BonusSection
         bonusContent={bonusContent}
         ratings={provider.ratings}

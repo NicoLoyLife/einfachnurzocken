@@ -13,7 +13,7 @@ import {
   useTheme,
 } from "@mui/material";
 
-const OverviewSection = ({ overview }) => {
+const OverviewSection = ({ overview, ctaLink }) => {
   const theme = useTheme();
 
   const data = [
@@ -79,7 +79,7 @@ const OverviewSection = ({ overview }) => {
                     </ul>
                   ) : item.label === "Webseite" ? (
                     <a
-                      href={`https://${item.value}`}
+                      href={ctaLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

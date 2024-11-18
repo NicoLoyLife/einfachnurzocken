@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Typography,
-  Box,
-  Button,
-} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import { onlineCasinoProvidersData as providersData } from "../../services/providersData";
 import MainLayout from "../../components/layout/MainLayout";
 import PageHeader from "../../components/casinos/providers/PageHeader";
@@ -237,7 +233,10 @@ const BingBongReview = () => {
         ratings={provider.ratings}
       />
 
-      <OverviewSection overview={provider.overview} />
+      <OverviewSection
+        overview={provider.overview}
+        ctaLink={provider.ctaLink}
+      />
 
       <BonusSection
         bonusContent={bonusContent}
