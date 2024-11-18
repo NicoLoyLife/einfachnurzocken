@@ -34,8 +34,19 @@ const BetanoReview = () => {
     return <div>Anbieter nicht gefunden</div>;
   }
 
-  const summary =
-    "Betano hat sich seit seiner Gründung im Jahr 2016 zu einem der führenden Sportwetten-Anbieter in Deutschland entwickelt. Mit einem breiten Angebot an Sportarten, attraktiven Bonusaktionen und einer benutzerfreundlichen Plattform spricht Betano sowohl Anfänger als auch erfahrene Wettfans an. In diesem Test teilen wir unsere aktuellen Betano Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen individuellen Anforderungen entspricht.";
+  const summary = (
+    <>
+      <Typography variant="body1" gutterBottom>
+        Betano hat sich seit seiner Gründung im Jahr 2016 zu einem der führenden
+        Sportwetten-Anbieter in Deutschland entwickelt. Mit einem breiten
+        Angebot an Sportarten, attraktiven Bonusaktionen und einer
+        benutzerfreundlichen Plattform spricht Betano sowohl Anfänger als auch
+        erfahrene Wettfans an. In diesem Test teilen wir unsere aktuellen Betano
+        Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist
+        und deinen individuellen Anforderungen entspricht.
+      </Typography>
+    </>
+  );
 
   const bonusContent = (
     <>
@@ -130,9 +141,9 @@ const BetanoReview = () => {
           target="_blank"
           rel="noopener noreferrer"
           sx={{
-            width: { xs: '75%', sm: 'auto' },
+            width: { xs: "75%", sm: "auto" },
             maxWidth: { sm: 400 },
-            whiteSpace: 'normal', // Ermöglicht Zeilenumbruch bei langem Text
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
         >
           Jetzt bei Betano anmelden und Bonus sichern!

@@ -33,27 +33,41 @@ const MerkurbetsReview = () => {
   if (!provider) {
     return <div>Anbieter nicht gefunden</div>;
   }
-
-  const summary =
-    "Merkur Bets hat sich seit seiner Gründung im Jahr 2016 als vertrauenswürdiger und innovativer Sportwetten-Anbieter in Deutschland etabliert. Als Teil der renommierten Gauselmann Gruppe, einem deutschen Traditionsunternehmen mit jahrzehntelanger Erfahrung in der Glücksspielbranche, steht Merkur Bets für Qualität und Zuverlässigkeit. Mit einem attraktiven Willkommensangebot, einem breiten Wettangebot und zahlreichen exklusiven Features richtet sich Merkur Bets sowohl an Neueinsteiger als auch an erfahrene Wettfreunde. In diesem Test teilen wir unsere aktuellen Merkur Bets Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen individuellen Anforderungen entspricht.";
+  const summary = (
+    <>
+      <Typography variant="body1" gutterBottom>
+        Merkur Bets hat sich seit seiner Gründung im Jahr 2016 als
+        vertrauenswürdiger und innovativer Sportwetten-Anbieter in Deutschland
+        etabliert. Als Teil der renommierten Gauselmann Gruppe, einem deutschen
+        Traditionsunternehmen mit jahrzehntelanger Erfahrung in der
+        Glücksspielbranche, steht Merkur Bets für Qualität und Zuverlässigkeit.
+        Mit einem attraktiven Willkommensangebot, einem breiten Wettangebot und
+        zahlreichen exklusiven Features richtet sich Merkur Bets sowohl an
+        Neueinsteiger als auch an erfahrene Wettfreunde. In diesem Test teilen
+        wir unsere aktuellen Merkur Bets Erfahrungen aus dem Jahr 2024 und
+        beleuchten, ob der Anbieter seriös ist und deinen individuellen
+        Anforderungen entspricht.
+      </Typography>
+    </>
+  );
 
   const bonusContent = (
     <>
       <Typography variant="h3" component="h3" gutterBottom>
-        Willkommensbonus: 100% 3er-Kombi Cashback + 10€ Gratiswette
+      25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette
       </Typography>
       <Typography variant="body1" paragraph>
         Merkur Bets begrüßt neue Kunden mit einem exklusiven Willkommensangebot,
         das keine Wünsche offenlässt. Erhalte einen 100% 3er-Kombi Cashback bis
-        zu 90€ sowie eine 10€ Gratiswette ohne Einzahlung. Dieses attraktive
+        zu 75€ sowie eine 25€ Gratiswette ab einer Einzahlung von nur 1€. Dieses attraktive
         Paket ermöglicht es dir, mit einem größeren Wettguthaben zu starten und
         deine ersten Wetten risikofrei auszuprobieren.
       </Typography>
       <Typography variant="body1" paragraph>
         Du musst lediglich eine Mindesteinzahlung von 10€ tätigen, um den Bonus
         zu aktivieren. Sollte deine erste 3er-Kombiwette nicht erfolgreich sein,
-        erhältst du bis zu 90€ Cashback als Freebet. Zusätzlich steht dir die
-        10€ Gratiswette zur Verfügung, die du ohne Einzahlung nutzen kannst.
+        erhältst du bis zu 75€ Cashback als Freebet. Zusätzlich steht dir die
+        25€ Gratiswette zur Verfügung, die du ab 1€ Einzahlung nutzen kannst.
         Dieses Angebot ist einmalig pro Haushalt und innerhalb von 7 Tagen nach
         Gutschrift gültig.
       </Typography>
@@ -69,7 +83,7 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                10€ Freebet ohne Einzahlung – starte sofort ohne eigenes Risiko.
+                25€ Freebet ab einer Einzahlung von nur 1€ – starte sofort ohne eigenes Risiko.
               </Typography>
             }
           />
@@ -81,7 +95,7 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                100% 3er-Kombi Cashback bis zu 90€ – sichere dir bis zu 90€
+                100% 3er-Kombi Cashback bis zu 75€ – sichere dir bis zu 75€
                 Cashback bei deiner ersten 3er-Kombiwette.
               </Typography>
             }
@@ -148,19 +162,6 @@ const MerkurbetsReview = () => {
               <Typography variant="body1">
                 Mobile App – bequem von unterwegs wetten und keine Chance
                 verpassen.
-              </Typography>
-            }
-          />
-        </ListItem>
-        <ListItem disableGutters>
-          <ListItemIcon sx={{ minWidth: "auto", pr: 1 }}>
-            <ArrowRightIcon color="primary" />
-          </ListItemIcon>
-          <ListItemText
-            primary={
-              <Typography variant="body1">
-                3er-Kombi-Versicherung – wenn deine erste Kombi scheitert,
-                gibt's bis zu 90€ Cashback als Freebet.
               </Typography>
             }
           />
@@ -390,7 +391,8 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                <strong>Abzug Wettsteuer:</strong> 0€ (da die Wettsteuer übernommen wird)
+                <strong>Abzug Wettsteuer:</strong> 0€ (da die Wettsteuer
+                übernommen wird)
               </Typography>
             }
           />
@@ -463,7 +465,7 @@ const MerkurbetsReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Ein besonderes Highlight ist die 3er-Kombi-Versicherung. Sollte deine
-        erste 3er-Kombiwette nicht erfolgreich sein, erhältst du bis zu 90€
+        erste 3er-Kombiwette nicht erfolgreich sein, erhältst du bis zu 75€
         Cashback als Freebet. Dieses Feature minimiert dein Risiko und erhöht
         deine Gewinnchancen bei Kombiwetten erheblich.
       </Typography>
@@ -499,7 +501,7 @@ const MerkurbetsReview = () => {
       <Typography variant="body1" paragraph>
         Unsere Merkur Bets Erfahrungen aus dem Jahr 2024 zeigen, dass es sich um
         einen seriösen und äußerst attraktiven Sportwetten-Anbieter handelt. Die
-        Kombination aus 10€ Freiwette ohne Einzahlung, der Übernahme der
+        Kombination aus 25€ Freiwette ab 1€ Einzahlung, der Übernahme der
         Wettsteuer und innovativen Funktionen wie Quickbet und Bet Builder
         machen Merkur Bets zu einer ausgezeichneten Wahl für Wettfreunde.
       </Typography>

@@ -34,8 +34,19 @@ const HappybetReview = () => {
     return <div>Anbieter nicht gefunden</div>;
   }
 
-  const summary =
-    "Happybet hat sich seit seiner Gründung im Jahr 2017 einen Namen in der Sportwetten-Branche gemacht. Mit attraktiven Bonusangeboten, einem breiten Wettangebot und kundenfreundlichen Features richtet sich Happybet sowohl an Neueinsteiger als auch an erfahrene Wettfreunde. In diesem Test teilen wir unsere aktuellen Happybet Erfahrungen aus dem Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen individuellen Anforderungen entspricht.";
+  const summary = (
+    <>
+      <Typography variant="body1" gutterBottom>
+        Happybet hat sich seit seiner Gründung im Jahr 2017 einen Namen in der
+        Sportwetten-Branche gemacht. Mit attraktiven Bonusangeboten, einem
+        breiten Wettangebot und kundenfreundlichen Features richtet sich
+        Happybet sowohl an Neueinsteiger als auch an erfahrene Wettfreunde. In
+        diesem Test teilen wir unsere aktuellen Happybet Erfahrungen aus dem
+        Jahr 2024 und beleuchten, ob der Anbieter seriös ist und deinen
+        individuellen Anforderungen entspricht.
+      </Typography>
+    </>
+  );
 
   const bonusContent = (
     <>
@@ -125,9 +136,9 @@ const HappybetReview = () => {
           target="_blank"
           rel="noopener noreferrer"
           sx={{
-            width: { xs: '75%', sm: 'auto' },
+            width: { xs: "75%", sm: "auto" },
             maxWidth: { sm: 400 },
-            whiteSpace: 'normal', // Ermöglicht Zeilenumbruch bei langem Text
+            whiteSpace: "normal", // Ermöglicht Zeilenumbruch bei langem Text
           }}
         >
           Jetzt bei Happybet anmelden und Bonus kassieren!
