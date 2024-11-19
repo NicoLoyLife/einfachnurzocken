@@ -1,34 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import matter from "gray-matter";
+import MainLayout from "../../layout/MainLayout";
 import WettTippTemplate from "./WettTippTemplate";
-import markdownFiles from "../../../services/wett-tipps";
+import wettTippsData from "../../../services/wett-tipps.json";
 
 const WettTipp = () => {
   const { id } = useParams();
-  const [wettTipp, setWettTipp] = useState(null);
 
-  useEffect(() => {
-    // Finde die Markdown-Datei anhand der ID
-    const file = markdownFiles[`../../../services/wett-tipps/${id}.md`];
-    if (file) {
-      const { data, content } = matter(file);
-      setWettTipp({ ...data, content });
-    }
-  }, [id]);
+  // Finde den entsprechenden Wett-Tipp anhand der ID
+  const wettTipp = wettTippsData.find((tipp) => tipp.id === id);
 
   if (!wettTipp) return <div>Wett-Tipp nicht gefunden!</div>;
 
   return (
-    <WettTippTemplate
-      title={wettTipp.title}
-      description={wettTipp.description}
-      sport={wettTipp.sport}
-      content={wettTipp.content}
-      date={wettTipp.date}
-      ctaText={wettTipp.ctaText}
-      ctaLink={wettTipp.ctaLink}
-    />
+    <MainLayout>
+      <WettTippTemplate
+        title={wettTipp.title}
+        description={wettTipp.description}
+        sport={wettTipp.sport}
+        content={wettTipp.content}
+        date={wettTipp.date}
+        ctaText={wettTipp.ctaText}
+        ctaLink={wettTipp.ctaLink}
+      />
+    </MainLayout>
   );
 };
 

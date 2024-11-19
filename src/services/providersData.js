@@ -1,6 +1,7 @@
 import betanoLogo from "../assets/images/sportsbooks/betano.png";
 // import happybetLogo from "../assets/images/sportsbooks/happybet.jpg";
 import merkurbetsLogo from "../assets/images/sportsbooks/merkurbets.jpg";
+// import winamaxLogo from "../assets/images/sportsbooks/winamax.png";
 // import merkurLogo from "../assets/images/casinos/merkur.jpg";
 import jackpotPiratenLogo from "../assets/images/casinos/jackpotpiraten.jpg";
 import bingBongLogo from "../assets/images/casinos/bingbong.png";
@@ -400,6 +401,14 @@ export const sportsbettingProvidersData = {
       "Limitierte Zahlungsmethoden für Auszahlungen im Vergleich zu einigen Konkurrenten",
     ],
   },
+  // winamax: {
+  //   name: "Winamax",
+  //   slug: "winamax",
+  //   title: "",
+  //   metaDescription: "",
+  //   ctaLink: "https://www.winamax.de/registration/landing/Default?language=DE&banid=73017",
+  //   logo: winamaxLogo,
+  // }
 };
 
 export const onlineCasinoProvidersData = {

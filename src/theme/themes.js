@@ -137,6 +137,13 @@ export const CasinoTheme = getTheme(casinoColors, {
     letterSpacing: "0.05em",
     color: casinoColors.primary,
   },
+  h4: {
+    fontFamily: '"Roboto", sans-serif',
+    fontWeight: 600,
+    fontSize: "1.25rem",
+    letterSpacing: "0.05em",
+    color: casinoColors.primary
+  },
   body1: {
     fontFamily: '"Lato", sans-serif',
     fontSize: "1rem",
@@ -175,6 +182,13 @@ export const SportwettenTheme = getTheme(sportwettenColors, {
     fontSize: "1.5rem",
     letterSpacing: "0.05em",
     color: sportwettenColors.primary,
+  },
+  h4: {
+    fontFamily: '"Roboto", sans-serif',
+    fontWeight: 600,
+    fontSize: "1.25rem",
+    letterSpacing: "0.05em",
+    color: sportwettenColors.primary
   },
   body1: {
     fontFamily: '"Lato", sans-serif',
