@@ -39,7 +39,7 @@ const WettTippTemplate = ({
     switch (sport) {
       case "Fußball":
         return soccerHeader;
-      case "Backetball":
+      case "Basketball":
         return basketballHeader;
       case "American Football":
         return footballHeader;
