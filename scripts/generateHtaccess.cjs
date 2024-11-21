@@ -17,11 +17,11 @@ let htaccessContent = `
   RewriteBase /
 
   # Affiliate-Weiterleitungen
-  `;
+`;
 
 // Affiliate-Links hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  htaccessContent += `RewriteRule ^links/${key}$ /redirect.php?id=${key} [L]\n`;
+  htaccessContent += `  RewriteRule ^links/${key}$ /redirect.php?id=${key} [L]\n`;
 });
 
 htaccessContent += `
@@ -47,33 +47,28 @@ $links = array(
 
 // Affiliate-Links hinzufügen zur redirect.php
 Object.keys(AffiliateLinks).forEach((key) => {
-  const url = AffiliateLinks[key].replace(/'/g, "\\'");
-  phpContent += `    '${key}' => '${url}',\n`;
+  const url = encodeURIComponent(AffiliateLinks[key]);
+  phpContent += `    '${key}' => base64_encode('${url}'),\n`;
 });
 
 phpContent += `);
 
-$id = isset($_GET['id']) ? $_GET['id'] : '';
+$id = $_GET['id'] ?? '';
 
 if (array_key_exists($id, $links)) {
-    $url = htmlspecialchars($links[$id], ENT_QUOTES, 'UTF-8');
-    echo "<!DOCTYPE html>
-    <html>
-    <head>
-        <meta http-equiv='refresh' content='1;url=$url'/>
-        <meta name='robots' content='noindex,nofollow'/>
-        <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'/>
-        <meta http-equiv='Pragma' content='no-cache'/>
-        <meta http-equiv='Expires' content='0'/>
-        <title>Weiterleitung...</title>
-    </head>
-    <body>
-        <p>Sie werden in Kürze weitergeleitet. Falls die Weiterleitung nicht automatisch erfolgt, klicken Sie <a href='$url'>hier</a>.</p>
-    </body>
-    </html>";
+    $decodedUrl = base64_decode($links[$id]);
+    if ($decodedUrl === false) {
+        header("HTTP/1.0 400 Bad Request");
+        echo "Ungültiger Link.";
+        exit;
+    }
+    sleep(2); // 2 Sekunden Verzögerung
+    header("Location: " . urldecode($decodedUrl));
+    exit;
 } else {
     header("HTTP/1.0 404 Not Found");
     echo "Link nicht gefunden.";
+    exit;
 }
 ?>`;
 

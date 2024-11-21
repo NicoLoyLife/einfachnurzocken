@@ -5,10 +5,10 @@
 
   # Affiliate-Weiterleitungen
   RewriteRule ^links/betanoSportwetten$ /redirect.php?id=betanoSportwetten [L]
-RewriteRule ^links/winamaxSportwetten$ /redirect.php?id=winamaxSportwetten [L]
-RewriteRule ^links/merkurbetsSportwetten$ /redirect.php?id=merkurbetsSportwetten [L]
-RewriteRule ^links/bingBongSlots$ /redirect.php?id=bingBongSlots [L]
-RewriteRule ^links/jackpotPiratenSlots$ /redirect.php?id=jackpotPiratenSlots [L]
+  RewriteRule ^links/winamaxSportwetten$ /redirect.php?id=winamaxSportwetten [L]
+  RewriteRule ^links/merkurbetsSportwetten$ /redirect.php?id=merkurbetsSportwetten [L]
+  RewriteRule ^links/bingBongSlots$ /redirect.php?id=bingBongSlots [L]
+  RewriteRule ^links/jackpotPiratenSlots$ /redirect.php?id=jackpotPiratenSlots [L]
 
 # React-Routing für Single Page Application
   RewriteCond %{REQUEST_FILENAME} !-f
