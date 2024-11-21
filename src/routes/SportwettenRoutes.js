@@ -8,6 +8,9 @@ import BetanoReview from '../pages/sportwetten/BetanoReview';
 import MerkurbetsReview from '../pages/sportwetten/MerkurbetsReview';
 import WinamaxReview from '../pages/sportwetten/WinamaxReview';
 
+import TippTemplate from '../components/sportsbetting/wett-tipps/TippTemplate';
+import WettTipps from '../pages/sportwetten/WettTipps';
+
 const SportwettenRoutes = () => {
   return (
     <>
@@ -18,6 +21,8 @@ const SportwettenRoutes = () => {
       <Route path="/sportwetten/betano" element={<BetanoReview />} />
       <Route path="/sportwetten/merkurbets" element={<MerkurbetsReview />} />
       <Route path="/sportwetten/winamax" element={<WinamaxReview />} />
+      <Route path="/sportwetten/tipps" element={<WettTipps />} />
+      <Route path="/sportwetten/tipp/:id" element={<TippTemplate />} />
     </>
   );
 };
