@@ -9,20 +9,25 @@ const htaccessPath = join(process.cwd(), "public", ".htaccess");
 
 // Header für die .htaccess-Datei
 let htaccessContent = `
-RewriteEngine On
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-# React-Routing für Single Page Application
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [L]
-
-# Affiliate-Weiterleitungen
-`;
+  # Affiliate-Weiterleitungen
+  `;
 
 // Affiliate-Links hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
   htaccessContent += `RewriteRule ^links/${key}$ ${AffiliateLinks[key]} [R=301,L]\n`;
 });
+
+htaccessContent += `
+# React-Routing für Single Page Application
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+`;
 
 // .htaccess-Datei schreiben
 writeFileSync(htaccessPath, htaccessContent, "utf8");
