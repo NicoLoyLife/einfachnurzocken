@@ -25,6 +25,7 @@ import CasinoRoutes from "./routes/CasinoRoutes";
 import { useDispatch } from "react-redux";
 import { setSection, SECTIONS } from "./redux/sectionSlice";
 import ScrollToTop from "./components/common/ScrollToTop";
+// import AffiliateRedirects from "./services/AffiliateRedirects";
 // import CookieConsent from "react-cookie-consent";
 // import { Cookie } from "@mui/icons-material";
 
@@ -118,6 +119,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/news" element={<News />} />
+              {/* Route für Affiliate-Weiterleitungen */}
+              {/* <Route
+                path="/links/:affiliate"
+                element={<AffiliateRedirects />}
+              /> */}
               <Route
                 path="/online-spielotheken/*"
                 element={<OnlineSpielotheken />}

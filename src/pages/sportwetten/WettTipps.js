@@ -1,23 +1,30 @@
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, List } from "@mui/material";
 import MainLayout from "../../components/layout/MainLayout";
+import { Link } from "react-router-dom";
+import getAllWettTipps from "../../services/wett-tipps/getAllWettTipps";
 
-function WettTipps() {
+const WettTipps = () => {
+  const tipps = getAllWettTipps();
+
   return (
     <MainLayout>
       <Container maxWidth="lg">
         <Box sx={{ mt: 4, mb: 8, textAlign: "center" }}>
           <Typography variant="h1" gutterBottom>
-            WettTipps
+            Wett-Tipps
           </Typography>
-          <Typography variant="body1">
-            Dieser Bereich ist aktuell im Aufbau. Schau bald wieder vorbei, um
-            die neuesten WettTipps zu erhalten!
-          </Typography>
+          <List>
+            {tipps.map((tipp, index) => (
+              <Link key={index} to={`/sportwetten/wett-tipps/${tipp.id}`}>
+                <Typography variant="h5">{tipp.title}</Typography>
+              </Link>
+            ))}
+          </List>
         </Box>
       </Container>
     </MainLayout>
   );
-}
+};
 
 export default WettTipps;

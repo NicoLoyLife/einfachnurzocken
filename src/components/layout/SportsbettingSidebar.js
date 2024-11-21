@@ -116,7 +116,7 @@ const SportsbettingSidebar = ({ isSticky }) => {
             <Button
               variant="contained"
               color="primary"
-              href={provider.ctaLink || `/${provider.slug}`}
+              href={provider.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
             >
