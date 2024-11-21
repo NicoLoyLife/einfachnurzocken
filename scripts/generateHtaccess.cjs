@@ -47,7 +47,6 @@ $links = array(
 
 // Affiliate-Links hinzufügen zur redirect.php
 Object.keys(AffiliateLinks).forEach((key) => {
-  // Escape von Single-Quotes in den URLs
   const url = AffiliateLinks[key].replace(/'/g, "\\'");
   phpContent += `    '${key}' => '${url}',\n`;
 });
@@ -57,12 +56,24 @@ phpContent += `);
 $id = isset($_GET['id']) ? $_GET['id'] : '';
 
 if (array_key_exists($id, $links)) {
-    header('Location: ' . $links[$id]);
-    exit;
+    $url = htmlspecialchars($links[$id], ENT_QUOTES, 'UTF-8');
+    echo "<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv='refresh' content='1;url=$url'/>
+        <meta name='robots' content='noindex,nofollow'/>
+        <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'/>
+        <meta http-equiv='Pragma' content='no-cache'/>
+        <meta http-equiv='Expires' content='0'/>
+        <title>Weiterleitung...</title>
+    </head>
+    <body>
+        <p>Sie werden in Kürze weitergeleitet. Falls die Weiterleitung nicht automatisch erfolgt, klicken Sie <a href='$url'>hier</a>.</p>
+    </body>
+    </html>";
 } else {
     header("HTTP/1.0 404 Not Found");
     echo "Link nicht gefunden.";
-    exit;
 }
 ?>`;
 
