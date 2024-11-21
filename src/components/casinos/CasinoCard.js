@@ -77,7 +77,7 @@ function CasinoCard({ casino }) {
           rel="noopener noreferrer"
           aria-label={`Jetzt spielen bei ${casino.name}`}
         >
-          Jetzt wetten
+          Jetzt spielen
         </Button>
         <Button
           variant="outlined"
