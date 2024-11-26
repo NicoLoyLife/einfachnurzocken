@@ -5,6 +5,7 @@ import { useTheme } from "@mui/material/styles";
 import PropTypes from "prop-types";
 import defaultLogo from "../../../assets/images/logo.png";
 import OpenGraphMeta from "../../common/OpenGraphMeta";
+import { Link } from "react-router-dom";
 
 const Banner = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -60,7 +61,8 @@ const PageHeader = ({
         <Button
           variant="contained"
           color="secondary"
-          href={ctaLink}
+          to={ctaLink}
+          component={Link}
           target="_blank"
           rel="noopener noreferrer sponsored"
           sx={{
