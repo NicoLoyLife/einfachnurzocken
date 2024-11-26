@@ -136,7 +136,7 @@ function CasinoBonusOfferCard({ offer, placement }) {
             fullWidth
             href={offer.ctaLink || `/${offer.slug}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer sponsored"
             aria-label={`Jetzt spielen bei ${offer.name}`}
           >
             Jetzt wetten

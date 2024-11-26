@@ -75,7 +75,7 @@ function SportsBettingCard({ sportsbook }) {
           fullWidth
           href={sportsbook.ctaLink || `/${sportsbook.slug}`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer sponsored"
           aria-label={`Jetzt wetten bei ${sportsbook.name}`}
         >
           Jetzt wetten

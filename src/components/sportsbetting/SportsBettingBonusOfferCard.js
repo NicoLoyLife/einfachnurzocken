@@ -136,7 +136,7 @@ function SportsBettingBonusOfferCard({ offer, placement }) {
             fullWidth
             href={offer.ctaLink || `/${offer.slug}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer sponsored"
             aria-label={`Jetzt wetten bei ${offer.name}`}
           >
             Jetzt wetten

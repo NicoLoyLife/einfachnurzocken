@@ -124,7 +124,7 @@ const ConclusionSection = ({
             color="primary"
             href={ctaLink}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer sponsored"
             sx={{
               width: { xs: '75%', sm: 'auto' },
               maxWidth: { sm: 400 },

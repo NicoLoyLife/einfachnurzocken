@@ -118,7 +118,7 @@ const SportsbettingSidebar = ({ isSticky }) => {
               color="primary"
               href={provider.ctaLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
             >
               Jetzt wetten
             </Button>

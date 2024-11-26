@@ -120,7 +120,7 @@ const CasinoSidebar = ({ isSticky }) => {
               color="primary"
               href={provider.ctaLink || `/${provider.slug}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
             >
               Jetzt spielen
             </Button>

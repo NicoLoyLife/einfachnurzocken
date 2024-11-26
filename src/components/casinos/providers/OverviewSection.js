@@ -81,7 +81,7 @@ const OverviewSection = ({ overview, ctaLink }) => {
                     <a
                       href={ctaLink}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer sponsored"
                       style={{
                         color: theme.palette.primary.main,
                         textDecoration: "none",

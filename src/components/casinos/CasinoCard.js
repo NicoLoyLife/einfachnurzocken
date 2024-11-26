@@ -74,7 +74,7 @@ function CasinoCard({ casino }) {
           fullWidth
           href={casino.ctaLink || `/${casino.slug}`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer sponsored"
           aria-label={`Jetzt spielen bei ${casino.name}`}
         >
           Jetzt spielen

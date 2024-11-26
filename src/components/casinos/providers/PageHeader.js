@@ -62,7 +62,7 @@ const PageHeader = ({
           color="secondary"
           href={ctaLink}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer sponsored"
           sx={{
             mt: 2,
             color: theme.palette.secondary.contrastText, // Korrektur der Textfarbe
