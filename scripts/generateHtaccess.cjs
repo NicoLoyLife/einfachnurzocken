@@ -4,24 +4,22 @@ const AffiliateLinks = require("../src/services/AffiliateLinks.js");
 
 console.log("Affiliate-Links importiert:", AffiliateLinks);
 
-// Pfad zur generierten .htaccess-Datei
+// Pfade zur generierten .htaccess und proxy.php
 const htaccessPath = join(process.cwd(), "public", ".htaccess");
+const proxyPhpPath = join(process.cwd(), "public", "proxy.php");
 
-// Pfad zur generierten redirect.php-Datei
-const redirectPhpPath = join(process.cwd(), "public", "redirect.php");
-
-// Header für die .htaccess-Datei
+// Header für die .htaccess
 let htaccessContent = `
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Affiliate-Weiterleitungen
+  # Maskierte Affiliate-Weiterleitungen
 `;
 
-// Affiliate-Links hinzufügen
+// Affiliate-Links in .htaccess hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  htaccessContent += `  RewriteRule ^links/${key}$ /redirect.php?id=${key} [L]\n`;
+  htaccessContent += `  RewriteRule ^go/${key}$ /proxy.php?key=${key} [L]\n`;
 });
 
 htaccessContent += `
@@ -34,36 +32,36 @@ htaccessContent += `
 
 // .htaccess-Datei schreiben
 writeFileSync(htaccessPath, htaccessContent, "utf8");
+console.log(`.htaccess wurde unter ${htaccessPath} erstellt.`);
 
-console.log(`.htaccess wird unter folgendem Pfad generiert: ${htaccessPath}`);
-console.log(`Inhalt der generierten .htaccess:\n${htaccessContent}`);
-
-// Inhalt für redirect.php
+// Inhalt für proxy.php
 let phpContent = `<?php
-// Automatisch generierte redirect.php
+// Automatisch generierte Proxy-Datei
 
 $links = array(
 `;
 
-// Affiliate-Links hinzufügen zur redirect.php
+// Affiliate-Links in proxy.php hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  const url = encodeURIComponent(AffiliateLinks[key]);
-  phpContent += `    '${key}' => base64_encode('${url}'),\n`;
+  const encodedUrl = Buffer.from(AffiliateLinks[key]).toString("base64");
+  phpContent += `    '${key}' => '${encodedUrl}',\n`;
 });
 
 phpContent += `);
 
-$id = $_GET['id'] ?? '';
+$key = $_GET['key'] ?? '';
 
-if (array_key_exists($id, $links)) {
-    $decodedUrl = base64_decode($links[$id]);
+if (array_key_exists($key, $links)) {
+    $decodedUrl = base64_decode($links[$key]);
     if ($decodedUrl === false) {
         header("HTTP/1.0 400 Bad Request");
         echo "Ungültiger Link.";
         exit;
     }
-    sleep(2); // 2 Sekunden Verzögerung
-    header("Location: " . urldecode($decodedUrl));
+
+    // Referrer entfernen, um AdBlocker zu umgehen
+    header("Referrer-Policy: no-referrer");
+    header("Location: " . $decodedUrl);
     exit;
 } else {
     header("HTTP/1.0 404 Not Found");
@@ -72,10 +70,6 @@ if (array_key_exists($id, $links)) {
 }
 ?>`;
 
-// redirect.php-Datei schreiben
-writeFileSync(redirectPhpPath, phpContent, "utf8");
-
-console.log(
-  `redirect.php wird unter folgendem Pfad generiert: ${redirectPhpPath}`
-);
-console.log(`Inhalt der generierten redirect.php:\n${phpContent}`);
+// proxy.php-Datei schreiben
+writeFileSync(proxyPhpPath, phpContent, "utf8");
+console.log(`proxy.php wurde unter ${proxyPhpPath} erstellt.`);
