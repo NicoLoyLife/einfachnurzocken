@@ -121,7 +121,7 @@ function App() {
               <Route path="/news" element={<News />} />
               {/* Route für Affiliate-Weiterleitungen */}
               {/* <Route
-                path="/go/:affiliate"
+                path="/r/:affiliate"
                 element={<AffiliateRedirects />}
               /> */}
               <Route

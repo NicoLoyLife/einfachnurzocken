@@ -19,7 +19,7 @@ let htaccessContent = `
 
 // Affiliate-Links in .htaccess hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  htaccessContent += `  RewriteRule ^go/${key}$ /proxy.php?key=${key} [L]\n`;
+  htaccessContent += `  RewriteRule ^r/${key}$ /proxy.php?key=${key} [L]\n`;
 });
 
 htaccessContent += `
@@ -59,9 +59,27 @@ if (array_key_exists($key, $links)) {
         exit;
     }
 
-    // Referrer entfernen, um AdBlocker zu umgehen
-    header("Referrer-Policy: no-referrer");
-    header("Location: " . $decodedUrl);
+    // Proxying der Zielseite mit cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $decodedUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Referrer-Policy: no-referrer'
+    ]);
+
+    $response = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code === 200) {
+        echo $response;
+    } else {
+        header("HTTP/1.0 500 Internal Server Error");
+        echo "Fehler beim Laden der Zielseite.";
+    }
     exit;
 } else {
     header("HTTP/1.0 404 Not Found");
