@@ -28,7 +28,7 @@ export const sportsbettingProvidersData = {
     metaDescription:
       "Ausführlicher Betano Sportwetten Test mit echten Erfahrungen ✓ 100% Bonus + 20€ Freiwette ✓ Wettquoten ✓ Wettangebot ✓ Jetzt informieren und profitieren!",
     ctaLink:
-      "/r/betanoSportwetten",
+      "/links/betanoSportwetten",
     logo: betanoLogo,
     highlights: [
       "100% Einzahlungsbonus bis zu 80€",
@@ -151,7 +151,7 @@ export const sportsbettingProvidersData = {
     metaDescription:
       "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 25€ Freiwette ab 1€ Einzahlung ✓ Wettsteuer übernommen ✓ Jetzt informieren und profitieren!",
     ctaLink:
-      "/r/merkurbetsSportwetten",
+      "/links/merkurbetsSportwetten",
     logo: merkurbetsLogo,
     highlights: [
       "25€ Freiwette ab 1€ Einzahlung",
@@ -284,7 +284,7 @@ export const sportsbettingProvidersData = {
     metaDescription:
       "Winamax im Test: 100 € Freebets als Willkommensbonus, steuerfreie Wetten, umfangreiche Live-Streams & innovative Funktionen. Jetzt anmelden und profitieren!",
     ctaLink:
-      "/r/winamaxSportwetten",
+      "/links/winamaxSportwetten",
     logo: winamaxLogo,
     highlights: [
       "Steuerfreie Wetten: Winamax übernimmt die Wettsteuer für dich",
@@ -382,7 +382,7 @@ export const onlineCasinoProvidersData = {
     metaDescription:
       "JackpotPiraten im Test: 100 % Bonus bis 100 € + 50 Freispiele, deutsche Lizenz, über 620 Slots. Jetzt spannende Abenteuer erleben und gewinnen!",
     ctaLink:
-      "/r/jackpotPiratenSlots",
+      "/links/jackpotPiratenSlots",
     logo: jackpotPiratenLogo,
     pros: [
       "Attraktiver Willkommensbonus mit fairen Bedingungen",
@@ -474,7 +474,7 @@ export const onlineCasinoProvidersData = {
     metaDescription:
       "Bing Bong im Test: 100 % Bonus bis 100 € + 50 Freispiele, deutsche Lizenz, über 650 Slots von Merkur, Novomatic & Co. Jetzt mehr erfahren!",
     ctaLink:
-      "/r/bingBongSlots",
+      "/links/bingBongSlots",
     logo: bingBongLogo,
     highlights: [
       "Über 650 Slots von Top-Entwicklern wie Merkus, Novomatic und Pragmatic Play",
