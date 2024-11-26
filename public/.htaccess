@@ -4,11 +4,11 @@
   RewriteBase /
 
   # Maskierte Affiliate-Weiterleitungen
-  RewriteRule ^go/betanoSportwetten$ /proxy.php?key=betanoSportwetten [L]
-  RewriteRule ^go/winamaxSportwetten$ /proxy.php?key=winamaxSportwetten [L]
-  RewriteRule ^go/merkurbetsSportwetten$ /proxy.php?key=merkurbetsSportwetten [L]
-  RewriteRule ^go/bingBongSlots$ /proxy.php?key=bingBongSlots [L]
-  RewriteRule ^go/jackpotPiratenSlots$ /proxy.php?key=jackpotPiratenSlots [L]
+  RewriteRule ^links/betanoSportwetten$ /redirect.php?key=betanoSportwetten [L]
+  RewriteRule ^links/winamaxSportwetten$ /redirect.php?key=winamaxSportwetten [L]
+  RewriteRule ^links/merkurbetsSportwetten$ /redirect.php?key=merkurbetsSportwetten [L]
+  RewriteRule ^links/bingBongSlots$ /redirect.php?key=bingBongSlots [L]
+  RewriteRule ^links/jackpotPiratenSlots$ /redirect.php?key=jackpotPiratenSlots [L]
 
 # React-Routing für Single Page Application
   RewriteCond %{REQUEST_FILENAME} !-f
