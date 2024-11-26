@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Card, CardContent } from "@mui/material";
+import { Box, Typography, Card, CardContent } from "@mui/material";
 import { styled } from "@mui/system";
 import OpenGraphMeta from "../../common/OpenGraphMeta";
 import soccerHeader from "../../../assets/images/wett-tipps/soccer-header.webp";
@@ -7,6 +7,7 @@ import basketballHeader from "../../../assets/images/wett-tipps/basketball-heade
 import footballHeader from "../../../assets/images/wett-tipps/american-football-header.webp";
 import sportwettenImage from "../../../assets/images/sportwetten.webp";
 import defaultLogo from "../../../assets/images/logo.png";
+// import AffiliateButton from "../../common/AffiliateButton";
 
 const Header = styled(Box)(({ theme, background }) => ({
   backgroundImage: `url(${background})`,
@@ -71,15 +72,7 @@ const WettTippTemplate = ({
         <Card sx={{ mb: 4 }}>
           <CardContent>
             <Typography variant="body1">{description}</Typography>
-            {/* <Button
-              href={ctaLink}
-              target="_blank"
-              variant="contained"
-              color="primary"
-              sx={{ mt: 2 }}
-            >
-              {ctaText}
-            </Button> */}
+            {/* <AffiliateButton to={ctaLink} text={ctaText} /> */}
           </CardContent>
         </Card>
 

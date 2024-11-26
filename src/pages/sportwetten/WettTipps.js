@@ -16,8 +16,8 @@ const WettTipps = () => {
           </Typography>
           <List>
             {tipps.map((tipp, index) => (
-              <Link key={index} to={`/sportwetten/wett-tipps/${tipp.id}`}>
-                <Typography variant="h5">{tipp.title}</Typography>
+              <Link key={index} to={`/sportwetten/tipps/${tipp.id}`}>
+                <Typography variant="h5">{tipp.filename.replace('./', '').replace('.md', '')}</Typography>
               </Link>
             ))}
           </List>

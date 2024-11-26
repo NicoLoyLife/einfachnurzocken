@@ -10,10 +10,10 @@ import {
   TableRow,
   Paper,
   Rating,
-  Button,
   Divider,
   useTheme,
 } from "@mui/material";
+import AffiliateButton from "../../common/AffiliateButton";
 
 const ConclusionSection = ({
   conclusionContent,
@@ -119,20 +119,7 @@ const ConclusionSection = ({
       {/* Call-to-Action */}
       {ctaLink && (
         <Box sx={{ mt: 4, textAlign: "center" }}>
-          <Button
-            variant="contained"
-            color="primary"
-            href={ctaLink}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            sx={{
-              width: { xs: '75%', sm: 'auto' },
-              maxWidth: { sm: 400 },
-              whiteSpace: 'normal', // Ermöglicht Zeilenumbruch bei langem Text
-            }}
-          >
-            {buttonTitle}
-          </Button>
+          <AffiliateButton to={ctaLink} text={buttonTitle} />
         </Box>
       )}
 

@@ -22,7 +22,7 @@ const SportwettenRoutes = () => {
       <Route path="/sportwetten/merkurbets" element={<MerkurbetsReview />} />
       <Route path="/sportwetten/winamax" element={<WinamaxReview />} />
       <Route path="/sportwetten/tipps" element={<WettTipps />} />
-      <Route path="/sportwetten/tipp/:id" element={<TippTemplate />} />
+      <Route path="/sportwetten/tipps/:id" element={<TippTemplate />} />
     </>
   );
 };

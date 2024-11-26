@@ -4,9 +4,9 @@ const AffiliateLinks = require("../src/services/AffiliateLinks.js");
 
 console.log("Affiliate-Links importiert:", AffiliateLinks);
 
-// Pfade zur generierten .htaccess und proxy.php
+// Pfade zur generierten .htaccess und redirect.php
 const htaccessPath = join(process.cwd(), "public", ".htaccess");
-const proxyPhpPath = join(process.cwd(), "public", "proxy.php");
+const redirectPhpPath = join(process.cwd(), "public", "redirect.php");
 
 // Header für die .htaccess
 let htaccessContent = `
@@ -19,7 +19,7 @@ let htaccessContent = `
 
 // Affiliate-Links in .htaccess hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  htaccessContent += `  RewriteRule ^go/${key}$ /proxy.php?key=${key} [L]\n`;
+  htaccessContent += `  RewriteRule ^links/${key}$ /redirect.php?key=${key} [L]\n`;
 });
 
 htaccessContent += `
@@ -34,16 +34,16 @@ htaccessContent += `
 writeFileSync(htaccessPath, htaccessContent, "utf8");
 console.log(`.htaccess wurde unter ${htaccessPath} erstellt.`);
 
-// Inhalt für proxy.php
+// Inhalt für redirect.php
 let phpContent = `<?php
-// Automatisch generierte Proxy-Datei
+// Automatisch generierte Weiterleitung
 
 $links = array(
 `;
 
-// Affiliate-Links in proxy.php hinzufügen
+// Affiliate-Links in redirect.php hinzufügen
 Object.keys(AffiliateLinks).forEach((key) => {
-  const encodedUrl = Buffer.from(AffiliateLinks[key]).toString("base64");
+  const encodedUrl = encodeURIComponent(AffiliateLinks[key]);
   phpContent += `    '${key}' => '${encodedUrl}',\n`;
 });
 
@@ -52,24 +52,18 @@ phpContent += `);
 $key = $_GET['key'] ?? '';
 
 if (array_key_exists($key, $links)) {
-    $decodedUrl = base64_decode($links[$key]);
-    if ($decodedUrl === false) {
-        header("HTTP/1.0 400 Bad Request");
-        echo "Ungültiger Link.";
-        exit;
-    }
-
-    // Referrer entfernen, um AdBlocker zu umgehen
+    // Entferne den Referrer und leite weiter
     header("Referrer-Policy: no-referrer");
-    header("Location: " . $decodedUrl);
+    header("Location: " . urldecode($links[$key]));
     exit;
 } else {
     header("HTTP/1.0 404 Not Found");
-    echo "Link nicht gefunden.";
+    echo "Ungültiger Link.";
     exit;
 }
-?>`;
+?>
+`;
 
-// proxy.php-Datei schreiben
-writeFileSync(proxyPhpPath, phpContent, "utf8");
-console.log(`proxy.php wurde unter ${proxyPhpPath} erstellt.`);
+// redirect.php-Datei schreiben
+writeFileSync(redirectPhpPath, phpContent, "utf8");
+console.log(`redirect.php wurde unter ${redirectPhpPath} erstellt.`);
