@@ -20,6 +20,8 @@ const WettTipp = () => {
         sport={wettTipp.sport}
         content={wettTipp.content}
         date={wettTipp.date}
+        time={wettTipp.time}
+        published={wettTipp.published}
         ctaText={wettTipp.ctaText}
         ctaLink={wettTipp.ctaLink}
       />

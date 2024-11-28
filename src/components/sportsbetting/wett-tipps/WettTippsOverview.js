@@ -10,15 +10,27 @@ import {
 } from "@mui/material";
 import MainLayout from "../../layout/MainLayout";
 import wettTippsData from "../../../services/wett-tipps.json";
+import { format, parse } from "date-fns";
+import { de } from "date-fns/locale";
 
 const WettTippsOverview = () => {
   const [wettTipps, setWettTipps] = useState([]);
 
   useEffect(() => {
-    // Sortiere Wett-Tipps nach Veröffentlichungsdatum (neueste zuerst)
-    const sortedTipps = [...wettTippsData].sort(
-      (a, b) => new Date(b.published) - new Date(a.published)
+    // Erstelle eine Kopie der Daten und füge ein 'dateTime' Feld hinzu
+    const tippsWithDateTime = wettTippsData.map((tipp) => {
+      // Kombiniere das Datum und die Uhrzeit
+      const dateTimeString = `${tipp.date} ${tipp.time}`;
+      // Erstelle ein Date-Objekt unter Angabe des Formats
+      const dateTime = parse(dateTimeString, 'yyyy-MM-dd HH:mm', new Date());
+      return { ...tipp, dateTime };
+    });
+
+    // Sortiere die Wett-Tipps nach Datum und Uhrzeit (neueste zuerst)
+    const sortedTipps = tippsWithDateTime.sort(
+      (a, b) => b.dateTime - a.dateTime
     );
+
     setWettTipps(sortedTipps);
   }, []);
 
@@ -35,6 +47,11 @@ const WettTippsOverview = () => {
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
                     {tipp.title}
+                  </Typography>
+                  <Typography variant="body2" gutterBottom>
+                    {format(tipp.dateTime, "dd. MMMM yyyy, HH:mm", {
+                      locale: de,
+                    })} Uhr
                   </Typography>
                   <Typography variant="body2" gutterBottom>
                     {tipp.description}
