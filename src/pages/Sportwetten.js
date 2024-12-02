@@ -19,6 +19,7 @@ import SportsBettingBonusSection from "../components/sportsbetting/SportsBetting
 import SportsBettingFAQSection from "../components/sportsbetting/SportsBettingFAQSection";
 // import SportsBettingNewsSection from "../components/sportsbetting/SportsBettingNewsSection";
 // import SportsBettingGuidesSection from "../components/sportsbetting/SportsBettingGuidesSection";
+import SportsBettingTippsSection from "../components/sportsbetting/SportsBettingTippsSection";
 
 function Sportwetten() {
   return (
@@ -28,6 +29,7 @@ function Sportwetten() {
       {/* <SportsBettingComparisonTable /> */}
       <WhyChooseSportsBetting />
       <SportsBettingBonusSection />
+      <SportsBettingTippsSection />
       <SportsBettingFAQSection />
       {/* <SportsBettingNewsSection />
       <SportsBettingGuidesSection /> */}
