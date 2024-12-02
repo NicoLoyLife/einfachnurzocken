@@ -7,6 +7,7 @@ import TopSportwetten from '../components/TopSportwetten';
 // import LatestNews from '../components/LatestNews';
 // import LatestGuides from '../components/LatestGuides';
 import FAQ from '../components/FAQ';
+import LatestTipps from '../components/LatestTipps';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <LatestBonusangebote />
       {/* <PopularGames /> */}
       <TopSportwetten />
+      <LatestTipps />
       {/* <LatestNews /> */}
       {/* <LatestGuides /> */}
       <FAQ />

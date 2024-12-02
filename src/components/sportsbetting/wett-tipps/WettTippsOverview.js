@@ -1,20 +1,24 @@
+// src/pages/WettTippsOverview.js
+
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   Box,
   Typography,
-  Card,
-  CardContent,
-  Button,
   Grid,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import MainLayout from "../../layout/MainLayout";
 import wettTippsData from "../../../services/wett-tipps.json";
-import { format, parse } from "date-fns";
-import { de } from "date-fns/locale";
+import { parse } from "date-fns";
+import TippCard from "./TippCard";
 
 const WettTippsOverview = () => {
   const [wettTipps, setWettTipps] = useState([]);
+  const [availableSports, setAvailableSports] = useState([]);
+  const [filterCategory, setFilterCategory] = useState("Alle");
 
   useEffect(() => {
     // Erstelle eine Kopie der Daten und füge ein 'dateTime' Feld hinzu
@@ -22,7 +26,7 @@ const WettTippsOverview = () => {
       // Kombiniere das Datum und die Uhrzeit
       const dateTimeString = `${tipp.date} ${tipp.time}`;
       // Erstelle ein Date-Objekt unter Angabe des Formats
-      const dateTime = parse(dateTimeString, 'yyyy-MM-dd HH:mm', new Date());
+      const dateTime = parse(dateTimeString, "yyyy-MM-dd HH:mm", new Date());
       return { ...tipp, dateTime };
     });
 
@@ -32,40 +36,70 @@ const WettTippsOverview = () => {
     );
 
     setWettTipps(sortedTipps);
+
+    // Extrahiere die einzigartigen Sportarten
+    const sports = [...new Set(sortedTipps.map((tipp) => tipp.sport))];
+    setAvailableSports(sports);
   }, []);
+
+  // Filtern der Wett-Tipps basierend auf Sportart
+  const filteredTipps = wettTipps.filter((tipp) => {
+    const matchesCategory =
+      filterCategory === "Alle" || tipp.sport === filterCategory;
+    return matchesCategory;
+  });
 
   return (
     <MainLayout>
       <Box sx={{ p: 4 }}>
-        <Typography variant="h3" gutterBottom>
+        <Typography
+          variant="h3"
+          component="h3"
+          sx={{ mb: 4, textAlign: "center" }}
+        >
           Wett-Tipps
         </Typography>
+
+        <Typography
+          variant="body1"
+          component="p"
+          sx={{ mb: 4, textAlign: "center" }}
+        >
+          Egal, ob du ein erfahrener Wetter oder ein Neuling bist – hier findest
+          du unsere aktuellen Wett-Tipps für verschiedene Sportarten. Nutze die
+          Filterfunktion, um die passenden Tipps für dich zu entdecken.
+        </Typography>
+
+        {/* Filter */}
+        <Grid container spacing={2} sx={{ mb: 4 }}>
+          <Grid item xs={12} md={6}>
+            {/* Platzhalter, falls Sie später weitere Filter hinzufügen möchten */}
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <FormControl fullWidth variant="outlined">
+              <InputLabel id="filter-label">Sportart</InputLabel>
+              <Select
+                labelId="filter-label"
+                value={filterCategory}
+                onChange={(e) => setFilterCategory(e.target.value)}
+                label="Sportart"
+              >
+                <MenuItem value="Alle">Alle Sportarten</MenuItem>
+                {availableSports.map((sport, index) => (
+                  <MenuItem key={index} value={sport}>
+                    {sport}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Grid>
+        </Grid>
+
+        {/* Anzeige der Wett-Tipps */}
         <Grid container spacing={4}>
-          {wettTipps.map((tipp) => (
-            <Grid item xs={12} md={6} key={tipp.id}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {tipp.title}
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {format(tipp.dateTime, "dd. MMMM yyyy, HH:mm", {
-                      locale: de,
-                    })} Uhr
-                  </Typography>
-                  <Typography variant="body2" gutterBottom>
-                    {tipp.description}
-                  </Typography>
-                  <Button
-                    component={Link}
-                    to={`/sportwetten/wett-tipps/${tipp.id}`}
-                    variant="contained"
-                    color="primary"
-                  >
-                    Mehr lesen
-                  </Button>
-                </CardContent>
-              </Card>
+          {filteredTipps.map((tipp) => (
+            <Grid item xs={12} md={4} key={tipp.id}>
+              <TippCard tipp={tipp} />
             </Grid>
           ))}
         </Grid>
