@@ -54,20 +54,20 @@ const MerkurbetsReview = () => {
   const bonusContent = (
     <>
       <Typography variant="h3" component="h3" gutterBottom>
-        25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette
+        40€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 60€ als Freiwette
       </Typography>
       <Typography variant="body1" paragraph>
         Merkur Bets begrüßt neue Kunden mit einem exklusiven Willkommensangebot,
         das keine Wünsche offenlässt. Erhalte einen 100% 3er-Kombi Cashback bis
-        zu 75€ sowie eine 25€ Gratiswette ab einer Einzahlung von nur 1€. Dieses
+        zu 60€ sowie eine 40€ Gratiswette ab einer Einzahlung von nur 1€. Dieses
         attraktive Paket ermöglicht es dir, mit einem größeren Wettguthaben zu
         starten und deine ersten Wetten risikofrei auszuprobieren.
       </Typography>
       <Typography variant="body1" paragraph>
         Du musst lediglich eine Mindesteinzahlung von 10€ tätigen, um den Bonus
         zu aktivieren. Sollte deine erste 3er-Kombiwette nicht erfolgreich sein,
-        erhältst du bis zu 75€ Cashback als Freebet. Zusätzlich steht dir die
-        25€ Gratiswette zur Verfügung, die du ab 1€ Einzahlung nutzen kannst.
+        erhältst du bis zu 60€ Cashback als Freebet. Zusätzlich steht dir die
+        40€ Gratiswette zur Verfügung, die du ab 1€ Einzahlung nutzen kannst.
         Dieses Angebot ist einmalig pro Haushalt und innerhalb von 7 Tagen nach
         Gutschrift gültig.
       </Typography>
@@ -83,7 +83,7 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                25€ Freebet ab einer Einzahlung von nur 1€ – starte sofort ohne
+                40€ Freebet ab einer Einzahlung von nur 1€ – starte sofort ohne
                 eigenes Risiko.
               </Typography>
             }
@@ -96,7 +96,7 @@ const MerkurbetsReview = () => {
           <ListItemText
             primary={
               <Typography variant="body1">
-                100% 3er-Kombi Cashback bis zu 75€ – sichere dir bis zu 75€
+                100% 3er-Kombi Cashback bis zu 60€ – sichere dir bis zu 60€
                 Cashback bei deiner ersten 3er-Kombiwette.
               </Typography>
             }
@@ -466,7 +466,7 @@ const MerkurbetsReview = () => {
       </Typography>
       <Typography variant="body1" paragraph>
         Ein besonderes Highlight ist die 3er-Kombi-Versicherung. Sollte deine
-        erste 3er-Kombiwette nicht erfolgreich sein, erhältst du bis zu 75€
+        erste 3er-Kombiwette nicht erfolgreich sein, erhältst du bis zu 60€
         Cashback als Freebet. Dieses Feature minimiert dein Risiko und erhöht
         deine Gewinnchancen bei Kombiwetten erheblich.
       </Typography>
@@ -502,7 +502,7 @@ const MerkurbetsReview = () => {
       <Typography variant="body1" paragraph>
         Unsere Merkur Bets Erfahrungen aus dem Jahr 2024 zeigen, dass es sich um
         einen seriösen und äußerst attraktiven Sportwetten-Anbieter handelt. Die
-        Kombination aus 25€ Freiwette ab 1€ Einzahlung, der Übernahme der
+        Kombination aus 40€ Freiwette ab 1€ Einzahlung, der Übernahme der
         Wettsteuer und innovativen Funktionen wie Quickbet und Bet Builder
         machen Merkur Bets zu einer ausgezeichneten Wahl für Wettfreunde.
       </Typography>

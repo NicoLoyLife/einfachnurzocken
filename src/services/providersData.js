@@ -149,30 +149,30 @@ export const sportsbettingProvidersData = {
     slug: "merkurbets",
     title: "Merkur Bets Erfahrungen & Test 2024 | Ist Merkur Bets seriös?",
     metaDescription:
-      "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 25€ Freiwette ab 1€ Einzahlung ✓ Wettsteuer übernommen ✓ Jetzt informieren und profitieren!",
+      "Ausführlicher Merkur Bets Test mit echten Erfahrungen ✓ 40€ Freiwette ab 1€ Einzahlung ✓ Wettsteuer übernommen ✓ Jetzt informieren und profitieren!",
     ctaLink:
       "/links/merkurbetsSportwetten",
     logo: merkurbetsLogo,
     highlights: [
-      "25€ Freiwette ab 1€ Einzahlung",
+      "40€ Freiwette ab 1€ Einzahlung",
       "Wettsteuer wird vom Anbieter übernommen, volle Gewinne ohne Abzüge",
       "Quickbet: Blitzschnelle Wetten ideal für Livewetten",
       "Bet Builder: Erstelle individuelle Wetten nach deinen Vorlieben",
       "Kombi Boost: Bis zu 30% zusätzlichen Gewinn bei Kombiwetten",
       "Benutzerfreundliche Mobile App für iOS und Android",
       "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
-      "3er-Kombi-Versicherung: Bis zu 75€ Cashback als Freiwette bei verlorenen Kombiwetten",
+      "3er-Kombi-Versicherung: Bis zu 60€ Cashback als Freiwette bei verlorenen Kombiwetten",
     ],
     bonus: {
-      type: "25€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 75€ als Freiwette",
-      maxBonus: "100€ (25 € Freiwette + 75 € Cashback)",
-      freiwette: "25€ Freiwette ab 1€ Einzahlung",
+      type: "40€ Freiwette ab 1€ Einzahlung + 100% Cashback bis zu 60€ als Freiwette",
+      maxBonus: "100€ (40 € Freiwette + 60 € Cashback)",
+      freiwette: "40€ Freiwette ab 1€ Einzahlung",
       minDeposit:
-        "1€ für die 25€ Freiwette; 10€ für die risikofreie Kombiwette",
-      maxDeposit: "Keine Angabe",
+        "1€ für die 40€ Freiwette; 10€ für die risikofreie Kombiwette",
+      maxDeposit: "60€",
       wageringRequirements:
         "Gewinne aus Freiwetten müssen einmal umgesetzt werden",
-      oddsRequirement: "Mindestquote von 1,50 für die risikofreie Kombiwette",
+      oddsRequirement: "Mindestquote von 1,50 (jedes Ereignis) für die risikofreie Kombiwette",
       timeframe: "Freiwetten sind 7 Tage nach Gutschrift gültig",
       validity: "1x pro Haushalt",
       availableIn: ["Deutschland"],
@@ -195,9 +195,9 @@ export const sportsbettingProvidersData = {
           "Ja, Merkur Bets ist Teil der Gauselmann Gruppe, einem etablierten deutschen Unternehmen mit langer Tradition in der Glücksspielbranche. Der Anbieter verfügt über eine deutsche Sportwetten-Lizenz und setzt auf hohe Sicherheitsstandards.",
       },
       {
-        question: "Wie erhalte ich die 25€ Freiwette ab 1€ Einzahlung?",
+        question: "Wie erhalte ich die 40€ Freiwette ab 1€ Einzahlung?",
         answer:
-          "Nach der Registrierung auf der Merkur Bets Webseite und einer Mindesteinzahlung von 1€ wird Ihnen die 25€ Freiwette automatisch gutgeschrieben.",
+          "Nach der Registrierung auf der Merkur Bets Webseite und einer Mindesteinzahlung von 1€ wird Ihnen die 40€ Freiwette automatisch gutgeschrieben.",
       },
       {
         question: "Muss ich die Wettsteuer bei Merkur Bets zahlen?",
@@ -249,7 +249,7 @@ export const sportsbettingProvidersData = {
       foundingYear: "2016",
       licence: "Deutsche Sportwetten-Lizenz gemäß Glücksspielstaatsvertrag",
       specialFeatures: [
-        "25€ Freiwette ab 1€ Einzahlung",
+        "40€ Freiwette ab 1€ Einzahlung",
         "Wettsteuer wird vom Anbieter übernommen",
         "exklusive Features wie Quickbet und Bet Builder",
       ],
@@ -261,9 +261,9 @@ export const sportsbettingProvidersData = {
       description: "",
     },
     pros: [
-      "25€ Freiwette ab 1€ Einzahlung – starte sofort mit minimalem Einsatz",
+      "40€ Freiwette ab 1€ Einzahlung – starte sofort mit minimalem Einsatz",
       "Wettsteuer wird vom Anbieter übernommen – volle Gewinne ohne Abzüge",
-      "100% Cashback bis zu 75€ als Freiwette bei verlorener erster Kombiwette",
+      "100% Cashback bis zu 60€ als Freiwette bei verlorener erster Kombiwette",
       "Innovative Features wie Quickbet, Bet Builder und Kombi Boost",
       "Breites Wettangebot mit vielen Sportarten und Spezialwetten",
       "Sichere und schnelle Ein- und Auszahlungen ohne Gebühren",
