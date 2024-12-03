@@ -25,9 +25,7 @@ import CasinoRoutes from "./routes/CasinoRoutes";
 import { useDispatch } from "react-redux";
 import { setSection, SECTIONS } from "./redux/sectionSlice";
 import ScrollToTop from "./components/common/ScrollToTop";
-// import AffiliateRedirects from "./services/AffiliateRedirects";
-// import CookieConsent from "react-cookie-consent";
-// import { Cookie } from "@mui/icons-material";
+import CookieConsentBanner from "./components/common/CookieConsentBanner"; // Import der ausgelagerten Komponente
 
 function App() {
   const location = useLocation();
@@ -70,26 +68,6 @@ function App() {
   return (
     <HelmetProvider>
       <ThemeProvider theme={currentTheme}>
-        {/* <CookieConsent
-          location="bottom"
-          buttonText="Ich stimme zu"
-          declineButtonText="Ablehnen"
-          enableDeclineButton
-          expires={30}
-          overlay={true}
-          icon={<Cookie />}
-          style={{ background: "#2B373B" }}
-          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-          declineButtonStyle={{ color: "#4e503b", fontSize: "13px" }}
-          onAccept={() => {
-            console.log("Cookies accepted");
-          }}
-          onDecline={() => {
-            console.log("Cookies declined");
-          }}
-        >
-          Diese Website verwendet Cookies, die Benutzererfahrung zu verbessern.
-        </CookieConsent> */}
         <CssBaseline />
         {/* Global Styles setzen */}
         <GlobalStyles
@@ -100,14 +78,11 @@ function App() {
               margin: 0,
               padding: 0,
               boxSizing: "border-box",
-              // minHeight: "100vh",
             },
             "*": {
               boxSizing: "inherit",
             },
-            "#root": {
-              // height: "100vh",
-            },
+            "#root": {},
           })}
         />
         <Box
@@ -147,6 +122,8 @@ function App() {
             </Routes>
           </Wrapper>
           <Footer />
+          {/* Cookie Consent Banner */}
+          <CookieConsentBanner />
         </Box>
       </ThemeProvider>
     </HelmetProvider>
