@@ -2,7 +2,7 @@
 // Automatisch generierte Weiterleitung
 
 $links = array(
-    'betanoSportwetten' => 'https%3A%2F%2Fgml-grp.com%2FC.ashx%3Fbtag%3Da_10846b_3503c_%26affid%3D3453%26siteid%3D10846%26adid%3D3503%26c%3D',
+    'betanoSportwetten' => 'https%3A%2F%2Fgml-grp.com%2FC.ashx%3Fbtag%3Da_57499b_3706c_%26affid%3D3453%26siteid%3D57499%26adid%3D3706%26c%3D',
     'winamaxSportwetten' => 'https%3A%2F%2Fwww.winamax.de%2Fregistration%2Flanding%2FDefault%3Flanguage%3DDE%26banid%3D73017',
     'merkurbetsSportwetten' => 'https%3A%2F%2Fmedia.cashpointpartners.com%2FC.ashx%3Fbtag%3Da_8433b_2360c_%26affid%3D4834%26siteid%3D8433%26adid%3D2360%26c%3D',
     'bingBongSlots' => 'https%3A%2F%2Fopwu.grass.bingbong.de%2Fts%2Fi5044752%2Ftsc%3Ftyp%3Dr%26amc%3Dnetworks.cap.526088.535942.CRTBbxuBVCq',
